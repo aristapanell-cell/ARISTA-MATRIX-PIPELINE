@@ -78,40 +78,6 @@ sniffer:
 proxies:
 - name: 'Trojan #1'
   type: trojan
-  server: 8.6.112.6
-  port: 443
-  password: humanity
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.calmloud.com
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.calmloud.com
-- name: 'Trojan #2'
-  type: trojan
-  server: 162.159.36.5
-  port: 443
-  password: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: sni.111000.dynv6.net
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /?proxyip=ip.111000.de5.net:443
-    headers:
-      Host: sni.111000.dynv6.net
-- name: 'Trojan #3'
-  type: trojan
   server: 172.64.145.202
   port: 443
   password: 5dc15e15-f285-4a9d-959b-0e4fbdd77b63
@@ -125,7 +91,7 @@ proxies:
     path: /
     headers:
       Host: vless.lrdxw.club
-- name: 'Trojan #4'
+- name: 'Trojan #2'
   type: trojan
   server: 172.64.147.106
   port: 2096
@@ -140,7 +106,7 @@ proxies:
     path: /tr
     headers:
       Host: Koma-YT.PAGeS.Dev
-- name: 'Trojan #5'
+- name: 'Trojan #3'
   type: trojan
   server: 172.64.147.29
   port: 443
@@ -157,7 +123,7 @@ proxies:
     path: /?proxyip=ip.111000.de5.net%3A443
     headers:
       Host: sni.111000.dynv6.net
-- name: 'Trojan #6'
+- name: 'Trojan #4'
   type: trojan
   server: 162.159.36.20
   port: 443
@@ -174,6 +140,38 @@ proxies:
     path: /?proxyip=ip.111000.de5.net%3A443
     headers:
       Host: sni.111000.dynv6.net
+- name: 'Trojan #5'
+  type: trojan
+  server: 162.159.152.2
+  port: 443
+  password: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: sni.111000.dynv6.net
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /?proxyip=ip.111000.de5.net%3A443
+    headers:
+      Host: sni.111000.dynv6.net
+- name: 'Trojan #6'
+  type: trojan
+  server: 188.114.98.0
+  port: 443
+  password: '1710442808'
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: subb.nrshop198.workers.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: subb.nrshop198.workers.dev
 - name: 'Trojan #7'
   type: trojan
   server: 35.180.106.124
@@ -230,6 +228,23 @@ proxies:
       Host: www.creationlong.org
 - name: 'Trojan #11'
   type: trojan
+  server: 8.6.112.6
+  port: 443
+  password: humanity
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.calmloud.com
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmloud.com
+- name: 'Trojan #12'
+  type: trojan
   server: 104.20.6.134
   port: 443
   password: humanity
@@ -259,6 +274,7 @@ proxy-groups:
   - 'Trojan #9'
   - 'Trojan #10'
   - 'Trojan #11'
+  - 'Trojan #12'
   - DIRECT
 - name: Auto Select
   type: url-test
@@ -274,6 +290,7 @@ proxy-groups:
   - 'Trojan #9'
   - 'Trojan #10'
   - 'Trojan #11'
+  - 'Trojan #12'
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 150
