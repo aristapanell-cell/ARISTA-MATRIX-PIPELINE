@@ -92,24 +92,6 @@ proxies:
   client-fingerprint: ''
 - name: 'ARISTA #2'
   type: vmess
-  server: cdn.ip-static.com
-  port: 80
-  uuid: b1f5f8b6-1e52-464c-af7b-ce73b4244a84
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: SWE003.midasnet.work
-  client-fingerprint: ''
-  ws-opts:
-    path: /
-    headers:
-      Host: SWE003.midasnet.work
-- name: 'ARISTA #3'
-  type: vmess
   server: star.reata.ir
   port: 29390
   uuid: 9a22b200-d665-4dee-aebc-2b0e223a978f
@@ -122,7 +104,7 @@ proxies:
   tcp-fast-open: true
   servername: star.reata.ir
   client-fingerprint: ''
-- name: 'ARISTA #4'
+- name: 'ARISTA #3'
   type: vmess
   server: star.reata.ir
   port: 29390
@@ -136,7 +118,49 @@ proxies:
   tcp-fast-open: true
   servername: star.reata.ir
   client-fingerprint: ''
+- name: 'ARISTA #4'
+  type: vmess
+  server: client.afraserverc1.top
+  port: 4170
+  uuid: 367c03b5-5ea0-4941-bec3-04ee703ee94c
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: client.afraserverc1.top
+  client-fingerprint: ''
 - name: 'ARISTA #5'
+  type: vmess
+  server: 217.218.52.1
+  port: 11182
+  uuid: f62d2411-c34d-460b-a93e-b789e03ca8b3
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: 217.218.52.1
+  client-fingerprint: ''
+- name: 'ARISTA #6'
+  type: vmess
+  server: client.afracp.top
+  port: 4271
+  uuid: 2c19233b-8e38-492f-9c81-df5fe511db14
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: client.afracp.top
+  client-fingerprint: ''
+- name: 'ARISTA #7'
   type: vmess
   server: 213.176.7.82
   port: 9090
@@ -154,39 +178,11 @@ proxies:
     path: /api/v2?ed=2560
     headers:
       Host: snapp.ir
-- name: 'ARISTA #6'
-  type: vmess
-  server: s82.faststrong.sbs
-  port: 38215
-  uuid: e49c983f-7ddb-4f17-9e7c-0e1337c439e9
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: s82.faststrong.sbs
-  client-fingerprint: ''
-- name: 'ARISTA #7'
-  type: vmess
-  server: client.afraserverc1.top
-  port: 4170
-  uuid: 367c03b5-5ea0-4941-bec3-04ee703ee94c
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: client.afraserverc1.top
-  client-fingerprint: ''
 - name: 'ARISTA #8'
   type: vmess
-  server: 185.143.233.235
+  server: cdn.ip-static.com
   port: 80
-  uuid: 4c3d1709-29d5-4ea3-89aa-8ecb4bc99a36
+  uuid: b1f5f8b6-1e52-464c-af7b-ce73b4244a84
   alterId: 0
   cipher: auto
   network: ws
@@ -194,73 +190,13 @@ proxies:
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: FRA001.midasnet.work
+  servername: SWE003.midasnet.work
   client-fingerprint: ''
   ws-opts:
     path: /
     headers:
-      Host: FRA001.midasnet.work
+      Host: SWE003.midasnet.work
 - name: 'ARISTA #9'
-  type: vmess
-  server: 185.11.89.38
-  port: 12809
-  uuid: aeddbbbd-ad95-49e8-ee31-7cacc7ede117
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 185.11.89.38
-  client-fingerprint: ''
-- name: 'ARISTA #10'
-  type: vmess
-  server: 185.11.89.38
-  port: 12809
-  uuid: aeddbbbd-ad95-49e8-ee31-7cacc7ede117
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 185.11.89.38
-  client-fingerprint: ''
-- name: 'ARISTA #11'
-  type: vmess
-  server: s82.faststrong.sbs
-  port: 38215
-  uuid: e49c983f-7ddb-4f17-9e7c-0e1337c439e9
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: s82.faststrong.sbs
-  client-fingerprint: ''
-- name: 'ARISTA #12'
-  type: vmess
-  server: v11.mailiran.net
-  port: 11999
-  uuid: 8257b31e-0805-4f28-9209-251b72b9a593
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: v11.mailiran.net
-  client-fingerprint: ''
-  ws-opts:
-    path: /
-    headers:
-      Host: v11.mailiran.net
-- name: 'ARISTA #13'
   type: vmess
   server: free-v7-09.elbrusway.online
   port: 443
@@ -278,6 +214,56 @@ proxies:
     path: /vmess-balkar
     headers:
       Host: free-v7-09.elbrusway.online
+- name: 'ARISTA #10'
+  type: vmess
+  server: v11.mailiran.net
+  port: 11999
+  uuid: 8257b31e-0805-4f28-9209-251b72b9a593
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: v11.mailiran.net
+  client-fingerprint: ''
+  ws-opts:
+    path: /
+    headers:
+      Host: v11.mailiran.net
+- name: 'ARISTA #11'
+  type: vmess
+  server: s82.faststrong.sbs
+  port: 38215
+  uuid: e49c983f-7ddb-4f17-9e7c-0e1337c439e9
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: s82.faststrong.sbs
+  client-fingerprint: ''
+- name: 'ARISTA #12'
+  type: vmess
+  server: 185.143.233.235
+  port: 80
+  uuid: 4c3d1709-29d5-4ea3-89aa-8ecb4bc99a36
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: FRA001.midasnet.work
+  client-fingerprint: ''
+  ws-opts:
+    path: /
+    headers:
+      Host: FRA001.midasnet.work
 proxy-groups:
 - name: Proxy Select
   type: select
@@ -295,7 +281,6 @@ proxy-groups:
   - 'ARISTA #10'
   - 'ARISTA #11'
   - 'ARISTA #12'
-  - 'ARISTA #13'
   - DIRECT
 - name: Auto Select
   type: url-test
@@ -312,7 +297,6 @@ proxy-groups:
   - 'ARISTA #10'
   - 'ARISTA #11'
   - 'ARISTA #12'
-  - 'ARISTA #13'
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 150
