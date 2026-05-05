@@ -78,38 +78,6 @@ sniffer:
 proxies:
 - name: 'ARISTA #1'
   type: vmess
-  server: snapp.ir
-  port: 80
-  uuid: 4c6423be-f717-44bf-b4aa-fced503cb7a0
-  alterId: 0
-  cipher: auto
-  network: httpupgrade
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: starlinck.parszone2.ir
-  client-fingerprint: ''
-- name: 'ARISTA #2'
-  type: vmess
-  server: creativecommons.org
-  port: 8443
-  uuid: 39382034-3920-4130-b220-393820353120
-  alterId: 0
-  cipher: none
-  network: ws
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: tr-1.stunnel.cc
-  client-fingerprint: ''
-  ws-opts:
-    path: /ws
-    headers:
-      Host: tr-1.stunnel.cc
-- name: 'ARISTA #3'
-  type: vmess
   server: 185.236.38.44
   port: 19946
   uuid: c9e42537-8652-4a4c-85d3-0d36abf38f88
@@ -122,11 +90,47 @@ proxies:
   tcp-fast-open: true
   servername: 185.236.38.44
   client-fingerprint: ''
+- name: 'ARISTA #2'
+  type: vmess
+  server: 2.189.255.159
+  port: 9095
+  uuid: af20e13a-1e31-456d-8387-02941ba0f24e
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: snapp.ir
+  client-fingerprint: chrome
+  ws-opts:
+    path: /api/v2?ed=2560
+    headers:
+      Host: snapp.ir
+- name: 'ARISTA #3'
+  type: vmess
+  server: 213.176.7.82
+  port: 9090
+  uuid: af20e13a-1e31-456d-8387-02941ba0f24e
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: snapp.ir
+  client-fingerprint: ''
+  ws-opts:
+    path: /api/v2?ed=2560
+    headers:
+      Host: snapp.ir
 - name: 'ARISTA #4'
   type: vmess
-  server: 217.218.52.1
-  port: 11182
-  uuid: f62d2411-c34d-460b-a93e-b789e03ca8b3
+  server: 185.11.89.38
+  port: 12809
+  uuid: aeddbbbd-ad95-49e8-ee31-7cacc7ede117
   alterId: 0
   cipher: auto
   network: tcp
@@ -134,7 +138,7 @@ proxies:
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: 217.218.52.1
+  servername: 185.11.89.38
   client-fingerprint: ''
 - name: 'ARISTA #5'
   type: vmess
@@ -152,20 +156,6 @@ proxies:
   client-fingerprint: ''
 - name: 'ARISTA #6'
   type: vmess
-  server: 185.11.89.38
-  port: 12809
-  uuid: aeddbbbd-ad95-49e8-ee31-7cacc7ede117
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 185.11.89.38
-  client-fingerprint: ''
-- name: 'ARISTA #7'
-  type: vmess
   server: cdn.ip-static.com
   port: 80
   uuid: b1f5f8b6-1e52-464c-af7b-ce73b4244a84
@@ -182,7 +172,7 @@ proxies:
     path: /
     headers:
       Host: SWE003.midasnet.work
-- name: 'ARISTA #8'
+- name: 'ARISTA #7'
   type: vmess
   server: free-v7-09.elbrusway.online
   port: 443
@@ -200,21 +190,7 @@ proxies:
     path: /vmess-balkar
     headers:
       Host: free-v7-09.elbrusway.online
-- name: 'ARISTA #9'
-  type: vmess
-  server: client.afracp.top
-  port: 4271
-  uuid: 2c19233b-8e38-492f-9c81-df5fe511db14
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: client.afracp.top
-  client-fingerprint: ''
-- name: 'ARISTA #10'
+- name: 'ARISTA #8'
   type: vmess
   server: client.afracp.top
   port: 4271
@@ -241,8 +217,6 @@ proxy-groups:
   - 'ARISTA #6'
   - 'ARISTA #7'
   - 'ARISTA #8'
-  - 'ARISTA #9'
-  - 'ARISTA #10'
   - DIRECT
 - name: Auto Select
   type: url-test
@@ -255,8 +229,6 @@ proxy-groups:
   - 'ARISTA #6'
   - 'ARISTA #7'
   - 'ARISTA #8'
-  - 'ARISTA #9'
-  - 'ARISTA #10'
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 150
