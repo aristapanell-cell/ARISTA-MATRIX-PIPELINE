@@ -92,9 +92,9 @@ proxies:
   client-fingerprint: ''
 - name: 'ARISTA #2'
   type: vmess
-  server: 185.11.89.38
-  port: 12809
-  uuid: aeddbbbd-ad95-49e8-ee31-7cacc7ede117
+  server: 185.236.38.44
+  port: 19946
+  uuid: c9e42537-8652-4a4c-85d3-0d36abf38f88
   alterId: 0
   cipher: auto
   network: tcp
@@ -102,13 +102,13 @@ proxies:
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: 185.11.89.38
+  servername: 185.236.38.44
   client-fingerprint: ''
 - name: 'ARISTA #3'
   type: vmess
-  server: v11.mailiran.net
-  port: 11999
-  uuid: 8257b31e-0805-4f28-9209-251b72b9a593
+  server: www.arvancloud.ir
+  port: 80
+  uuid: ce93e8a9-47b4-47f8-82f0-ee233fb00d71
   alterId: 0
   cipher: auto
   network: ws
@@ -116,27 +116,13 @@ proxies:
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: v11.mailiran.net
+  servername: snappfootdigitorobfullymull.rayannob.ir
   client-fingerprint: ''
   ws-opts:
-    path: /
+    path: /rayYou
     headers:
-      Host: v11.mailiran.net
+      Host: snappfootdigitorobfullymull.rayannob.ir
 - name: 'ARISTA #4'
-  type: vmess
-  server: 94.101.191.194
-  port: 8081
-  uuid: 4c3a539d-3923-45b4-ffb4-761807da5b6b
-  alterId: 0
-  cipher: auto
-  network: httpupgrade
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: pooyangru123-0d7cdbf02d-nginx.apps.ir-central1.arvancaas.ir
-  client-fingerprint: ''
-- name: 'ARISTA #5'
   type: vmess
   server: sanjose01.zgjok.com
   port: 443
@@ -154,7 +140,7 @@ proxies:
     path: /
     headers:
       Host: sanjose01.zgjok.com
-- name: 'ARISTA #6'
+- name: 'ARISTA #5'
   type: vmess
   server: 82.198.246.9
   port: 180
@@ -168,7 +154,7 @@ proxies:
   tcp-fast-open: true
   servername: 82.198.246.9
   client-fingerprint: chrome
-- name: 'ARISTA #7'
+- name: 'ARISTA #6'
   type: vmess
   server: 165.154.195.38
   port: 35034
@@ -182,11 +168,11 @@ proxies:
   tcp-fast-open: true
   servername: 165.154.195.38
   client-fingerprint: ''
-- name: 'ARISTA #8'
+- name: 'ARISTA #7'
   type: vmess
-  server: 185.11.89.38
-  port: 12809
-  uuid: aeddbbbd-ad95-49e8-ee31-7cacc7ede117
+  server: 185.236.38.44
+  port: 19946
+  uuid: c9e42537-8652-4a4c-85d3-0d36abf38f88
   alterId: 0
   cipher: auto
   network: tcp
@@ -194,41 +180,62 @@ proxies:
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: 185.11.89.38
+  servername: 185.236.38.44
+  client-fingerprint: ''
+- name: 'ARISTA #8'
+  type: vmess
+  server: login.rahahostagents.com
+  port: 4159
+  uuid: 28493a9c-8a0a-4694-9841-d5e871f3495f
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: login.rahahostagents.com
   client-fingerprint: ''
 - name: 'ARISTA #9'
   type: vmess
-  server: login.rahahostagents.com
-  port: 4159
-  uuid: 28493a9c-8a0a-4694-9841-d5e871f3495f
+  server: fars.sanprime.ir
+  port: 47395
+  uuid: 4a551403-b274-4f1d-a4c5-489457bd5a62
   alterId: 0
   cipher: auto
   network: tcp
-  tls: false
+  tls: true
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: login.rahahostagents.com
-  client-fingerprint: ''
+  servername: web.sanprime.ir
+  client-fingerprint: chrome
+  alpn:
+  - h2
+  - http/1.1
 - name: 'ARISTA #10'
   type: vmess
-  server: login.rahahostagents.com
-  port: 4159
-  uuid: 28493a9c-8a0a-4694-9841-d5e871f3495f
+  server: v11.mailiran.net
+  port: 11999
+  uuid: 8257b31e-0805-4f28-9209-251b72b9a593
   alterId: 0
   cipher: auto
-  network: tcp
+  network: ws
   tls: false
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: login.rahahostagents.com
+  servername: v11.mailiran.net
   client-fingerprint: ''
+  ws-opts:
+    path: /
+    headers:
+      Host: v11.mailiran.net
 - name: 'ARISTA #11'
   type: vmess
-  server: snapp.ir
-  port: 8080
-  uuid: c3a4a1c7-2726-4dad-8c1e-ebd1675a0f59
+  server: 94.101.191.194
+  port: 8081
+  uuid: 4c3a539d-3923-45b4-ffb4-761807da5b6b
   alterId: 0
   cipher: auto
   network: httpupgrade
@@ -236,7 +243,7 @@ proxies:
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: max1.parszone2.ir
+  servername: pooyangru123-0d7cdbf02d-nginx.apps.ir-central1.arvancaas.ir
   client-fingerprint: ''
 - name: 'ARISTA #12'
   type: vmess
@@ -268,9 +275,9 @@ proxies:
   client-fingerprint: ''
 - name: 'ARISTA #14'
   type: vmess
-  server: b51d64cb-c5d6-4791-8ecf-0a6d8d71c717.wtf
-  port: 21014
-  uuid: d12a07d7-f112-4a7c-9832-feaac20908a3
+  server: 185.11.89.38
+  port: 12809
+  uuid: aeddbbbd-ad95-49e8-ee31-7cacc7ede117
   alterId: 0
   cipher: auto
   network: tcp
@@ -278,13 +285,13 @@ proxies:
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: b51d64cb-c5d6-4791-8ecf-0a6d8d71c717.wtf
+  servername: 185.11.89.38
   client-fingerprint: ''
 - name: 'ARISTA #15'
   type: vmess
-  server: 185.236.38.44
-  port: 19946
-  uuid: c9e42537-8652-4a4c-85d3-0d36abf38f88
+  server: 185.11.89.38
+  port: 12809
+  uuid: aeddbbbd-ad95-49e8-ee31-7cacc7ede117
   alterId: 0
   cipher: auto
   network: tcp
@@ -292,76 +299,23 @@ proxies:
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: 185.236.38.44
+  servername: 185.11.89.38
   client-fingerprint: ''
 - name: 'ARISTA #16'
   type: vmess
-  server: www.arvancloud.ir
-  port: 80
-  uuid: ce93e8a9-47b4-47f8-82f0-ee233fb00d71
+  server: login.rahahostagents.com
+  port: 4159
+  uuid: 28493a9c-8a0a-4694-9841-d5e871f3495f
   alterId: 0
   cipher: auto
-  network: ws
+  network: tcp
   tls: false
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: snappfootdigitorobfullymull.rayannob.ir
+  servername: login.rahahostagents.com
   client-fingerprint: ''
-  ws-opts:
-    path: /rayYou
-    headers:
-      Host: snappfootdigitorobfullymull.rayannob.ir
 - name: 'ARISTA #17'
-  type: vmess
-  server: fars.sanprime.ir
-  port: 47395
-  uuid: 4a551403-b274-4f1d-a4c5-489457bd5a62
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: web.sanprime.ir
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
-- name: 'ARISTA #18'
-  type: vmess
-  server: www.arvancloud.ir
-  port: 80
-  uuid: ce93e8a9-47b4-47f8-82f0-ee233fb00d71
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: snappfootdigitorobfullymull.rayannob.ir
-  client-fingerprint: ''
-  ws-opts:
-    path: /rayYou
-    headers:
-      Host: snappfootdigitorobfullymull.rayannob.ir
-- name: 'ARISTA #19'
-  type: vmess
-  server: 185.236.38.44
-  port: 19946
-  uuid: c9e42537-8652-4a4c-85d3-0d36abf38f88
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 185.236.38.44
-  client-fingerprint: ''
-- name: 'ARISTA #20'
   type: vmess
   server: login.rahahostagents.com
   port: 4159
@@ -397,9 +351,6 @@ proxy-groups:
   - 'ARISTA #15'
   - 'ARISTA #16'
   - 'ARISTA #17'
-  - 'ARISTA #18'
-  - 'ARISTA #19'
-  - 'ARISTA #20'
   - DIRECT
 - name: Auto Select
   type: url-test
@@ -421,9 +372,6 @@ proxy-groups:
   - 'ARISTA #15'
   - 'ARISTA #16'
   - 'ARISTA #17'
-  - 'ARISTA #18'
-  - 'ARISTA #19'
-  - 'ARISTA #20'
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 150
