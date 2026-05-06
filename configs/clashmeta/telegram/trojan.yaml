@@ -93,6 +93,19 @@ proxies:
       Host: www.creationlong.org
 - name: 'Trojan #2'
   type: trojan
+  server: 63.182.185.223
+  port: 22222
+  password: telegram-id-privatevpns
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+- name: 'Trojan #3'
+  type: trojan
   server: 104.20.6.134
   port: 443
   password: humanity
@@ -106,6 +119,83 @@ proxies:
     path: /assignment
     headers:
       Host: www.creationlong.org
+- name: 'Trojan #4'
+  type: trojan
+  server: 162.159.36.20
+  port: 443
+  password: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: sni.111000.dynv6.net
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /?proxyip=ip.111000.de5.net%3A443
+    headers:
+      Host: sni.111000.dynv6.net
+- name: 'Trojan #5'
+  type: trojan
+  server: 162.159.152.2
+  port: 443
+  password: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: sni.111000.dynv6.net
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /?proxyip=ip.111000.de5.net%3A443
+    headers:
+      Host: sni.111000.dynv6.net
+- name: 'Trojan #6'
+  type: trojan
+  server: 188.114.98.0
+  port: 443
+  password: '1710442808'
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: subb.nrshop198.workers.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: subb.nrshop198.workers.dev
+- name: 'Trojan #7'
+  type: trojan
+  server: 172.64.146.129
+  port: 443
+  password: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: sni.111000.dynv6.net
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /?proxyip=ip.111000.de5.net:443
+    headers:
+      Host: sni.111000.dynv6.net
+- name: 'Trojan #8'
+  type: trojan
+  server: 78.159.131.12
+  port: 28259
+  password: MeaDiUmPlkWbZJ2BON8tz
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: ads.x5.ru
+  client-fingerprint: chrome
 proxy-groups:
 - name: Proxy Select
   type: select
@@ -113,12 +203,24 @@ proxy-groups:
   - Auto Select
   - 'Trojan #1'
   - 'Trojan #2'
+  - 'Trojan #3'
+  - 'Trojan #4'
+  - 'Trojan #5'
+  - 'Trojan #6'
+  - 'Trojan #7'
+  - 'Trojan #8'
   - DIRECT
 - name: Auto Select
   type: url-test
   proxies:
   - 'Trojan #1'
   - 'Trojan #2'
+  - 'Trojan #3'
+  - 'Trojan #4'
+  - 'Trojan #5'
+  - 'Trojan #6'
+  - 'Trojan #7'
+  - 'Trojan #8'
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 150
