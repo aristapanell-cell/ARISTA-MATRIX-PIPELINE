@@ -180,9 +180,9 @@ proxies:
       Host: rxs.bravo-six.ir
 - name: 'ARISTA #8'
   type: vmess
-  server: 185.11.89.38
-  port: 12809
-  uuid: aeddbbbd-ad95-49e8-ee31-7cacc7ede117
+  server: b51d64cb-c5d6-4791-8ecf-0a6d8d71c717.wtf
+  port: 21052
+  uuid: 9be25493-b1cc-4c79-ab5f-f647c6d790ae
   alterId: 0
   cipher: auto
   network: tcp
@@ -190,9 +190,41 @@ proxies:
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: 185.11.89.38
+  servername: b51d64cb-c5d6-4791-8ecf-0a6d8d71c717.wtf
   client-fingerprint: ''
 - name: 'ARISTA #9'
+  type: vmess
+  server: cip.salimore.com
+  port: 443
+  uuid: 7ff57d9a-d879-487d-8e54-f12e394d0d56
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: cip.salimore.com
+  client-fingerprint: ''
+  ws-opts:
+    path: /ws/
+    headers:
+      Host: cip.salimore.com
+- name: 'ARISTA #10'
+  type: vmess
+  server: b51d64cb-c5d6-4791-8ecf-0a6d8d71c717.wtf
+  port: 21050
+  uuid: 6f886c7f-a017-4368-af68-d3fa907f5d8c
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: b51d64cb-c5d6-4791-8ecf-0a6d8d71c717.wtf
+  client-fingerprint: ''
+- name: 'ARISTA #11'
   type: vmess
   server: 185.236.38.44
   port: 19946
@@ -206,7 +238,38 @@ proxies:
   tcp-fast-open: true
   servername: 185.236.38.44
   client-fingerprint: ''
-- name: 'ARISTA #10'
+- name: 'ARISTA #12'
+  type: vmess
+  server: fars.sanprime.ir
+  port: 47395
+  uuid: 4a551403-b274-4f1d-a4c5-489457bd5a62
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: web.sanprime.ir
+  client-fingerprint: chrome
+  alpn:
+  - h2
+  - http/1.1
+- name: 'ARISTA #13'
+  type: vmess
+  server: 185.236.38.44
+  port: 19946
+  uuid: c9e42537-8652-4a4c-85d3-0d36abf38f88
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: 185.236.38.44
+  client-fingerprint: ''
+- name: 'ARISTA #14'
   type: vmess
   server: www.arvancloud.ir
   port: 80
@@ -224,7 +287,7 @@ proxies:
     path: /rayYou
     headers:
       Host: snappfootdigitorobfullymull.rayannob.ir
-- name: 'ARISTA #11'
+- name: 'ARISTA #15'
   type: vmess
   server: snapp.ir
   port: 8880
@@ -242,21 +305,7 @@ proxies:
     path: /
     headers:
       Host: rxs.bravo-six.ir
-- name: 'ARISTA #12'
-  type: vmess
-  server: login.rahahostagents.com
-  port: 4159
-  uuid: 28493a9c-8a0a-4694-9841-d5e871f3495f
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: login.rahahostagents.com
-  client-fingerprint: ''
-- name: 'ARISTA #13'
+- name: 'ARISTA #16'
   type: vmess
   server: 185.236.38.44
   port: 19946
@@ -270,28 +319,11 @@ proxies:
   tcp-fast-open: true
   servername: 185.236.38.44
   client-fingerprint: ''
-- name: 'ARISTA #14'
+- name: 'ARISTA #17'
   type: vmess
-  server: fars.sanprime.ir
-  port: 47395
-  uuid: 4a551403-b274-4f1d-a4c5-489457bd5a62
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: web.sanprime.ir
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
-- name: 'ARISTA #15'
-  type: vmess
-  server: 185.236.38.44
-  port: 19946
-  uuid: c9e42537-8652-4a4c-85d3-0d36abf38f88
+  server: 185.11.89.38
+  port: 12809
+  uuid: aeddbbbd-ad95-49e8-ee31-7cacc7ede117
   alterId: 0
   cipher: auto
   network: tcp
@@ -299,7 +331,7 @@ proxies:
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: 185.236.38.44
+  servername: 185.11.89.38
   client-fingerprint: ''
 proxy-groups:
 - name: Proxy Select
@@ -321,6 +353,8 @@ proxy-groups:
   - 'ARISTA #13'
   - 'ARISTA #14'
   - 'ARISTA #15'
+  - 'ARISTA #16'
+  - 'ARISTA #17'
   - DIRECT
 - name: Auto Select
   type: url-test
@@ -340,6 +374,8 @@ proxy-groups:
   - 'ARISTA #13'
   - 'ARISTA #14'
   - 'ARISTA #15'
+  - 'ARISTA #16'
+  - 'ARISTA #17'
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 150
