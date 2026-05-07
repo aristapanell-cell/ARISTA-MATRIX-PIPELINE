@@ -91,47 +91,6 @@ proxies:
   - http/1.1
 - name: 'Trojan #2'
   type: trojan
-  server: 104.20.6.134
-  port: 443
-  password: humanity
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.creationlong.org
-  client-fingerprint: chrome
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.creationlong.org
-- name: 'Trojan #3'
-  type: trojan
-  server: hl-freedom-1.undef.network
-  port: 443
-  password: GZOof2R1ej4yML1NxajR2frGQ
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: HL-FREEDOM-1.UNDEF.NETWORK
-  client-fingerprint: chrome
-- name: 'Trojan #4'
-  type: trojan
-  server: 176.124.201.78
-  port: 2053
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: Koma-YT.PAGeS.Dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /trTelegram🇨🇳+@WangCai2
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-- name: 'Trojan #5'
-  type: trojan
   server: 172.64.146.129
   port: 443
   password: 6202b230-417c-4d8e-b624-0f71afa9c75d
@@ -147,7 +106,7 @@ proxies:
     path: /?proxyip=ip.111000.de5.net:443
     headers:
       Host: sni.111000.dynv6.net
-- name: 'Trojan #6'
+- name: 'Trojan #3'
   type: trojan
   server: 78.159.131.12
   port: 28259
@@ -158,7 +117,7 @@ proxies:
   tcp-fast-open: true
   servername: ads.x5.ru
   client-fingerprint: chrome
-- name: 'Trojan #7'
+- name: 'Trojan #4'
   type: trojan
   server: 172.64.149.209
   port: 443
@@ -173,6 +132,47 @@ proxies:
     path: /
     headers:
       Host: vless.lrdxw.club
+- name: 'Trojan #5'
+  type: trojan
+  server: hl-freedom-1.undef.network
+  port: 443
+  password: GZOof2R1ej4yML1NxajR2frGQ
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: HL-FREEDOM-1.UNDEF.NETWORK
+  client-fingerprint: chrome
+- name: 'Trojan #6'
+  type: trojan
+  server: 176.124.201.78
+  port: 2053
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: Koma-YT.PAGeS.Dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /trTelegram🇨🇳+@WangCai2
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+- name: 'Trojan #7'
+  type: trojan
+  server: 104.20.6.134
+  port: 443
+  password: humanity
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.creationlong.org
+  client-fingerprint: chrome
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.creationlong.org
 proxy-groups:
 - name: Proxy Select
   type: select
