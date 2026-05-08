@@ -78,31 +78,18 @@ sniffer:
 proxies:
 - name: 'Trojan #1'
   type: trojan
-  server: hl-freedom-1.undef.network
-  port: 443
-  password: GZOof2R1ej4yML1NxajR2frGQ
+  server: 15.224.87.132
+  port: 22222
+  password: telegram-id-privatevpns
   network: tcp
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: HL-FREEDOM-1.UNDEF.NETWORK
+  servername: trojan.burgerip.co.uk
   client-fingerprint: chrome
+  alpn:
+  - http/1.1
 - name: 'Trojan #2'
-  type: trojan
-  server: 176.124.201.78
-  port: 2053
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: Koma-YT.PAGeS.Dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /trTelegram🇨🇳+@WangCai2
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-- name: 'Trojan #3'
   type: trojan
   server: 172.64.149.209
   port: 443
@@ -117,32 +104,43 @@ proxies:
     path: /
     headers:
       Host: vless.lrdxw.club
+- name: 'Trojan #3'
+  type: trojan
+  server: hl-freedom-1.undef.network
+  port: 443
+  password: GZOof2R1ej4yML1NxajR2frGQ
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: HL-FREEDOM-1.UNDEF.NETWORK
+  client-fingerprint: chrome
 - name: 'Trojan #4'
   type: trojan
-  server: 15.224.29.207
-  port: 22222
-  password: telegram-id-privatevpns
-  network: tcp
+  server: 176.124.201.78
+  port: 2053
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  network: ws
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: trojan.burgerip.co.uk
+  servername: Koma-YT.PAGeS.Dev
   client-fingerprint: chrome
-  alpn:
-  - http/1.1
+  ws-opts:
+    path: /trTelegram🇨🇳+@WangCai2
+    headers:
+      Host: Koma-YT.PAGeS.Dev
 - name: 'Trojan #5'
   type: trojan
-  server: 15.224.87.132
-  port: 22222
-  password: telegram-id-privatevpns
+  server: 188.213.199.125
+  port: 19754
+  password: 52DCB0eOjp
   network: tcp
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: trojan.burgerip.co.uk
+  servername: 188.213.199.125
   client-fingerprint: chrome
-  alpn:
-  - http/1.1
 proxy-groups:
 - name: Proxy Select
   type: select
