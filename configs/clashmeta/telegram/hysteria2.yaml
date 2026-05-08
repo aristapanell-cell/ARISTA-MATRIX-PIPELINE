@@ -78,15 +78,13 @@ sniffer:
 proxies:
 - name: 'Hysteria2 #1'
   type: hysteria2
-  server: srm.kishonline.online
+  server: 45.81.19.251
   port: 443
-  password: Kz0JGcGICb
-  sni: srm.kishonline.online
+  password: DBUklcvOyH
+  sni: web.bale.ai
   skip-cert-verify: false
   fast-open: true
   client-fingerprint: chrome
-  obfs: salamander
-  obfs-password: kish-data-center
 - name: 'Hysteria2 #2'
   type: hysteria2
   server: srm.kishonline.online
@@ -98,15 +96,6 @@ proxies:
   client-fingerprint: chrome
   obfs: salamander
   obfs-password: kish-data-center
-- name: 'Hysteria2 #3'
-  type: hysteria2
-  server: 45.81.19.251
-  port: 443
-  password: DBUklcvOyH
-  sni: web.bale.ai
-  skip-cert-verify: false
-  fast-open: true
-  client-fingerprint: chrome
 proxy-groups:
 - name: Proxy Select
   type: select
@@ -114,14 +103,12 @@ proxy-groups:
   - Auto Select
   - 'Hysteria2 #1'
   - 'Hysteria2 #2'
-  - 'Hysteria2 #3'
   - DIRECT
 - name: Auto Select
   type: url-test
   proxies:
   - 'Hysteria2 #1'
   - 'Hysteria2 #2'
-  - 'Hysteria2 #3'
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 150

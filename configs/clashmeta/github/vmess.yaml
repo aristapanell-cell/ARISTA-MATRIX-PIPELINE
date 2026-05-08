@@ -2544,51 +2544,41 @@ proxies:
       Host: fsdns1.ectunnelvpn.me
 - name: 'T.ME: @aristapnel #151'
   type: vmess
-  server: usaapp1.jisuyun.top
-  port: 2053
-  uuid: 4b80aa86-4354-40bb-d2a3-47126cff0bea
+  server: 152.67.218.38
+  port: 443
+  uuid: b5e9480a-b7aa-40a4-f9a7-5299b5e363b4
+  alterId: 0
+  cipher: null
+  network: ws
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: 152.67.218.38
+  client-fingerprint: null
+  ws-opts:
+    path: /
+    headers:
+      Host: 152.67.218.38
+- name: 'T.ME: @aristapnel #152'
+  type: vmess
+  server: 152.67.218.38
+  port: 443
+  uuid: b5e9480a-b7aa-40a4-f9a7-5299b5e363b4
   alterId: 0
   cipher: auto
   network: ws
-  tls: true
+  tls: false
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: usaapp1.jisuyun.top
+  servername: 152.67.218.38
   client-fingerprint: null
   ws-opts:
-    path: /usavm
+    path: /
     headers:
-      Host: usaapp1.jisuyun.top
-- name: 'T.ME: @aristapnel #152'
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: null
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 2001:bc8:32d7:302::10
-  client-fingerprint: null
+      Host: 152.67.218.38
 - name: 'T.ME: @aristapnel #153'
-  type: vmess
-  server: 82.198.246.214
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 82.198.246.214
-  client-fingerprint: null
-- name: 'T.ME: @aristapnel #154'
   type: vmess
   server: 152.67.218.38
   port: 443
@@ -2606,21 +2596,71 @@ proxies:
     path: /
     headers:
       Host: 152.67.218.38
+- name: 'T.ME: @aristapnel #154'
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: null
+  network: null
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: 82.198.246.97
+  client-fingerprint: null
 - name: 'T.ME: @aristapnel #155'
   type: vmess
-  server: node-de.connectsuite.org
-  port: 2053
-  uuid: 9309640e-d299-484a-a0e8-c9b975d94822
+  server: v35.hdacd.com
+  port: 30835
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: null
+  network: null
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: v35.hdacd.com
+  client-fingerprint: null
+- name: 'T.ME: @aristapnel #156'
+  type: vmess
+  server: n1753101277.4u9ma.icu
+  port: 443
+  uuid: 6ea48dfe-7de2-45dc-9267-d4d9effad9fc
   alterId: 0
-  cipher: auto
-  network: tcp
+  cipher: null
+  network: ws
   tls: true
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: node-de.connectsuite.org
+  servername: n1753101277.4u9ma.icu
   client-fingerprint: null
-- name: 'T.ME: @aristapnel #156'
+  ws-opts:
+    path: /
+    headers:
+      Host: n1753101277.4u9ma.icu
+- name: 'T.ME: @aristapnel #157'
+  type: vmess
+  server: usaapp1.jisuyun.top
+  port: 2053
+  uuid: 4b80aa86-4354-40bb-d2a3-47126cff0bea
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: usaapp1.jisuyun.top
+  client-fingerprint: null
+  ws-opts:
+    path: /usavm
+    headers:
+      Host: usaapp1.jisuyun.top
+- name: 'T.ME: @aristapnel #158'
   type: vmess
   server: ray.skymirror.cc
   port: 443
@@ -2638,43 +2678,43 @@ proxies:
     path: /
     headers:
       Host: ray.skymirror.cc
-- name: 'T.ME: @aristapnel #157'
-  type: vmess
-  server: hk2.lrzdx.uk
-  port: 443
-  uuid: db69d5bc-d36c-4903-f471-74b98c5cefe5
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: hk2.lrzdx.uk
-  client-fingerprint: chrome
-  ws-opts:
-    path: /register
-    headers:
-      Host: hk2.lrzdx.uk
-- name: 'T.ME: @aristapnel #158'
-  type: vmess
-  server: hk2.lrzdx.uk
-  port: 443
-  uuid: db69d5bc-d36c-4903-f471-74b98c5cefe5
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: hk2.lrzdx.uk
-  client-fingerprint: chrome
-  ws-opts:
-    path: /register
-    headers:
-      Host: hk2.lrzdx.uk
 - name: 'T.ME: @aristapnel #159'
+  type: vmess
+  server: hk2.lrzdx.uk
+  port: 443
+  uuid: db69d5bc-d36c-4903-f471-74b98c5cefe5
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: hk2.lrzdx.uk
+  client-fingerprint: chrome
+  ws-opts:
+    path: /register
+    headers:
+      Host: hk2.lrzdx.uk
+- name: 'T.ME: @aristapnel #160'
+  type: vmess
+  server: hk2.lrzdx.uk
+  port: 443
+  uuid: db69d5bc-d36c-4903-f471-74b98c5cefe5
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: hk2.lrzdx.uk
+  client-fingerprint: chrome
+  ws-opts:
+    path: /register
+    headers:
+      Host: hk2.lrzdx.uk
+- name: 'T.ME: @aristapnel #161'
   type: vmess
   server: gs03-1.guoshi1520.com
   port: 443
@@ -2692,7 +2732,7 @@ proxies:
     path: /82ff6d30
     headers:
       Host: gs03-1.guoshi1520.com
-- name: 'T.ME: @aristapnel #160'
+- name: 'T.ME: @aristapnel #162'
   type: vmess
   server: cloudgetservice.mcloudservice.site
   port: 443
@@ -2710,7 +2750,7 @@ proxies:
     path: /linkws
     headers:
       Host: maXNEtVIP-usA-VP3.nETKH3.SiTE
-- name: 'T.ME: @aristapnel #161'
+- name: 'T.ME: @aristapnel #163'
   type: vmess
   server: a.886968.xyz
   port: 21369
@@ -2728,7 +2768,7 @@ proxies:
     path: /wfdef
     headers:
       Host: a.886968.xyz
-- name: 'T.ME: @aristapnel #162'
+- name: 'T.ME: @aristapnel #164'
   type: vmess
   server: xc125-1.meiziba5566.com
   port: 443
@@ -2746,7 +2786,7 @@ proxies:
     path: /6b95d340
     headers:
       Host: xc125-1.meiziba5566.com
-- name: 'T.ME: @aristapnel #163'
+- name: 'T.ME: @aristapnel #165'
   type: vmess
   server: xc115-1.meiziba5566.com
   port: 443
@@ -2764,7 +2804,7 @@ proxies:
     path: /f40a8d65
     headers:
       Host: xc115-1.meiziba5566.com
-- name: 'T.ME: @aristapnel #164'
+- name: 'T.ME: @aristapnel #166'
   type: vmess
   server: xc011-2.meiziba5566.com
   port: 443
@@ -2782,7 +2822,7 @@ proxies:
     path: /xc1234
     headers:
       Host: xc011-2.meiziba5566.com
-- name: 'T.ME: @aristapnel #165'
+- name: 'T.ME: @aristapnel #167'
   type: vmess
   server: xcf037.facai2024.com
   port: 443
@@ -2800,7 +2840,7 @@ proxies:
     path: /d9863037
     headers:
       Host: xcf037.facai2024.com
-- name: 'T.ME: @aristapnel #166'
+- name: 'T.ME: @aristapnel #168'
   type: vmess
   server: xcf036.facai2024.com
   port: 443
@@ -2818,7 +2858,7 @@ proxies:
     path: /96c585de
     headers:
       Host: xcf036.facai2024.com
-- name: 'T.ME: @aristapnel #167'
+- name: 'T.ME: @aristapnel #169'
   type: vmess
   server: xcf029.facai2024.com
   port: 443
@@ -2836,7 +2876,7 @@ proxies:
     path: /9ce4526a
     headers:
       Host: xcf029.facai2024.com
-- name: 'T.ME: @aristapnel #168'
+- name: 'T.ME: @aristapnel #170'
   type: vmess
   server: xcmg19.dtkj0328.com
   port: 443
@@ -2854,7 +2894,7 @@ proxies:
     path: /xcmg1234
     headers:
       Host: xcmg19.dtkj0328.com
-- name: 'T.ME: @aristapnel #169'
+- name: 'T.ME: @aristapnel #171'
   type: vmess
   server: www.wn03.cc
   port: 80
@@ -2872,7 +2912,7 @@ proxies:
     path: /rongseven?ed=2048
     headers:
       Host: us.freeyyds.dpdns.org
-- name: 'T.ME: @aristapnel #170'
+- name: 'T.ME: @aristapnel #172'
   type: vmess
   server: u8.huvicloud.com
   port: 443
@@ -2890,7 +2930,7 @@ proxies:
     path: /6796611b-260e-4d63-9016-20c27b12e420
     headers:
       Host: u8.huvicloud.com
-- name: 'T.ME: @aristapnel #171'
+- name: 'T.ME: @aristapnel #173'
   type: vmess
   server: tk.hzlt.tkddns.xyz
   port: 22643
@@ -2908,7 +2948,7 @@ proxies:
     path: /
     headers:
       Host: zxjp-c.tkong.cc
-- name: 'T.ME: @aristapnel #172'
+- name: 'T.ME: @aristapnel #174'
   type: vmess
   server: time.is
   port: 443
@@ -2926,7 +2966,7 @@ proxies:
     path: /
     headers:
       Host: shs111.kejixiaoqi666.store
-- name: 'T.ME: @aristapnel #173'
+- name: 'T.ME: @aristapnel #175'
   type: vmess
   server: 3sdfgvcxxx.938.pp.ua
   port: 443
@@ -2944,7 +2984,7 @@ proxies:
     path: /P879mtCoHQqaWO67qEaMINZ1
     headers:
       Host: 3sdfgvcxxx.938.pp.ua
-- name: 'T.ME: @aristapnel #174'
+- name: 'T.ME: @aristapnel #176'
   type: vmess
   server: 172.67.198.187
   port: 443
@@ -2962,7 +3002,7 @@ proxies:
     path: /linkws
     headers:
       Host: xmivideo.cfd
-- name: 'T.ME: @aristapnel #175'
+- name: 'T.ME: @aristapnel #177'
   type: vmess
   server: 104.19.32.0
   port: 443
@@ -2980,7 +3020,7 @@ proxies:
     path: /linkws
     headers:
       Host: xmivideo.cfd
-- name: 'T.ME: @aristapnel #176'
+- name: 'T.ME: @aristapnel #178'
   type: vmess
   server: 104.17.137.127
   port: 443
@@ -3179,6 +3219,8 @@ proxy-groups:
   - 'T.ME: @aristapnel #174'
   - 'T.ME: @aristapnel #175'
   - 'T.ME: @aristapnel #176'
+  - 'T.ME: @aristapnel #177'
+  - 'T.ME: @aristapnel #178'
   - DIRECT
 - name: Auto Select
   type: url-test
@@ -3359,6 +3401,8 @@ proxy-groups:
   - 'T.ME: @aristapnel #174'
   - 'T.ME: @aristapnel #175'
   - 'T.ME: @aristapnel #176'
+  - 'T.ME: @aristapnel #177'
+  - 'T.ME: @aristapnel #178'
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 150
