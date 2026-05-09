@@ -78,10 +78,10 @@ sniffer:
 proxies:
 - name: 'ARISTA🔥 #1'
   type: ss
-  server: 194.233.75.190
-  port: 443
-  cipher: aes-256-gcm
-  password: qKvfX7yQnT99OMu3
+  server: xiaomandapple4certificate.ikco.ir.soserverbot.shop
+  port: 15152
+  cipher: chacha20-ietf-poly1305
+  password: vxNw5diZYN3srq8uCfmQR98vYc39ect4
   udp: true
   tcp-fast-open: true
 - name: 'ARISTA🔥 #2'
@@ -172,22 +172,6 @@ proxies:
   password: CJmTCCx7Ltud
   udp: true
   tcp-fast-open: true
-- name: 'ARISTA🔥 #13'
-  type: ss
-  server: xiaomandapple4certificate.ikco.ir.soserverbot.shop
-  port: 15152
-  cipher: chacha20-ietf-poly1305
-  password: vxNw5diZYN3srq8uCfmQR98vYc39ect4
-  udp: true
-  tcp-fast-open: true
-- name: 'ARISTA🔥 #14'
-  type: ss
-  server: 154.46.31.106
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: QFWzCw2uX9B9i6qAYeFBIE
-  udp: true
-  tcp-fast-open: true
 proxy-groups:
 - name: Proxy Select
   type: select
@@ -205,8 +189,6 @@ proxy-groups:
   - 'ARISTA🔥 #10'
   - 'ARISTA🔥 #11'
   - 'ARISTA🔥 #12'
-  - 'ARISTA🔥 #13'
-  - 'ARISTA🔥 #14'
   - DIRECT
 - name: Auto Select
   type: url-test
@@ -223,8 +205,6 @@ proxy-groups:
   - 'ARISTA🔥 #10'
   - 'ARISTA🔥 #11'
   - 'ARISTA🔥 #12'
-  - 'ARISTA🔥 #13'
-  - 'ARISTA🔥 #14'
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 150
