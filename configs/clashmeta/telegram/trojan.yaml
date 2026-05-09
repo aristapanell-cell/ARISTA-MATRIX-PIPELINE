@@ -78,47 +78,6 @@ sniffer:
 proxies:
 - name: 'Trojan #1'
   type: trojan
-  server: 188.213.199.125
-  port: 19754
-  password: 52DCB0eOjp
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 188.213.199.125
-  client-fingerprint: chrome
-- name: 'Trojan #2'
-  type: trojan
-  server: 104.20.6.134
-  port: 443
-  password: humanity
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.ignitelimit.com
-  client-fingerprint: chrome
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.ignitelimit.com
-- name: 'Trojan #3'
-  type: trojan
-  server: 8.6.112.0
-  port: 2096
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: Koma-YT.PAGeS.Dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /tr
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-- name: 'Trojan #4'
-  type: trojan
   server: 172.64.152.23
   port: 443
   password: 6202b230-417c-4d8e-b624-0f71afa9c75d
@@ -134,7 +93,7 @@ proxies:
     path: /
     headers:
       Host: sni.111000.dynv6.net
-- name: 'Trojan #5'
+- name: 'Trojan #2'
   type: trojan
   server: 104.18.12.149
   port: 443
@@ -151,7 +110,7 @@ proxies:
     path: /
     headers:
       Host: sni.111000.dynv6.net
-- name: 'Trojan #6'
+- name: 'Trojan #3'
   type: trojan
   server: 104.17.185.207
   port: 443
@@ -168,9 +127,24 @@ proxies:
     path: /?proxyip=ip.111000.de5.net:443
     headers:
       Host: sni.111000.dynv6.net
-- name: 'Trojan #7'
+- name: 'Trojan #4'
   type: trojan
-  server: 3.79.92.53
+  server: 8.6.112.0
+  port: 2096
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: Koma-YT.PAGeS.Dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /tr
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+- name: 'Trojan #5'
+  type: trojan
+  server: 15.188.208.223
   port: 22222
   password: telegram-id-privatevpns
   network: tcp
@@ -181,9 +155,9 @@ proxies:
   client-fingerprint: chrome
   alpn:
   - http/1.1
-- name: 'Trojan #8'
+- name: 'Trojan #6'
   type: trojan
-  server: 15.188.208.223
+  server: 63.184.155.101
   port: 22222
   password: telegram-id-privatevpns
   network: tcp
@@ -205,8 +179,6 @@ proxy-groups:
   - 'Trojan #4'
   - 'Trojan #5'
   - 'Trojan #6'
-  - 'Trojan #7'
-  - 'Trojan #8'
   - DIRECT
 - name: Auto Select
   type: url-test
@@ -217,8 +189,6 @@ proxy-groups:
   - 'Trojan #4'
   - 'Trojan #5'
   - 'Trojan #6'
-  - 'Trojan #7'
-  - 'Trojan #8'
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 150
