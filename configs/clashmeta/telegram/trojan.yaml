@@ -78,46 +78,16 @@ sniffer:
 proxies:
 - name: 'Trojan #1'
   type: trojan
-  server: 63.178.170.208
-  port: 22222
-  password: telegram-id-privatevpns
+  server: dateandusage.a
+  port: 8443
+  password: J6aoK74aaYaReDimz0zvQw
   network: tcp
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: trojan.burgerip.co.uk
+  servername: dateandusage.a
   client-fingerprint: chrome
-  alpn:
-  - http/1.1
 - name: 'Trojan #2'
-  type: trojan
-  server: 13.37.161.114
-  port: 22222
-  password: telegram-id-privatevpns
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-- name: 'Trojan #3'
-  type: trojan
-  server: 188.114.96.3
-  port: 443
-  password: humanity
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.creationlong.org
-  client-fingerprint: chrome
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.creationlong.org
-- name: 'Trojan #4'
   type: trojan
   server: 188.114.98.0
   port: 443
@@ -132,6 +102,32 @@ proxies:
     path: /assignment
     headers:
       Host: www.calmlunch.com
+- name: 'Trojan #3'
+  type: trojan
+  server: 63.178.170.208
+  port: 22222
+  password: telegram-id-privatevpns
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+- name: 'Trojan #4'
+  type: trojan
+  server: 13.37.161.114
+  port: 22222
+  password: telegram-id-privatevpns
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
 - name: 'Trojan #5'
   type: trojan
   server: 162.159.36.5
@@ -149,6 +145,49 @@ proxies:
     path: /?proxyip=ip.111000.de5.net:443
     headers:
       Host: sni.111000.dynv6.net
+- name: 'Trojan #6'
+  type: trojan
+  server: 78.159.131.12
+  port: 28259
+  password: MeaDiUmPlkWbZJ2BON8tz
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: 78.159.131.12
+  client-fingerprint: chrome
+- name: 'Trojan #7'
+  type: trojan
+  server: 198.12.144.253
+  port: 443
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: Koma-YT.PAGeS.Dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /trTelegram🇨🇳+@WangCai2
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+- name: 'Trojan #8'
+  type: trojan
+  server: 104.20.6.134
+  port: 443
+  password: humanity
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.calmloud.com
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmloud.com
 proxy-groups:
 - name: Proxy Select
   type: select
@@ -159,6 +198,9 @@ proxy-groups:
   - 'Trojan #3'
   - 'Trojan #4'
   - 'Trojan #5'
+  - 'Trojan #6'
+  - 'Trojan #7'
+  - 'Trojan #8'
   - DIRECT
 - name: Auto Select
   type: url-test
@@ -168,6 +210,9 @@ proxy-groups:
   - 'Trojan #3'
   - 'Trojan #4'
   - 'Trojan #5'
+  - 'Trojan #6'
+  - 'Trojan #7'
+  - 'Trojan #8'
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 150
