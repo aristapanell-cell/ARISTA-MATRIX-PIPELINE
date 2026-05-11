@@ -104,21 +104,6 @@ proxies:
   - http/1.1
 - name: 'Trojan #3'
   type: trojan
-  server: 188.114.98.0
-  port: 443
-  password: humanity
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.calmlunch.com
-  client-fingerprint: chrome
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.calmlunch.com
-- name: 'Trojan #4'
-  type: trojan
   server: 50.7.4.243
   port: 443
   password: 8r%3C%5B9%27l6hAO%238ZQi
@@ -132,6 +117,21 @@ proxies:
     path: /tr
     headers:
       Host: Koma-YT.PAGeS.Dev
+- name: 'Trojan #4'
+  type: trojan
+  server: 188.114.98.0
+  port: 443
+  password: humanity
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.calmlunch.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmlunch.com
 proxy-groups:
 - name: Proxy Select
   type: select
