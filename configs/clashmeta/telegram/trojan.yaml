@@ -119,49 +119,6 @@ proxies:
       Host: www.calmlunch.com
 - name: 'Trojan #4'
   type: trojan
-  server: 104.16.147.104
-  port: 443
-  password: humanity
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.creationlong.org
-  client-fingerprint: chrome
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.creationlong.org
-- name: 'Trojan #5'
-  type: trojan
-  server: 78.159.131.12
-  port: 28259
-  password: MeaDiUmPlkWbZJ2BON8tz
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 78.159.131.12
-  client-fingerprint: chrome
-- name: 'Trojan #6'
-  type: trojan
-  server: 162.159.36.20
-  port: 443
-  password: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: sni.111000.dynv6.net
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /?proxyip=ip.111000.de5.net%3A443
-    headers:
-      Host: sni.111000.dynv6.net
-- name: 'Trojan #7'
-  type: trojan
   server: 50.7.4.243
   port: 443
   password: 8r%3C%5B9%27l6hAO%238ZQi
@@ -184,9 +141,6 @@ proxy-groups:
   - 'Trojan #2'
   - 'Trojan #3'
   - 'Trojan #4'
-  - 'Trojan #5'
-  - 'Trojan #6'
-  - 'Trojan #7'
   - DIRECT
 - name: Auto Select
   type: url-test
@@ -195,9 +149,6 @@ proxy-groups:
   - 'Trojan #2'
   - 'Trojan #3'
   - 'Trojan #4'
-  - 'Trojan #5'
-  - 'Trojan #6'
-  - 'Trojan #7'
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 150
