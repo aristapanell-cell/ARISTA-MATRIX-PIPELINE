@@ -92,20 +92,6 @@ proxies:
   client-fingerprint: ''
 - name: 'ARISTA #2'
   type: vmess
-  server: 185.11.89.38
-  port: 12809
-  uuid: aeddbbbd-ad95-49e8-ee31-7cacc7ede117
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 185.11.89.38
-  client-fingerprint: ''
-- name: 'ARISTA #3'
-  type: vmess
   server: www.arvancloud.ir
   port: 8080
   uuid: f59c9c52-f2ed-4196-9d9d-1156198958b7
@@ -122,7 +108,7 @@ proxies:
     path: /aria
     headers:
       Host: vip6.ariatakpoyan.ir
-- name: 'ARISTA #4'
+- name: 'ARISTA #3'
   type: vmess
   server: 37.32.11.105
   port: 4
@@ -136,7 +122,7 @@ proxies:
   tcp-fast-open: true
   servername: 37.32.11.105
   client-fingerprint: ''
-- name: 'ARISTA #5'
+- name: 'ARISTA #4'
   type: vmess
   server: 37.32.11.105
   port: 4
@@ -150,7 +136,7 @@ proxies:
   tcp-fast-open: true
   servername: 37.32.11.105
   client-fingerprint: ''
-- name: 'ARISTA #6'
+- name: 'ARISTA #5'
   type: vmess
   server: 37.32.11.105
   port: 4
@@ -164,7 +150,7 @@ proxies:
   tcp-fast-open: true
   servername: 37.32.11.105
   client-fingerprint: ''
-- name: 'ARISTA #7'
+- name: 'ARISTA #6'
   type: vmess
   server: 37.32.11.105
   port: 4
@@ -178,7 +164,7 @@ proxies:
   tcp-fast-open: true
   servername: 37.32.11.105
   client-fingerprint: ''
-- name: 'ARISTA #8'
+- name: 'ARISTA #7'
   type: vmess
   server: 37.32.11.105
   port: 4
@@ -192,24 +178,34 @@ proxies:
   tcp-fast-open: true
   servername: 37.32.11.105
   client-fingerprint: ''
-- name: 'ARISTA #9'
+- name: 'ARISTA #8'
   type: vmess
-  server: www.arvancloud.ir
-  port: 8080
-  uuid: 766d4ab2-c092-451f-b5f4-f33c84978065
+  server: 185.11.89.38
+  port: 12809
+  uuid: aeddbbbd-ad95-49e8-ee31-7cacc7ede117
   alterId: 0
   cipher: auto
-  network: ws
+  network: tcp
   tls: false
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: vip6.ariatakpoyan.ir
+  servername: 185.11.89.38
   client-fingerprint: ''
-  ws-opts:
-    path: /aria
-    headers:
-      Host: vip6.ariatakpoyan.ir
+- name: 'ARISTA #9'
+  type: vmess
+  server: 185.11.89.38
+  port: 12809
+  uuid: aeddbbbd-ad95-49e8-ee31-7cacc7ede117
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: 185.11.89.38
+  client-fingerprint: ''
 - name: 'ARISTA #10'
   type: vmess
   server: 82.198.246.9
@@ -252,6 +248,38 @@ proxies:
   tcp-fast-open: true
   servername: 37.32.11.105
   client-fingerprint: ''
+- name: 'ARISTA #13'
+  type: vmess
+  server: www.arvancloud.ir
+  port: 8080
+  uuid: f59c9c52-f2ed-4196-9d9d-1156198958b7
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: vip6.ariatakpoyan.ir
+  client-fingerprint: ''
+  ws-opts:
+    path: /aria
+    headers:
+      Host: vip6.ariatakpoyan.ir
+- name: 'ARISTA #14'
+  type: vmess
+  server: 94.182.149.202
+  port: 13936
+  uuid: b985be06-150d-4ea7-aa71-764a397f7d91
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: 94.182.149.202
+  client-fingerprint: ''
 proxy-groups:
 - name: Proxy Select
   type: select
@@ -269,6 +297,8 @@ proxy-groups:
   - 'ARISTA #10'
   - 'ARISTA #11'
   - 'ARISTA #12'
+  - 'ARISTA #13'
+  - 'ARISTA #14'
   - DIRECT
 - name: Auto Select
   type: url-test
@@ -285,6 +315,8 @@ proxy-groups:
   - 'ARISTA #10'
   - 'ARISTA #11'
   - 'ARISTA #12'
+  - 'ARISTA #13'
+  - 'ARISTA #14'
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 150
