@@ -78,18 +78,18 @@ sniffer:
 proxies:
 - name: 'ARISTA🔥 #1'
   type: ss
-  server: 159.223.236.36
-  port: 19582
-  cipher: chacha20-ietf-poly1305
-  password: WC0GbiCk67K8nHDaDHmYIX
-  udp: true
-  tcp-fast-open: true
-- name: 'ARISTA🔥 #2'
-  type: ss
   server: 83.166.250.6
   port: 50529
   cipher: chacha20-ietf-poly1305
   password: zEozh4psdpqyy1k9U5tykMFF5
+  udp: true
+  tcp-fast-open: true
+- name: 'ARISTA🔥 #2'
+  type: ss
+  server: 159.223.236.36
+  port: 19582
+  cipher: chacha20-ietf-poly1305
+  password: WC0GbiCk67K8nHDaDHmYIX
   udp: true
   tcp-fast-open: true
 - name: 'ARISTA🔥 #3'
@@ -148,7 +148,7 @@ proxies:
   password: QFWzCw2uX9B9i6qAYeFBIE
   udp: true
   tcp-fast-open: true
-- name: 'ARISTA🔥 #11'
+- name: 'ARISTA🔥 #10'
   type: ss
   server: 149.102.149.207
   port: 443
@@ -156,15 +156,15 @@ proxies:
   password: umWwoQJEJGf74SLe
   udp: true
   tcp-fast-open: true
-- name: 'ARISTA🔥 #12'
+- name: 'ARISTA🔥 #11'
   type: ss
-  server: 82.38.31.99
-  port: 8080
+  server: 142.93.73.182
+  port: 45389
   cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
+  password: hk1SdyRWbYi3Igxeow9JdN
   udp: true
   tcp-fast-open: true
-- name: 'ARISTA🔥 #13'
+- name: 'ARISTA🔥 #12'
   type: ss
   server: xiaomandapple4certificate.ikco.ir.soserverbot.shop
   port: 15152
@@ -186,9 +186,9 @@ proxy-groups:
   - 'ARISTA🔥 #7'
   - 'ARISTA🔥 #8'
   - 'ARISTA🔥 #9'
+  - 'ARISTA🔥 #10'
   - 'ARISTA🔥 #11'
   - 'ARISTA🔥 #12'
-  - 'ARISTA🔥 #13'
   - DIRECT
 - name: Auto Select
   type: url-test
@@ -202,9 +202,9 @@ proxy-groups:
   - 'ARISTA🔥 #7'
   - 'ARISTA🔥 #8'
   - 'ARISTA🔥 #9'
+  - 'ARISTA🔥 #10'
   - 'ARISTA🔥 #11'
   - 'ARISTA🔥 #12'
-  - 'ARISTA🔥 #13'
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 150
