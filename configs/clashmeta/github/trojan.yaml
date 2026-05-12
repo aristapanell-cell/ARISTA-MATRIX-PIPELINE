@@ -1852,6 +1852,66 @@ proxies:
   tcp-fast-open: true
   servername: yespaintstudio.rav-kraski.ru
   client-fingerprint: chrome
+- name: 'T.ME: @aristapnel #124'
+  type: trojan
+  server: 188.114.98.0
+  port: 443
+  password: humanity
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.creationlong.org
+  client-fingerprint: chrome
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.creationlong.org
+- name: 'T.ME: @aristapnel #125'
+  type: trojan
+  server: 172.67.180.92
+  port: 443
+  password: humanity
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.multiplydose.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.multiplydose.com
+- name: 'T.ME: @aristapnel #126'
+  type: trojan
+  server: 172.64.152.23
+  port: 443
+  password: humanity
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.gossipglove.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.gossipglove.com
+- name: 'T.ME: @aristapnel #127'
+  type: trojan
+  server: 104.21.40.34
+  port: 443
+  password: humanity
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.gossipglove.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.gossipglove.com
 proxy-groups:
 - name: Proxy Select
   type: select
@@ -1980,6 +2040,10 @@ proxy-groups:
   - 'T.ME: @aristapnel #121'
   - 'T.ME: @aristapnel #122'
   - 'T.ME: @aristapnel #123'
+  - 'T.ME: @aristapnel #124'
+  - 'T.ME: @aristapnel #125'
+  - 'T.ME: @aristapnel #126'
+  - 'T.ME: @aristapnel #127'
   - DIRECT
 - name: Auto Select
   type: url-test
@@ -2107,6 +2171,10 @@ proxy-groups:
   - 'T.ME: @aristapnel #121'
   - 'T.ME: @aristapnel #122'
   - 'T.ME: @aristapnel #123'
+  - 'T.ME: @aristapnel #124'
+  - 'T.ME: @aristapnel #125'
+  - 'T.ME: @aristapnel #126'
+  - 'T.ME: @aristapnel #127'
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 150

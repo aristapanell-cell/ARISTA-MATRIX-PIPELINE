@@ -78,6 +78,48 @@ sniffer:
 proxies:
 - name: 'ARISTA #1'
   type: vmess
+  server: 185.236.38.44
+  port: 19946
+  uuid: c9e42537-8652-4a4c-85d3-0d36abf38f88
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: 185.236.38.44
+  client-fingerprint: ''
+- name: 'ARISTA #2'
+  type: vmess
+  server: 185.11.89.38
+  port: 12809
+  uuid: aeddbbbd-ad95-49e8-ee31-7cacc7ede117
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: 185.11.89.38
+  client-fingerprint: ''
+- name: 'ARISTA #3'
+  type: vmess
+  server: 185.236.38.44
+  port: 19946
+  uuid: c9e42537-8652-4a4c-85d3-0d36abf38f88
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: 185.236.38.44
+  client-fingerprint: ''
+- name: 'ARISTA #4'
+  type: vmess
   server: snapp.ir
   port: 8880
   uuid: 69678a86-929d-4709-82cd-c5dad24bba47
@@ -94,21 +136,7 @@ proxies:
     path: /
     headers:
       Host: rxs.bravo-six.ir
-- name: 'ARISTA #2'
-  type: vmess
-  server: 185.236.38.44
-  port: 19946
-  uuid: c9e42537-8652-4a4c-85d3-0d36abf38f88
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 185.236.38.44
-  client-fingerprint: ''
-- name: 'ARISTA #3'
+- name: 'ARISTA #5'
   type: vmess
   server: 94.101.178.69
   port: 45384
@@ -124,7 +152,7 @@ proxies:
   client-fingerprint: ''
   grpc-opts:
     grpc-service-name: ''
-- name: 'ARISTA #4'
+- name: 'ARISTA #6'
   type: vmess
   server: cip.salimore.com
   port: 443
@@ -142,7 +170,7 @@ proxies:
     path: /ws/
     headers:
       Host: cip.salimore.com
-- name: 'ARISTA #5'
+- name: 'ARISTA #7'
   type: vmess
   server: client.serverafra.top
   port: 4355
@@ -156,7 +184,7 @@ proxies:
   tcp-fast-open: true
   servername: client.serverafra.top
   client-fingerprint: ''
-- name: 'ARISTA #6'
+- name: 'ARISTA #8'
   type: vmess
   server: Aob1.nama1.top
   port: 42855
@@ -170,39 +198,11 @@ proxies:
   tcp-fast-open: true
   servername: Aob1.nama1.top
   client-fingerprint: ''
-- name: 'ARISTA #7'
-  type: vmess
-  server: 185.236.38.44
-  port: 19946
-  uuid: c9e42537-8652-4a4c-85d3-0d36abf38f88
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 185.236.38.44
-  client-fingerprint: ''
-- name: 'ARISTA #8'
-  type: vmess
-  server: 185.236.38.44
-  port: 19946
-  uuid: c9e42537-8652-4a4c-85d3-0d36abf38f88
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 185.236.38.44
-  client-fingerprint: ''
 - name: 'ARISTA #9'
   type: vmess
-  server: 185.11.89.38
-  port: 12809
-  uuid: aeddbbbd-ad95-49e8-ee31-7cacc7ede117
+  server: 185.236.38.44
+  port: 19946
+  uuid: c9e42537-8652-4a4c-85d3-0d36abf38f88
   alterId: 0
   cipher: auto
   network: tcp
@@ -210,7 +210,7 @@ proxies:
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: 185.11.89.38
+  servername: 185.236.38.44
   client-fingerprint: ''
 - name: 'ARISTA #10'
   type: vmess
@@ -231,6 +231,38 @@ proxies:
     headers:
       Host: vip6.ariatakpoyan.ir
 - name: 'ARISTA #11'
+  type: vmess
+  server: sanjose01.zgjok.com
+  port: 443
+  uuid: 96d21cfe-b264-4bf3-8349-fb076d40837e
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: sanjose01.zgjok.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: sanjose01.zgjok.com
+- name: 'ARISTA #12'
+  type: vmess
+  server: 185.236.38.44
+  port: 19946
+  uuid: c9e42537-8652-4a4c-85d3-0d36abf38f88
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: 185.236.38.44
+  client-fingerprint: ''
+- name: 'ARISTA #13'
   type: vmess
   server: 185.236.38.44
   port: 19946
@@ -260,6 +292,8 @@ proxy-groups:
   - 'ARISTA #9'
   - 'ARISTA #10'
   - 'ARISTA #11'
+  - 'ARISTA #12'
+  - 'ARISTA #13'
   - DIRECT
 - name: Auto Select
   type: url-test
@@ -275,6 +309,8 @@ proxy-groups:
   - 'ARISTA #9'
   - 'ARISTA #10'
   - 'ARISTA #11'
+  - 'ARISTA #12'
+  - 'ARISTA #13'
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 150
