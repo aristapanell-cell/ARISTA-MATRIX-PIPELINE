@@ -78,23 +78,23 @@ sniffer:
 proxies:
 - name: 'ARISTA #1'
   type: vmess
-  server: 185.236.38.44
-  port: 19946
-  uuid: c9e42537-8652-4a4c-85d3-0d36abf38f88
-  alterId: 0
+  server: 67.220.72.237
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 1
   cipher: auto
   network: tcp
   tls: false
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: 185.236.38.44
+  servername: 67.220.72.237
   client-fingerprint: ''
 - name: 'ARISTA #2'
   type: vmess
-  server: 185.236.38.44
-  port: 19946
-  uuid: c9e42537-8652-4a4c-85d3-0d36abf38f88
+  server: b51d64cb-c5d6-4791-8ecf-0a6d8d71c717.wtf
+  port: 21451
+  uuid: 1b1b59f8-b2d2-462a-9b33-99abc2f2a1eb
   alterId: 0
   cipher: auto
   network: tcp
@@ -102,7 +102,7 @@ proxies:
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: 185.236.38.44
+  servername: b51d64cb-c5d6-4791-8ecf-0a6d8d71c717.wtf
   client-fingerprint: ''
 - name: 'ARISTA #3'
   type: vmess
@@ -120,22 +120,18 @@ proxies:
   client-fingerprint: ''
 - name: 'ARISTA #4'
   type: vmess
-  server: www.arvancloud.ir
-  port: 8080
-  uuid: f59c9c52-f2ed-4196-9d9d-1156198958b7
+  server: 185.236.38.44
+  port: 19946
+  uuid: c9e42537-8652-4a4c-85d3-0d36abf38f88
   alterId: 0
   cipher: auto
-  network: ws
+  network: tcp
   tls: false
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: vip6.ariatakpoyan.ir
+  servername: 185.236.38.44
   client-fingerprint: ''
-  ws-opts:
-    path: /aria
-    headers:
-      Host: vip6.ariatakpoyan.ir
 - name: 'ARISTA #5'
   type: vmess
   server: snapp.ir
@@ -232,6 +228,20 @@ proxies:
   client-fingerprint: ''
 - name: 'ARISTA #11'
   type: vmess
+  server: 185.236.38.44
+  port: 19946
+  uuid: c9e42537-8652-4a4c-85d3-0d36abf38f88
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: 185.236.38.44
+  client-fingerprint: ''
+- name: 'ARISTA #12'
+  type: vmess
   server: b51d64cb-c5d6-4791-8ecf-0a6d8d71c717.wtf
   port: 21402
   uuid: c5f575b4-392a-4368-a9bf-0b16a1481f17
@@ -243,20 +253,6 @@ proxies:
   skip-cert-verify: false
   tcp-fast-open: true
   servername: b51d64cb-c5d6-4791-8ecf-0a6d8d71c717.wtf
-  client-fingerprint: ''
-- name: 'ARISTA #12'
-  type: vmess
-  server: 67.220.72.237
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 1
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 67.220.72.237
   client-fingerprint: ''
 proxy-groups:
 - name: Proxy Select
