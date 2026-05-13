@@ -78,54 +78,20 @@ sniffer:
 proxies:
 - name: 'Trojan #1'
   type: trojan
-  server: 8.6.112.0
+  server: 104.20.6.134
   port: 443
   password: humanity
   network: ws
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: www.multiplydose.com
+  servername: www.ignitelimit.com
   client-fingerprint: chrome
   ws-opts:
     path: /assignment
     headers:
-      Host: www.multiplydose.com
+      Host: www.ignitelimit.com
 - name: 'Trojan #2'
-  type: trojan
-  server: 8.6.112.0
-  port: 443
-  password: humanity
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.multiplydose.com
-  client-fingerprint: chrome
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.multiplydose.com
-- name: 'Trojan #3'
-  type: trojan
-  server: 79.127.82.170
-  port: 443
-  password: 2a599135-886f-4359-bf68-0993baa990f1
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: wow-game-server-gb-nb-d.world-of-warcraft-game-server.cfd
-  client-fingerprint: randomized
-  alpn:
-  - h3
-  - h2
-  - http/1.1
-  ws-opts:
-    path: /1000/10/b449693f-1869-4379-946d-279f2ad95021
-    headers:
-      Host: wow-game-server-gb-nb-d.world-of-warcraft-game-server.cfd
-- name: 'Trojan #4'
   type: trojan
   server: 27.50.48.253
   port: 443
@@ -140,7 +106,7 @@ proxies:
     path: /trTelegram🇨🇳 @WangCai2
     headers:
       Host: Koma-YT.PAGeS.Dev
-- name: 'Trojan #5'
+- name: 'Trojan #3'
   type: trojan
   server: 5.35.37.238
   port: 2053
@@ -155,7 +121,7 @@ proxies:
     path: /trTelegram🇨🇳+@WangCai2
     headers:
       Host: Koma-YT.PAGeS.Dev
-- name: 'Trojan #6'
+- name: 'Trojan #4'
   type: trojan
   server: 185.233.80.60
   port: 8443
@@ -170,7 +136,7 @@ proxies:
     path: /trTelegram🇨🇳+@WangCai2
     headers:
       Host: Koma-YT.PAGeS.Dev
-- name: 'Trojan #7'
+- name: 'Trojan #5'
   type: trojan
   server: 172.64.152.23
   port: 443
@@ -187,7 +153,7 @@ proxies:
     path: /
     headers:
       Host: sni.111000.dynv6.net
-- name: 'Trojan #8'
+- name: 'Trojan #6'
   type: trojan
   server: 91.99.193.84
   port: 2053
@@ -202,7 +168,7 @@ proxies:
     path: /trTelegram🇨🇳+@WangCai2
     headers:
       Host: Koma-YT.PAGeS.Dev
-- name: 'Trojan #9'
+- name: 'Trojan #7'
   type: trojan
   server: 79.127.82.170
   port: 443
@@ -221,7 +187,7 @@ proxies:
     path: /1000/10/b449693f-1869-4379-946d-279f2ad95021
     headers:
       Host: wow-game-server-gb-nb-d.world-of-warcraft-game-server.cfd
-- name: 'Trojan #10'
+- name: 'Trojan #8'
   type: trojan
   server: 188.114.98.0
   port: 443
@@ -236,7 +202,22 @@ proxies:
     path: /assignment
     headers:
       Host: www.calmlunch.com
-- name: 'Trojan #11'
+- name: 'Trojan #9'
+  type: trojan
+  server: 8.6.112.0
+  port: 443
+  password: humanity
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.multiplydose.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.multiplydose.com
+- name: 'Trojan #10'
   type: trojan
   server: 3.122.87.69
   port: 22222
@@ -249,7 +230,7 @@ proxies:
   client-fingerprint: chrome
   alpn:
   - http/1.1
-- name: 'Trojan #12'
+- name: 'Trojan #11'
   type: trojan
   server: 35.180.13.11
   port: 22222
@@ -262,40 +243,21 @@ proxies:
   client-fingerprint: chrome
   alpn:
   - http/1.1
-- name: 'Trojan #13'
+- name: 'Trojan #12'
   type: trojan
-  server: 104.20.6.134
+  server: 8.6.112.0
   port: 443
   password: humanity
   network: ws
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: www.ignitelimit.com
+  servername: www.multiplydose.com
   client-fingerprint: chrome
   ws-opts:
     path: /assignment
     headers:
-      Host: www.ignitelimit.com
-- name: 'Trojan #14'
-  type: trojan
-  server: 79.127.82.170
-  port: 443
-  password: 2a599135-886f-4359-bf68-0993baa990f1
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: wow-game-server-gb-nb-d.world-of-warcraft-game-server.cfd
-  client-fingerprint: randomized
-  alpn:
-  - h3
-  - h2
-  - http/1.1
-  ws-opts:
-    path: /1000/10/b449693f-1869-4379-946d-279f2ad95021
-    headers:
-      Host: wow-game-server-gb-nb-d.world-of-warcraft-game-server.cfd
+      Host: www.multiplydose.com
 proxy-groups:
 - name: Proxy Select
   type: select
@@ -313,8 +275,6 @@ proxy-groups:
   - 'Trojan #10'
   - 'Trojan #11'
   - 'Trojan #12'
-  - 'Trojan #13'
-  - 'Trojan #14'
   - DIRECT
 - name: Auto Select
   type: url-test
@@ -331,8 +291,6 @@ proxy-groups:
   - 'Trojan #10'
   - 'Trojan #11'
   - 'Trojan #12'
-  - 'Trojan #13'
-  - 'Trojan #14'
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 150
