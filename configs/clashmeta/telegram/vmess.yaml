@@ -78,66 +78,6 @@ sniffer:
 proxies:
 - name: 'ARISTA #1'
   type: vmess
-  server: b51d64cb-c5d6-4791-8ecf-0a6d8d71c717.wtf
-  port: 21450
-  uuid: f7e57872-aa67-4858-9808-f497251fdbfb
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: b51d64cb-c5d6-4791-8ecf-0a6d8d71c717.wtf
-  client-fingerprint: ''
-- name: 'ARISTA #2'
-  type: vmess
-  server: snapp.ir
-  port: 8880
-  uuid: d7844d27-1dcd-4480-b783-7e06c3f0d4b5
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: rxs.bravo-six.ir
-  client-fingerprint: ''
-  ws-opts:
-    path: /
-    headers:
-      Host: rxs.bravo-six.ir
-- name: 'ARISTA #3'
-  type: vmess
-  server: 185.236.38.44
-  port: 19946
-  uuid: c9e42537-8652-4a4c-85d3-0d36abf38f88
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 185.236.38.44
-  client-fingerprint: ''
-- name: 'ARISTA #4'
-  type: vmess
-  server: 185.236.38.44
-  port: 19946
-  uuid: c9e42537-8652-4a4c-85d3-0d36abf38f88
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 185.236.38.44
-  client-fingerprint: ''
-- name: 'ARISTA #5'
-  type: vmess
   server: snapp.ir
   port: 8880
   uuid: 69678a86-929d-4709-82cd-c5dad24bba47
@@ -154,7 +94,7 @@ proxies:
     path: /
     headers:
       Host: rxs.bravo-six.ir
-- name: 'ARISTA #6'
+- name: 'ARISTA #2'
   type: vmess
   server: 185.236.38.44
   port: 19946
@@ -168,7 +108,7 @@ proxies:
   tcp-fast-open: true
   servername: 185.236.38.44
   client-fingerprint: ''
-- name: 'ARISTA #7'
+- name: 'ARISTA #3'
   type: vmess
   server: 94.101.178.69
   port: 45384
@@ -184,7 +124,7 @@ proxies:
   client-fingerprint: ''
   grpc-opts:
     grpc-service-name: ''
-- name: 'ARISTA #8'
+- name: 'ARISTA #4'
   type: vmess
   server: cip.salimore.com
   port: 443
@@ -202,7 +142,7 @@ proxies:
     path: /ws/
     headers:
       Host: cip.salimore.com
-- name: 'ARISTA #9'
+- name: 'ARISTA #5'
   type: vmess
   server: client.serverafra.top
   port: 4355
@@ -216,7 +156,7 @@ proxies:
   tcp-fast-open: true
   servername: client.serverafra.top
   client-fingerprint: ''
-- name: 'ARISTA #10'
+- name: 'ARISTA #6'
   type: vmess
   server: Aob1.nama1.top
   port: 42855
@@ -230,7 +170,21 @@ proxies:
   tcp-fast-open: true
   servername: Aob1.nama1.top
   client-fingerprint: ''
-- name: 'ARISTA #11'
+- name: 'ARISTA #7'
+  type: vmess
+  server: 185.236.38.44
+  port: 19946
+  uuid: c9e42537-8652-4a4c-85d3-0d36abf38f88
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: 185.236.38.44
+  client-fingerprint: ''
+- name: 'ARISTA #8'
   type: vmess
   server: 47.243.135.74
   port: 55185
@@ -248,7 +202,7 @@ proxies:
     path: /Notif_Chat
     headers:
       Host: 47.243.135.74
-- name: 'ARISTA #12'
+- name: 'ARISTA #9'
   type: vmess
   server: n1753101277.4u9ma.icu
   port: 443
@@ -266,7 +220,7 @@ proxies:
     path: /
     headers:
       Host: n1753101277.4u9ma.icu
-- name: 'ARISTA #13'
+- name: 'ARISTA #10'
   type: vmess
   server: n1753348736.lie5d.cyou
   port: 443
@@ -284,6 +238,52 @@ proxies:
     path: /
     headers:
       Host: n1753348736.lie5d.cyou
+- name: 'ARISTA #11'
+  type: vmess
+  server: b51d64cb-c5d6-4791-8ecf-0a6d8d71c717.wtf
+  port: 21450
+  uuid: f7e57872-aa67-4858-9808-f497251fdbfb
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: b51d64cb-c5d6-4791-8ecf-0a6d8d71c717.wtf
+  client-fingerprint: ''
+- name: 'ARISTA #12'
+  type: vmess
+  server: snapp.ir
+  port: 8880
+  uuid: d7844d27-1dcd-4480-b783-7e06c3f0d4b5
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: rxs.bravo-six.ir
+  client-fingerprint: ''
+  ws-opts:
+    path: /
+    headers:
+      Host: rxs.bravo-six.ir
+- name: 'ARISTA #13'
+  type: vmess
+  server: 185.236.38.44
+  port: 19946
+  uuid: c9e42537-8652-4a4c-85d3-0d36abf38f88
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: 185.236.38.44
+  client-fingerprint: ''
 - name: 'ARISTA #14'
   type: vmess
   server: 185.236.38.44
