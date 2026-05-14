@@ -128,130 +128,6 @@ proxies:
       Host: januray.helxx.ir
 - name: 'ARISTA #4'
   type: vmess
-  server: 217.218.52.1
-  port: 11182
-  uuid: f62d2411-c34d-460b-a93e-b789e03ca8b3
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 217.218.52.1
-  client-fingerprint: ''
-- name: 'ARISTA #5'
-  type: vmess
-  server: b51d64cb-c5d6-4791-8ecf-0a6d8d71c717.wtf
-  port: 21805
-  uuid: 64ad221c-539e-4109-9f7c-403bb8f79544
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: b51d64cb-c5d6-4791-8ecf-0a6d8d71c717.wtf
-  client-fingerprint: ''
-- name: 'ARISTA #6'
-  type: vmess
-  server: mig-sin.darkube.ir
-  port: 443
-  uuid: 254721a9-5739-4baf-b35d-9bc950e346db
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: mig-sin.darkube.ir
-  client-fingerprint: ''
-  ws-opts:
-    path: /api/direct
-    headers:
-      Host: mig-sin.darkube.ir
-- name: 'ARISTA #7'
-  type: vmess
-  server: b51d64cb-c5d6-4791-8ecf-0a6d8d71c717.wtf
-  port: 21901
-  uuid: 5d3ff01d-18bc-49f5-8a42-b074fc49b0b0
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: b51d64cb-c5d6-4791-8ecf-0a6d8d71c717.wtf
-  client-fingerprint: ''
-- name: 'ARISTA #8'
-  type: vmess
-  server: www.arvancloud.ir
-  port: 80
-  uuid: ce93e8a9-47b4-47f8-82f0-ee233fb00d71
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: snappfootdigitorobfullymull.rayannob.ir
-  client-fingerprint: ''
-  ws-opts:
-    path: /rayYou
-    headers:
-      Host: snappfootdigitorobfullymull.rayannob.ir
-- name: 'ARISTA #9'
-  type: vmess
-  server: 185.236.38.44
-  port: 19946
-  uuid: c9e42537-8652-4a4c-85d3-0d36abf38f88
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 185.236.38.44
-  client-fingerprint: ''
-- name: 'ARISTA #10'
-  type: vmess
-  server: av.reata.ir
-  port: 33795
-  uuid: c94dda40-44a6-413f-815e-0a7925b94b0a
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: av.reata.ir
-  client-fingerprint: ''
-- name: 'ARISTA #11'
-  type: vmess
-  server: 185.143.233.235
-  port: 80
-  uuid: ba6d9b39-0bae-4179-9b9b-824b9bb27dc4
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: n3.multiservers.ir
-  client-fingerprint: ''
-  ws-opts:
-    path: /
-    headers:
-      Host: n3.multiservers.ir
-- name: 'ARISTA #12'
-  type: vmess
   server: 85.90.217.42
   port: 22324
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
@@ -264,25 +140,7 @@ proxies:
   tcp-fast-open: true
   servername: 85.90.217.42
   client-fingerprint: ''
-- name: 'ARISTA #13'
-  type: vmess
-  server: www.arvancloud.ir
-  port: 2082
-  uuid: a01f4cc9-b290-4dcd-b687-aef8cb10ce65
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: januray.helxx.ir
-  client-fingerprint: ''
-  ws-opts:
-    path: /newserver
-    headers:
-      Host: januray.helxx.ir
-- name: 'ARISTA #14'
+- name: 'ARISTA #5'
   type: vmess
   server: av.reata.ir
   port: 33795
@@ -296,7 +154,25 @@ proxies:
   tcp-fast-open: true
   servername: av.reata.ir
   client-fingerprint: ''
-- name: 'ARISTA #15'
+- name: 'ARISTA #6'
+  type: vmess
+  server: cip.salimore.com
+  port: 443
+  uuid: 503bb046-5ddf-4b0b-922b-790a01865dc2
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: cip.salimore.com
+  client-fingerprint: ''
+  ws-opts:
+    path: /ws/
+    headers:
+      Host: cip.salimore.com
+- name: 'ARISTA #7'
   type: vmess
   server: www.arvancloud.ir
   port: 2082
@@ -314,6 +190,84 @@ proxies:
     path: /newserver
     headers:
       Host: januray.helxx.ir
+- name: 'ARISTA #8'
+  type: vmess
+  server: 185.236.38.44
+  port: 19946
+  uuid: c9e42537-8652-4a4c-85d3-0d36abf38f88
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: 185.236.38.44
+  client-fingerprint: ''
+- name: 'ARISTA #9'
+  type: vmess
+  server: www.arvancloud.ir
+  port: 2082
+  uuid: a01f4cc9-b290-4dcd-b687-aef8cb10ce65
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: januray.helxx.ir
+  client-fingerprint: ''
+  ws-opts:
+    path: /newserver
+    headers:
+      Host: januray.helxx.ir
+- name: 'ARISTA #10'
+  type: vmess
+  server: b51d64cb-c5d6-4791-8ecf-0a6d8d71c717.wtf
+  port: 21805
+  uuid: 64ad221c-539e-4109-9f7c-403bb8f79544
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: b51d64cb-c5d6-4791-8ecf-0a6d8d71c717.wtf
+  client-fingerprint: ''
+- name: 'ARISTA #11'
+  type: vmess
+  server: mig-sin.darkube.ir
+  port: 443
+  uuid: 254721a9-5739-4baf-b35d-9bc950e346db
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: mig-sin.darkube.ir
+  client-fingerprint: ''
+  ws-opts:
+    path: /api/direct
+    headers:
+      Host: mig-sin.darkube.ir
+- name: 'ARISTA #12'
+  type: vmess
+  server: b51d64cb-c5d6-4791-8ecf-0a6d8d71c717.wtf
+  port: 21901
+  uuid: 5d3ff01d-18bc-49f5-8a42-b074fc49b0b0
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: b51d64cb-c5d6-4791-8ecf-0a6d8d71c717.wtf
+  client-fingerprint: ''
 proxy-groups:
 - name: Proxy Select
   type: select
@@ -331,9 +285,6 @@ proxy-groups:
   - 'ARISTA #10'
   - 'ARISTA #11'
   - 'ARISTA #12'
-  - 'ARISTA #13'
-  - 'ARISTA #14'
-  - 'ARISTA #15'
   - DIRECT
 - name: Auto Select
   type: url-test
@@ -350,9 +301,6 @@ proxy-groups:
   - 'ARISTA #10'
   - 'ARISTA #11'
   - 'ARISTA #12'
-  - 'ARISTA #13'
-  - 'ARISTA #14'
-  - 'ARISTA #15'
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 150
