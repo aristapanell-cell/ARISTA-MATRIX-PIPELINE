@@ -78,6 +78,49 @@ sniffer:
 proxies:
 - name: 'Trojan #1'
   type: trojan
+  server: 8.6.112.0
+  port: 443
+  password: humanity
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.multiplydose.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.multiplydose.com
+- name: 'Trojan #2'
+  type: trojan
+  server: 188.114.98.0
+  port: 443
+  password: humanity
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.calmlunch.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmlunch.com
+- name: 'Trojan #3'
+  type: trojan
+  server: 35.180.13.11
+  port: 22222
+  password: telegram-id-privatevpns
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+- name: 'Trojan #4'
+  type: trojan
   server: 104.20.6.134
   port: 443
   password: humanity
@@ -91,84 +134,22 @@ proxies:
     path: /assignment
     headers:
       Host: www.ignitelimit.com
-- name: 'Trojan #2'
-  type: trojan
-  server: 27.50.48.253
-  port: 443
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: Koma-YT.PAGeS.Dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /trTelegram🇨🇳 @WangCai2
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-- name: 'Trojan #3'
-  type: trojan
-  server: 5.35.37.238
-  port: 2053
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: Koma-YT.PAGeS.Dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /trTelegram🇨🇳+@WangCai2
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-- name: 'Trojan #4'
-  type: trojan
-  server: 185.233.80.60
-  port: 8443
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: Koma-YT.PAGeS.Dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /trTelegram🇨🇳+@WangCai2
-    headers:
-      Host: Koma-YT.PAGeS.Dev
 - name: 'Trojan #5'
   type: trojan
-  server: 172.64.152.23
+  server: 8.6.112.0
   port: 443
-  password: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  password: humanity
   network: ws
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: sni.111000.dynv6.net
+  servername: www.multiplydose.com
   client-fingerprint: chrome
-  alpn:
-  - http/1.1
   ws-opts:
-    path: /
+    path: /assignment
     headers:
-      Host: sni.111000.dynv6.net
+      Host: www.multiplydose.com
 - name: 'Trojan #6'
-  type: trojan
-  server: 91.99.193.84
-  port: 2053
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: Koma-YT.PAGeS.Dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /trTelegram🇨🇳+@WangCai2
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-- name: 'Trojan #7'
   type: trojan
   server: 79.127.82.170
   port: 443
@@ -187,77 +168,83 @@ proxies:
     path: /1000/10/b449693f-1869-4379-946d-279f2ad95021
     headers:
       Host: wow-game-server-gb-nb-d.world-of-warcraft-game-server.cfd
+- name: 'Trojan #7'
+  type: trojan
+  server: 27.50.48.253
+  port: 443
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: Koma-YT.PAGeS.Dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /trTelegram🇨🇳 @WangCai2
+    headers:
+      Host: Koma-YT.PAGeS.Dev
 - name: 'Trojan #8'
   type: trojan
-  server: 188.114.98.0
-  port: 443
-  password: humanity
+  server: 5.35.37.238
+  port: 2053
+  password: 8r%3C%5B9%27l6hAO%238ZQi
   network: ws
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: www.calmlunch.com
+  servername: Koma-YT.PAGeS.Dev
   client-fingerprint: chrome
   ws-opts:
-    path: /assignment
+    path: /trTelegram🇨🇳+@WangCai2
     headers:
-      Host: www.calmlunch.com
+      Host: Koma-YT.PAGeS.Dev
 - name: 'Trojan #9'
   type: trojan
-  server: 8.6.112.0
-  port: 443
-  password: humanity
+  server: 185.233.80.60
+  port: 8443
+  password: 8r%3C%5B9%27l6hAO%238ZQi
   network: ws
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: www.multiplydose.com
+  servername: Koma-YT.PAGeS.Dev
   client-fingerprint: chrome
   ws-opts:
-    path: /assignment
+    path: /trTelegram🇨🇳+@WangCai2
     headers:
-      Host: www.multiplydose.com
+      Host: Koma-YT.PAGeS.Dev
 - name: 'Trojan #10'
   type: trojan
-  server: 3.122.87.69
-  port: 22222
-  password: telegram-id-privatevpns
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-- name: 'Trojan #11'
-  type: trojan
-  server: 35.180.13.11
-  port: 22222
-  password: telegram-id-privatevpns
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-- name: 'Trojan #12'
-  type: trojan
-  server: 8.6.112.0
+  server: 172.64.152.23
   port: 443
-  password: humanity
+  password: 6202b230-417c-4d8e-b624-0f71afa9c75d
   network: ws
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: www.multiplydose.com
+  servername: sni.111000.dynv6.net
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /
+    headers:
+      Host: sni.111000.dynv6.net
+- name: 'Trojan #11'
+  type: trojan
+  server: 91.99.193.84
+  port: 2053
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: Koma-YT.PAGeS.Dev
   client-fingerprint: chrome
   ws-opts:
-    path: /assignment
+    path: /trTelegram🇨🇳+@WangCai2
     headers:
-      Host: www.multiplydose.com
+      Host: Koma-YT.PAGeS.Dev
 proxy-groups:
 - name: Proxy Select
   type: select
@@ -274,7 +261,6 @@ proxy-groups:
   - 'Trojan #9'
   - 'Trojan #10'
   - 'Trojan #11'
-  - 'Trojan #12'
   - DIRECT
 - name: Auto Select
   type: url-test
@@ -290,7 +276,6 @@ proxy-groups:
   - 'Trojan #9'
   - 'Trojan #10'
   - 'Trojan #11'
-  - 'Trojan #12'
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 150
