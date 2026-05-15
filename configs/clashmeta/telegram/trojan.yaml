@@ -78,21 +78,6 @@ sniffer:
 proxies:
 - name: 'Trojan #1'
   type: trojan
-  server: 92.243.74.253
-  port: 443
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: Koma-YT.PAGeS.Dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /trTelegram🇨🇳+@WangCai2
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-- name: 'Trojan #2'
-  type: trojan
   server: 162.159.153.212
   port: 2087
   password: r137979f
@@ -106,7 +91,7 @@ proxies:
     path: /
     headers:
       Host: sheleqaz.emotionreza.workers.dev
-- name: 'Trojan #3'
+- name: 'Trojan #2'
   type: trojan
   server: 104.17.185.207
   port: 443
@@ -123,7 +108,7 @@ proxies:
     path: /?proxyip=ip.111000.de5.net:443
     headers:
       Host: sni.111000.dynv6.net
-- name: 'Trojan #4'
+- name: 'Trojan #3'
   type: trojan
   server: 152.53.200.163
   port: 8443
@@ -138,6 +123,21 @@ proxies:
     path: /trTelegram🇨🇳+@WangCai2
     headers:
       Host: Koma-YT.PAGeS.Dev
+- name: 'Trojan #4'
+  type: trojan
+  server: 104.18.16.56
+  port: 443
+  password: humanity
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.creationlong.org
+  client-fingerprint: chrome
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.creationlong.org
 - name: 'Trojan #5'
   type: trojan
   server: 52.28.27.2
@@ -177,21 +177,6 @@ proxies:
   client-fingerprint: chrome
   alpn:
   - http/1.1
-- name: 'Trojan #8'
-  type: trojan
-  server: 8.6.112.0
-  port: 443
-  password: humanity
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.multiplydose.com
-  client-fingerprint: chrome
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.multiplydose.com
 proxy-groups:
 - name: Proxy Select
   type: select
@@ -204,7 +189,6 @@ proxy-groups:
   - 'Trojan #5'
   - 'Trojan #6'
   - 'Trojan #7'
-  - 'Trojan #8'
   - DIRECT
 - name: Auto Select
   type: url-test
@@ -216,7 +200,6 @@ proxy-groups:
   - 'Trojan #5'
   - 'Trojan #6'
   - 'Trojan #7'
-  - 'Trojan #8'
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 150
