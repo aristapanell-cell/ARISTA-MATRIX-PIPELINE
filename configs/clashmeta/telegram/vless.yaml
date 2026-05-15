@@ -78,272 +78,25 @@ sniffer:
 proxies:
 - name: 'VLESS #1'
   type: vless
-  server: zir.alihapps3.aghanami.ir
+  server: adler-1g.adelshoop.net
   port: 80
-  uuid: b10d234d-7cae-4f36-9700-d6b60b7318df
+  uuid: bbc68258-173b-4f0f-b126-f7aac6bb2db3
   network: ws
   tls: false
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: zir.alihapps3.aghanami.ir
+  servername: adler-1g.adelshoop.net
   flow: ''
   client-fingerprint: chrome
   packet-encoding: xudp
   ws-opts:
     path: /
     headers:
-      Host: zir.alihapps3.aghanami.ir
+      Host: adler-1g.adelshoop.net
     max-early-data: 2048
     early-data-header-name: Sec-WebSocket-Protocol
 - name: 'VLESS #2'
-  type: vless
-  server: 109.122.255.198
-  port: 1022
-  uuid: 1d509c22-4e43-4067-9185-873ec5bb49da
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: zula.ir
-  flow: ''
-  client-fingerprint: chrome
-  packet-encoding: xudp
-- name: 'VLESS #3'
-  type: vless
-  server: 185.143.233.5
-  port: 2083
-  uuid: 39de32c6-34b7-4486-a15f-dd1ef9c96b34
-  network: ws
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: sub.sesrsa.com
-  flow: ''
-  client-fingerprint: firefox
-  packet-encoding: xudp
-  alpn:
-  - h2
-  - http/1.1
-  ws-opts:
-    path: /
-    headers:
-      Host: sub.sesrsa.com
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
-- name: 'VLESS #4'
-  type: vless
-  server: 185.243.48.205
-  port: 45003
-  uuid: a2129318-5a87-4724-87d5-e46685437c6e
-  network: xhttp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.aparat.com
-  flow: ''
-  client-fingerprint: chrome
-  packet-encoding: xudp
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: VQAkDt9USo0NiyvgQKW3N4xn-DCBh-vUMJ2L6KSDPiA
-    short-id: 62a48d
-- name: 'VLESS #5'
-  type: vless
-  server: blubank.sb24.ir
-  port: 80
-  uuid: f4af15b0-8994-48bf-b0d2-117a49f3f503
-  network: ws
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: static.aliyanserver.ir
-  flow: ''
-  client-fingerprint: chrome
-  packet-encoding: xudp
-  ws-opts:
-    path: /
-    headers:
-      Host: static.aliyanserver.ir
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
-- name: 'VLESS #6'
-  type: vless
-  server: 188.121.124.181
-  port: 443
-  uuid: e58dbca4-0ae4-4433-8fb0-bde844306c26
-  network: xhttp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: static.cdn.asset.aparat.com
-  flow: ''
-  client-fingerprint: chrome
-  packet-encoding: xudp
-  alpn:
-  - h2
-  - http/1.1
-- name: 'VLESS #7'
-  type: vless
-  server: 185.24.253.108
-  port: 443
-  uuid: 97d60b34-00a8-4d9e-a60a-f71d93ba93d9
-  network: xhttp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: cdn.gapfilm.org
-  flow: ''
-  client-fingerprint: chrome
-  packet-encoding: xudp
-  alpn:
-  - h2
-  - http/1.1
-- name: 'VLESS #8'
-  type: vless
-  server: superip.mhvpm.ir
-  port: 2082
-  uuid: 1e3cee10-a1d4-4744-b7de-c7952d218e7f
-  network: ws
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: superip.mhvpm.ir
-  flow: ''
-  client-fingerprint: chrome
-  packet-encoding: xudp
-  ws-opts:
-    path: /
-    headers:
-      Host: superip.mhvpm.ir
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
-- name: 'VLESS #9'
-  type: vless
-  server: 50.7.4.106
-  port: 443
-  uuid: d6ef4a50-ea08-4f35-ba27-b58a86487dd0
-  network: ws
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: wro.u3er1.ir
-  flow: ''
-  client-fingerprint: chrome
-  packet-encoding: xudp
-  alpn:
-  - h2
-  - http/1.1
-  ws-opts:
-    path: /ws
-    headers:
-      Host: wro.u3er1.ir
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
-- name: 'VLESS #10'
-  type: vless
-  server: javid.izadyar.shop
-  port: 443
-  uuid: 4bdd11a6-c993-499d-b19c-85bfee509ff6
-  network: ws
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: javid.izadyar.shop
-  flow: ''
-  client-fingerprint: chrome
-  packet-encoding: xudp
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /
-    headers:
-      Host: javid.izadyar.shop
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
-- name: 'VLESS #11'
-  type: vless
-  server: space.zenvault.ir
-  port: 80
-  uuid: 08d9ece3-1218-437c-b43d-ce6d89225634
-  network: ws
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: space.zenvault.ir
-  flow: ''
-  client-fingerprint: chrome
-  packet-encoding: xudp
-  ws-opts:
-    path: /
-    headers:
-      Host: space.zenvault.ir
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
-- name: 'VLESS #12'
-  type: vless
-  server: snapp.ir
-  port: 80
-  uuid: 6a2405d9-61e2-4c74-a638-b2e2899e1995
-  network: ws
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: pa1.ghostantaniehh.ir
-  flow: ''
-  client-fingerprint: chrome
-  packet-encoding: xudp
-  ws-opts:
-    path: /
-    headers:
-      Host: pa1.ghostantaniehh.ir
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
-- name: 'VLESS #13'
-  type: vless
-  server: 45.159.148.34
-  port: 8585
-  uuid: 82849133-de8c-48ef-8479-ec67859c58e8
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: speedtest.net
-  flow: ''
-  client-fingerprint: chrome
-  packet-encoding: xudp
-- name: 'VLESS #14'
-  type: vless
-  server: 188.121.124.181
-  port: 443
-  uuid: 6e0676e7-3cbf-4c82-be05-4841e688c92c
-  network: xhttp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: static.cdn.asset.aparat.com
-  flow: ''
-  client-fingerprint: chrome
-  packet-encoding: xudp
-  alpn:
-  - h2
-  - http/1.1
-- name: 'VLESS #15'
   type: vless
   server: 185.143.233.5
   port: 2087
@@ -366,461 +119,27 @@ proxies:
       Host: sub.sesrsa.com
     max-early-data: 2048
     early-data-header-name: Sec-WebSocket-Protocol
-- name: 'VLESS #16'
+- name: 'VLESS #3'
   type: vless
-  server: red.docos.tech
-  port: 443
-  uuid: 1b50eb2c-ee25-479e-b593-ec80db9a54a0
-  network: ws
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: red.docos.tech
-  flow: ''
-  client-fingerprint: chrome
-  packet-encoding: xudp
-  alpn:
-  - h2
-  - http/1.1
-  ws-opts:
-    path: /red/
-    headers:
-      Host: red.docos.tech
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
-- name: 'VLESS #17'
-  type: vless
-  server: 83.147.255.191
-  port: 8443
-  uuid: 4cb46f0c-4f4e-468d-a834-bc2a4e404835
-  network: grpc
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: ads.x5.ru
-  flow: ''
-  client-fingerprint: qq
-  packet-encoding: xudp
-  alpn:
-  - h2
-  - http/1.1
-  grpc-opts:
-    grpc-service-name: xyz
-  reality-opts:
-    public-key: wSQIBnAc0cYO9JitaNcgZ2LwkTix0_dXVpDjnZxDrCE
-    short-id: ''
-- name: 'VLESS #18'
-  type: vless
-  server: 144.31.24.85
-  port: 8443
-  uuid: 4cb46f0c-4f4e-468d-a834-bc2a4e404835
-  network: grpc
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: ads.x5.ru
-  flow: ''
-  client-fingerprint: qq
-  packet-encoding: xudp
-  alpn:
-  - h2
-  - http/1.1
-  grpc-opts:
-    grpc-service-name: xyz
-  reality-opts:
-    public-key: wSQIBnAc0cYO9JitaNcgZ2LwkTix0_dXVpDjnZxDrCE
-    short-id: ''
-- name: 'VLESS #19'
-  type: vless
-  server: 79.137.198.154
-  port: 443
-  uuid: 4cb46f0c-4f4e-468d-a834-bc2a4e404835
-  network: grpc
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: ads.x5.ru
-  flow: ''
-  client-fingerprint: chrome
-  packet-encoding: xudp
-  alpn:
-  - h2
-  - http/1.1
-  grpc-opts:
-    grpc-service-name: GunService
-  reality-opts:
-    public-key: XrXK3qb2CKCBP80Vkg3WfNBB4gpy4YOADmQ7mhHfDWE
-    short-id: ''
-- name: 'VLESS #20'
-  type: vless
-  server: gosuslugiru.outlinekeys.net
-  port: 443
-  uuid: 4cb46f0c-4f4e-468d-a834-bc2a4e404835
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: node12.telegavpn.org
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  packet-encoding: xudp
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: WvNaAxI0W__qfUKbtysH4IwF155YENlv3PG6crCmPkA
-    short-id: ''
-- name: 'VLESS #21'
-  type: vless
-  server: 193.233.201.13
-  port: 443
-  uuid: 4cb46f0c-4f4e-468d-a834-bc2a4e404835
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: ads.x5.ru
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  packet-encoding: xudp
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: WvNaAxI0W__qfUKbtysH4IwF155YENlv3PG6crCmPkA
-    short-id: ''
-- name: 'VLESS #22'
-  type: vless
-  server: 45.140.205.215
-  port: 443
-  uuid: 4cb46f0c-4f4e-468d-a834-bc2a4e404835
-  network: grpc
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: ads.x5.ru
-  flow: ''
-  client-fingerprint: chrome
-  packet-encoding: xudp
-  alpn:
-  - h2
-  - http/1.1
-  grpc-opts:
-    grpc-service-name: xyz
-  reality-opts:
-    public-key: wSQIBnAc0cYO9JitaNcgZ2LwkTix0_dXVpDjnZxDrCE
-    short-id: ''
-- name: 'VLESS #23'
-  type: vless
-  server: 130.49.189.40
-  port: 443
-  uuid: 4cb46f0c-4f4e-468d-a834-bc2a4e404835
-  network: grpc
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: ads.x5.ru
-  flow: ''
-  client-fingerprint: chrome
-  packet-encoding: xudp
-  alpn:
-  - h2
-  - http/1.1
-  grpc-opts:
-    grpc-service-name: xyz
-  reality-opts:
-    public-key: wSQIBnAc0cYO9JitaNcgZ2LwkTix0_dXVpDjnZxDrCE
-    short-id: 6ba85179e30d4fc2
-- name: 'VLESS #24'
-  type: vless
-  server: 83.147.255.191
-  port: 8443
-  uuid: aedb65ef-b2c9-4ce1-8a72-332a94a253f2
-  network: grpc
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: ads.x5.ru
-  flow: ''
-  client-fingerprint: qq
-  packet-encoding: xudp
-  alpn:
-  - h2
-  - http/1.1
-  grpc-opts:
-    grpc-service-name: xyz
-  reality-opts:
-    public-key: wSQIBnAc0cYO9JitaNcgZ2LwkTix0_dXVpDjnZxDrCE
-    short-id: 6ba85179e30d4fc2
-- name: 'VLESS #25'
-  type: vless
-  server: 144.31.24.85
-  port: 8443
-  uuid: aedb65ef-b2c9-4ce1-8a72-332a94a253f2
-  network: grpc
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: ads.x5.ru
-  flow: ''
-  client-fingerprint: qq
-  packet-encoding: xudp
-  alpn:
-  - h2
-  - http/1.1
-  grpc-opts:
-    grpc-service-name: xyz
-  reality-opts:
-    public-key: wSQIBnAc0cYO9JitaNcgZ2LwkTix0_dXVpDjnZxDrCE
-    short-id: 6ba85179e30d4fc2
-- name: 'VLESS #26'
-  type: vless
-  server: 79.137.198.154
-  port: 443
-  uuid: aedb65ef-b2c9-4ce1-8a72-332a94a253f2
-  network: grpc
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: ads.x5.ru
-  flow: ''
-  client-fingerprint: chrome
-  packet-encoding: xudp
-  alpn:
-  - h2
-  - http/1.1
-  grpc-opts:
-    grpc-service-name: GunService
-  reality-opts:
-    public-key: XrXK3qb2CKCBP80Vkg3WfNBB4gpy4YOADmQ7mhHfDWE
-    short-id: ''
-- name: 'VLESS #27'
-  type: vless
-  server: gosuslugiru.outlinekeys.net
-  port: 443
-  uuid: aedb65ef-b2c9-4ce1-8a72-332a94a253f2
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: node12.telegavpn.org
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  packet-encoding: xudp
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: WvNaAxI0W__qfUKbtysH4IwF155YENlv3PG6crCmPkA
-    short-id: ''
-- name: 'VLESS #28'
-  type: vless
-  server: 193.233.201.13
-  port: 443
-  uuid: aedb65ef-b2c9-4ce1-8a72-332a94a253f2
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: ads.x5.ru
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  packet-encoding: xudp
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: WvNaAxI0W__qfUKbtysH4IwF155YENlv3PG6crCmPkA
-    short-id: ''
-- name: 'VLESS #29'
-  type: vless
-  server: 45.140.205.215
-  port: 443
-  uuid: aedb65ef-b2c9-4ce1-8a72-332a94a253f2
-  network: grpc
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: ads.x5.ru
-  flow: ''
-  client-fingerprint: chrome
-  packet-encoding: xudp
-  alpn:
-  - h2
-  - http/1.1
-  grpc-opts:
-    grpc-service-name: xyz
-  reality-opts:
-    public-key: wSQIBnAc0cYO9JitaNcgZ2LwkTix0_dXVpDjnZxDrCE
-    short-id: ''
-- name: 'VLESS #30'
-  type: vless
-  server: 130.49.189.40
-  port: 443
-  uuid: aedb65ef-b2c9-4ce1-8a72-332a94a253f2
-  network: grpc
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: ads.x5.ru
-  flow: ''
-  client-fingerprint: chrome
-  packet-encoding: xudp
-  alpn:
-  - h2
-  - http/1.1
-  grpc-opts:
-    grpc-service-name: xyz
-  reality-opts:
-    public-key: wSQIBnAc0cYO9JitaNcgZ2LwkTix0_dXVpDjnZxDrCE
-    short-id: 6ba85179e30d4fc2
-- name: 'VLESS #31'
-  type: vless
-  server: 83.147.255.191
-  port: 8443
-  uuid: 86f8a90e-b25a-492a-ac42-65b9756c9d67
-  network: grpc
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: ads.x5.ru
-  flow: ''
-  client-fingerprint: chrome
-  packet-encoding: xudp
-  alpn:
-  - h2
-  - http/1.1
-  grpc-opts:
-    grpc-service-name: xyz
-  reality-opts:
-    public-key: wSQIBnAc0cYO9JitaNcgZ2LwkTix0_dXVpDjnZxDrCE
-    short-id: ''
-- name: 'VLESS #32'
-  type: vless
-  server: adler-1g.adelshoop.net
-  port: 80
-  uuid: bbc68258-173b-4f0f-b126-f7aac6bb2db3
+  server: www.varzesh3.com
+  port: 2082
+  uuid: 2b54669c-0038-450a-b246-7e979c87dd43
   network: ws
   tls: false
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: adler-1g.adelshoop.net
+  servername: server1.mizbanertebatfarda.ir
   flow: ''
   client-fingerprint: chrome
   packet-encoding: xudp
   ws-opts:
     path: /
     headers:
-      Host: adler-1g.adelshoop.net
+      Host: server1.mizbanertebatfarda.ir
     max-early-data: 2048
     early-data-header-name: Sec-WebSocket-Protocol
-- name: 'VLESS #33'
-  type: vless
-  server: 2.144.21.240
-  port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: sni.jpmj.dev
-  flow: ''
-  client-fingerprint: chrome
-  packet-encoding: xudp
-  alpn:
-  - h2
-  - http/1.1
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: sni.jpmj.dev
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
-- name: 'VLESS #34'
-  type: vless
-  server: 185.143.233.5
-  port: 2087
-  uuid: c4bf78f1-fb2c-4170-a715-0ebe446de5ac
-  network: ws
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: sub.sesrsa.com
-  flow: ''
-  client-fingerprint: firefox
-  packet-encoding: xudp
-  alpn:
-  - h2
-  - http/1.1
-  ws-opts:
-    path: /
-    headers:
-      Host: sub.sesrsa.com
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
-- name: 'VLESS #35'
-  type: vless
-  server: 2.144.21.240
-  port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: sni.jpmj.dev
-  flow: ''
-  client-fingerprint: chrome
-  packet-encoding: xudp
-  alpn:
-  - h2
-  - http/1.1
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: sni.jpmj.dev
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
-- name: 'VLESS #36'
-  type: vless
-  server: arvancloud.ir
-  port: 80
-  uuid: ced89321-0fbd-4c55-9874-ec5f2ded420b
-  network: ws
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: samrexnet.ir
-  flow: ''
-  client-fingerprint: chrome
-  packet-encoding: xudp
-  ws-opts:
-    path: /
-    headers:
-      Host: samrexnet.ir
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
-- name: 'VLESS #37'
+- name: 'VLESS #4'
   type: vless
   server: 2.144.21.44
   port: 443
@@ -832,7 +151,7 @@ proxies:
   tcp-fast-open: true
   servername: roncomi.pages.dev
   flow: ''
-  client-fingerprint: chrome
+  client-fingerprint: safari
   packet-encoding: xudp
   alpn:
   - h2
@@ -842,341 +161,7 @@ proxies:
       Host: roncomi.pages.dev
     max-early-data: 2048
     early-data-header-name: Sec-WebSocket-Protocol
-- name: 'VLESS #38'
-  type: vless
-  server: finally.dashivo.ir
-  port: 8080
-  uuid: c91cb9a5-b428-416b-9903-623add910594
-  network: ws
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: finally.dashivo.ir
-  flow: ''
-  client-fingerprint: chrome
-  packet-encoding: xudp
-  ws-opts:
-    path: /
-    headers:
-      Host: finally.dashivo.ir
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
-- name: 'VLESS #39'
-  type: vless
-  server: snapp.ir
-  port: 80
-  uuid: a469bf88-8f4c-4b39-81c8-736acb3e1a39
-  network: ws
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: biawban.yeksancloud.ir
-  flow: ''
-  client-fingerprint: chrome
-  packet-encoding: xudp
-  ws-opts:
-    path: /
-    headers:
-      Host: biawban.yeksancloud.ir
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
-- name: 'VLESS #40'
-  type: vless
-  server: nobitex.ir
-  port: 80
-  uuid: 061183f9-a722-4707-9160-3a2ee47209b3
-  network: ws
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: support.mindigosupport.ir
-  flow: ''
-  client-fingerprint: chrome
-  packet-encoding: xudp
-  ws-opts:
-    path: /
-    headers:
-      Host: support.mindigosupport.ir
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
-- name: 'VLESS #41'
-  type: vless
-  server: snapp.ir
-  port: 80
-  uuid: 017998c6-da9e-4edf-a5d1-0d7dc68f5097
-  network: ws
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: iranfuture.musicritmic.ir
-  flow: ''
-  client-fingerprint: chrome
-  packet-encoding: xudp
-  ws-opts:
-    path: /
-    headers:
-      Host: iranfuture.musicritmic.ir
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
-- name: 'VLESS #42'
-  type: vless
-  server: snapp.ir
-  port: 2086
-  uuid: 5536ea8b-2d17-4e05-9051-66ae96cf2240
-  network: ws
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: ma.nexoratechcenter.ir
-  flow: ''
-  client-fingerprint: chrome
-  packet-encoding: xudp
-  ws-opts:
-    path: /
-    headers:
-      Host: ma.nexoratechcenter.ir
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
-- name: 'VLESS #43'
-  type: vless
-  server: snapp.ir
-  port: 8080
-  uuid: 27dd0ad0-0b0b-446a-b738-8d763333d4cc
-  network: ws
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: badboybi2.yeksancloud.ir
-  flow: ''
-  client-fingerprint: chrome
-  packet-encoding: xudp
-  ws-opts:
-    path: /
-    headers:
-      Host: badboybi2.yeksancloud.ir
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
-- name: 'VLESS #44'
-  type: vless
-  server: wp14.virgool.best
-  port: 55014
-  uuid: b01631fa-502b-497f-b8ed-2fda669667ad
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.digikala.com
-  flow: ''
-  client-fingerprint: chrome
-  packet-encoding: xudp
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: vxdmULi_cO7dha2aQnsjSViARO15hvI9HWyo0pVPlkQ
-    short-id: c385
-- name: 'VLESS #45'
-  type: vless
-  server: snapp.ir
-  port: 8880
-  uuid: 6b361f77-da65-48b0-9467-0aeb00fc74a4
-  network: ws
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: wh.nexoratechcenter.ir
-  flow: ''
-  client-fingerprint: chrome
-  packet-encoding: xudp
-  ws-opts:
-    path: /
-    headers:
-      Host: wh.nexoratechcenter.ir
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
-- name: 'VLESS #46'
-  type: vless
-  server: snapp.ir
-  port: 8080
-  uuid: dc656dcf-27d6-45d8-9e95-2828c5f0ec41
-  network: ws
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: ts.programming-coding.ir
-  flow: ''
-  client-fingerprint: chrome
-  packet-encoding: xudp
-  ws-opts:
-    path: /
-    headers:
-      Host: ts.programming-coding.ir
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
-- name: 'VLESS #47'
-  type: vless
-  server: 2.144.21.44
-  port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: sni.111000.indevs.in
-  flow: ''
-  client-fingerprint: chrome
-  packet-encoding: xudp
-  alpn:
-  - h2
-  - http/1.1
-  ws-opts:
-    path: /?ed=2560&Telegram @DigiHubAI
-    headers:
-      Host: sni.111000.indevs.in
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
-- name: 'VLESS #48'
-  type: vless
-  server: 185.143.233.235
-  port: 80
-  uuid: 0edaa453-6be7-4442-8449-d95d4e2dabfc
-  network: ws
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: Ld.artarona.ir
-  flow: ''
-  client-fingerprint: chrome
-  packet-encoding: xudp
-  ws-opts:
-    path: /
-    headers:
-      Host: Ld.artarona.ir
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
-- name: 'VLESS #49'
-  type: vless
-  server: varzesh3.com
-  port: 2095
-  uuid: 5a48bec8-0bf5-4ff9-a009-218d286f0f21
-  network: ws
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: H.goodphilips.ir
-  flow: ''
-  client-fingerprint: chrome
-  packet-encoding: xudp
-  ws-opts:
-    path: /@Matinam844@Matinam844@Matinam844@Matinam844@Matinam844@Matinam844@Matinam844@Matinam844@Matinam844@Matinam844@Matinam844@Matinam844@Matinam844@Matinam844@Matinam844@Matinam844@Matinam844@Matinam844@Matinam844@Matinam844@Matinam844@Matinam844@Matinam844@Matinam844@Matinam844@Matinam844@Matinam844@Matinam844@Matinam844@Matinam844
-    headers:
-      Host: H.goodphilips.ir
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
-- name: 'VLESS #50'
-  type: vless
-  server: 188.121.110.15
-  port: 8080
-  uuid: 7122f61f-cbbd-4098-b632-f7531b141d03
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 188.121.110.15
-  flow: ''
-  client-fingerprint: chrome
-  packet-encoding: xudp
-- name: 'VLESS #51'
-  type: vless
-  server: finally.dashivo.ir
-  port: 8080
-  uuid: c91cb9a5-b428-416b-9903-623add910594
-  network: ws
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: finally.dashivo.ir
-  flow: ''
-  client-fingerprint: chrome
-  packet-encoding: xudp
-  ws-opts:
-    path: /
-    headers:
-      Host: finally.dashivo.ir
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
-- name: 'VLESS #52'
-  type: vless
-  server: alihapps3.aghanami.ir
-  port: 80
-  uuid: c5edb38f-d322-45a5-a9f9-74ed19382eff
-  network: ws
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: alihapps3.aghanami.ir
-  flow: ''
-  client-fingerprint: chrome
-  packet-encoding: xudp
-  ws-opts:
-    path: /
-    headers:
-      Host: alihapps3.aghanami.ir
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
-- name: 'VLESS #53'
-  type: vless
-  server: snapp.ir
-  port: 80
-  uuid: 5f496166-f690-4033-84a1-8d628b020b5f
-  network: ws
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: kolp1.ketabastan.ir
-  flow: ''
-  client-fingerprint: chrome
-  packet-encoding: xudp
-  ws-opts:
-    path: /
-    headers:
-      Host: kolp1.ketabastan.ir
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
-- name: 'VLESS #54'
-  type: vless
-  server: snapp.ir
-  port: 443
-  uuid: 19c3239a-1ce4-4f7d-9fbc-c82a64f85110
-  network: xhttp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: dy.redordead.ir
-  flow: ''
-  client-fingerprint: chrome
-  packet-encoding: xudp
-  alpn:
-  - h2
-  - http/1.1
-- name: 'VLESS #55'
+- name: 'VLESS #5'
   type: vless
   server: 185.143.233.5
   port: 2083
@@ -1199,7 +184,7 @@ proxies:
       Host: sub.sesrsa.com
     max-early-data: 2048
     early-data-header-name: Sec-WebSocket-Protocol
-- name: 'VLESS #56'
+- name: 'VLESS #6'
   type: vless
   server: www.varzesh3.com
   port: 2082
@@ -1219,7 +204,7 @@ proxies:
       Host: server1.mizbanertebatfarda.ir
     max-early-data: 2048
     early-data-header-name: Sec-WebSocket-Protocol
-- name: 'VLESS #57'
+- name: 'VLESS #7'
   type: vless
   server: 193.58.119.134
   port: 443
@@ -1233,7 +218,7 @@ proxies:
   flow: ''
   client-fingerprint: chrome
   packet-encoding: xudp
-- name: 'VLESS #58'
+- name: 'VLESS #8'
   type: vless
   server: 144.31.96.174
   port: 443
@@ -1253,7 +238,7 @@ proxies:
   reality-opts:
     public-key: nPcUKydxoRI66O3tT9O4QCZpLjOBvkGsiXG7pDX1BBw
     short-id: 6ba85179e30d4fc2
-- name: 'VLESS #59'
+- name: 'VLESS #9'
   type: vless
   server: varzesh3.com
   port: 8080
@@ -1273,7 +258,7 @@ proxies:
       Host: vip.ghatenadooni.ir
     max-early-data: 2048
     early-data-header-name: Sec-WebSocket-Protocol
-- name: 'VLESS #60'
+- name: 'VLESS #10'
   type: vless
   server: 64.226.109.18
   port: 4399
@@ -1296,7 +281,7 @@ proxies:
       Host: ooa858iqkhza12.mesa.ip-ddns.com
     max-early-data: 2048
     early-data-header-name: Sec-WebSocket-Protocol
-- name: 'VLESS #61'
+- name: 'VLESS #11'
   type: vless
   server: red.docos.tech
   port: 443
@@ -1319,7 +304,52 @@ proxies:
       Host: red.docos.tech
     max-early-data: 2048
     early-data-header-name: Sec-WebSocket-Protocol
-- name: 'VLESS #62'
+- name: 'VLESS #12'
+  type: vless
+  server: 2.144.21.240
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: sni.jpmj.dev
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  alpn:
+  - h2
+  - http/1.1
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: sni.jpmj.dev
+    max-early-data: 2048
+    early-data-header-name: Sec-WebSocket-Protocol
+- name: 'VLESS #13'
+  type: vless
+  server: 2.144.21.44
+  port: 443
+  uuid: 538c7c92-9bb6-4294-8250-b224fb95fc78
+  network: ws
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: roncomi.pages.dev
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  alpn:
+  - h2
+  ws-opts:
+    path: /city/setting?ed=2560
+    headers:
+      Host: roncomi.pages.dev
+    max-early-data: 2048
+    early-data-header-name: Sec-WebSocket-Protocol
+- name: 'VLESS #14'
   type: vless
   server: 45.142.120.191
   port: 443
@@ -1342,7 +372,7 @@ proxies:
       Host: sni.my111000.tech
     max-early-data: 2048
     early-data-header-name: Sec-WebSocket-Protocol
-- name: 'VLESS #63'
+- name: 'VLESS #15'
   type: vless
   server: 104.16.250.22
   port: 80
@@ -1362,786 +392,7 @@ proxies:
       Host: aa.beijng.dpdns.org
     max-early-data: 2048
     early-data-header-name: Sec-WebSocket-Protocol
-- name: 'VLESS #64'
-  type: vless
-  server: ir-frankfurt.samanpy.ir
-  port: 19785
-  uuid: 8e5cd658-cde6-48d3-8ab5-2c9ca1b194d2
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: ir-frankfurt.samanpy.ir
-  flow: ''
-  client-fingerprint: chrome
-  packet-encoding: xudp
-- name: 'VLESS #65'
-  type: vless
-  server: 185.143.233.5
-  port: 2087
-  uuid: 6af45c63-342c-4a63-bbed-cee81821dbe3
-  network: ws
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: sub.sesrsa.com
-  flow: ''
-  client-fingerprint: firefox
-  packet-encoding: xudp
-  alpn:
-  - h2
-  - http/1.1
-  ws-opts:
-    path: /
-    headers:
-      Host: sub.sesrsa.com
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
-- name: 'VLESS #66'
-  type: vless
-  server: 104.17.72.206
-  port: 443
-  uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
-  network: ws
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 2026.hhhhh.eu.org
-  flow: ''
-  client-fingerprint: chrome
-  packet-encoding: xudp
-  alpn:
-  - h2
-  - http/1.1
-  ws-opts:
-    path: /222.167.202.31:744...
-    headers:
-      Host: 2026.hhhhh.eu.org
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
-- name: 'VLESS #67'
-  type: vless
-  server: snapp.ir
-  port: 80
-  uuid: 514a5016-bda7-4e97-bd52-fa63ba537b7f
-  network: ws
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 1.jojo.avenflow.ir
-  flow: ''
-  client-fingerprint: chrome
-  packet-encoding: xudp
-  ws-opts:
-    path: /?ed=2080
-    headers:
-      Host: 1.jojo.avenflow.ir
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
-- name: 'VLESS #68'
-  type: vless
-  server: webpanel.trmas-po.ir
-  port: 8080
-  uuid: 41d265d2-5889-49e4-ba5b-4d017fcaf544
-  network: ws
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: asli.svnteam-vip-fast.ip-ddns.com
-  flow: ''
-  client-fingerprint: chrome
-  packet-encoding: xudp
-  ws-opts:
-    path: /
-    headers:
-      Host: asli.svnteam-vip-fast.ip-ddns.com
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
-- name: 'VLESS #69'
-  type: vless
-  server: pm5.vhuma.com
-  port: 443
-  uuid: f358f62d-eda3-48a3-a52a-d7020ce15d79
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: bama.ir
-  flow: ''
-  client-fingerprint: chrome
-  packet-encoding: xudp
-- name: 'VLESS #70'
-  type: vless
-  server: 95.216.69.37
-  port: 443
-  uuid: '%40IR_NETLIFY'
-  network: xhttp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: kind.sigs.k8s.io
-  flow: ''
-  client-fingerprint: chrome
-  packet-encoding: xudp
-  alpn:
-  - h2
-  - http/1.1
-- name: 'VLESS #71'
-  type: vless
-  server: rob.gladyshopnine.com
-  port: 57713
-  uuid: da8491d3-7f53-4ca0-8fe9-d4e2d82c5900
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.aparat.com
-  flow: ''
-  client-fingerprint: chrome
-  packet-encoding: xudp
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: _sWh3QZdUwXQ2hoP431q5rqf_pQIufaOXSef1qbEwjs
-    short-id: '99'
-- name: 'VLESS #72'
-  type: vless
-  server: arvancloud.ir
-  port: 80
-  uuid: 8c8ac7a3-9fff-40ad-aa07-87d09ccd9812
-  network: ws
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: t1.tunnellinuweb.ir
-  flow: ''
-  client-fingerprint: chrome
-  packet-encoding: xudp
-  ws-opts:
-    path: /
-    headers:
-      Host: t1.tunnellinuweb.ir
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
-- name: 'VLESS #73'
-  type: vless
-  server: play.nexia.cam
-  port: 80
-  uuid: 2527f476-8c49-4338-8942-e6f5bc536202
-  network: ws
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: play.nexia.cam
-  flow: ''
-  client-fingerprint: chrome
-  packet-encoding: xudp
-  ws-opts:
-    path: /
-    headers:
-      Host: play.nexia.cam
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
-- name: 'VLESS #74'
-  type: vless
-  server: vitallife.gg
-  port: 443
-  uuid: 2a9caf16-0cd1-46dd-a0fd-97f0ef5e10cd
-  network: xhttp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: vitallife.gg
-  flow: ''
-  client-fingerprint: chrome
-  packet-encoding: xudp
-  alpn:
-  - h2
-- name: 'VLESS #75'
-  type: vless
-  server: hi-verso.docos.tech
-  port: 443
-  uuid: 35bc4cbb-ac26-4cbf-815e-88635e7cdc22
-  network: ws
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: hi-verso.docos.tech
-  flow: ''
-  client-fingerprint: chrome
-  packet-encoding: xudp
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /vl/
-    headers:
-      Host: hi-verso.docos.tech
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
-- name: 'VLESS #76'
-  type: vless
-  server: 5.145.114.132
-  port: 41794
-  uuid: 0dda9711-df88-48b9-a7a0-28b384013470
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 5.145.114.132
-  flow: ''
-  client-fingerprint: chrome
-  packet-encoding: xudp
-- name: 'VLESS #77'
-  type: vless
-  server: 188.121.124.181
-  port: 443
-  uuid: 00ba6032-1ed2-46e0-b242-d5fe4d59a1de
-  network: xhttp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: static.cdn.asset.aparat.com
-  flow: ''
-  client-fingerprint: chrome
-  packet-encoding: xudp
-  alpn:
-  - h2
-  - http/1.1
-- name: 'VLESS #78'
-  type: vless
-  server: snapp.ir
-  port: 8080
-  uuid: 09e930ef-6288-4179-b055-b8382942a180
-  network: ws
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: ts.programming-coding.ir
-  flow: ''
-  client-fingerprint: chrome
-  packet-encoding: xudp
-  ws-opts:
-    path: /
-    headers:
-      Host: ts.programming-coding.ir
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
-- name: 'VLESS #79'
-  type: vless
-  server: ohio12.newcallapphelper.online
-  port: 80
-  uuid: 03b2cce0-d94e-4cab-90de-ce412b626839
-  network: ws
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: ohio12.newcallapphelper.online
-  flow: ''
-  client-fingerprint: chrome
-  packet-encoding: xudp
-  ws-opts:
-    path: /
-    headers:
-      Host: ohio12.newcallapphelper.online
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
-- name: 'VLESS #80'
-  type: vless
-  server: 188.121.123.73
-  port: 443
-  uuid: 2d6a8b6e-831b-48b5-a7df-4a430521de92
-  network: ws
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: plus.sabavision.com
-  flow: ''
-  client-fingerprint: chrome
-  packet-encoding: xudp
-  alpn:
-  - h2
-  - http/1.1
-  ws-opts:
-    path: /ws?ed=500
-    headers:
-      Host: plus.sabavision.com
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
-- name: 'VLESS #81'
-  type: vless
-  server: n1.linkinfo.cloud
-  port: 2082
-  uuid: 02583eac-aef0-408c-a1ca-93098f96ed54
-  network: ws
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: n1.linkinfo.cloud
-  flow: ''
-  client-fingerprint: chrome
-  packet-encoding: xudp
-  ws-opts:
-    path: /
-    headers:
-      Host: n1.linkinfo.cloud
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
-- name: 'VLESS #82'
-  type: vless
-  server: snapp.ir
-  port: 80
-  uuid: c6ceccbe-351b-444f-b7eb-2462fcdab45f
-  network: ws
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: ir3.cdnk1.cfd
-  flow: ''
-  client-fingerprint: chrome
-  packet-encoding: xudp
-  ws-opts:
-    path: /?ed=2080
-    headers:
-      Host: ir3.cdnk1.cfd
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
-- name: 'VLESS #83'
-  type: vless
-  server: 185.143.234.235
-  port: 80
-  uuid: 7a9d10c8-db5e-446d-ba95-61c2f54e0bc9
-  network: ws
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: felorida2.azmabekaraziz.shop
-  flow: ''
-  client-fingerprint: chrome
-  packet-encoding: xudp
-  ws-opts:
-    path: /
-    headers:
-      Host: felorida2.azmabekaraziz.shop
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
-- name: 'VLESS #84'
-  type: vless
-  server: snapp.ir
-  port: 8080
-  uuid: 59bb1fa4-8c04-44af-bffb-efff394b75c2
-  network: ws
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: ir2.kokomokiyoo.ir
-  flow: ''
-  client-fingerprint: chrome
-  packet-encoding: xudp
-  ws-opts:
-    path: /
-    headers:
-      Host: ir2.kokomokiyoo.ir
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
-- name: 'VLESS #85'
-  type: vless
-  server: 104.17.150.99
-  port: 80
-  uuid: 388a6c57-87e7-420b-afe2-b3eb670fd7da
-  network: ws
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: vip.yaml7.ggff.net
-  flow: ''
-  client-fingerprint: chrome
-  packet-encoding: xudp
-  ws-opts:
-    path: /
-    headers:
-      Host: vip.yaml7.ggff.net
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
-- name: 'VLESS #86'
-  type: vless
-  server: 185.143.234.96
-  port: 80
-  uuid: 36326231-3138-4166-b834-303439306131
-  network: ws
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: dl.tgmovie.bond
-  flow: ''
-  client-fingerprint: chrome
-  packet-encoding: xudp
-  ws-opts:
-    path: /l/w/aXD2QyDdS6vRQpxs?ed=2047
-    headers:
-      Host: dl.tgmovie.bond
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
-- name: 'VLESS #87'
-  type: vless
-  server: 46.101.136.162
-  port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: sni.latonyamadeline.ndjp.net
-  flow: ''
-  client-fingerprint: chrome
-  packet-encoding: xudp
-  alpn:
-  - h2
-  - http/1.1
-  ws-opts:
-    path: /?https%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3=
-    headers:
-      Host: sni.latonyamadeline.ndjp.net
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
-- name: 'VLESS #88'
-  type: vless
-  server: snapp.ir
-  port: 80
-  uuid: b8545bb9-adf4-4bb8-a58b-cb3994cde763
-  network: ws
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: ss9.limitless-cloud.ir
-  flow: ''
-  client-fingerprint: chrome
-  packet-encoding: xudp
-  ws-opts:
-    path: /graphql?ed=2560
-    headers:
-      Host: ss9.limitless-cloud.ir
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
-- name: 'VLESS #89'
-  type: vless
-  server: snapp.ir
-  port: 80
-  uuid: 3d6d89ff-f34d-4ff7-b1b8-71568d89beb8
-  network: ws
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: ss3.limitless-cloud.ir
-  flow: ''
-  client-fingerprint: chrome
-  packet-encoding: xudp
-  ws-opts:
-    path: /graphql?ed=2560
-    headers:
-      Host: ss3.limitless-cloud.ir
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
-- name: 'VLESS #90'
-  type: vless
-  server: 185.143.233.235
-  port: 8080
-  uuid: 0595727a-c536-4bcf-b110-528e7f5806e2
-  network: ws
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: d5.artarona.ir
-  flow: ''
-  client-fingerprint: chrome
-  packet-encoding: xudp
-  ws-opts:
-    path: /
-    headers:
-      Host: d5.artarona.ir
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
-- name: 'VLESS #91'
-  type: vless
-  server: 185.143.233.5
-  port: 2087
-  uuid: daf8a45c-5a32-47a5-8da1-db3e323a2fbb
-  network: ws
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: sub.sesrsa.com
-  flow: ''
-  client-fingerprint: firefox
-  packet-encoding: xudp
-  alpn:
-  - h2
-  - http/1.1
-  ws-opts:
-    path: /
-    headers:
-      Host: sub.sesrsa.com
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
-- name: 'VLESS #92'
-  type: vless
-  server: anten.ir
-  port: 80
-  uuid: 49a41d23-a0b4-4208-b910-df298f2c2158
-  network: ws
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: TU.amirenzohost.ir
-  flow: ''
-  client-fingerprint: chrome
-  packet-encoding: xudp
-  ws-opts:
-    path: '@TunizoNET'
-    headers:
-      Host: TU.amirenzohost.ir
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
-- name: 'VLESS #93'
-  type: vless
-  server: arvancloud.ir
-  port: 80
-  uuid: ad148fcd-aefa-47e8-8c7e-5fc242f9e142
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: gh2
-  flow: ''
-  client-fingerprint: chrome
-  packet-encoding: xudp
-- name: 'VLESS #94'
-  type: vless
-  server: snapp.ir
-  port: 80
-  uuid: 76ae5a8e-f504-44a9-8c6e-e8c2657665c5
-  network: ws
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 1.jojo.avenflow.ir
-  flow: ''
-  client-fingerprint: chrome
-  packet-encoding: xudp
-  ws-opts:
-    path: /?ed=20
-    headers:
-      Host: 1.jojo.avenflow.ir
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
-- name: 'VLESS #95'
-  type: vless
-  server: n3th3ryt.gxcore.net
-  port: 443
-  uuid: b6ce8a51-19b9-4979-91ba-b4298c26d5fc
-  network: grpc
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: n3th3ryt.gxcore.net
-  flow: ''
-  client-fingerprint: chrome
-  packet-encoding: xudp
-  alpn:
-  - h2
-  - http/1.1
-  grpc-opts:
-    grpc-service-name: grpc
-  reality-opts:
-    public-key: KzSy2i45DrsFOfXXQ7ConynwqKOaH70pvpoMR4joMWU
-    short-id: d45feecd265c116d
-- name: 'VLESS #96'
-  type: vless
-  server: ciallo-egb.pages.dev
-  port: 2087
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  network: ws
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: CIallO-egB.pAGes.Dev
-  flow: ''
-  client-fingerprint: chrome
-  packet-encoding: xudp
-  alpn:
-  - h2
-  - http/1.1
-  ws-opts:
-    path: /%2F
-    headers:
-      Host: CIallO-egB.pAGes.Dev
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
-- name: 'VLESS #97'
-  type: vless
-  server: 104.16.158.162
-  port: 80
-  uuid: a7444b2b-20fb-461f-9840-63e5c8c7d883
-  network: ws
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: mute-violet-c674.poviy66273.workers.dev
-  flow: ''
-  client-fingerprint: chrome
-  packet-encoding: xudp
-  ws-opts:
-    path: /
-    headers:
-      Host: mute-violet-c674.poviy66273.workers.dev
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
-- name: 'VLESS #98'
-  type: vless
-  server: 144.31.233.81
-  port: 7443
-  uuid: 00492f4b-95d1-46d9-837a-ebf9c881d81e
-  network: grpc
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: apple.com
-  flow: ''
-  client-fingerprint: chrome
-  packet-encoding: xudp
-  alpn:
-  - h2
-  - http/1.1
-  grpc-opts:
-    grpc-service-name: GunService
-  reality-opts:
-    public-key: E7Hb6k6CYEZ0Zoas5inuxx5jM1wks4b9gXSbWVizRxQ
-    short-id: d4bb8712c70539ef
-- name: 'VLESS #99'
-  type: vless
-  server: 104.194.159.207
-  port: 443
-  uuid: 3c81c716-4fd5-11f1-8a2c-525400a7149e
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.kleinanzeigen.de
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  packet-encoding: xudp
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: XFv4Qy1Pfx_Wj_oLqIqfVpBiykT2zr35X0mwEOME2Wg
-    short-id: ''
-- name: 'VLESS #100'
-  type: vless
-  server: 185.158.133.138
-  port: 2096
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: sni.111000.indevs.in
-  flow: ''
-  client-fingerprint: chrome
-  packet-encoding: xudp
-  alpn:
-  - h2
-  - http/1.1
-  ws-opts:
-    path: /
-    headers:
-      Host: sni.111000.indevs.in
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
-- name: 'VLESS #101'
-  type: vless
-  server: 162.120.94.138
-  port: 2096
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: sni.111000.indevs.in
-  flow: ''
-  client-fingerprint: chrome
-  packet-encoding: xudp
-  alpn:
-  - h2
-  - http/1.1
-  ws-opts:
-    path: /
-    headers:
-      Host: sni.111000.indevs.in
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
-- name: 'VLESS #102'
-  type: vless
-  server: 176.124.223.138
-  port: 2096
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: sni.111000.indevs.in
-  flow: ''
-  client-fingerprint: chrome
-  packet-encoding: xudp
-  alpn:
-  - h2
-  - http/1.1
-  ws-opts:
-    path: /
-    headers:
-      Host: sni.111000.indevs.in
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
-- name: 'VLESS #103'
+- name: 'VLESS #16'
   type: vless
   server: 8.39.125.134
   port: 2096
@@ -2164,415 +415,7 @@ proxies:
       Host: cocobaby.pages.dev
     max-early-data: 2048
     early-data-header-name: Sec-WebSocket-Protocol
-- name: 'VLESS #104'
-  type: vless
-  server: 94.131.105.175
-  port: 443
-  uuid: 44b7a388-21ca-4af0-a16b-01e9e6ef04e1
-  network: ws
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: webmode.yota.ru
-  flow: ''
-  client-fingerprint: chrome
-  packet-encoding: xudp
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /hSnh23IZa4CZTWQa78l9eM
-    headers:
-      Host: webmode.yota.ru
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
-- name: 'VLESS #105'
-  type: vless
-  server: zir.alihapps3.aghanami.ir
-  port: 80
-  uuid: 2eb3d1b6-f542-4258-a219-4406256d0d23
-  network: ws
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: zir.alihapps3.aghanami.ir
-  flow: ''
-  client-fingerprint: chrome
-  packet-encoding: xudp
-  ws-opts:
-    path: /
-    headers:
-      Host: zir.alihapps3.aghanami.ir
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
-- name: 'VLESS #106'
-  type: vless
-  server: snapp.ir
-  port: 8080
-  uuid: 01b9bb98-ee11-4362-b397-8666d2abc97b
-  network: ws
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: pro.babayaroabasino.ir
-  flow: ''
-  client-fingerprint: chrome
-  packet-encoding: xudp
-  ws-opts:
-    path: /wp-content/addons/downloader.php
-    headers:
-      Host: pro.babayaroabasino.ir
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
-- name: 'VLESS #107'
-  type: vless
-  server: zone.ca.f2zone.ir
-  port: 17759
-  uuid: 3cbad916-d882-4773-8dfb-15564f2d29fe
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: telewebion.com
-  flow: ''
-  client-fingerprint: chrome
-  packet-encoding: xudp
-- name: 'VLESS #108'
-  type: vless
-  server: snapp.ir
-  port: 2052
-  uuid: dae2ddc6-a892-495f-a001-181cec56ad12
-  network: ws
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: p1.razstar.ir
-  flow: ''
-  client-fingerprint: chrome
-  packet-encoding: xudp
-  ws-opts:
-    path: /
-    headers:
-      Host: p1.razstar.ir
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
-- name: 'VLESS #109'
-  type: vless
-  server: snapp.ir
-  port: 80
-  uuid: 20c33382-9f5a-4fe3-998b-1af9719f260a
-  network: ws
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: M1.snllshop.ir
-  flow: ''
-  client-fingerprint: chrome
-  packet-encoding: xudp
-  ws-opts:
-    path: /
-    headers:
-      Host: M1.snllshop.ir
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
-- name: 'VLESS #110'
-  type: vless
-  server: trex.docos.tech
-  port: 443
-  uuid: 69ab00e0-9230-424b-b1be-eaf9ec776ce8
-  network: ws
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: trex.docos.tech
-  flow: ''
-  client-fingerprint: chrome
-  packet-encoding: xudp
-  alpn:
-  - h2
-  - http/1.1
-  ws-opts:
-    path: /vless-ws
-    headers:
-      Host: trex.docos.tech
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
-- name: 'VLESS #111'
-  type: vless
-  server: men2.gafe-lorbad.ir
-  port: 80
-  uuid: 92b93f5d-af24-420e-95fb-0120f55b4481
-  network: ws
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: s2.fasrrapido.ir
-  flow: ''
-  client-fingerprint: chrome
-  packet-encoding: xudp
-  ws-opts:
-    path: /
-    headers:
-      Host: s2.fasrrapido.ir
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
-- name: 'VLESS #112'
-  type: vless
-  server: react.dev
-  port: 443
-  uuid: e11354d8-f297-4139-9813-aeab84f1cf0c
-  network: xhttp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: react.dev
-  flow: ''
-  client-fingerprint: chrome
-  packet-encoding: xudp
-  alpn:
-  - h2
-- name: 'VLESS #113'
-  type: vless
-  server: wp14.virgool.best
-  port: 55014
-  uuid: b01631fa-502b-497f-b8ed-2fda669667ad
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.digikala.com
-  flow: ''
-  client-fingerprint: chrome
-  packet-encoding: xudp
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: vxdmULi_cO7dha2aQnsjSViARO15hvI9HWyo0pVPlkQ
-    short-id: c385
-- name: 'VLESS #114'
-  type: vless
-  server: www.varzesh3.com
-  port: 2082
-  uuid: 2b54669c-0038-450a-b246-7e979c87dd43
-  network: ws
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: server1.mizbanertebatfarda.ir
-  flow: ''
-  client-fingerprint: chrome
-  packet-encoding: xudp
-  ws-opts:
-    path: /
-    headers:
-      Host: server1.mizbanertebatfarda.ir
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
-- name: 'VLESS #115'
-  type: vless
-  server: 2.144.21.44
-  port: 443
-  uuid: 538c7c92-9bb6-4294-8250-b224fb95fc78
-  network: ws
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: roncomi.pages.dev
-  flow: ''
-  client-fingerprint: safari
-  packet-encoding: xudp
-  alpn:
-  - h2
-  ws-opts:
-    path: /city/setting?ed=2560
-    headers:
-      Host: roncomi.pages.dev
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
-- name: 'VLESS #116'
-  type: vless
-  server: 185.143.234.235
-  port: 80
-  uuid: b8799fac-622a-4142-aab2-2aa862ad35f2
-  network: ws
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: vixon.portab.org
-  flow: ''
-  client-fingerprint: chrome
-  packet-encoding: xudp
-  ws-opts:
-    path: /
-    headers:
-      Host: vixon.portab.org
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
-- name: 'VLESS #117'
-  type: vless
-  server: 193.151.155.162
-  port: 443
-  uuid: 77f14cd9-b356-4341-a41f-2dd72f705ab7
-  network: xhttp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: cdn.gapfilm.org
-  flow: ''
-  client-fingerprint: chrome
-  packet-encoding: xudp
-  alpn:
-  - h2
-  - http/1.1
-- name: 'VLESS #118'
-  type: vless
-  server: 45.130.125.160
-  port: 2052
-  uuid: 2271c50f-ac7a-4d7f-8b04-64085b0daa56
-  network: xhttp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: nlbv1.pabloping.pro
-  flow: ''
-  client-fingerprint: chrome
-  packet-encoding: xudp
-- name: 'VLESS #119'
-  type: vless
-  server: varzesh3.com
-  port: 443
-  uuid: c387b0f2-5d9e-4c95-882d-1d5eeb443ce2
-  network: ws
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: nginx-3b1e7ed824-abol.apps.ir-central1.arvancaas.ir
-  flow: ''
-  client-fingerprint: chrome
-  packet-encoding: xudp
-  alpn:
-  - h2
-  - http/1.1
-  ws-opts:
-    path: /movie
-    headers:
-      Host: nginx-3b1e7ed824-abol.apps.ir-central1.arvancaas.ir
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
-- name: 'VLESS #120'
-  type: vless
-  server: snapp.ir
-  port: 80
-  uuid: 18f9098f-1d6e-431f-abc6-91b6c732b303
-  network: ws
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: cdn2.softnetconnect.ir
-  flow: ''
-  client-fingerprint: chrome
-  packet-encoding: xudp
-  ws-opts:
-    path: /
-    headers:
-      Host: cdn2.softnetconnect.ir
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
-- name: 'VLESS #121'
-  type: vless
-  server: milad1.cloudzeusggwp.com.tr
-  port: 36266
-  uuid: 879c96f2-fae7-4555-84f2-b47612c9021d
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.aparat.com
-  flow: ''
-  client-fingerprint: chrome
-  packet-encoding: xudp
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: 1VJvRSqXw-Gcwf7TGQfq-AoT8pa2qN-2IMLVHiZvHiw
-    short-id: d9919852
-- name: 'VLESS #122'
-  type: vless
-  server: snapp.ir
-  port: 80
-  uuid: 6c02e19e-adc3-46a2-b287-7d228a4d079d
-  network: ws
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: ss10.limitless-cloud.ir
-  flow: ''
-  client-fingerprint: chrome
-  packet-encoding: xudp
-  ws-opts:
-    path: /graphql?ed=2560
-    headers:
-      Host: ss10.limitless-cloud.ir
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
-- name: 'VLESS #123'
-  type: vless
-  server: 24dc5c91924c5346.freestly.sapienza-mahan.ir
-  port: 443
-  uuid: d230f0f7-6826-4f8e-8dbb-69ee2c837358
-  network: xhttp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: speedtest.net
-  flow: ''
-  client-fingerprint: firefox
-  packet-encoding: xudp
-  alpn:
-  - h2
-  - http/1.1
-- name: 'VLESS #124'
-  type: vless
-  server: snapp.ir
-  port: 80
-  uuid: 6a2405d9-61e2-4c74-a638-b2e2899e1995
-  network: ws
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: pa1.ghostantaniehh.ir
-  flow: ''
-  client-fingerprint: chrome
-  packet-encoding: xudp
-  ws-opts:
-    path: /
-    headers:
-      Host: pa1.ghostantaniehh.ir
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
-- name: 'VLESS #125'
+- name: 'VLESS #17'
   type: vless
   server: 51.158.206.93
   port: 23576
@@ -2592,7 +435,7 @@ proxies:
   reality-opts:
     public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
     short-id: '01'
-- name: 'VLESS #126'
+- name: 'VLESS #18'
   type: vless
   server: 57.129.137.55
   port: 443
@@ -2615,7 +458,7 @@ proxies:
       Host: sni.111000.v6.rocks
     max-early-data: 2048
     early-data-header-name: Sec-WebSocket-Protocol
-- name: 'VLESS #127'
+- name: 'VLESS #19'
   type: vless
   server: 172.64.147.227
   port: 80
@@ -2635,7 +478,7 @@ proxies:
       Host: tt.andishehparenting.com
     max-early-data: 2048
     early-data-header-name: Sec-WebSocket-Protocol
-- name: 'VLESS #128'
+- name: 'VLESS #20'
   type: vless
   server: 57.128.183.225
   port: 8443
@@ -2658,7 +501,7 @@ proxies:
       Host: sni.111000.v6.navy
     max-early-data: 2048
     early-data-header-name: Sec-WebSocket-Protocol
-- name: 'VLESS #129'
+- name: 'VLESS #21'
   type: vless
   server: cf3.danfeng.eu.org
   port: 8443
@@ -2681,7 +524,7 @@ proxies:
       Host: juzi8186.qea.ccwu.cc
     max-early-data: 2048
     early-data-header-name: Sec-WebSocket-Protocol
-- name: 'VLESS #130'
+- name: 'VLESS #22'
   type: vless
   server: 57.129.137.202
   port: 8443
@@ -2704,7 +547,7 @@ proxies:
       Host: sni.111000.indevs.in
     max-early-data: 2048
     early-data-header-name: Sec-WebSocket-Protocol
-- name: 'VLESS #131'
+- name: 'VLESS #23'
   type: vless
   server: uk1.fromblancwithlove.com
   port: 8443
@@ -2721,7 +564,7 @@ proxies:
   alpn:
   - h2
   - http/1.1
-- name: 'VLESS #132'
+- name: 'VLESS #24'
   type: vless
   server: cf3.danfeng.eu.org
   port: 8443
@@ -2744,7 +587,7 @@ proxies:
       Host: juzi8186.qea.ccwu.cc
     max-early-data: 2048
     early-data-header-name: Sec-WebSocket-Protocol
-- name: 'VLESS #133'
+- name: 'VLESS #25'
   type: vless
   server: 144.31.237.162
   port: 2053
@@ -2767,7 +610,30 @@ proxies:
       Host: sni.111000.v6.army
     max-early-data: 2048
     early-data-header-name: Sec-WebSocket-Protocol
-- name: 'VLESS #134'
+- name: 'VLESS #26'
+  type: vless
+  server: red.docos.tech
+  port: 443
+  uuid: 1b50eb2c-ee25-479e-b593-ec80db9a54a0
+  network: ws
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: red.docos.tech
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  alpn:
+  - h2
+  - http/1.1
+  ws-opts:
+    path: /red/
+    headers:
+      Host: red.docos.tech
+    max-early-data: 2048
+    early-data-header-name: Sec-WebSocket-Protocol
+- name: 'VLESS #27'
   type: vless
   server: 94.130.132.180
   port: 8443
@@ -2790,7 +656,7 @@ proxies:
       Host: sni.111000.indevs.in
     max-early-data: 2048
     early-data-header-name: Sec-WebSocket-Protocol
-- name: 'VLESS #135'
+- name: 'VLESS #28'
   type: vless
   server: 45.148.31.0
   port: 15855
@@ -2810,7 +676,7 @@ proxies:
       Host: 45.148.31.0
     max-early-data: 2048
     early-data-header-name: Sec-WebSocket-Protocol
-- name: 'VLESS #136'
+- name: 'VLESS #29'
   type: vless
   server: arvancloud.ir
   port: 80
@@ -2830,7 +696,7 @@ proxies:
       Host: samrexnet.ir
     max-early-data: 2048
     early-data-header-name: Sec-WebSocket-Protocol
-- name: 'VLESS #137'
+- name: 'VLESS #30'
   type: vless
   server: ip.sb
   port: 443
@@ -2853,6 +719,2148 @@ proxies:
       Host: 3-7ny.pages.dev
     max-early-data: 2048
     early-data-header-name: Sec-WebSocket-Protocol
+- name: 'VLESS #31'
+  type: vless
+  server: n3th3ryt.gxcore.net
+  port: 443
+  uuid: b6ce8a51-19b9-4979-91ba-b4298c26d5fc
+  network: grpc
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: n3th3ryt.gxcore.net
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  alpn:
+  - h2
+  - http/1.1
+  grpc-opts:
+    grpc-service-name: grpc
+  reality-opts:
+    public-key: KzSy2i45DrsFOfXXQ7ConynwqKOaH70pvpoMR4joMWU
+    short-id: d45feecd265c116d
+- name: 'VLESS #32'
+  type: vless
+  server: ciallo-egb.pages.dev
+  port: 2087
+  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  network: ws
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: CIallO-egB.pAGes.Dev
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  alpn:
+  - h2
+  - http/1.1
+  ws-opts:
+    path: /%2F
+    headers:
+      Host: CIallO-egB.pAGes.Dev
+    max-early-data: 2048
+    early-data-header-name: Sec-WebSocket-Protocol
+- name: 'VLESS #33'
+  type: vless
+  server: 104.16.158.162
+  port: 80
+  uuid: a7444b2b-20fb-461f-9840-63e5c8c7d883
+  network: ws
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: mute-violet-c674.poviy66273.workers.dev
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  ws-opts:
+    path: /
+    headers:
+      Host: mute-violet-c674.poviy66273.workers.dev
+    max-early-data: 2048
+    early-data-header-name: Sec-WebSocket-Protocol
+- name: 'VLESS #34'
+  type: vless
+  server: 144.31.233.81
+  port: 7443
+  uuid: 00492f4b-95d1-46d9-837a-ebf9c881d81e
+  network: grpc
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: apple.com
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  alpn:
+  - h2
+  - http/1.1
+  grpc-opts:
+    grpc-service-name: GunService
+  reality-opts:
+    public-key: E7Hb6k6CYEZ0Zoas5inuxx5jM1wks4b9gXSbWVizRxQ
+    short-id: d4bb8712c70539ef
+- name: 'VLESS #35'
+  type: vless
+  server: 104.194.159.207
+  port: 443
+  uuid: 3c81c716-4fd5-11f1-8a2c-525400a7149e
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.kleinanzeigen.de
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: XFv4Qy1Pfx_Wj_oLqIqfVpBiykT2zr35X0mwEOME2Wg
+    short-id: ''
+- name: 'VLESS #36'
+  type: vless
+  server: 185.158.133.138
+  port: 2096
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: sni.111000.indevs.in
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  alpn:
+  - h2
+  - http/1.1
+  ws-opts:
+    path: /
+    headers:
+      Host: sni.111000.indevs.in
+    max-early-data: 2048
+    early-data-header-name: Sec-WebSocket-Protocol
+- name: 'VLESS #37'
+  type: vless
+  server: 162.120.94.138
+  port: 2096
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: sni.111000.indevs.in
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  alpn:
+  - h2
+  - http/1.1
+  ws-opts:
+    path: /
+    headers:
+      Host: sni.111000.indevs.in
+    max-early-data: 2048
+    early-data-header-name: Sec-WebSocket-Protocol
+- name: 'VLESS #38'
+  type: vless
+  server: 176.124.223.138
+  port: 2096
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: sni.111000.indevs.in
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  alpn:
+  - h2
+  - http/1.1
+  ws-opts:
+    path: /
+    headers:
+      Host: sni.111000.indevs.in
+    max-early-data: 2048
+    early-data-header-name: Sec-WebSocket-Protocol
+- name: 'VLESS #39'
+  type: vless
+  server: 94.131.105.175
+  port: 443
+  uuid: 44b7a388-21ca-4af0-a16b-01e9e6ef04e1
+  network: ws
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: webmode.yota.ru
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /hSnh23IZa4CZTWQa78l9eM
+    headers:
+      Host: webmode.yota.ru
+    max-early-data: 2048
+    early-data-header-name: Sec-WebSocket-Protocol
+- name: 'VLESS #40'
+  type: vless
+  server: snapp.ir
+  port: 80
+  uuid: c6ceccbe-351b-444f-b7eb-2462fcdab45f
+  network: ws
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: ir3.cdnk1.cfd
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  ws-opts:
+    path: /?ed=2080
+    headers:
+      Host: ir3.cdnk1.cfd
+    max-early-data: 2048
+    early-data-header-name: Sec-WebSocket-Protocol
+- name: 'VLESS #41'
+  type: vless
+  server: gosuslugiru.outlinekeys.net
+  port: 443
+  uuid: 4cb46f0c-4f4e-468d-a834-bc2a4e404835
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: node12.telegavpn.org
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: WvNaAxI0W__qfUKbtysH4IwF155YENlv3PG6crCmPkA
+    short-id: ''
+- name: 'VLESS #42'
+  type: vless
+  server: 193.233.201.13
+  port: 443
+  uuid: 4cb46f0c-4f4e-468d-a834-bc2a4e404835
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: ads.x5.ru
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: WvNaAxI0W__qfUKbtysH4IwF155YENlv3PG6crCmPkA
+    short-id: ''
+- name: 'VLESS #43'
+  type: vless
+  server: 45.140.205.215
+  port: 443
+  uuid: 4cb46f0c-4f4e-468d-a834-bc2a4e404835
+  network: grpc
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: ads.x5.ru
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  alpn:
+  - h2
+  - http/1.1
+  grpc-opts:
+    grpc-service-name: xyz
+  reality-opts:
+    public-key: wSQIBnAc0cYO9JitaNcgZ2LwkTix0_dXVpDjnZxDrCE
+    short-id: ''
+- name: 'VLESS #44'
+  type: vless
+  server: 130.49.189.40
+  port: 443
+  uuid: 4cb46f0c-4f4e-468d-a834-bc2a4e404835
+  network: grpc
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: ads.x5.ru
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  alpn:
+  - h2
+  - http/1.1
+  grpc-opts:
+    grpc-service-name: xyz
+  reality-opts:
+    public-key: wSQIBnAc0cYO9JitaNcgZ2LwkTix0_dXVpDjnZxDrCE
+    short-id: 6ba85179e30d4fc2
+- name: 'VLESS #45'
+  type: vless
+  server: 83.147.255.191
+  port: 8443
+  uuid: aedb65ef-b2c9-4ce1-8a72-332a94a253f2
+  network: grpc
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: ads.x5.ru
+  flow: ''
+  client-fingerprint: qq
+  packet-encoding: xudp
+  alpn:
+  - h2
+  - http/1.1
+  grpc-opts:
+    grpc-service-name: xyz
+  reality-opts:
+    public-key: wSQIBnAc0cYO9JitaNcgZ2LwkTix0_dXVpDjnZxDrCE
+    short-id: 6ba85179e30d4fc2
+- name: 'VLESS #46'
+  type: vless
+  server: 144.31.24.85
+  port: 8443
+  uuid: aedb65ef-b2c9-4ce1-8a72-332a94a253f2
+  network: grpc
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: ads.x5.ru
+  flow: ''
+  client-fingerprint: qq
+  packet-encoding: xudp
+  alpn:
+  - h2
+  - http/1.1
+  grpc-opts:
+    grpc-service-name: xyz
+  reality-opts:
+    public-key: wSQIBnAc0cYO9JitaNcgZ2LwkTix0_dXVpDjnZxDrCE
+    short-id: 6ba85179e30d4fc2
+- name: 'VLESS #47'
+  type: vless
+  server: 79.137.198.154
+  port: 443
+  uuid: aedb65ef-b2c9-4ce1-8a72-332a94a253f2
+  network: grpc
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: ads.x5.ru
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  alpn:
+  - h2
+  - http/1.1
+  grpc-opts:
+    grpc-service-name: GunService
+  reality-opts:
+    public-key: XrXK3qb2CKCBP80Vkg3WfNBB4gpy4YOADmQ7mhHfDWE
+    short-id: ''
+- name: 'VLESS #48'
+  type: vless
+  server: gosuslugiru.outlinekeys.net
+  port: 443
+  uuid: aedb65ef-b2c9-4ce1-8a72-332a94a253f2
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: node12.telegavpn.org
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: WvNaAxI0W__qfUKbtysH4IwF155YENlv3PG6crCmPkA
+    short-id: ''
+- name: 'VLESS #49'
+  type: vless
+  server: 193.233.201.13
+  port: 443
+  uuid: aedb65ef-b2c9-4ce1-8a72-332a94a253f2
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: ads.x5.ru
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: WvNaAxI0W__qfUKbtysH4IwF155YENlv3PG6crCmPkA
+    short-id: ''
+- name: 'VLESS #50'
+  type: vless
+  server: 45.140.205.215
+  port: 443
+  uuid: aedb65ef-b2c9-4ce1-8a72-332a94a253f2
+  network: grpc
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: ads.x5.ru
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  alpn:
+  - h2
+  - http/1.1
+  grpc-opts:
+    grpc-service-name: xyz
+  reality-opts:
+    public-key: wSQIBnAc0cYO9JitaNcgZ2LwkTix0_dXVpDjnZxDrCE
+    short-id: ''
+- name: 'VLESS #51'
+  type: vless
+  server: 130.49.189.40
+  port: 443
+  uuid: aedb65ef-b2c9-4ce1-8a72-332a94a253f2
+  network: grpc
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: ads.x5.ru
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  alpn:
+  - h2
+  - http/1.1
+  grpc-opts:
+    grpc-service-name: xyz
+  reality-opts:
+    public-key: wSQIBnAc0cYO9JitaNcgZ2LwkTix0_dXVpDjnZxDrCE
+    short-id: 6ba85179e30d4fc2
+- name: 'VLESS #52'
+  type: vless
+  server: 83.147.255.191
+  port: 8443
+  uuid: 86f8a90e-b25a-492a-ac42-65b9756c9d67
+  network: grpc
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: ads.x5.ru
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  alpn:
+  - h2
+  - http/1.1
+  grpc-opts:
+    grpc-service-name: xyz
+  reality-opts:
+    public-key: wSQIBnAc0cYO9JitaNcgZ2LwkTix0_dXVpDjnZxDrCE
+    short-id: ''
+- name: 'VLESS #53'
+  type: vless
+  server: 144.31.24.85
+  port: 8443
+  uuid: 86f8a90e-b25a-492a-ac42-65b9756c9d67
+  network: grpc
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: ads.x5.ru
+  flow: ''
+  client-fingerprint: qq
+  packet-encoding: xudp
+  alpn:
+  - h2
+  - http/1.1
+  grpc-opts:
+    grpc-service-name: xyz
+  reality-opts:
+    public-key: wSQIBnAc0cYO9JitaNcgZ2LwkTix0_dXVpDjnZxDrCE
+    short-id: 6ba85179e30d4fc2
+- name: 'VLESS #54'
+  type: vless
+  server: 79.137.198.154
+  port: 443
+  uuid: 86f8a90e-b25a-492a-ac42-65b9756c9d67
+  network: grpc
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: ads.x5.ru
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  alpn:
+  - h2
+  - http/1.1
+  grpc-opts:
+    grpc-service-name: GunService
+  reality-opts:
+    public-key: XrXK3qb2CKCBP80Vkg3WfNBB4gpy4YOADmQ7mhHfDWE
+    short-id: ''
+- name: 'VLESS #55'
+  type: vless
+  server: gosuslugiru.outlinekeys.net
+  port: 443
+  uuid: 86f8a90e-b25a-492a-ac42-65b9756c9d67
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: node12.telegavpn.org
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: WvNaAxI0W__qfUKbtysH4IwF155YENlv3PG6crCmPkA
+    short-id: ''
+- name: 'VLESS #56'
+  type: vless
+  server: wp14.virgool.best
+  port: 55014
+  uuid: b01631fa-502b-497f-b8ed-2fda669667ad
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.digikala.com
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: vxdmULi_cO7dha2aQnsjSViARO15hvI9HWyo0pVPlkQ
+    short-id: c385
+- name: 'VLESS #57'
+  type: vless
+  server: snapp.ir
+  port: 8880
+  uuid: 6b361f77-da65-48b0-9467-0aeb00fc74a4
+  network: ws
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: wh.nexoratechcenter.ir
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  ws-opts:
+    path: /
+    headers:
+      Host: wh.nexoratechcenter.ir
+    max-early-data: 2048
+    early-data-header-name: Sec-WebSocket-Protocol
+- name: 'VLESS #58'
+  type: vless
+  server: snapp.ir
+  port: 8080
+  uuid: dc656dcf-27d6-45d8-9e95-2828c5f0ec41
+  network: ws
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: ts.programming-coding.ir
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  ws-opts:
+    path: /
+    headers:
+      Host: ts.programming-coding.ir
+    max-early-data: 2048
+    early-data-header-name: Sec-WebSocket-Protocol
+- name: 'VLESS #59'
+  type: vless
+  server: 2.144.21.44
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: sni.111000.indevs.in
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  alpn:
+  - h2
+  - http/1.1
+  ws-opts:
+    path: /?ed=2560&Telegram @DigiHubAI
+    headers:
+      Host: sni.111000.indevs.in
+    max-early-data: 2048
+    early-data-header-name: Sec-WebSocket-Protocol
+- name: 'VLESS #60'
+  type: vless
+  server: 185.143.233.235
+  port: 80
+  uuid: 0edaa453-6be7-4442-8449-d95d4e2dabfc
+  network: ws
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: Ld.artarona.ir
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  ws-opts:
+    path: /
+    headers:
+      Host: Ld.artarona.ir
+    max-early-data: 2048
+    early-data-header-name: Sec-WebSocket-Protocol
+- name: 'VLESS #61'
+  type: vless
+  server: varzesh3.com
+  port: 2095
+  uuid: 5a48bec8-0bf5-4ff9-a009-218d286f0f21
+  network: ws
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: H.goodphilips.ir
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  ws-opts:
+    path: /@Matinam844@Matinam844@Matinam844@Matinam844@Matinam844@Matinam844@Matinam844@Matinam844@Matinam844@Matinam844@Matinam844@Matinam844@Matinam844@Matinam844@Matinam844@Matinam844@Matinam844@Matinam844@Matinam844@Matinam844@Matinam844@Matinam844@Matinam844@Matinam844@Matinam844@Matinam844@Matinam844@Matinam844@Matinam844@Matinam844
+    headers:
+      Host: H.goodphilips.ir
+    max-early-data: 2048
+    early-data-header-name: Sec-WebSocket-Protocol
+- name: 'VLESS #62'
+  type: vless
+  server: 188.121.110.15
+  port: 8080
+  uuid: 7122f61f-cbbd-4098-b632-f7531b141d03
+  network: tcp
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: 188.121.110.15
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
+- name: 'VLESS #63'
+  type: vless
+  server: finally.dashivo.ir
+  port: 8080
+  uuid: c91cb9a5-b428-416b-9903-623add910594
+  network: ws
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: finally.dashivo.ir
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  ws-opts:
+    path: /
+    headers:
+      Host: finally.dashivo.ir
+    max-early-data: 2048
+    early-data-header-name: Sec-WebSocket-Protocol
+- name: 'VLESS #64'
+  type: vless
+  server: alihapps3.aghanami.ir
+  port: 80
+  uuid: c5edb38f-d322-45a5-a9f9-74ed19382eff
+  network: ws
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: alihapps3.aghanami.ir
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  ws-opts:
+    path: /
+    headers:
+      Host: alihapps3.aghanami.ir
+    max-early-data: 2048
+    early-data-header-name: Sec-WebSocket-Protocol
+- name: 'VLESS #65'
+  type: vless
+  server: snapp.ir
+  port: 80
+  uuid: 5f496166-f690-4033-84a1-8d628b020b5f
+  network: ws
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: kolp1.ketabastan.ir
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  ws-opts:
+    path: /
+    headers:
+      Host: kolp1.ketabastan.ir
+    max-early-data: 2048
+    early-data-header-name: Sec-WebSocket-Protocol
+- name: 'VLESS #66'
+  type: vless
+  server: snapp.ir
+  port: 443
+  uuid: 19c3239a-1ce4-4f7d-9fbc-c82a64f85110
+  network: xhttp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: dy.redordead.ir
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  alpn:
+  - h2
+  - http/1.1
+- name: 'VLESS #67'
+  type: vless
+  server: 188.121.124.181
+  port: 443
+  uuid: 38b6ad0f-b493-493a-8374-9b043ce1ff89
+  network: xhttp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: static.cdn.asset.aparat.com
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  alpn:
+  - h2
+  - http/1.1
+- name: 'VLESS #68'
+  type: vless
+  server: 185.243.48.205
+  port: 45003
+  uuid: a2129318-5a87-4724-87d5-e46685437c6e
+  network: xhttp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.aparat.com
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: VQAkDt9USo0NiyvgQKW3N4xn-DCBh-vUMJ2L6KSDPiA
+    short-id: 62a48d
+- name: 'VLESS #69'
+  type: vless
+  server: react.dev
+  port: 443
+  uuid: e11354d8-f297-4139-9813-aeab84f1cf0c
+  network: xhttp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: react.dev
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  alpn:
+  - h2
+- name: 'VLESS #70'
+  type: vless
+  server: wp14.virgool.best
+  port: 55014
+  uuid: b01631fa-502b-497f-b8ed-2fda669667ad
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.digikala.com
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: vxdmULi_cO7dha2aQnsjSViARO15hvI9HWyo0pVPlkQ
+    short-id: c385
+- name: 'VLESS #71'
+  type: vless
+  server: 185.143.234.235
+  port: 80
+  uuid: 7a9d10c8-db5e-446d-ba95-61c2f54e0bc9
+  network: ws
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: felorida2.azmabekaraziz.shop
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  ws-opts:
+    path: /
+    headers:
+      Host: felorida2.azmabekaraziz.shop
+    max-early-data: 2048
+    early-data-header-name: Sec-WebSocket-Protocol
+- name: 'VLESS #72'
+  type: vless
+  server: snapp.ir
+  port: 80
+  uuid: 20c33382-9f5a-4fe3-998b-1af9719f260a
+  network: ws
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: M1.snllshop.ir
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  ws-opts:
+    path: /
+    headers:
+      Host: M1.snllshop.ir
+    max-early-data: 2048
+    early-data-header-name: Sec-WebSocket-Protocol
+- name: 'VLESS #73'
+  type: vless
+  server: snapp.ir
+  port: 8080
+  uuid: 59bb1fa4-8c04-44af-bffb-efff394b75c2
+  network: ws
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: ir2.kokomokiyoo.ir
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  ws-opts:
+    path: /
+    headers:
+      Host: ir2.kokomokiyoo.ir
+    max-early-data: 2048
+    early-data-header-name: Sec-WebSocket-Protocol
+- name: 'VLESS #74'
+  type: vless
+  server: trex.docos.tech
+  port: 443
+  uuid: 69ab00e0-9230-424b-b1be-eaf9ec776ce8
+  network: ws
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: trex.docos.tech
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  alpn:
+  - h2
+  - http/1.1
+  ws-opts:
+    path: /vless-ws
+    headers:
+      Host: trex.docos.tech
+    max-early-data: 2048
+    early-data-header-name: Sec-WebSocket-Protocol
+- name: 'VLESS #75'
+  type: vless
+  server: men2.gafe-lorbad.ir
+  port: 80
+  uuid: 92b93f5d-af24-420e-95fb-0120f55b4481
+  network: ws
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: s2.fasrrapido.ir
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  ws-opts:
+    path: /
+    headers:
+      Host: s2.fasrrapido.ir
+    max-early-data: 2048
+    early-data-header-name: Sec-WebSocket-Protocol
+- name: 'VLESS #76'
+  type: vless
+  server: snapp.ir
+  port: 80
+  uuid: a469bf88-8f4c-4b39-81c8-736acb3e1a39
+  network: ws
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: biawban.yeksancloud.ir
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  ws-opts:
+    path: /
+    headers:
+      Host: biawban.yeksancloud.ir
+    max-early-data: 2048
+    early-data-header-name: Sec-WebSocket-Protocol
+- name: 'VLESS #77'
+  type: vless
+  server: zir.alihapps3.aghanami.ir
+  port: 80
+  uuid: 2eb3d1b6-f542-4258-a219-4406256d0d23
+  network: ws
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: zir.alihapps3.aghanami.ir
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  ws-opts:
+    path: /
+    headers:
+      Host: zir.alihapps3.aghanami.ir
+    max-early-data: 2048
+    early-data-header-name: Sec-WebSocket-Protocol
+- name: 'VLESS #78'
+  type: vless
+  server: snapp.ir
+  port: 8080
+  uuid: 01b9bb98-ee11-4362-b397-8666d2abc97b
+  network: ws
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: pro.babayaroabasino.ir
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  ws-opts:
+    path: /wp-content/addons/downloader.php
+    headers:
+      Host: pro.babayaroabasino.ir
+    max-early-data: 2048
+    early-data-header-name: Sec-WebSocket-Protocol
+- name: 'VLESS #79'
+  type: vless
+  server: zone.ca.f2zone.ir
+  port: 17759
+  uuid: 3cbad916-d882-4773-8dfb-15564f2d29fe
+  network: tcp
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: telewebion.com
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
+- name: 'VLESS #80'
+  type: vless
+  server: snapp.ir
+  port: 2052
+  uuid: dae2ddc6-a892-495f-a001-181cec56ad12
+  network: ws
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: p1.razstar.ir
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  ws-opts:
+    path: /
+    headers:
+      Host: p1.razstar.ir
+    max-early-data: 2048
+    early-data-header-name: Sec-WebSocket-Protocol
+- name: 'VLESS #81'
+  type: vless
+  server: space.zenvault.ir
+  port: 80
+  uuid: 08d9ece3-1218-437c-b43d-ce6d89225634
+  network: ws
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: space.zenvault.ir
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  ws-opts:
+    path: /
+    headers:
+      Host: space.zenvault.ir
+    max-early-data: 2048
+    early-data-header-name: Sec-WebSocket-Protocol
+- name: 'VLESS #82'
+  type: vless
+  server: 50.7.4.106
+  port: 443
+  uuid: d6ef4a50-ea08-4f35-ba27-b58a86487dd0
+  network: ws
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: wro.u3er1.ir
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  alpn:
+  - h2
+  - http/1.1
+  ws-opts:
+    path: /ws
+    headers:
+      Host: wro.u3er1.ir
+    max-early-data: 2048
+    early-data-header-name: Sec-WebSocket-Protocol
+- name: 'VLESS #83'
+  type: vless
+  server: javid.izadyar.shop
+  port: 443
+  uuid: 4bdd11a6-c993-499d-b19c-85bfee509ff6
+  network: ws
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: javid.izadyar.shop
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /
+    headers:
+      Host: javid.izadyar.shop
+    max-early-data: 2048
+    early-data-header-name: Sec-WebSocket-Protocol
+- name: 'VLESS #84'
+  type: vless
+  server: snapp.ir
+  port: 80
+  uuid: 6a2405d9-61e2-4c74-a638-b2e2899e1995
+  network: ws
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: pa1.ghostantaniehh.ir
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  ws-opts:
+    path: /
+    headers:
+      Host: pa1.ghostantaniehh.ir
+    max-early-data: 2048
+    early-data-header-name: Sec-WebSocket-Protocol
+- name: 'VLESS #85'
+  type: vless
+  server: 45.159.148.34
+  port: 8585
+  uuid: 82849133-de8c-48ef-8479-ec67859c58e8
+  network: tcp
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: speedtest.net
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
+- name: 'VLESS #86'
+  type: vless
+  server: 188.121.124.181
+  port: 443
+  uuid: 6e0676e7-3cbf-4c82-be05-4841e688c92c
+  network: xhttp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: static.cdn.asset.aparat.com
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  alpn:
+  - h2
+  - http/1.1
+- name: 'VLESS #87'
+  type: vless
+  server: rose8.lhpuniversity.online
+  port: 41488
+  uuid: 7e7a4ad3-4b94-47e7-b692-b77f94fc25f9
+  network: tcp
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: aparat.com
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
+- name: 'VLESS #88'
+  type: vless
+  server: snapp.ir
+  port: 8080
+  uuid: 18434758-3b1b-4494-99c6-b16fac9b76dd
+  network: ws
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: Cyrus.zomavo.ir
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  ws-opts:
+    path: /Embestpro1
+    headers:
+      Host: Cyrus.zomavo.ir
+    max-early-data: 2048
+    early-data-header-name: Sec-WebSocket-Protocol
+- name: 'VLESS #89'
+  type: vless
+  server: du.mobileemdad.top
+  port: 42542
+  uuid: 2d2c29fd-ed07-43ee-9514-e62f1645fb6c
+  network: tcp
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: du.mobileemdad.top
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
+- name: 'VLESS #90'
+  type: vless
+  server: 188.121.124.181
+  port: 443
+  uuid: 186935d7-d82c-4a3f-8890-6cf2f58aaf1a
+  network: xhttp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: static.cdn.asset.aparat.com
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  alpn:
+  - h2
+  - http/1.1
+- name: 'VLESS #91'
+  type: vless
+  server: 193.151.155.162
+  port: 443
+  uuid: 7048d91d-cca9-49aa-8037-90c86b408422
+  network: xhttp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: cdn.gapfilm.org
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  alpn:
+  - h2
+  - http/1.1
+- name: 'VLESS #92'
+  type: vless
+  server: varzesh3.com
+  port: 443
+  uuid: c387b0f2-5d9e-4c95-882d-1d5eeb443ce2
+  network: ws
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: nginx-3b1e7ed824-abol.apps.ir-central1.arvancaas.ir
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  alpn:
+  - h2
+  - http/1.1
+  ws-opts:
+    path: /movie
+    headers:
+      Host: nginx-3b1e7ed824-abol.apps.ir-central1.arvancaas.ir
+    max-early-data: 2048
+    early-data-header-name: Sec-WebSocket-Protocol
+- name: 'VLESS #93'
+  type: vless
+  server: 50.7.5.83
+  port: 443
+  uuid: Troll_hastam
+  network: xhttp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: kind.sigs.k8s.io
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  alpn:
+  - h2
+  - http/1.1
+- name: 'VLESS #94'
+  type: vless
+  server: b.pabloping.cloud
+  port: 2052
+  uuid: 2271c50f-ac7a-4d7f-8b04-64085b0daa56
+  network: xhttp
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: nlbv1.pabloping.pro
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
+- name: 'VLESS #95'
+  type: vless
+  server: snapp.ir
+  port: 80
+  uuid: 6a2405d9-61e2-4c74-a638-b2e2899e1995
+  network: ws
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: pa1.ghostantaniehh.ir
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  ws-opts:
+    path: /
+    headers:
+      Host: pa1.ghostantaniehh.ir
+    max-early-data: 2048
+    early-data-header-name: Sec-WebSocket-Protocol
+- name: 'VLESS #96'
+  type: vless
+  server: finally.dashivo.ir
+  port: 8080
+  uuid: c91cb9a5-b428-416b-9903-623add910594
+  network: ws
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: finally.dashivo.ir
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  ws-opts:
+    path: /
+    headers:
+      Host: finally.dashivo.ir
+    max-early-data: 2048
+    early-data-header-name: Sec-WebSocket-Protocol
+- name: 'VLESS #97'
+  type: vless
+  server: 185.143.233.5
+  port: 2087
+  uuid: c4bf78f1-fb2c-4170-a715-0ebe446de5ac
+  network: ws
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: sub.sesrsa.com
+  flow: ''
+  client-fingerprint: firefox
+  packet-encoding: xudp
+  alpn:
+  - h2
+  - http/1.1
+  ws-opts:
+    path: /
+    headers:
+      Host: sub.sesrsa.com
+    max-early-data: 2048
+    early-data-header-name: Sec-WebSocket-Protocol
+- name: 'VLESS #98'
+  type: vless
+  server: arvancloud.ir
+  port: 80
+  uuid: ced89321-0fbd-4c55-9874-ec5f2ded420b
+  network: ws
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: samrexnet.ir
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  ws-opts:
+    path: /
+    headers:
+      Host: samrexnet.ir
+    max-early-data: 2048
+    early-data-header-name: Sec-WebSocket-Protocol
+- name: 'VLESS #99'
+  type: vless
+  server: nobitex.ir
+  port: 80
+  uuid: 061183f9-a722-4707-9160-3a2ee47209b3
+  network: ws
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: support.mindigosupport.ir
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  ws-opts:
+    path: /
+    headers:
+      Host: support.mindigosupport.ir
+    max-early-data: 2048
+    early-data-header-name: Sec-WebSocket-Protocol
+- name: 'VLESS #100'
+  type: vless
+  server: snapp.ir
+  port: 80
+  uuid: 017998c6-da9e-4edf-a5d1-0d7dc68f5097
+  network: ws
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: iranfuture.musicritmic.ir
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  ws-opts:
+    path: /
+    headers:
+      Host: iranfuture.musicritmic.ir
+    max-early-data: 2048
+    early-data-header-name: Sec-WebSocket-Protocol
+- name: 'VLESS #101'
+  type: vless
+  server: 87.236.215.18
+  port: 443
+  uuid: d4d3840c-14a4-40b6-9953-30c5dd0adeba
+  network: xhttp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: cdn.gapfilm.org
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  alpn:
+  - h2
+  - http/1.1
+- name: 'VLESS #102'
+  type: vless
+  server: 94.130.70.160
+  port: 443
+  uuid: Troll_hastam
+  network: xhttp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: gateway-api.sigs.k8s.io
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  alpn:
+  - h2
+  - http/1.1
+- name: 'VLESS #103'
+  type: vless
+  server: 87.236.215.18
+  port: 443
+  uuid: 445f9e29-bb36-4bac-918a-eeba70755f65
+  network: xhttp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: cdn.gapfilm.org
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  alpn:
+  - h2
+  - http/1.1
+- name: 'VLESS #104'
+  type: vless
+  server: snapp.ir
+  port: 80
+  uuid: edb305b4-4ab3-4e93-8b8f-11c4175308a7
+  network: ws
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: down.speedtell.ir
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  ws-opts:
+    path: /
+    headers:
+      Host: down.speedtell.ir
+    max-early-data: 2048
+    early-data-header-name: Sec-WebSocket-Protocol
+- name: 'VLESS #105'
+  type: vless
+  server: new.nexusteam.site
+  port: 2086
+  uuid: 7de63b71-3131-4794-9b9e-5790f9092709
+  network: ws
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: new.nexusteam.site
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  ws-opts:
+    path: /@Nexus_v2ray
+    headers:
+      Host: new.nexusteam.site
+    max-early-data: 2048
+    early-data-header-name: Sec-WebSocket-Protocol
+- name: 'VLESS #106'
+  type: vless
+  server: milli.gold
+  port: 8080
+  uuid: 84d5e9c4-8fd7-4508-bf25-48e74ee22888
+  network: ws
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: blog.tahadevblog.ir
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  ws-opts:
+    path: /blogfa?ed=2560
+    headers:
+      Host: blog.tahadevblog.ir
+    max-early-data: 2048
+    early-data-header-name: Sec-WebSocket-Protocol
+- name: 'VLESS #107'
+  type: vless
+  server: 87.236.215.18
+  port: 443
+  uuid: d880291c-59fe-49a9-837f-cfe697cdd6e1
+  network: xhttp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: cdn.gapfilm.org
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  alpn:
+  - h2
+  - http/1.1
+- name: 'VLESS #108'
+  type: vless
+  server: 87.236.215.18
+  port: 443
+  uuid: 22077b92-e322-4954-a250-337cdfa6e868
+  network: xhttp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: cdn.gapfilm.org
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  alpn:
+  - h2
+  - http/1.1
+- name: 'VLESS #109'
+  type: vless
+  server: milad1.cloudzeusggwp.com.tr
+  port: 36266
+  uuid: 879c96f2-fae7-4555-84f2-b47612c9021d
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.aparat.com
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: 1VJvRSqXw-Gcwf7TGQfq-AoT8pa2qN-2IMLVHiZvHiw
+    short-id: d9919852
+- name: 'VLESS #110'
+  type: vless
+  server: snapp.ir
+  port: 80
+  uuid: 6c02e19e-adc3-46a2-b287-7d228a4d079d
+  network: ws
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: ss10.limitless-cloud.ir
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  ws-opts:
+    path: /graphql?ed=2560
+    headers:
+      Host: ss10.limitless-cloud.ir
+    max-early-data: 2048
+    early-data-header-name: Sec-WebSocket-Protocol
+- name: 'VLESS #111'
+  type: vless
+  server: 24dc5c91924c5346.freestly.sapienza-mahan.ir
+  port: 443
+  uuid: d230f0f7-6826-4f8e-8dbb-69ee2c837358
+  network: xhttp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: speedtest.net
+  flow: ''
+  client-fingerprint: firefox
+  packet-encoding: xudp
+  alpn:
+  - h2
+  - http/1.1
+- name: 'VLESS #112'
+  type: vless
+  server: snapp.ir
+  port: 80
+  uuid: 18f9098f-1d6e-431f-abc6-91b6c732b303
+  network: ws
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: cdn2.softnetconnect.ir
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  ws-opts:
+    path: /
+    headers:
+      Host: cdn2.softnetconnect.ir
+    max-early-data: 2048
+    early-data-header-name: Sec-WebSocket-Protocol
+- name: 'VLESS #113'
+  type: vless
+  server: 87.236.215.18
+  port: 443
+  uuid: 96458141-c862-47f7-947d-088eb3764009
+  network: xhttp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: cdn.gapfilm.org
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  alpn:
+  - h2
+  - http/1.1
+- name: 'VLESS #114'
+  type: vless
+  server: 193.151.143.138
+  port: 201
+  uuid: 042bcb1f-23dd-4ae9-9dc0-e301f89a5359
+  network: tcp
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: 193.151.143.138
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
+- name: 'VLESS #115'
+  type: vless
+  server: glob.thisiswe.uno
+  port: 2053
+  uuid: d4f44cf4-cbca-4313-9156-5a8498b20387
+  network: ws
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: godplease11.thisiswe.uno
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /
+    headers:
+      Host: godplease11.thisiswe.uno
+    max-early-data: 2048
+    early-data-header-name: Sec-WebSocket-Protocol
+- name: 'VLESS #116'
+  type: vless
+  server: tapsi.ir
+  port: 80
+  uuid: d54214cb-ebac-4f19-b637-adf72599c335
+  network: ws
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: Za.movizdl.ir
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  ws-opts:
+    path: /cdn
+    headers:
+      Host: Za.movizdl.ir
+    max-early-data: 2048
+    early-data-header-name: Sec-WebSocket-Protocol
+- name: 'VLESS #117'
+  type: vless
+  server: glob.thisiswe.uno
+  port: 2053
+  uuid: ee9b0614-50ec-41b6-951b-e1d5d755fa4b
+  network: ws
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: cd11.thisiswe.uno
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  alpn:
+  - networld_vpn-channel@.networld_vpn-channel@.networld_vpn-channel@.networld_vpn-channel@.networld_vpn-channel@.networld_vpn-channel@.networld_vpn-
+  ws-opts:
+    path: /
+    headers:
+      Host: cd11.thisiswe.uno
+    max-early-data: 2048
+    early-data-header-name: Sec-WebSocket-Protocol
+- name: 'VLESS #118'
+  type: vless
+  server: 185.143.233.5
+  port: 2087
+  uuid: 6af45c63-342c-4a63-bbed-cee81821dbe3
+  network: ws
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: sub.sesrsa.com
+  flow: ''
+  client-fingerprint: firefox
+  packet-encoding: xudp
+  alpn:
+  - h2
+  - http/1.1
+  ws-opts:
+    path: /
+    headers:
+      Host: sub.sesrsa.com
+    max-early-data: 2048
+    early-data-header-name: Sec-WebSocket-Protocol
+- name: 'VLESS #119'
+  type: vless
+  server: 109.206.254.93
+  port: 33618
+  uuid: 9ab68b23-fabd-49da-9e45-b4fd5052a90a
+  network: tcp
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: 109.206.254.93
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
+- name: 'VLESS #120'
+  type: vless
+  server: snapp.ir
+  port: 2052
+  uuid: 1e626a22-fbce-43fe-b8e9-d16e979a386f
+  network: ws
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: s.softtiger.ir
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  ws-opts:
+    path: /
+    headers:
+      Host: s.softtiger.ir
+    max-early-data: 2048
+    early-data-header-name: Sec-WebSocket-Protocol
+- name: 'VLESS #121'
+  type: vless
+  server: 2.144.21.240
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: sni.jpmj.dev
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  alpn:
+  - h2
+  - http/1.1
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: sni.jpmj.dev
+    max-early-data: 2048
+    early-data-header-name: Sec-WebSocket-Protocol
+- name: 'VLESS #122'
+  type: vless
+  server: 104.17.150.99
+  port: 80
+  uuid: 388a6c57-87e7-420b-afe2-b3eb670fd7da
+  network: ws
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: vip.yaml7.ggff.net
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  ws-opts:
+    path: /
+    headers:
+      Host: vip.yaml7.ggff.net
+    max-early-data: 2048
+    early-data-header-name: Sec-WebSocket-Protocol
+- name: 'VLESS #123'
+  type: vless
+  server: 185.143.234.96
+  port: 80
+  uuid: 36326231-3138-4166-b834-303439306131
+  network: ws
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: dl.tgmovie.bond
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  ws-opts:
+    path: /l/w/aXD2QyDdS6vRQpxs?ed=2047
+    headers:
+      Host: dl.tgmovie.bond
+    max-early-data: 2048
+    early-data-header-name: Sec-WebSocket-Protocol
+- name: 'VLESS #124'
+  type: vless
+  server: 46.101.136.162
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: sni.latonyamadeline.ndjp.net
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  alpn:
+  - h2
+  - http/1.1
+  ws-opts:
+    path: /?https%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3=
+    headers:
+      Host: sni.latonyamadeline.ndjp.net
+    max-early-data: 2048
+    early-data-header-name: Sec-WebSocket-Protocol
+- name: 'VLESS #125'
+  type: vless
+  server: snapp.ir
+  port: 80
+  uuid: b8545bb9-adf4-4bb8-a58b-cb3994cde763
+  network: ws
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: ss9.limitless-cloud.ir
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  ws-opts:
+    path: /graphql?ed=2560
+    headers:
+      Host: ss9.limitless-cloud.ir
+    max-early-data: 2048
+    early-data-header-name: Sec-WebSocket-Protocol
+- name: 'VLESS #126'
+  type: vless
+  server: snapp.ir
+  port: 80
+  uuid: 3d6d89ff-f34d-4ff7-b1b8-71568d89beb8
+  network: ws
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: ss3.limitless-cloud.ir
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  ws-opts:
+    path: /graphql?ed=2560
+    headers:
+      Host: ss3.limitless-cloud.ir
+    max-early-data: 2048
+    early-data-header-name: Sec-WebSocket-Protocol
+- name: 'VLESS #127'
+  type: vless
+  server: 185.143.233.235
+  port: 8080
+  uuid: 0595727a-c536-4bcf-b110-528e7f5806e2
+  network: ws
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: d5.artarona.ir
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  ws-opts:
+    path: /
+    headers:
+      Host: d5.artarona.ir
+    max-early-data: 2048
+    early-data-header-name: Sec-WebSocket-Protocol
+- name: 'VLESS #128'
+  type: vless
+  server: 185.143.233.5
+  port: 2087
+  uuid: daf8a45c-5a32-47a5-8da1-db3e323a2fbb
+  network: ws
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: sub.sesrsa.com
+  flow: ''
+  client-fingerprint: firefox
+  packet-encoding: xudp
+  alpn:
+  - h2
+  - http/1.1
+  ws-opts:
+    path: /
+    headers:
+      Host: sub.sesrsa.com
+    max-early-data: 2048
+    early-data-header-name: Sec-WebSocket-Protocol
+- name: 'VLESS #129'
+  type: vless
+  server: blubank.sb24.ir
+  port: 80
+  uuid: f4af15b0-8994-48bf-b0d2-117a49f3f503
+  network: ws
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: static.aliyanserver.ir
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  ws-opts:
+    path: /
+    headers:
+      Host: static.aliyanserver.ir
+    max-early-data: 2048
+    early-data-header-name: Sec-WebSocket-Protocol
+- name: 'VLESS #130'
+  type: vless
+  server: anten.ir
+  port: 80
+  uuid: 49a41d23-a0b4-4208-b910-df298f2c2158
+  network: ws
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: TU.amirenzohost.ir
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  ws-opts:
+    path: '@TunizoNET'
+    headers:
+      Host: TU.amirenzohost.ir
+    max-early-data: 2048
+    early-data-header-name: Sec-WebSocket-Protocol
+- name: 'VLESS #131'
+  type: vless
+  server: arvancloud.ir
+  port: 80
+  uuid: ad148fcd-aefa-47e8-8c7e-5fc242f9e142
+  network: tcp
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: gh2
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
+- name: 'VLESS #132'
+  type: vless
+  server: snapp.ir
+  port: 80
+  uuid: 76ae5a8e-f504-44a9-8c6e-e8c2657665c5
+  network: ws
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: 1.jojo.avenflow.ir
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  ws-opts:
+    path: /?ed=20
+    headers:
+      Host: 1.jojo.avenflow.ir
+    max-early-data: 2048
+    early-data-header-name: Sec-WebSocket-Protocol
+- name: 'VLESS #133'
+  type: vless
+  server: 5.145.114.132
+  port: 41794
+  uuid: 0dda9711-df88-48b9-a7a0-28b384013470
+  network: tcp
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: 5.145.114.132
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
+- name: 'VLESS #134'
+  type: vless
+  server: 188.121.124.181
+  port: 443
+  uuid: 00ba6032-1ed2-46e0-b242-d5fe4d59a1de
+  network: xhttp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: static.cdn.asset.aparat.com
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  alpn:
+  - h2
+  - http/1.1
+- name: 'VLESS #135'
+  type: vless
+  server: snapp.ir
+  port: 8080
+  uuid: 09e930ef-6288-4179-b055-b8382942a180
+  network: ws
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: ts.programming-coding.ir
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  ws-opts:
+    path: /
+    headers:
+      Host: ts.programming-coding.ir
+    max-early-data: 2048
+    early-data-header-name: Sec-WebSocket-Protocol
+- name: 'VLESS #136'
+  type: vless
+  server: ohio12.newcallapphelper.online
+  port: 80
+  uuid: 03b2cce0-d94e-4cab-90de-ce412b626839
+  network: ws
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: ohio12.newcallapphelper.online
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  ws-opts:
+    path: /
+    headers:
+      Host: ohio12.newcallapphelper.online
+    max-early-data: 2048
+    early-data-header-name: Sec-WebSocket-Protocol
+- name: 'VLESS #137'
+  type: vless
+  server: 188.121.123.73
+  port: 443
+  uuid: 2d6a8b6e-831b-48b5-a7df-4a430521de92
+  network: ws
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: plus.sabavision.com
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  alpn:
+  - h2
+  - http/1.1
+  ws-opts:
+    path: /ws?ed=500
+    headers:
+      Host: plus.sabavision.com
+    max-early-data: 2048
+    early-data-header-name: Sec-WebSocket-Protocol
+- name: 'VLESS #138'
+  type: vless
+  server: n1.linkinfo.cloud
+  port: 2082
+  uuid: 02583eac-aef0-408c-a1ca-93098f96ed54
+  network: ws
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: n1.linkinfo.cloud
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
+  ws-opts:
+    path: /
+    headers:
+      Host: n1.linkinfo.cloud
+    max-early-data: 2048
+    early-data-header-name: Sec-WebSocket-Protocol
+- name: 'VLESS #139'
+  type: vless
+  server: ir-frankfurt.samanpy.ir
+  port: 19785
+  uuid: 8e5cd658-cde6-48d3-8ab5-2c9ca1b194d2
+  network: tcp
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: ir-frankfurt.samanpy.ir
+  flow: ''
+  client-fingerprint: chrome
+  packet-encoding: xudp
 proxy-groups:
 - name: Proxy Select
   type: select
@@ -2995,6 +3003,8 @@ proxy-groups:
   - 'VLESS #135'
   - 'VLESS #136'
   - 'VLESS #137'
+  - 'VLESS #138'
+  - 'VLESS #139'
   - DIRECT
 - name: Auto Select
   type: url-test
@@ -3136,6 +3146,8 @@ proxy-groups:
   - 'VLESS #135'
   - 'VLESS #136'
   - 'VLESS #137'
+  - 'VLESS #138'
+  - 'VLESS #139'
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 150

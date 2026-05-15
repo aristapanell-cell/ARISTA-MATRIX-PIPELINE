@@ -140,7 +140,7 @@ proxies:
       Host: sni.111000.dynv6.net
 - name: 'Trojan #5'
   type: trojan
-  server: 52.28.27.2
+  server: 51.44.198.68
   port: 22222
   password: telegram-id-privatevpns
   network: tcp
@@ -153,19 +153,6 @@ proxies:
   - http/1.1
 - name: 'Trojan #6'
   type: trojan
-  server: 51.44.198.68
-  port: 22222
-  password: telegram-id-privatevpns
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-- name: 'Trojan #7'
-  type: trojan
   server: 13.38.241.41
   port: 22222
   password: telegram-id-privatevpns
@@ -177,7 +164,7 @@ proxies:
   client-fingerprint: chrome
   alpn:
   - http/1.1
-- name: 'Trojan #8'
+- name: 'Trojan #7'
   type: trojan
   server: 15.237.55.229
   port: 22222
@@ -202,7 +189,6 @@ proxy-groups:
   - 'Trojan #5'
   - 'Trojan #6'
   - 'Trojan #7'
-  - 'Trojan #8'
   - DIRECT
 - name: Auto Select
   type: url-test
@@ -214,7 +200,6 @@ proxy-groups:
   - 'Trojan #5'
   - 'Trojan #6'
   - 'Trojan #7'
-  - 'Trojan #8'
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 150
