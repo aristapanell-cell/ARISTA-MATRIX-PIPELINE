@@ -78,98 +78,6 @@ sniffer:
 proxies:
 - name: 'ARISTA #1'
   type: vmess
-  server: www.arvancloud.ir
-  port: 2082
-  uuid: f4ff777e-9adb-43f8-84da-5866f150ee86
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: januray.helxx.ir
-  client-fingerprint: ''
-  ws-opts:
-    path: /newserver
-    headers:
-      Host: januray.helxx.ir
-- name: 'ARISTA #2'
-  type: vmess
-  server: shop.fastit.top
-  port: 6144
-  uuid: 70ce59eb-3ea0-4966-8141-49f368af46a1
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: shop.fastit.top
-  client-fingerprint: ''
-- name: 'ARISTA #3'
-  type: vmess
-  server: 188.213.199.47
-  port: 43366
-  uuid: 067ae20f-7bd9-4cd6-b0c3-2fea677755ff
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: filmnet.ir
-  client-fingerprint: ''
-- name: 'ARISTA #4'
-  type: vmess
-  server: www.arvancloud.ir
-  port: 2082
-  uuid: a01f4cc9-b290-4dcd-b687-aef8cb10ce65
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: januray.helxx.ir
-  client-fingerprint: ''
-  ws-opts:
-    path: /newserver
-    headers:
-      Host: januray.helxx.ir
-- name: 'ARISTA #5'
-  type: vmess
-  server: av.reata.ir
-  port: 33795
-  uuid: c94dda40-44a6-413f-815e-0a7925b94b0a
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: av.reata.ir
-  client-fingerprint: ''
-- name: 'ARISTA #6'
-  type: vmess
-  server: av.reata.ir
-  port: 33795
-  uuid: c94dda40-44a6-413f-815e-0a7925b94b0a
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: av.reata.ir
-  client-fingerprint: ''
-- name: 'ARISTA #7'
-  type: vmess
   server: 185.236.38.44
   port: 19946
   uuid: c9e42537-8652-4a4c-85d3-0d36abf38f88
@@ -182,7 +90,7 @@ proxies:
   tcp-fast-open: true
   servername: 185.236.38.44
   client-fingerprint: ''
-- name: 'ARISTA #8'
+- name: 'ARISTA #2'
   type: vmess
   server: snapp.ir
   port: 8080
@@ -200,7 +108,7 @@ proxies:
     path: /
     headers:
       Host: dldisk.nr2coren.ir
-- name: 'ARISTA #9'
+- name: 'ARISTA #3'
   type: vmess
   server: b51d64cb-c5d6-4791-8ecf-0a6d8d71c717.wtf
   port: 21901
@@ -214,6 +122,56 @@ proxies:
   tcp-fast-open: true
   servername: b51d64cb-c5d6-4791-8ecf-0a6d8d71c717.wtf
   client-fingerprint: ''
+- name: 'ARISTA #4'
+  type: vmess
+  server: 188.213.199.47
+  port: 43366
+  uuid: 067ae20f-7bd9-4cd6-b0c3-2fea677755ff
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: filmnet.ir
+  client-fingerprint: ''
+- name: 'ARISTA #5'
+  type: vmess
+  server: www.arvancloud.ir
+  port: 2082
+  uuid: a01f4cc9-b290-4dcd-b687-aef8cb10ce65
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: januray.helxx.ir
+  client-fingerprint: ''
+  ws-opts:
+    path: /newserver
+    headers:
+      Host: januray.helxx.ir
+- name: 'ARISTA #6'
+  type: vmess
+  server: www.arvancloud.ir
+  port: 2082
+  uuid: a01f4cc9-b290-4dcd-b687-aef8cb10ce65
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: januray.helxx.ir
+  client-fingerprint: ''
+  ws-opts:
+    path: /newserver
+    headers:
+      Host: januray.helxx.ir
 proxy-groups:
 - name: Proxy Select
   type: select
@@ -225,9 +183,6 @@ proxy-groups:
   - 'ARISTA #4'
   - 'ARISTA #5'
   - 'ARISTA #6'
-  - 'ARISTA #7'
-  - 'ARISTA #8'
-  - 'ARISTA #9'
   - DIRECT
 - name: Auto Select
   type: url-test
@@ -238,9 +193,6 @@ proxy-groups:
   - 'ARISTA #4'
   - 'ARISTA #5'
   - 'ARISTA #6'
-  - 'ARISTA #7'
-  - 'ARISTA #8'
-  - 'ARISTA #9'
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 150

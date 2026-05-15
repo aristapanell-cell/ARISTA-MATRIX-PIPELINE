@@ -78,6 +78,98 @@ sniffer:
 proxies:
 - name: 'Trojan #1'
   type: trojan
+  server: 167.68.11.253
+  port: 443
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: Koma-YT.PAGeS.Dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /trTelegram🇨🇳+@WangCai2
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+- name: 'Trojan #2'
+  type: trojan
+  server: 92.243.74.253
+  port: 443
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: Koma-YT.PAGeS.Dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /trTelegram🇨🇳+@WangCai2
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+- name: 'Trojan #3'
+  type: trojan
+  server: 162.159.153.212
+  port: 2087
+  password: r137979f
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: sheleqaz.emotionreza.workers.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: sheleqaz.emotionreza.workers.dev
+- name: 'Trojan #4'
+  type: trojan
+  server: 104.17.185.207
+  port: 443
+  password: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: sni.111000.dynv6.net
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /?proxyip=ip.111000.de5.net:443
+    headers:
+      Host: sni.111000.dynv6.net
+- name: 'Trojan #5'
+  type: trojan
+  server: 152.53.200.163
+  port: 8443
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: Koma-YT.PAGeS.Dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /trTelegram🇨🇳+@WangCai2
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+- name: 'Trojan #6'
+  type: trojan
+  server: 104.18.16.56
+  port: 443
+  password: humanity
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.creationlong.org
+  client-fingerprint: chrome
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.creationlong.org
+- name: 'Trojan #7'
+  type: trojan
   server: 8.6.112.0
   port: 443
   password: humanity
@@ -91,24 +183,9 @@ proxies:
     path: /assignment
     headers:
       Host: www.multiplydose.com
-- name: 'Trojan #2'
+- name: 'Trojan #8'
   type: trojan
-  server: 188.114.98.0
-  port: 443
-  password: humanity
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.calmlunch.com
-  client-fingerprint: chrome
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.calmlunch.com
-- name: 'Trojan #3'
-  type: trojan
-  server: 172.64.152.23
+  server: 8.6.112.0
   port: 443
   password: humanity
   network: ws
@@ -121,22 +198,7 @@ proxies:
     path: /assignment
     headers:
       Host: www.multiplydose.com
-- name: 'Trojan #4'
-  type: trojan
-  server: 125.227.86.47
-  port: 443
-  password: 0a9f1f5a397bd427
-  network: grpc
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: TG.freecodes
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  grpc-opts:
-    grpc-service-name: db
-- name: 'Trojan #5'
+- name: 'Trojan #9'
   type: trojan
   server: 13.39.94.180
   port: 22222
@@ -159,6 +221,10 @@ proxy-groups:
   - 'Trojan #3'
   - 'Trojan #4'
   - 'Trojan #5'
+  - 'Trojan #6'
+  - 'Trojan #7'
+  - 'Trojan #8'
+  - 'Trojan #9'
   - DIRECT
 - name: Auto Select
   type: url-test
@@ -168,6 +234,10 @@ proxy-groups:
   - 'Trojan #3'
   - 'Trojan #4'
   - 'Trojan #5'
+  - 'Trojan #6'
+  - 'Trojan #7'
+  - 'Trojan #8'
+  - 'Trojan #9'
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 150
