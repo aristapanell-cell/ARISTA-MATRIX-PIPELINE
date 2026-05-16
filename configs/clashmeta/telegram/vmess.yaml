@@ -92,6 +92,48 @@ proxies:
   client-fingerprint: ''
 - name: 'ARISTA #2'
   type: vmess
+  server: b51d64cb-c5d6-4791-8ecf-0a6d8d71c717.wtf
+  port: 21930
+  uuid: 97132b07-c50d-48f1-a569-ef6b2d792097
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: b51d64cb-c5d6-4791-8ecf-0a6d8d71c717.wtf
+  client-fingerprint: ''
+- name: 'ARISTA #3'
+  type: vmess
+  server: b51d64cb-c5d6-4791-8ecf-0a6d8d71c717.wtf
+  port: 21930
+  uuid: f164594a-4e06-47df-9264-07fcd7f0acf1
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: b51d64cb-c5d6-4791-8ecf-0a6d8d71c717.wtf
+  client-fingerprint: ''
+- name: 'ARISTA #4'
+  type: vmess
+  server: b51d64cb-c5d6-4791-8ecf-0a6d8d71c717.wtf
+  port: 21953
+  uuid: 5710fd2a-5256-498e-963a-6a7b6949bccd
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: b51d64cb-c5d6-4791-8ecf-0a6d8d71c717.wtf
+  client-fingerprint: ''
+- name: 'ARISTA #5'
+  type: vmess
   server: ak.reata.ir
   port: 16482
   uuid: 3d322eba-f7b8-4a84-bdeb-fcce9286351c
@@ -104,7 +146,21 @@ proxies:
   tcp-fast-open: true
   servername: ak.reata.ir
   client-fingerprint: ''
-- name: 'ARISTA #3'
+- name: 'ARISTA #6'
+  type: vmess
+  server: b51d64cb-c5d6-4791-8ecf-0a6d8d71c717.wtf
+  port: 21958
+  uuid: 39d6990b-f757-4703-a7f9-df266505b63d
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: b51d64cb-c5d6-4791-8ecf-0a6d8d71c717.wtf
+  client-fingerprint: ''
+- name: 'ARISTA #7'
   type: vmess
   server: network.spacestar.best
   port: 2082
@@ -122,11 +178,11 @@ proxies:
     path: /newserver
     headers:
       Host: januray.helxx.ir
-- name: 'ARISTA #4'
+- name: 'ARISTA #8'
   type: vmess
-  server: b51d64cb-c5d6-4791-8ecf-0a6d8d71c717.wtf
-  port: 21930
-  uuid: 97132b07-c50d-48f1-a569-ef6b2d792097
+  server: client.serverkhalij.top
+  port: 4362
+  uuid: 3c55964b-3fa2-48e6-8aa4-0c5d287eaa73
   alterId: 0
   cipher: auto
   network: tcp
@@ -134,13 +190,13 @@ proxies:
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: b51d64cb-c5d6-4791-8ecf-0a6d8d71c717.wtf
+  servername: client.serverkhalij.top
   client-fingerprint: ''
-- name: 'ARISTA #5'
+- name: 'ARISTA #9'
   type: vmess
-  server: b51d64cb-c5d6-4791-8ecf-0a6d8d71c717.wtf
-  port: 21930
-  uuid: f164594a-4e06-47df-9264-07fcd7f0acf1
+  server: ak.reata.ir
+  port: 16482
+  uuid: 3d322eba-f7b8-4a84-bdeb-fcce9286351c
   alterId: 0
   cipher: auto
   network: tcp
@@ -148,35 +204,7 @@ proxies:
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: b51d64cb-c5d6-4791-8ecf-0a6d8d71c717.wtf
-  client-fingerprint: ''
-- name: 'ARISTA #6'
-  type: vmess
-  server: b51d64cb-c5d6-4791-8ecf-0a6d8d71c717.wtf
-  port: 21953
-  uuid: 5710fd2a-5256-498e-963a-6a7b6949bccd
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: b51d64cb-c5d6-4791-8ecf-0a6d8d71c717.wtf
-  client-fingerprint: ''
-- name: 'ARISTA #7'
-  type: vmess
-  server: b51d64cb-c5d6-4791-8ecf-0a6d8d71c717.wtf
-  port: 21958
-  uuid: 39d6990b-f757-4703-a7f9-df266505b63d
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: b51d64cb-c5d6-4791-8ecf-0a6d8d71c717.wtf
+  servername: ak.reata.ir
   client-fingerprint: ''
 proxy-groups:
 - name: Proxy Select
@@ -190,6 +218,8 @@ proxy-groups:
   - 'ARISTA #5'
   - 'ARISTA #6'
   - 'ARISTA #7'
+  - 'ARISTA #8'
+  - 'ARISTA #9'
   - DIRECT
 - name: Auto Select
   type: url-test
@@ -201,6 +231,8 @@ proxy-groups:
   - 'ARISTA #5'
   - 'ARISTA #6'
   - 'ARISTA #7'
+  - 'ARISTA #8'
+  - 'ARISTA #9'
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 150
