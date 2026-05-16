@@ -78,21 +78,13 @@ sniffer:
 proxies:
 - name: 'ARISTA🔥 #1'
   type: ss
-  server: 154.18.239.126
-  port: 37425
-  cipher: chacha20-ietf-poly1305
-  password: eLPlIVuRZ6UJyapVDeT++l7fYC0uowXJFlb9qhntAd4=
-  udp: true
-  tcp-fast-open: true
-- name: 'ARISTA🔥 #2'
-  type: ss
   server: 109.122.196.106
   port: 443
   cipher: chacha20-ietf-poly1305
   password: w3JDLilehmBXnpPZp8Mcrj
   udp: true
   tcp-fast-open: true
-- name: 'ARISTA🔥 #3'
+- name: 'ARISTA🔥 #2'
   type: ss
   server: 109.176.229.55
   port: 8388
@@ -100,12 +92,20 @@ proxies:
   password: X6btbRvJCo3uTQ--yaaT8Mvh0CgqhYTL
   udp: true
   tcp-fast-open: true
-- name: 'ARISTA🔥 #4'
+- name: 'ARISTA🔥 #3'
   type: ss
   server: 80.71.152.33
   port: 8388
   cipher: chacha20-ietf-poly1305
   password: X6btbRvJCo3uTQ--yaaT8Mvh0CgqhYTL
+  udp: true
+  tcp-fast-open: true
+- name: 'ARISTA🔥 #4'
+  type: ss
+  server: 154.18.239.126
+  port: 37425
+  cipher: chacha20-ietf-poly1305
+  password: eLPlIVuRZ6UJyapVDeT++l7fYC0uowXJFlb9qhntAd4=
   udp: true
   tcp-fast-open: true
 - name: 'ARISTA🔥 #5'
@@ -158,10 +158,26 @@ proxies:
   tcp-fast-open: true
 - name: 'ARISTA🔥 #11'
   type: ss
-  server: switcher-nick-croquet.freesocks.work
-  port: 443
+  server: 107.172.250.161
+  port: 59556
   cipher: chacha20-ietf-poly1305
-  password: wwzVn2ZnHfqYa6l8EWh3eY
+  password: QTmLViU4VEmuwbOxUw4IXd
+  udp: true
+  tcp-fast-open: true
+- name: 'ARISTA🔥 #12'
+  type: ss
+  server: 149.22.87.241
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+  tcp-fast-open: true
+- name: 'ARISTA🔥 #13'
+  type: ss
+  server: 82.38.31.149
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
   tcp-fast-open: true
 proxy-groups:
@@ -180,6 +196,8 @@ proxy-groups:
   - 'ARISTA🔥 #9'
   - 'ARISTA🔥 #10'
   - 'ARISTA🔥 #11'
+  - 'ARISTA🔥 #12'
+  - 'ARISTA🔥 #13'
   - DIRECT
 - name: Auto Select
   type: url-test
@@ -195,6 +213,8 @@ proxy-groups:
   - 'ARISTA🔥 #9'
   - 'ARISTA🔥 #10'
   - 'ARISTA🔥 #11'
+  - 'ARISTA🔥 #12'
+  - 'ARISTA🔥 #13'
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 150
