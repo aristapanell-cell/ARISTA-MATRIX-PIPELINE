@@ -78,34 +78,32 @@ sniffer:
 proxies:
 - name: 'Trojan #1'
   type: trojan
-  server: 104.18.16.56
-  port: 443
-  password: humanity
+  server: 77.221.157.251
+  port: 2083
+  password: 8r%3C%5B9%27l6hAO%238ZQi
   network: ws
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: www.creationlong.org
+  servername: Koma-YT.PAGeS.Dev
   client-fingerprint: chrome
   ws-opts:
-    path: /assignment
+    path: /trTelegram🇨🇳+@WangCai2
     headers:
-      Host: www.creationlong.org
+      Host: Koma-YT.PAGeS.Dev
 - name: 'Trojan #2'
   type: trojan
-  server: 104.19.229.21
-  port: 443
-  password: humanity
-  network: ws
+  server: 63.183.179.231
+  port: 22222
+  password: telegram-id-privatevpns
+  network: tcp
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: www.creationlong.org
+  servername: trojan.burgerip.co.uk
   client-fingerprint: chrome
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.creationlong.org
+  alpn:
+  - http/1.1
 - name: 'Trojan #3'
   type: trojan
   server: 162.159.36.20
@@ -138,6 +136,21 @@ proxies:
     path: /trTelegram🇨🇳+@WangCai2
     headers:
       Host: Koma-YT.PAGeS.Dev
+- name: 'Trojan #5'
+  type: trojan
+  server: 46.101.160.68
+  port: 2096
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: Koma-YT.PAGeS.Dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /trTelegram🇨🇳+@WangCai2
+    headers:
+      Host: Koma-YT.PAGeS.Dev
 proxy-groups:
 - name: Proxy Select
   type: select
@@ -147,6 +160,7 @@ proxy-groups:
   - 'Trojan #2'
   - 'Trojan #3'
   - 'Trojan #4'
+  - 'Trojan #5'
   - DIRECT
 - name: Auto Select
   type: url-test
@@ -155,6 +169,7 @@ proxy-groups:
   - 'Trojan #2'
   - 'Trojan #3'
   - 'Trojan #4'
+  - 'Trojan #5'
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 150
