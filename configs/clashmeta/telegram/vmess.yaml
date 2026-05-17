@@ -78,34 +78,6 @@ sniffer:
 proxies:
 - name: 'ARISTA #1'
   type: vmess
-  server: ak.reata.ir
-  port: 16482
-  uuid: 3d322eba-f7b8-4a84-bdeb-fcce9286351c
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: ak.reata.ir
-  client-fingerprint: ''
-- name: 'ARISTA #2'
-  type: vmess
-  server: s82.faststrong.sbs
-  port: 35768
-  uuid: dd308322-1c16-4309-b840-e5db3df54f1a
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: s82.faststrong.sbs
-  client-fingerprint: ''
-- name: 'ARISTA #3'
-  type: vmess
   server: network.spacestar.best
   port: 2082
   uuid: f243d3f8-77ae-4c0d-add9-c82e32172b74
@@ -122,35 +94,7 @@ proxies:
     path: /newserver
     headers:
       Host: januray.helxx.ir
-- name: 'ARISTA #4'
-  type: vmess
-  server: b51d64cb-c5d6-4791-8ecf-0a6d8d71c717.wtf
-  port: 21958
-  uuid: 39d6990b-f757-4703-a7f9-df266505b63d
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: b51d64cb-c5d6-4791-8ecf-0a6d8d71c717.wtf
-  client-fingerprint: ''
-- name: 'ARISTA #5'
-  type: vmess
-  server: 185.236.38.44
-  port: 19946
-  uuid: c9e42537-8652-4a4c-85d3-0d36abf38f88
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 185.236.38.44
-  client-fingerprint: ''
-- name: 'ARISTA #6'
+- name: 'ARISTA #2'
   type: vmess
   server: b51d64cb-c5d6-4791-8ecf-0a6d8d71c717.wtf
   port: 21951
@@ -164,7 +108,7 @@ proxies:
   tcp-fast-open: true
   servername: b51d64cb-c5d6-4791-8ecf-0a6d8d71c717.wtf
   client-fingerprint: ''
-- name: 'ARISTA #7'
+- name: 'ARISTA #3'
   type: vmess
   server: 165.140.216.141
   port: 443
@@ -177,6 +121,62 @@ proxies:
   skip-cert-verify: false
   tcp-fast-open: true
   servername: 165.140.216.141
+  client-fingerprint: ''
+- name: 'ARISTA #4'
+  type: vmess
+  server: s82.faststrong.sbs
+  port: 35768
+  uuid: dd308322-1c16-4309-b840-e5db3df54f1a
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: s82.faststrong.sbs
+  client-fingerprint: ''
+- name: 'ARISTA #5'
+  type: vmess
+  server: ak.reata.ir
+  port: 16482
+  uuid: 3d322eba-f7b8-4a84-bdeb-fcce9286351c
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: ak.reata.ir
+  client-fingerprint: ''
+- name: 'ARISTA #6'
+  type: vmess
+  server: b51d64cb-c5d6-4791-8ecf-0a6d8d71c717.wtf
+  port: 21958
+  uuid: 39d6990b-f757-4703-a7f9-df266505b63d
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: b51d64cb-c5d6-4791-8ecf-0a6d8d71c717.wtf
+  client-fingerprint: ''
+- name: 'ARISTA #7'
+  type: vmess
+  server: 185.236.38.44
+  port: 19946
+  uuid: c9e42537-8652-4a4c-85d3-0d36abf38f88
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: 185.236.38.44
   client-fingerprint: ''
 proxy-groups:
 - name: Proxy Select
