@@ -78,77 +78,6 @@ sniffer:
 proxies:
 - name: 'Trojan #1'
   type: trojan
-  server: 63.184.236.74
-  port: 22222
-  password: telegram-id-privatevpns
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-- name: 'Trojan #2'
-  type: trojan
-  server: 15.224.82.53
-  port: 22222
-  password: telegram-id-privatevpns
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-- name: 'Trojan #3'
-  type: trojan
-  server: 51.44.62.234
-  port: 22222
-  password: telegram-id-privatevpns
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-- name: 'Trojan #4'
-  type: trojan
-  server: 104.17.101.139
-  port: 443
-  password: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: sni.111000.dynv6.net
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /?proxyip=ip.111000.de5.net%3A443
-    headers:
-      Host: sni.111000.dynv6.net
-- name: 'Trojan #5'
-  type: trojan
-  server: 46.229.253.73
-  port: 8443
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: Koma-YT.PAGeS.Dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /trTelegram🇨🇳+@WangCai2
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-- name: 'Trojan #6'
-  type: trojan
   server: 172.64.146.129
   port: 443
   password: 6202b230-417c-4d8e-b624-0f71afa9c75d
@@ -164,17 +93,58 @@ proxies:
     path: /?proxyip=ip.111000.de5.net:443
     headers:
       Host: sni.111000.dynv6.net
-- name: 'Trojan #7'
+- name: 'Trojan #2'
   type: trojan
-  server: dateandusage.a
-  port: 8443
-  password: iVfmEiZ7kuZT1PDOxigN9A
+  server: 51.44.62.234
+  port: 22222
+  password: telegram-id-privatevpns
   network: tcp
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: dateandusage.a
+  servername: trojan.burgerip.co.uk
   client-fingerprint: chrome
+  alpn:
+  - http/1.1
+- name: 'Trojan #3'
+  type: trojan
+  server: 3.77.116.109
+  port: 22222
+  password: telegram-id-privatevpns
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+- name: 'Trojan #4'
+  type: trojan
+  server: 45.12.146.179
+  port: 4443
+  password: strong-secret-pass-777
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: 45.12.146.179
+  client-fingerprint: chrome
+- name: 'Trojan #5'
+  type: trojan
+  server: 5.188.118.92
+  port: 8443
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: Koma-YT.PAGeS.Dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /trTelegram🇨🇳+@WangCai2
+    headers:
+      Host: Koma-YT.PAGeS.Dev
 proxy-groups:
 - name: Proxy Select
   type: select
@@ -185,8 +155,6 @@ proxy-groups:
   - 'Trojan #3'
   - 'Trojan #4'
   - 'Trojan #5'
-  - 'Trojan #6'
-  - 'Trojan #7'
   - DIRECT
 - name: Auto Select
   type: url-test
@@ -196,8 +164,6 @@ proxy-groups:
   - 'Trojan #3'
   - 'Trojan #4'
   - 'Trojan #5'
-  - 'Trojan #6'
-  - 'Trojan #7'
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 150

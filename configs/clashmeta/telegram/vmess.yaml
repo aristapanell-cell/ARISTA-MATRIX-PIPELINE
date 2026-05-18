@@ -78,18 +78,22 @@ sniffer:
 proxies:
 - name: 'ARISTA #1'
   type: vmess
-  server: freegonet.wirobike.ir
-  port: 2626
-  uuid: 1e6225de-583c-44a0-a3ca-12572dd5d97a
+  server: 154.205.136.122
+  port: 37849
+  uuid: 30e88f67-8445-43ca-ff2b-961bbf6339fc
   alterId: 0
   cipher: auto
-  network: tcp
+  network: ws
   tls: false
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: freegonet.wirobike.ir
-  client-fingerprint: ''
+  servername: 154.205.136.122
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: 154.205.136.122
 - name: 'ARISTA #2'
   type: vmess
   server: freegonet.wirobike.ir
@@ -105,20 +109,6 @@ proxies:
   servername: freegonet.wirobike.ir
   client-fingerprint: ''
 - name: 'ARISTA #3'
-  type: vmess
-  server: 95.38.164.61
-  port: 2626
-  uuid: 24036708-93b1-4c07-b35d-03f9afe3b63b
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 95.38.164.61
-  client-fingerprint: ''
-- name: 'ARISTA #4'
   type: vmess
   server: cip.salimore.com
   port: 443
@@ -136,7 +126,7 @@ proxies:
     path: /ws/
     headers:
       Host: cip.salimore.com
-- name: 'ARISTA #5'
+- name: 'ARISTA #4'
   type: vmess
   server: cip.salimore.com
   port: 443
@@ -154,7 +144,35 @@ proxies:
     path: /ws/
     headers:
       Host: cip.salimore.com
+- name: 'ARISTA #5'
+  type: vmess
+  server: b51d64cb-c5d6-4791-8ecf-0a6d8d71c717.wtf
+  port: 22131
+  uuid: 1ff414a3-b946-41ca-9366-01935c86afd0
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: b51d64cb-c5d6-4791-8ecf-0a6d8d71c717.wtf
+  client-fingerprint: ''
 - name: 'ARISTA #6'
+  type: vmess
+  server: 95.38.164.61
+  port: 2626
+  uuid: 24036708-93b1-4c07-b35d-03f9afe3b63b
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: 95.38.164.61
+  client-fingerprint: ''
+- name: 'ARISTA #7'
   type: vmess
   server: 95.38.164.61
   port: 2626
@@ -168,6 +186,20 @@ proxies:
   tcp-fast-open: true
   servername: 95.38.164.61
   client-fingerprint: chrome
+- name: 'ARISTA #8'
+  type: vmess
+  server: freegonet.wirobike.ir
+  port: 2626
+  uuid: 1e6225de-583c-44a0-a3ca-12572dd5d97a
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: freegonet.wirobike.ir
+  client-fingerprint: ''
 proxy-groups:
 - name: Proxy Select
   type: select
@@ -179,6 +211,8 @@ proxy-groups:
   - 'ARISTA #4'
   - 'ARISTA #5'
   - 'ARISTA #6'
+  - 'ARISTA #7'
+  - 'ARISTA #8'
   - DIRECT
 - name: Auto Select
   type: url-test
@@ -189,6 +223,8 @@ proxy-groups:
   - 'ARISTA #4'
   - 'ARISTA #5'
   - 'ARISTA #6'
+  - 'ARISTA #7'
+  - 'ARISTA #8'
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 150
