@@ -76,14 +76,6 @@ sniffer:
       - 2087
       - 2096
 proxies:
-- name: 'ARISTA🔥 #1'
-  type: ss
-  server: 109.104.155.45
-  port: 41348
-  cipher: chacha20-ietf-poly1305
-  password: NVcw9OTGwmThWmhs1uh7rrIJcVz7ln96ifYZiv4zsWvToTjg
-  udp: true
-  tcp-fast-open: true
 - name: 'ARISTA🔥 #2'
   type: ss
   server: 92.118.112.203
@@ -166,18 +158,82 @@ proxies:
   tcp-fast-open: true
 - name: 'ARISTA🔥 #12'
   type: ss
-  server: 193.135.174.135
+  server: 109.104.155.45
+  port: 41348
+  cipher: chacha20-ietf-poly1305
+  password: NVcw9OTGwmThWmhs1uh7rrIJcVz7ln96ifYZiv4zsWvToTjg
+  udp: true
+  tcp-fast-open: true
+- name: 'ARISTA🔥 #13'
+  type: ss
+  server: 23.95.76.59
   port: 990
   cipher: chacha20-ietf-poly1305
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   udp: true
   tcp-fast-open: true
-- name: 'ARISTA🔥 #13'
+- name: 'ARISTA🔥 #14'
   type: ss
-  server: 144.126.145.77
+  server: 141.98.101.182
   port: 443
-  cipher: aes-256-gcm
-  password: QzM0NfuMNngbVnZK
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+  tcp-fast-open: true
+- name: 'ARISTA🔥 #15'
+  type: ss
+  server: 45.15.185.70
+  port: 990
+  cipher: chacha20-ietf-poly1305
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+  udp: true
+  tcp-fast-open: true
+- name: 'ARISTA🔥 #16'
+  type: ss
+  server: r3mrcg0011499tl.cybervena.com
+  port: 50099
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+  udp: true
+  tcp-fast-open: true
+- name: 'ARISTA🔥 #17'
+  type: ss
+  server: r3mrcg007147vhp.cybervena.com
+  port: 50099
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+  udp: true
+  tcp-fast-open: true
+- name: 'ARISTA🔥 #18'
+  type: ss
+  server: r3mrcg00129437x.cybervena.com
+  port: 50099
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+  udp: true
+  tcp-fast-open: true
+- name: 'ARISTA🔥 #19'
+  type: ss
+  server: nbmrcg0034686rw.cybervena.com
+  port: 50099
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+  udp: true
+  tcp-fast-open: true
+- name: 'ARISTA🔥 #20'
+  type: ss
+  server: tinkered-pennies-puppies.freesocks.work
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: hbGrpfvNrJsUmKmPbR3iY2
+  udp: true
+  tcp-fast-open: true
+- name: 'ARISTA🔥 #21'
+  type: ss
+  server: 37.143.130.203
+  port: 990
+  cipher: chacha20-ietf-poly1305
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   udp: true
   tcp-fast-open: true
 proxy-groups:
@@ -185,7 +241,6 @@ proxy-groups:
   type: select
   proxies:
   - Auto Select
-  - 'ARISTA🔥 #1'
   - 'ARISTA🔥 #2'
   - 'ARISTA🔥 #3'
   - 'ARISTA🔥 #4'
@@ -198,11 +253,18 @@ proxy-groups:
   - 'ARISTA🔥 #11'
   - 'ARISTA🔥 #12'
   - 'ARISTA🔥 #13'
+  - 'ARISTA🔥 #14'
+  - 'ARISTA🔥 #15'
+  - 'ARISTA🔥 #16'
+  - 'ARISTA🔥 #17'
+  - 'ARISTA🔥 #18'
+  - 'ARISTA🔥 #19'
+  - 'ARISTA🔥 #20'
+  - 'ARISTA🔥 #21'
   - DIRECT
 - name: Auto Select
   type: url-test
   proxies:
-  - 'ARISTA🔥 #1'
   - 'ARISTA🔥 #2'
   - 'ARISTA🔥 #3'
   - 'ARISTA🔥 #4'
@@ -215,6 +277,14 @@ proxy-groups:
   - 'ARISTA🔥 #11'
   - 'ARISTA🔥 #12'
   - 'ARISTA🔥 #13'
+  - 'ARISTA🔥 #14'
+  - 'ARISTA🔥 #15'
+  - 'ARISTA🔥 #16'
+  - 'ARISTA🔥 #17'
+  - 'ARISTA🔥 #18'
+  - 'ARISTA🔥 #19'
+  - 'ARISTA🔥 #20'
+  - 'ARISTA🔥 #21'
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 150
