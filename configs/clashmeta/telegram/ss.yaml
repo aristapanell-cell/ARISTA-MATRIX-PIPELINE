@@ -86,29 +86,21 @@ proxies:
   tcp-fast-open: true
 - name: 'ARISTA🔥 #2'
   type: ss
-  server: 193.29.139.206
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: 4a2rfixophdjffa8KVA4Aa
-  udp: true
-  tcp-fast-open: true
-- name: 'ARISTA🔥 #3'
-  type: ss
-  server: 92.118.112.203
-  port: 41348
-  cipher: chacha20-ietf-poly1305
-  password: 66iAPUHyyA3YxBb3DmloTuArM0IiPeY2HCoH3m
-  udp: true
-  tcp-fast-open: true
-- name: 'ARISTA🔥 #4'
-  type: ss
   server: 109.104.155.45
   port: 41348
   cipher: chacha20-ietf-poly1305
   password: NVcw9OTGwmThWmhs1uh7rrIJcVz7ln96ifYZiv4zsWvToTjg
   udp: true
   tcp-fast-open: true
-- name: 'ARISTA🔥 #5'
+- name: 'ARISTA🔥 #3'
+  type: ss
+  server: 193.29.139.206
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: 4a2rfixophdjffa8KVA4Aa
+  udp: true
+  tcp-fast-open: true
+- name: 'ARISTA🔥 #4'
   type: ss
   server: 104.192.227.162
   port: 443
@@ -116,12 +108,20 @@ proxies:
   password: 91LFVJhY6a7f8KeJPeuYln
   udp: true
   tcp-fast-open: true
-- name: 'ARISTA🔥 #6'
+- name: 'ARISTA🔥 #5'
   type: ss
   server: 107.172.250.161
   port: 59556
   cipher: chacha20-ietf-poly1305
   password: QTmLViU4VEmuwbOxUw4IXd
+  udp: true
+  tcp-fast-open: true
+- name: 'ARISTA🔥 #6'
+  type: ss
+  server: 92.118.112.203
+  port: 41348
+  cipher: chacha20-ietf-poly1305
+  password: 66iAPUHyyA3YxBb3DmloTuArM0IiPeY2HCoH3m
   udp: true
   tcp-fast-open: true
 - name: 'ARISTA🔥 #7'
@@ -140,6 +140,14 @@ proxies:
   password: 4iF5nYyTMSQNAbPBDEcEdk
   udp: true
   tcp-fast-open: true
+- name: 'ARISTA🔥 #9'
+  type: ss
+  server: 46.101.196.138
+  port: 23243
+  cipher: chacha20-ietf-poly1305
+  password: Q7cjiVD0oKNE2o9sUnZKQg
+  udp: true
+  tcp-fast-open: true
 proxy-groups:
 - name: Proxy Select
   type: select
@@ -153,6 +161,7 @@ proxy-groups:
   - 'ARISTA🔥 #6'
   - 'ARISTA🔥 #7'
   - 'ARISTA🔥 #8'
+  - 'ARISTA🔥 #9'
   - DIRECT
 - name: Auto Select
   type: url-test
@@ -165,6 +174,7 @@ proxy-groups:
   - 'ARISTA🔥 #6'
   - 'ARISTA🔥 #7'
   - 'ARISTA🔥 #8'
+  - 'ARISTA🔥 #9'
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 150
