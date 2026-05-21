@@ -93,8 +93,8 @@ proxies:
 - name: 'ARISTA #2'
   type: vmess
   server: b51d64cb-c5d6-4791-8ecf-0a6d8d71c717.wtf
-  port: 22401
-  uuid: 903a1676-a232-491a-bfd8-9e34d96c2c03
+  port: 21083
+  uuid: 83dd0fc2-c507-44bb-be45-9f2f29842b2c
   alterId: 0
   cipher: auto
   network: tcp
@@ -108,7 +108,7 @@ proxies:
   type: vmess
   server: b51d64cb-c5d6-4791-8ecf-0a6d8d71c717.wtf
   port: 22301
-  uuid: 16563c51-2db2-4b50-a3f1-572b632c7342
+  uuid: c0d7c2ee-87ed-499e-a0cc-eaff16f563bb
   alterId: 0
   cipher: auto
   network: tcp
@@ -132,48 +132,6 @@ proxies:
   tcp-fast-open: true
   servername: b51d64cb-c5d6-4791-8ecf-0a6d8d71c717.wtf
   client-fingerprint: ''
-- name: 'ARISTA #5'
-  type: vmess
-  server: b51d64cb-c5d6-4791-8ecf-0a6d8d71c717.wtf
-  port: 22157
-  uuid: 27c7f7db-b35e-4bde-b3d3-14f5a2d778ab
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: b51d64cb-c5d6-4791-8ecf-0a6d8d71c717.wtf
-  client-fingerprint: ''
-- name: 'ARISTA #6'
-  type: vmess
-  server: b51d64cb-c5d6-4791-8ecf-0a6d8d71c717.wtf
-  port: 22201
-  uuid: 1b637500-129b-4a18-9e39-46e61d35d6a5
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: b51d64cb-c5d6-4791-8ecf-0a6d8d71c717.wtf
-  client-fingerprint: ''
-- name: 'ARISTA #7'
-  type: vmess
-  server: b51d64cb-c5d6-4791-8ecf-0a6d8d71c717.wtf
-  port: 22301
-  uuid: c0d7c2ee-87ed-499e-a0cc-eaff16f563bb
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: b51d64cb-c5d6-4791-8ecf-0a6d8d71c717.wtf
-  client-fingerprint: ''
 proxy-groups:
 - name: Proxy Select
   type: select
@@ -183,9 +141,6 @@ proxy-groups:
   - 'ARISTA #2'
   - 'ARISTA #3'
   - 'ARISTA #4'
-  - 'ARISTA #5'
-  - 'ARISTA #6'
-  - 'ARISTA #7'
   - DIRECT
 - name: Auto Select
   type: url-test
@@ -194,9 +149,6 @@ proxy-groups:
   - 'ARISTA #2'
   - 'ARISTA #3'
   - 'ARISTA #4'
-  - 'ARISTA #5'
-  - 'ARISTA #6'
-  - 'ARISTA #7'
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 150
