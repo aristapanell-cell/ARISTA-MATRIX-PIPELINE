@@ -78,35 +78,20 @@ sniffer:
 proxies:
 - name: 'Trojan #1'
   type: trojan
-  server: 37.46.19.79
-  port: 8443
-  password: 8r%3C%5B9%27l6hAO%238ZQi
+  server: snapp.ir
+  port: 2086
+  password: 7G2nYjAyik
   network: ws
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: Koma-YT.PAGeS.Dev
+  servername: max1.sohrab172.ir
   client-fingerprint: chrome
   ws-opts:
-    path: /trTelegram🇨🇳+@WangCai2
+    path: /
     headers:
-      Host: Koma-YT.PAGeS.Dev
+      Host: max1.sohrab172.ir
 - name: 'Trojan #2'
-  type: trojan
-  server: 193.151.152.206
-  port: 40443
-  password: humanity
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.ignitelimit.com
-  client-fingerprint: chrome
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.ignitelimit.com
-- name: 'Trojan #3'
   type: trojan
   server: 62.60.244.195
   port: 8443
@@ -121,7 +106,7 @@ proxies:
     path: /trTelegram🇨🇳 @WangCai2
     headers:
       Host: Koma-YT.PAGeS.Dev
-- name: 'Trojan #4'
+- name: 'Trojan #3'
   type: trojan
   server: 31.169.127.103
   port: 8443
@@ -136,24 +121,39 @@ proxies:
     path: /trTelegram🇨🇳+@WangCai2
     headers:
       Host: Koma-YT.PAGeS.Dev
-- name: 'Trojan #5'
+- name: 'Trojan #4'
   type: trojan
-  server: 2.144.22.10
-  port: 40443
-  password: humanity
+  server: 194.120.116.68
+  port: 2053
+  password: 8r%3C%5B9%27l6hAO%238ZQi
   network: ws
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: www.creationlong.org
+  servername: Koma-YT.PAGeS.Dev
   client-fingerprint: chrome
   ws-opts:
-    path: /assignment
+    path: /trTelegram🇨🇳+@WangCai2
     headers:
-      Host: www.creationlong.org
+      Host: Koma-YT.PAGeS.Dev
+- name: 'Trojan #5'
+  type: trojan
+  server: 94.242.53.94
+  port: 8443
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: Koma-YT.PAGeS.Dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /trTelegram🇨🇳+@WangCai2
+    headers:
+      Host: Koma-YT.PAGeS.Dev
 - name: 'Trojan #6'
   type: trojan
-  server: 85.198.11.172
+  server: 2.144.2.245
   port: 40443
   password: humanity
   network: ws
@@ -168,19 +168,19 @@ proxies:
       Host: www.ignitelimit.com
 - name: 'Trojan #7'
   type: trojan
-  server: snapp.ir
-  port: 2086
-  password: 7G2nYjAyik
+  server: snappfood.ir
+  port: 80
+  password: 2Bb8zvNNJd
   network: ws
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: max1.sohrab172.ir
+  servername: wsphan.q69-cloud.ir
   client-fingerprint: chrome
   ws-opts:
-    path: /
+    path: /margbaaramricas
     headers:
-      Host: max1.sohrab172.ir
+      Host: wsphan.q69-cloud.ir
 - name: 'Trojan #8'
   type: trojan
   server: 13.38.175.41
@@ -222,7 +222,20 @@ proxies:
   - http/1.1
 - name: 'Trojan #11'
   type: trojan
-  server: 2.144.2.245
+  server: 15.188.165.183
+  port: 22222
+  password: telegram-id-privatevpns
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+- name: 'Trojan #12'
+  type: trojan
+  server: 85.198.11.172
   port: 40443
   password: humanity
   network: ws
@@ -235,9 +248,22 @@ proxies:
     path: /assignment
     headers:
       Host: www.ignitelimit.com
-- name: 'Trojan #12'
+- name: 'Trojan #13'
   type: trojan
-  server: 85.198.20.177
+  server: 15.188.165.183
+  port: 22223
+  password: telegram-id-directvpn
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+- name: 'Trojan #14'
+  type: trojan
+  server: 193.151.145.252
   port: 40443
   password: humanity
   network: ws
@@ -267,6 +293,8 @@ proxy-groups:
   - 'Trojan #10'
   - 'Trojan #11'
   - 'Trojan #12'
+  - 'Trojan #13'
+  - 'Trojan #14'
   - DIRECT
 - name: Auto Select
   type: url-test
@@ -283,6 +311,8 @@ proxy-groups:
   - 'Trojan #10'
   - 'Trojan #11'
   - 'Trojan #12'
+  - 'Trojan #13'
+  - 'Trojan #14'
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 150
