@@ -78,62 +78,6 @@ sniffer:
 proxies:
 - name: 'Trojan #1'
   type: trojan
-  server: 172.64.152.23
-  port: 443
-  password: humanity
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.creationlong.org
-  client-fingerprint: chrome
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.creationlong.org
-- name: 'Trojan #2'
-  type: trojan
-  server: 63.176.4.250
-  port: 22222
-  password: telegram-id-privatevpns
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-- name: 'Trojan #3'
-  type: trojan
-  server: 13.37.207.166
-  port: 22222
-  password: telegram-id-privatevpns
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-- name: 'Trojan #4'
-  type: trojan
-  server: 193.151.152.73
-  port: 40443
-  password: humanity
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.ignitelimit.com
-  client-fingerprint: chrome
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.ignitelimit.com
-- name: 'Trojan #5'
-  type: trojan
   server: 85.198.11.172
   port: 40443
   password: humanity
@@ -147,48 +91,20 @@ proxies:
     path: /assignment
     headers:
       Host: www.ignitelimit.com
-- name: 'Trojan #6'
+- name: 'Trojan #2'
   type: trojan
-  server: 2.144.22.10
-  port: 40443
-  password: humanity
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.creationlong.org
-  client-fingerprint: chrome
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.creationlong.org
-- name: 'Trojan #7'
-  type: trojan
-  server: 193.151.152.73
-  port: 40443
-  password: humanity
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.ignitelimit.com
-  client-fingerprint: chrome
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.ignitelimit.com
-- name: 'Trojan #8'
-  type: trojan
-  server: link.honghongai.top
-  port: 8443
-  password: 8f3a2b1c9d4e5f6a7b8c9d0e1f2a3b4c
+  server: 13.37.207.166
+  port: 22222
+  password: telegram-id-privatevpns
   network: tcp
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: link.honghongai.top
+  servername: trojan.burgerip.co.uk
   client-fingerprint: chrome
-- name: 'Trojan #9'
+  alpn:
+  - http/1.1
+- name: 'Trojan #3'
   type: trojan
   server: 172.64.146.129
   port: 443
@@ -205,7 +121,7 @@ proxies:
     path: /?proxyip=ip.111000.de5.net:443
     headers:
       Host: sni.111000.dynv6.net
-- name: 'Trojan #10'
+- name: 'Trojan #4'
   type: trojan
   server: 172.64.152.23
   port: 443
@@ -222,7 +138,7 @@ proxies:
     path: /
     headers:
       Host: sni.111000.dynv6.net
-- name: 'Trojan #11'
+- name: 'Trojan #5'
   type: trojan
   server: 139.59.151.190
   port: 8443
@@ -237,7 +153,7 @@ proxies:
     path: /trTelegram🇨🇳 @WangCai2
     headers:
       Host: Koma-YT.PAGeS.Dev
-- name: 'Trojan #12'
+- name: 'Trojan #6'
   type: trojan
   server: 37.46.19.79
   port: 8443
@@ -252,7 +168,37 @@ proxies:
     path: /trTelegram🇨🇳+@WangCai2
     headers:
       Host: Koma-YT.PAGeS.Dev
-- name: 'Trojan #13'
+- name: 'Trojan #7'
+  type: trojan
+  server: 193.151.152.206
+  port: 40443
+  password: humanity
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.ignitelimit.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.ignitelimit.com
+- name: 'Trojan #8'
+  type: trojan
+  server: 193.151.152.73
+  port: 40443
+  password: humanity
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.ignitelimit.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.ignitelimit.com
+- name: 'Trojan #9'
   type: trojan
   server: 2.144.6.222
   port: 40443
@@ -267,7 +213,7 @@ proxies:
     path: /assignment
     headers:
       Host: www.ignitelimit.com
-- name: 'Trojan #14'
+- name: 'Trojan #10'
   type: trojan
   server: 95.38.162.35
   port: 40443
@@ -282,7 +228,7 @@ proxies:
     path: /assignment
     headers:
       Host: www.ignitelimit.com
-- name: 'Trojan #15'
+- name: 'Trojan #11'
   type: trojan
   server: 95.38.162.54
   port: 40443
@@ -297,7 +243,7 @@ proxies:
     path: /assignment
     headers:
       Host: www.ignitelimit.com
-- name: 'Trojan #16'
+- name: 'Trojan #12'
   type: trojan
   server: 193.151.145.252
   port: 40443
@@ -312,67 +258,22 @@ proxies:
     path: /assignment
     headers:
       Host: www.ignitelimit.com
-- name: 'Trojan #17'
+- name: 'Trojan #13'
   type: trojan
-  server: 188.121.105.201
+  server: 2.144.22.10
   port: 40443
   password: humanity
   network: ws
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: www.ignitelimit.com
+  servername: www.creationlong.org
   client-fingerprint: chrome
   ws-opts:
     path: /assignment
     headers:
-      Host: www.ignitelimit.com
-- name: 'Trojan #18'
-  type: trojan
-  server: 95.38.165.189
-  port: 40443
-  password: humanity
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.ignitelimit.com
-  client-fingerprint: chrome
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.ignitelimit.com
-- name: 'Trojan #19'
-  type: trojan
-  server: 37.32.9.230
-  port: 40443
-  password: humanity
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.ignitelimit.com
-  client-fingerprint: chrome
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.ignitelimit.com
-- name: 'Trojan #20'
-  type: trojan
-  server: 37.32.11.121
-  port: 40443
-  password: humanity
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.ignitelimit.com
-  client-fingerprint: chrome
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.ignitelimit.com
-- name: 'Trojan #21'
+      Host: www.creationlong.org
+- name: 'Trojan #14'
   type: trojan
   server: 85.198.20.177
   port: 40443
@@ -387,37 +288,7 @@ proxies:
     path: /assignment
     headers:
       Host: www.ignitelimit.com
-- name: 'Trojan #22'
-  type: trojan
-  server: snapp.ir
-  port: 2086
-  password: 7G2nYjAyik
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: max1.sohrab172.ir
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: max1.sohrab172.ir
-- name: 'Trojan #23'
-  type: trojan
-  server: 85.198.20.177
-  port: 40443
-  password: humanity
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.ignitelimit.com
-  client-fingerprint: chrome
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.ignitelimit.com
-- name: 'Trojan #24'
+- name: 'Trojan #15'
   type: trojan
   server: 2.144.22.10
   port: 40443
@@ -432,6 +303,51 @@ proxies:
     path: /assignment
     headers:
       Host: www.creationlong.org
+- name: 'Trojan #17'
+  type: trojan
+  server: snapp.ir
+  port: 2086
+  password: 7G2nYjAyik
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: max1.sohrab172.ir
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: max1.sohrab172.ir
+- name: 'Trojan #18'
+  type: trojan
+  server: 193.151.152.73
+  port: 40443
+  password: humanity
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.ignitelimit.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.ignitelimit.com
+- name: 'Trojan #19'
+  type: trojan
+  server: 85.198.20.177
+  port: 40443
+  password: humanity
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.ignitelimit.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.ignitelimit.com
 proxy-groups:
 - name: Proxy Select
   type: select
@@ -452,15 +368,9 @@ proxy-groups:
   - 'Trojan #13'
   - 'Trojan #14'
   - 'Trojan #15'
-  - 'Trojan #16'
   - 'Trojan #17'
   - 'Trojan #18'
   - 'Trojan #19'
-  - 'Trojan #20'
-  - 'Trojan #21'
-  - 'Trojan #22'
-  - 'Trojan #23'
-  - 'Trojan #24'
   - DIRECT
 - name: Auto Select
   type: url-test
@@ -480,15 +390,9 @@ proxy-groups:
   - 'Trojan #13'
   - 'Trojan #14'
   - 'Trojan #15'
-  - 'Trojan #16'
   - 'Trojan #17'
   - 'Trojan #18'
   - 'Trojan #19'
-  - 'Trojan #20'
-  - 'Trojan #21'
-  - 'Trojan #22'
-  - 'Trojan #23'
-  - 'Trojan #24'
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 150
