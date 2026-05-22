@@ -78,20 +78,22 @@ sniffer:
 proxies:
 - name: 'Trojan #1'
   type: trojan
-  server: 63.183.106.71
-  port: 22222
-  password: telegram-id-privatevpns
-  network: tcp
+  server: 188.121.121.183
+  port: 443
+  password: humanity
+  network: ws
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: trojan.burgerip.co.uk
+  servername: www.creationlong.org
   client-fingerprint: chrome
-  alpn:
-  - http/1.1
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.creationlong.org
 - name: 'Trojan #2'
   type: trojan
-  server: 13.38.186.226
+  server: 63.183.106.71
   port: 22222
   password: telegram-id-privatevpns
   network: tcp
@@ -104,7 +106,7 @@ proxies:
   - http/1.1
 - name: 'Trojan #3'
   type: trojan
-  server: 35.181.10.101
+  server: 13.38.186.226
   port: 22222
   password: telegram-id-privatevpns
   network: tcp
@@ -117,20 +119,31 @@ proxies:
   - http/1.1
 - name: 'Trojan #4'
   type: trojan
-  server: 85.198.11.172
-  port: 40443
-  password: humanity
-  network: ws
+  server: 35.181.10.101
+  port: 22222
+  password: telegram-id-privatevpns
+  network: tcp
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: www.ignitelimit.com
+  servername: trojan.burgerip.co.uk
   client-fingerprint: chrome
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.ignitelimit.com
+  alpn:
+  - http/1.1
 - name: 'Trojan #5'
+  type: trojan
+  server: 63.185.56.8
+  port: 22222
+  password: telegram-id-privatevpns
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+- name: 'Trojan #6'
   type: trojan
   server: 89.107.10.22
   port: 8443
@@ -145,7 +158,7 @@ proxies:
     path: /trTelegram🇨🇳+@WangCai2
     headers:
       Host: Koma-YT.PAGeS.Dev
-- name: 'Trojan #6'
+- name: 'Trojan #7'
   type: trojan
   server: 104.17.101.139
   port: 443
@@ -173,6 +186,7 @@ proxy-groups:
   - 'Trojan #4'
   - 'Trojan #5'
   - 'Trojan #6'
+  - 'Trojan #7'
   - DIRECT
 - name: Auto Select
   type: url-test
@@ -183,6 +197,7 @@ proxy-groups:
   - 'Trojan #4'
   - 'Trojan #5'
   - 'Trojan #6'
+  - 'Trojan #7'
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 150
