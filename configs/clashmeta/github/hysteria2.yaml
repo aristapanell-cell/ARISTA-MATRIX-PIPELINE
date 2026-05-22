@@ -706,6 +706,15 @@ proxies:
   skip-cert-verify: false
   fast-open: true
   client-fingerprint: chrome
+- name: 'T.ME: @aristapnel #70'
+  type: hysteria2
+  server: 1f0709c5-t6ngg0-t7d1t3-81nv.us.hyhuawei.com
+  port: 443
+  password: 47e91fb6-25b8-df52-bc18-3cdc8548192f
+  sni: 1f0709c5-t6ngg0-t7d1t3-81nv.us.hyhuawei.com
+  skip-cert-verify: false
+  fast-open: true
+  client-fingerprint: chrome
 proxy-groups:
 - name: Proxy Select
   type: select
@@ -775,6 +784,7 @@ proxy-groups:
   - 'T.ME: @aristapnel #67'
   - 'T.ME: @aristapnel #68'
   - 'T.ME: @aristapnel #69'
+  - 'T.ME: @aristapnel #70'
   - DIRECT
 - name: Auto Select
   type: url-test
@@ -843,6 +853,7 @@ proxy-groups:
   - 'T.ME: @aristapnel #67'
   - 'T.ME: @aristapnel #68'
   - 'T.ME: @aristapnel #69'
+  - 'T.ME: @aristapnel #70'
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 150
