@@ -78,19 +78,6 @@ sniffer:
 proxies:
 - name: 'Trojan #1'
   type: trojan
-  server: 3.65.4.209
-  port: 22222
-  password: telegram-id-privatevpns
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-- name: 'Trojan #2'
-  type: trojan
   server: 104.19.229.21
   port: 443
   password: 8r%3C%5B9%27l6hAO%238ZQi
@@ -104,6 +91,17 @@ proxies:
     path: /tr
     headers:
       Host: Koma-YT.PAGeS.Dev
+- name: 'Trojan #2'
+  type: trojan
+  server: 78.159.131.12
+  port: 28259
+  password: MeaDiUmPlkWbZJ2BON8tz
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: 🔒
+  client-fingerprint: chrome
 - name: 'Trojan #3'
   type: trojan
   server: 104.20.5.134
@@ -123,6 +121,19 @@ proxies:
       Host: abest.api-tel.xyz
 - name: 'Trojan #4'
   type: trojan
+  server: 3.65.4.209
+  port: 22222
+  password: telegram-id-privatevpns
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+- name: 'Trojan #5'
+  type: trojan
   server: 188.121.121.183
   port: 443
   password: humanity
@@ -136,17 +147,21 @@ proxies:
     path: /assignment
     headers:
       Host: www.creationlong.org
-- name: 'Trojan #5'
+- name: 'Trojan #6'
   type: trojan
-  server: 78.159.131.12
-  port: 28259
-  password: MeaDiUmPlkWbZJ2BON8tz
-  network: tcp
+  server: 2.144.2.62
+  port: 40443
+  password: humanity
+  network: ws
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: 🔒
+  servername: www.ignitelimit.com
   client-fingerprint: chrome
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.ignitelimit.com
 proxy-groups:
 - name: Proxy Select
   type: select
@@ -157,6 +172,7 @@ proxy-groups:
   - 'Trojan #3'
   - 'Trojan #4'
   - 'Trojan #5'
+  - 'Trojan #6'
   - DIRECT
 - name: Auto Select
   type: url-test
@@ -166,6 +182,7 @@ proxy-groups:
   - 'Trojan #3'
   - 'Trojan #4'
   - 'Trojan #5'
+  - 'Trojan #6'
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 150
