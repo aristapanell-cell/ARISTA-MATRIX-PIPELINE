@@ -78,21 +78,17 @@ sniffer:
 proxies:
 - name: 'Trojan #1'
   type: trojan
-  server: 104.20.5.134
-  port: 443
-  password: mSzFVhUczD
-  network: ws
+  server: 3.65.4.209
+  port: 22222
+  password: telegram-id-privatevpns
+  network: tcp
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: abest.api-tel.xyz
+  servername: trojan.burgerip.co.uk
   client-fingerprint: chrome
   alpn:
   - http/1.1
-  ws-opts:
-    path: /
-    headers:
-      Host: abest.api-tel.xyz
 - name: 'Trojan #2'
   type: trojan
   server: 104.19.229.21
@@ -110,106 +106,22 @@ proxies:
       Host: Koma-YT.PAGeS.Dev
 - name: 'Trojan #3'
   type: trojan
-  server: 104.19.229.21
+  server: 104.20.5.134
   port: 443
-  password: humanity
+  password: mSzFVhUczD
   network: ws
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: www.multiplydose.com
+  servername: abest.api-tel.xyz
   client-fingerprint: chrome
+  alpn:
+  - http/1.1
   ws-opts:
-    path: /assignment
+    path: /
     headers:
-      Host: www.multiplydose.com
+      Host: abest.api-tel.xyz
 - name: 'Trojan #4'
-  type: trojan
-  server: 104.19.229.21
-  port: 443
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: Koma-YT.PAGeS.Dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /tr
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-- name: 'Trojan #5'
-  type: trojan
-  server: 85.198.20.177
-  port: 40443
-  password: humanity
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.ignitelimit.com
-  client-fingerprint: chrome
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.ignitelimit.com
-- name: 'Trojan #6'
-  type: trojan
-  server: 13.37.60.29
-  port: 22222
-  password: telegram-id-privatevpns
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-- name: 'Trojan #7'
-  type: trojan
-  server: 3.65.4.209
-  port: 22222
-  password: telegram-id-privatevpns
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-- name: 'Trojan #8'
-  type: trojan
-  server: 217.60.248.94
-  port: 8443
-  password: '162534'
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: cchh2.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: cchh2.pages.dev
-- name: 'Trojan #9'
-  type: trojan
-  server: 104.19.229.21
-  port: 443
-  password: humanity
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.multiplydose.com
-  client-fingerprint: chrome
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.multiplydose.com
-- name: 'Trojan #10'
   type: trojan
   server: 188.121.121.183
   port: 443
@@ -224,6 +136,17 @@ proxies:
     path: /assignment
     headers:
       Host: www.creationlong.org
+- name: 'Trojan #5'
+  type: trojan
+  server: 78.159.131.12
+  port: 28259
+  password: MeaDiUmPlkWbZJ2BON8tz
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: 🔒
+  client-fingerprint: chrome
 proxy-groups:
 - name: Proxy Select
   type: select
@@ -234,11 +157,6 @@ proxy-groups:
   - 'Trojan #3'
   - 'Trojan #4'
   - 'Trojan #5'
-  - 'Trojan #6'
-  - 'Trojan #7'
-  - 'Trojan #8'
-  - 'Trojan #9'
-  - 'Trojan #10'
   - DIRECT
 - name: Auto Select
   type: url-test
@@ -248,11 +166,6 @@ proxy-groups:
   - 'Trojan #3'
   - 'Trojan #4'
   - 'Trojan #5'
-  - 'Trojan #6'
-  - 'Trojan #7'
-  - 'Trojan #8'
-  - 'Trojan #9'
-  - 'Trojan #10'
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 150
