@@ -78,7 +78,7 @@ sniffer:
 proxies:
 - name: 'Trojan #1'
   type: trojan
-  server: 2.144.2.62
+  server: 2.144.23.72
   port: 40443
   password: humanity
   network: ws
@@ -93,62 +93,6 @@ proxies:
       Host: www.ignitelimit.com
 - name: 'Trojan #2'
   type: trojan
-  server: 2.144.2.51
-  port: 443
-  password: humanity
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.ignitelimit.com
-  client-fingerprint: random
-  alpn:
-  - h2
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.ignitelimit.com
-- name: 'Trojan #3'
-  type: trojan
-  server: 35.159.190.54
-  port: 22222
-  password: telegram-id-privatevpns
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-- name: 'Trojan #4'
-  type: trojan
-  server: 78.159.131.12
-  port: 28259
-  password: MeaDiUmPlkWbZJ2BON8tz
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 🔒
-  client-fingerprint: chrome
-- name: 'Trojan #5'
-  type: trojan
-  server: 162.159.153.212
-  port: 2087
-  password: r137979f
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: sheleqaz.emotionreza.workers.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: sheleqaz.emotionreza.workers.dev
-- name: 'Trojan #6'
-  type: trojan
   server: 127.0.0.1
   port: 40443
   password: humanity
@@ -162,7 +106,7 @@ proxies:
     path: /assignment
     headers:
       Host: www.ignitelimit.com
-- name: 'Trojan #7'
+- name: 'Trojan #3'
   type: trojan
   server: 127.0.0.1
   port: 40443
@@ -177,9 +121,69 @@ proxies:
     path: /assignment
     headers:
       Host: www.creationlong.org
+- name: 'Trojan #4'
+  type: trojan
+  server: 35.159.190.54
+  port: 22222
+  password: telegram-id-privatevpns
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+- name: 'Trojan #5'
+  type: trojan
+  server: sourceforge.net
+  port: 443
+  password: humanity
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.calmloud.com
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmloud.com
+- name: 'Trojan #6'
+  type: trojan
+  server: 188.121.121.183
+  port: 443
+  password: humanity
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.creationlong.org
+  client-fingerprint: chrome
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.creationlong.org
+- name: 'Trojan #7'
+  type: trojan
+  server: 2.144.2.62
+  port: 40443
+  password: humanity
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.ignitelimit.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.ignitelimit.com
 - name: 'Trojan #8'
   type: trojan
-  server: 2.144.23.72
+  server: 193.151.132.136
   port: 40443
   password: humanity
   network: ws
@@ -224,23 +228,6 @@ proxies:
     path: /
     headers:
       Host: abest.api-tel.xyz
-- name: 'Trojan #11'
-  type: trojan
-  server: sourceforge.net
-  port: 443
-  password: humanity
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.calmloud.com
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.calmloud.com
 proxy-groups:
 - name: Proxy Select
   type: select
@@ -256,7 +243,6 @@ proxy-groups:
   - 'Trojan #8'
   - 'Trojan #9'
   - 'Trojan #10'
-  - 'Trojan #11'
   - DIRECT
 - name: Auto Select
   type: url-test
@@ -271,7 +257,6 @@ proxy-groups:
   - 'Trojan #8'
   - 'Trojan #9'
   - 'Trojan #10'
-  - 'Trojan #11'
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 150

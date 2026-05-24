@@ -78,90 +78,6 @@ sniffer:
 proxies:
 - name: 'ARISTA #1'
   type: vmess
-  server: 185.236.38.44
-  port: 19946
-  uuid: c9e42537-8652-4a4c-85d3-0d36abf38f88
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 185.236.38.44
-  client-fingerprint: ''
-- name: 'ARISTA #2'
-  type: vmess
-  server: 193.151.131.118
-  port: 22408
-  uuid: 6ffea2a0-1210-45cd-8276-900be7c7578e
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 193.151.131.118
-  client-fingerprint: ''
-- name: 'ARISTA #3'
-  type: vmess
-  server: 193.151.131.118
-  port: 22401
-  uuid: 903a1676-a232-491a-bfd8-9e34d96c2c03
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 193.151.131.118
-  client-fingerprint: ''
-- name: 'ARISTA #4'
-  type: vmess
-  server: 193.151.131.118
-  port: 22156
-  uuid: e0d72f4b-f759-4bed-addf-3a34a36ba983
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 193.151.131.118
-  client-fingerprint: ''
-- name: 'ARISTA #5'
-  type: vmess
-  server: 193.151.131.118
-  port: 22450
-  uuid: a46c6c8a-9f2e-47b8-8832-41e256ab7b56
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 193.151.131.118
-  client-fingerprint: ''
-- name: 'ARISTA #6'
-  type: vmess
-  server: 193.151.131.118
-  port: 22416
-  uuid: f291b02e-810c-4ac5-afc1-3dab09eaf2a5
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 193.151.131.118
-  client-fingerprint: ''
-- name: 'ARISTA #7'
-  type: vmess
   server: 85.90.217.42
   port: 22324
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
@@ -174,6 +90,20 @@ proxies:
   tcp-fast-open: true
   servername: 85.90.217.42
   client-fingerprint: null
+- name: 'ARISTA #2'
+  type: vmess
+  server: 27.122.57.43
+  port: 11638
+  uuid: 0be3a336-85ad-4c42-930b-05318236e68c
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: 27.122.57.43
+  client-fingerprint: chrome
 proxy-groups:
 - name: Proxy Select
   type: select
@@ -181,22 +111,12 @@ proxy-groups:
   - Auto Select
   - 'ARISTA #1'
   - 'ARISTA #2'
-  - 'ARISTA #3'
-  - 'ARISTA #4'
-  - 'ARISTA #5'
-  - 'ARISTA #6'
-  - 'ARISTA #7'
   - DIRECT
 - name: Auto Select
   type: url-test
   proxies:
   - 'ARISTA #1'
   - 'ARISTA #2'
-  - 'ARISTA #3'
-  - 'ARISTA #4'
-  - 'ARISTA #5'
-  - 'ARISTA #6'
-  - 'ARISTA #7'
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 150
