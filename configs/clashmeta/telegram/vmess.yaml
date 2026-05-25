@@ -78,20 +78,6 @@ sniffer:
 proxies:
 - name: 'ARISTA #1'
   type: vmess
-  server: 185.236.38.44
-  port: 19946
-  uuid: c9e42537-8652-4a4c-85d3-0d36abf38f88
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 185.236.38.44
-  client-fingerprint: ''
-- name: 'ARISTA #2'
-  type: vmess
   server: 85.90.217.42
   port: 22324
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
@@ -104,105 +90,21 @@ proxies:
   tcp-fast-open: true
   servername: 85.90.217.42
   client-fingerprint: null
+- name: 'ARISTA #2'
+  type: vmess
+  server: ak.reata.ir
+  port: 16482
+  uuid: 1acd9c7c-2ae7-4c22-876e-23d6b416b6b7
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: ak.reata.ir
+  client-fingerprint: ''
 - name: 'ARISTA #3'
-  type: vmess
-  server: ak.reata.ir
-  port: 16482
-  uuid: 1acd9c7c-2ae7-4c22-876e-23d6b416b6b7
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: ak.reata.ir
-  client-fingerprint: ''
-- name: 'ARISTA #4'
-  type: vmess
-  server: b51d64cb-c5d6-4791-8ecf-0a6d8d71c717.wtf
-  port: 22911
-  uuid: 638dea38-eb02-4fac-99aa-f83453606467
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: b51d64cb-c5d6-4791-8ecf-0a6d8d71c717.wtf
-  client-fingerprint: ''
-- name: 'ARISTA #5'
-  type: vmess
-  server: dn.torontomovie.com
-  port: 8080
-  uuid: 001ed66a-c019-486d-8110-0765cbf0c31d
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: dn.torontomovie.com
-  client-fingerprint: ''
-- name: 'ARISTA #6'
-  type: vmess
-  server: 193.151.131.118
-  port: 22911
-  uuid: 638dea38-eb02-4fac-99aa-f83453606467
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 193.151.131.118
-  client-fingerprint: ''
-- name: 'ARISTA #7'
-  type: vmess
-  server: 87.107.81.215
-  port: 8080
-  uuid: 001ed66a-c019-486d-8110-0765cbf0c31d
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 87.107.81.215
-  client-fingerprint: ''
-- name: 'ARISTA #8'
-  type: vmess
-  server: b51d64cb-c5d6-4791-8ecf-0a6d8d71c717.wtf
-  port: 22912
-  uuid: 5d16ea73-8780-4595-a8a2-0125b8bb4c97
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: b51d64cb-c5d6-4791-8ecf-0a6d8d71c717.wtf
-  client-fingerprint: ''
-- name: 'ARISTA #9'
-  type: vmess
-  server: ak.reata.ir
-  port: 16482
-  uuid: 1acd9c7c-2ae7-4c22-876e-23d6b416b6b7
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: ak.reata.ir
-  client-fingerprint: ''
-- name: 'ARISTA #10'
   type: vmess
   server: 193.151.139.72
   port: 40880
@@ -216,6 +118,48 @@ proxies:
   tcp-fast-open: true
   servername: telewebion.ir
   client-fingerprint: ''
+- name: 'ARISTA #4'
+  type: vmess
+  server: 193.24.120.18
+  port: 16482
+  uuid: 1acd9c7c-2ae7-4c22-876e-23d6b416b6b7
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: 193.24.120.18
+  client-fingerprint: chrome
+- name: 'ARISTA #5'
+  type: vmess
+  server: 185.231.181.62
+  port: 443
+  uuid: 7d951c02-05f0-46a4-a5d8-b6fa967bbef0
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: 185.231.181.62
+  client-fingerprint: ''
+- name: 'ARISTA #6'
+  type: vmess
+  server: 185.236.38.44
+  port: 19946
+  uuid: c9e42537-8652-4a4c-85d3-0d36abf38f88
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: 185.236.38.44
+  client-fingerprint: ''
 proxy-groups:
 - name: Proxy Select
   type: select
@@ -227,10 +171,6 @@ proxy-groups:
   - 'ARISTA #4'
   - 'ARISTA #5'
   - 'ARISTA #6'
-  - 'ARISTA #7'
-  - 'ARISTA #8'
-  - 'ARISTA #9'
-  - 'ARISTA #10'
   - DIRECT
 - name: Auto Select
   type: url-test
@@ -241,10 +181,6 @@ proxy-groups:
   - 'ARISTA #4'
   - 'ARISTA #5'
   - 'ARISTA #6'
-  - 'ARISTA #7'
-  - 'ARISTA #8'
-  - 'ARISTA #9'
-  - 'ARISTA #10'
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 150
