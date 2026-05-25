@@ -166,18 +166,26 @@ proxies:
   tcp-fast-open: true
 - name: 'ARISTA🔥 #12'
   type: ss
-  server: srv2.blueshadow.top
-  port: 57741
-  cipher: aes-256-gcm
-  password: PLKUPvKVHnI
+  server: 209.46.102.22
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: 1hhrqrokj3ag
   udp: true
   tcp-fast-open: true
-- name: 'ARISTA🔥 #14'
+- name: 'ARISTA🔥 #13'
   type: ss
-  server: 193.135.174.135
-  port: 990
+  server: 193.29.139.144
+  port: 8080
   cipher: chacha20-ietf-poly1305
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+  tcp-fast-open: true
+- name: 'ARISTA🔥 #15'
+  type: ss
+  server: 104.192.227.162
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: 91LFVJhY6a7f8KeJPeuYln
   udp: true
   tcp-fast-open: true
 proxy-groups:
@@ -197,7 +205,8 @@ proxy-groups:
   - 'ARISTA🔥 #10'
   - 'ARISTA🔥 #11'
   - 'ARISTA🔥 #12'
-  - 'ARISTA🔥 #14'
+  - 'ARISTA🔥 #13'
+  - 'ARISTA🔥 #15'
   - DIRECT
 - name: Auto Select
   type: url-test
@@ -214,7 +223,8 @@ proxy-groups:
   - 'ARISTA🔥 #10'
   - 'ARISTA🔥 #11'
   - 'ARISTA🔥 #12'
-  - 'ARISTA🔥 #14'
+  - 'ARISTA🔥 #13'
+  - 'ARISTA🔥 #15'
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 150

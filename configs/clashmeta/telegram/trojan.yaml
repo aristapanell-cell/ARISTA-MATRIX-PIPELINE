@@ -78,7 +78,7 @@ sniffer:
 proxies:
 - name: 'Trojan #1'
   type: trojan
-  server: 104.20.42.250
+  server: 188.114.96.4
   port: 443
   password: humanity
   network: ws
@@ -95,22 +95,20 @@ proxies:
       Host: www.calmloud.com
 - name: 'Trojan #2'
   type: trojan
-  server: 104.18.13.149
-  port: 443
-  password: humanity
-  network: ws
+  server: 63.176.15.12
+  port: 22222
+  password: telegram-id-privatevpns
+  network: tcp
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: www.calmloud.com
-  client-fingerprint: ios
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.calmloud.com
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
 - name: 'Trojan #3'
   type: trojan
-  server: 188.114.96.3
+  server: 104.17.72.206
   port: 443
   password: humanity
   network: ws
@@ -118,14 +116,16 @@ proxies:
   skip-cert-verify: false
   tcp-fast-open: true
   servername: www.calmloud.com
-  client-fingerprint: ios
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
   ws-opts:
     path: /assignment
     headers:
       Host: www.calmloud.com
 - name: 'Trojan #4'
   type: trojan
-  server: 188.114.98.0
+  server: 141.193.213.11
   port: 443
   password: humanity
   network: ws
@@ -133,14 +133,16 @@ proxies:
   skip-cert-verify: false
   tcp-fast-open: true
   servername: www.calmloud.com
-  client-fingerprint: ios
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
   ws-opts:
     path: /assignment
     headers:
       Host: www.calmloud.com
 - name: 'Trojan #5'
   type: trojan
-  server: 188.114.96.4
+  server: 104.20.42.250
   port: 443
   password: humanity
   network: ws
@@ -157,64 +159,64 @@ proxies:
       Host: www.calmloud.com
 - name: 'Trojan #6'
   type: trojan
-  server: 104.19.229.21
-  port: 443
+  server: 2.144.7.227
+  port: 40443
   password: humanity
   network: ws
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: www.multiplydose.com
+  servername: www.ignitelimit.com
   client-fingerprint: chrome
   ws-opts:
     path: /assignment
     headers:
-      Host: www.multiplydose.com
+      Host: www.ignitelimit.com
 - name: 'Trojan #7'
   type: trojan
-  server: 188.114.96.4
+  server: 141.101.90.101
   port: 443
   password: humanity
   network: ws
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: www.calmloud.com
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
+  servername: www.ignitelimit.com
+  client-fingerprint: ios
   ws-opts:
     path: /assignment
     headers:
-      Host: www.calmloud.com
+      Host: www.ignitelimit.com
 - name: 'Trojan #8'
   type: trojan
-  server: 63.176.15.12
-  port: 22222
-  password: telegram-id-privatevpns
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-- name: 'Trojan #9'
-  type: trojan
-  server: 94.101.177.20
-  port: 2087
-  password: 8r%3C%5B9%27l6hAO%238ZQi
+  server: 95.38.188.84
+  port: 40443
+  password: humanity
   network: ws
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: Koma-YT.PAGeS.Dev
+  servername: www.ignitelimit.com
   client-fingerprint: chrome
   ws-opts:
-    path: /trTelegram🇨🇳+@WangCai2
+    path: /assignment
     headers:
-      Host: Koma-YT.PAGeS.Dev
+      Host: www.ignitelimit.com
+- name: 'Trojan #9'
+  type: trojan
+  server: 188.121.120.248
+  port: 40443
+  password: humanity
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.ignitelimit.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.ignitelimit.com
 - name: 'Trojan #10'
   type: trojan
   server: 104.20.42.250
@@ -264,52 +266,20 @@ proxies:
       Host: Koma-YT.PAGeS.Dev
 - name: 'Trojan #13'
   type: trojan
-  server: www.calmloud.com
-  port: 443
-  password: humanity
+  server: 94.101.177.20
+  port: 2087
+  password: 8r%3C%5B9%27l6hAO%238ZQi
   network: ws
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: www.calmloud.com
-  client-fingerprint: ios
-  alpn:
-  - http/1.1
+  servername: Koma-YT.PAGeS.Dev
+  client-fingerprint: chrome
   ws-opts:
-    path: /assignment
+    path: /trTelegram🇨🇳+@WangCai2
     headers:
-      Host: www.calmloud.com
+      Host: Koma-YT.PAGeS.Dev
 - name: 'Trojan #14'
-  type: trojan
-  server: 104.20.42.250
-  port: 443
-  password: humanity
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.calmloud.com
-  client-fingerprint: ios
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.calmloud.com
-- name: 'Trojan #15'
-  type: trojan
-  server: 188.114.98.0
-  port: 443
-  password: humanity
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.calmloud.com
-  client-fingerprint: ios
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.calmloud.com
-- name: 'Trojan #16'
   type: trojan
   server: 188.114.96.4
   port: 443
@@ -326,7 +296,7 @@ proxies:
     path: /assignment
     headers:
       Host: www.calmloud.com
-- name: 'Trojan #17'
+- name: 'Trojan #15'
   type: trojan
   server: 104.20.42.250
   port: 443
@@ -341,82 +311,7 @@ proxies:
     path: /assignment
     headers:
       Host: www.calmloud.com
-- name: 'Trojan #18'
-  type: trojan
-  server: 94.101.177.20
-  port: 2087
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: Koma-YT.PAGeS.Dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /trTelegram🇨🇳+@WangCai2
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-- name: 'Trojan #19'
-  type: trojan
-  server: 95.38.189.135
-  port: 40443
-  password: humanity
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.ignitelimit.com
-  client-fingerprint: chrome
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.ignitelimit.com
-- name: 'Trojan #20'
-  type: trojan
-  server: 172.67.180.92
-  port: 443
-  password: humanity
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.multiplydose.com
-  client-fingerprint: chrome
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.multiplydose.com
-- name: 'Trojan #21'
-  type: trojan
-  server: 89.110.108.189
-  port: 2053
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: Koma-YT.PAGeS.Dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /trTelegram🇨🇳+@WangCai2
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-- name: 'Trojan #22'
-  type: trojan
-  server: 104.17.72.206
-  port: 443
-  password: humanity
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.calmloud.com
-  client-fingerprint: ios
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.calmloud.com
-- name: 'Trojan #23'
+- name: 'Trojan #16'
   type: trojan
   server: 185.208.79.62
   port: 443
@@ -431,9 +326,54 @@ proxies:
     path: /assignment
     headers:
       Host: www.calmlunch.com
-- name: 'Trojan #24'
+- name: 'Trojan #17'
   type: trojan
-  server: 188.121.120.248
+  server: 172.67.180.92
+  port: 443
+  password: humanity
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.multiplydose.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.multiplydose.com
+- name: 'Trojan #18'
+  type: trojan
+  server: 89.110.108.189
+  port: 2053
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: Koma-YT.PAGeS.Dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /trTelegram🇨🇳+@WangCai2
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+- name: 'Trojan #19'
+  type: trojan
+  server: 94.101.177.20
+  port: 2087
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: Koma-YT.PAGeS.Dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /trTelegram🇨🇳+@WangCai2
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+- name: 'Trojan #20'
+  type: trojan
+  server: 95.38.189.135
   port: 40443
   password: humanity
   network: ws
@@ -446,6 +386,53 @@ proxies:
     path: /assignment
     headers:
       Host: www.ignitelimit.com
+- name: 'Trojan #21'
+  type: trojan
+  server: www.calmloud.com
+  port: 443
+  password: humanity
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.calmloud.com
+  client-fingerprint: ios
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmloud.com
+- name: 'Trojan #22'
+  type: trojan
+  server: 104.20.42.250
+  port: 443
+  password: humanity
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.calmloud.com
+  client-fingerprint: ios
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmloud.com
+- name: 'Trojan #23'
+  type: trojan
+  server: 188.114.98.0
+  port: 443
+  password: humanity
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.calmloud.com
+  client-fingerprint: ios
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmloud.com
 proxy-groups:
 - name: Proxy Select
   type: select
@@ -474,7 +461,6 @@ proxy-groups:
   - 'Trojan #21'
   - 'Trojan #22'
   - 'Trojan #23'
-  - 'Trojan #24'
   - DIRECT
 - name: Auto Select
   type: url-test
@@ -502,7 +488,6 @@ proxy-groups:
   - 'Trojan #21'
   - 'Trojan #22'
   - 'Trojan #23'
-  - 'Trojan #24'
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 150
