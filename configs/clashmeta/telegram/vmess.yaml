@@ -78,6 +78,20 @@ sniffer:
 proxies:
 - name: 'ARISTA #1'
   type: vmess
+  server: 185.236.38.44
+  port: 19946
+  uuid: c9e42537-8652-4a4c-85d3-0d36abf38f88
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: 185.236.38.44
+  client-fingerprint: ''
+- name: 'ARISTA #2'
+  type: vmess
   server: 193.151.131.118
   port: 22901
   uuid: 0c46f160-d048-4ed8-a247-d66643b3197c
@@ -90,7 +104,7 @@ proxies:
   tcp-fast-open: true
   servername: 193.151.131.118
   client-fingerprint: ''
-- name: 'ARISTA #2'
+- name: 'ARISTA #3'
   type: vmess
   server: b51d64cb-c5d6-4791-8ecf-0a6d8d71c717.wtf
   port: 22903
@@ -104,7 +118,7 @@ proxies:
   tcp-fast-open: true
   servername: b51d64cb-c5d6-4791-8ecf-0a6d8d71c717.wtf
   client-fingerprint: ''
-- name: 'ARISTA #3'
+- name: 'ARISTA #4'
   type: vmess
   server: b51d64cb-c5d6-4791-8ecf-0a6d8d71c717.wtf
   port: 22911
@@ -118,7 +132,7 @@ proxies:
   tcp-fast-open: true
   servername: b51d64cb-c5d6-4791-8ecf-0a6d8d71c717.wtf
   client-fingerprint: ''
-- name: 'ARISTA #4'
+- name: 'ARISTA #5'
   type: vmess
   server: dn.torontomovie.com
   port: 8080
@@ -132,7 +146,7 @@ proxies:
   tcp-fast-open: true
   servername: dn.torontomovie.com
   client-fingerprint: ''
-- name: 'ARISTA #5'
+- name: 'ARISTA #6'
   type: vmess
   server: 193.151.131.118
   port: 22911
@@ -146,7 +160,7 @@ proxies:
   tcp-fast-open: true
   servername: 193.151.131.118
   client-fingerprint: ''
-- name: 'ARISTA #6'
+- name: 'ARISTA #7'
   type: vmess
   server: 87.107.81.215
   port: 8080
@@ -160,7 +174,7 @@ proxies:
   tcp-fast-open: true
   servername: 87.107.81.215
   client-fingerprint: ''
-- name: 'ARISTA #7'
+- name: 'ARISTA #8'
   type: vmess
   server: 85.90.217.42
   port: 22324
@@ -174,20 +188,6 @@ proxies:
   tcp-fast-open: true
   servername: 85.90.217.42
   client-fingerprint: null
-- name: 'ARISTA #8'
-  type: vmess
-  server: 27.122.57.43
-  port: 11638
-  uuid: 0be3a336-85ad-4c42-930b-05318236e68c
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 27.122.57.43
-  client-fingerprint: chrome
 proxy-groups:
 - name: Proxy Select
   type: select
