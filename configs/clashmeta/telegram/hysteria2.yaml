@@ -76,123 +76,26 @@ sniffer:
       - 2087
       - 2096
 proxies:
-- name: 'ARISTA #1'
-  type: vmess
-  server: 45.92.70.236
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
+- name: 'Hysteria2 #1'
+  type: hysteria2
+  server: assgzl.hhwyy.xyz
+  port: 35561
+  password: 9994536d-4824-45f9-bdc9-ccde0443f3fa
+  sni: assgzl.hhwyy.xyz
   skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 45.92.70.236
+  fast-open: true
   client-fingerprint: chrome
-- name: 'ARISTA #2'
-  type: vmess
-  server: 185.213.167.75
-  port: 28096
-  uuid: 19d0d1b4-8dca-4032-b0e4-2d7f843cdabd
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 185.213.167.75
-  client-fingerprint: ''
-- name: 'ARISTA #3'
-  type: vmess
-  server: n1753348736.lie5d.cyou
-  port: 443
-  uuid: f267eac3-dfb4-45be-a480-7e1847ca04ab
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: n1753348736.lie5d.cyou
-  client-fingerprint: ''
-  ws-opts:
-    path: /
-    headers:
-      Host: n1753348736.lie5d.cyou
-- name: 'ARISTA #4'
-  type: vmess
-  server: skk.moe
-  port: 80
-  uuid: 65b17c0b-0a52-4b54-9bc9-60e31397b841
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: accklsj.bufu.us.ci
-  client-fingerprint: ''
-  ws-opts:
-    path: /65b17c0b-0a52-4b54-9bc9-60e31397b841-vmess
-    headers:
-      Host: accklsj.bufu.us.ci
-- name: 'ARISTA #5'
-  type: vmess
-  server: b51d64cb-c5d6-4791-8ecf-0a6d8d71c717.wtf
-  port: 22972
-  uuid: ebf50f56-843c-44ae-92f7-c987f9f664de
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: b51d64cb-c5d6-4791-8ecf-0a6d8d71c717.wtf
-  client-fingerprint: ''
-- name: 'ARISTA #6'
-  type: vmess
-  server: 61.245.11.60
-  port: 80
-  uuid: a3e3a710-79f8-4ae0-b83c-607aab40d197
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 61.245.11.60
-  client-fingerprint: ''
-  ws-opts:
-    path: /vmess/
-    headers:
-      Host: 61.245.11.60
 proxy-groups:
 - name: Proxy Select
   type: select
   proxies:
   - Auto Select
-  - 'ARISTA #1'
-  - 'ARISTA #2'
-  - 'ARISTA #3'
-  - 'ARISTA #4'
-  - 'ARISTA #5'
-  - 'ARISTA #6'
+  - 'Hysteria2 #1'
   - DIRECT
 - name: Auto Select
   type: url-test
   proxies:
-  - 'ARISTA #1'
-  - 'ARISTA #2'
-  - 'ARISTA #3'
-  - 'ARISTA #4'
-  - 'ARISTA #5'
-  - 'ARISTA #6'
+  - 'Hysteria2 #1'
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 150
