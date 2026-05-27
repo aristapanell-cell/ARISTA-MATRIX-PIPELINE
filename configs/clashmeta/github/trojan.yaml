@@ -3517,31 +3517,20 @@ proxies:
       Host: www.calmloud.com
 - name: 'T.ME: @aristapnel #235'
   type: trojan
-  server: 104.20.42.250
+  server: 141.101.90.101
   port: 443
   password: humanity
   network: ws
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: www.calmloud.com
+  servername: www.ignitelimit.com
   client-fingerprint: chrome
   ws-opts:
     path: /assignment
     headers:
-      Host: www.calmloud.com
+      Host: www.ignitelimit.com
 - name: 'T.ME: @aristapnel #236'
-  type: trojan
-  server: 104.16.7.70
-  port: 443
-  password: humanity
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 104.16.7.70
-  client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #237'
   type: trojan
   server: 104.18.32.47
   port: 443
@@ -3556,7 +3545,7 @@ proxies:
     path: /assignment
     headers:
       Host: www.multiplydose.com
-- name: 'T.ME: @aristapnel #238'
+- name: 'T.ME: @aristapnel #237'
   type: trojan
   server: 51.75.86.196
   port: 55646
@@ -3566,6 +3555,17 @@ proxies:
   skip-cert-verify: false
   tcp-fast-open: true
   servername: 51.75.86.196
+  client-fingerprint: chrome
+- name: 'T.ME: @aristapnel #238'
+  type: trojan
+  server: 150.241.65.18
+  port: 50824
+  password: 7aXwJPnpAJ
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: yespaintstudio.rav-kraski.ru
   client-fingerprint: chrome
 - name: 'T.ME: @aristapnel #239'
   type: trojan
@@ -3577,10 +3577,12 @@ proxies:
   skip-cert-verify: false
   tcp-fast-open: true
   servername: yespaintstudio.rav-kraski.ru
-  client-fingerprint: chrome
+  client-fingerprint: qq
+  alpn:
+  - h2
 - name: 'T.ME: @aristapnel #240'
   type: trojan
-  server: 150.241.65.18
+  server: yespaintstudio.rav-kraski.ru
   port: 50824
   password: 7aXwJPnpAJ
   network: tcp
@@ -3601,12 +3603,10 @@ proxies:
   skip-cert-verify: false
   tcp-fast-open: true
   servername: yespaintstudio.rav-kraski.ru
-  client-fingerprint: qq
-  alpn:
-  - h2
+  client-fingerprint: chrome
 - name: 'T.ME: @aristapnel #242'
   type: trojan
-  server: yespaintstudio.rav-kraski.ru
+  server: 150.241.65.18
   port: 50824
   password: 7aXwJPnpAJ
   network: tcp
@@ -3628,7 +3628,7 @@ proxies:
   client-fingerprint: chrome
 - name: 'T.ME: @aristapnel #244'
   type: trojan
-  server: 150.241.65.18
+  server: yespaintstudio.rav-kraski.ru
   port: 50824
   password: 7aXwJPnpAJ
   network: tcp
@@ -3670,20 +3670,9 @@ proxies:
   tcp-fast-open: true
   servername: yespaintstudio.rav-kraski.ru
   client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #248'
-  type: trojan
-  server: yespaintstudio.rav-kraski.ru
-  port: 50824
-  password: 7aXwJPnpAJ
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: yespaintstudio.rav-kraski.ru
-  client-fingerprint: chrome
   alpn:
   - h2
-- name: 'T.ME: @aristapnel #249'
+- name: 'T.ME: @aristapnel #248'
   type: trojan
   server: yespaintstudio.rav-kraski.ru
   port: 50824
@@ -3696,7 +3685,7 @@ proxies:
   client-fingerprint: qq
   alpn:
   - h2
-- name: 'T.ME: @aristapnel #250'
+- name: 'T.ME: @aristapnel #249'
   type: trojan
   server: vless.herogoing.top
   port: 443
@@ -3711,6 +3700,17 @@ proxies:
     path: /tr?ed=2560
     headers:
       Host: vless.herogoing.top
+- name: 'T.ME: @aristapnel #250'
+  type: trojan
+  server: 23.144.12.33
+  port: 14555
+  password: 7c9fea7c-8def-3dd5-853a-5844f9b04146
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: windows11.dpdns.org
+  client-fingerprint: chrome
 - name: 'T.ME: @aristapnel #251'
   type: trojan
   server: 23.144.12.33
@@ -3724,15 +3724,19 @@ proxies:
   client-fingerprint: chrome
 - name: 'T.ME: @aristapnel #252'
   type: trojan
-  server: 23.144.12.33
-  port: 14555
-  password: 7c9fea7c-8def-3dd5-853a-5844f9b04146
-  network: tcp
+  server: www.ignitelimit.com
+  port: 443
+  password: humanity
+  network: ws
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: windows11.dpdns.org
+  servername: www.ignitelimit.com
   client-fingerprint: chrome
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.ignitelimit.com
 - name: 'T.ME: @aristapnel #253'
   type: trojan
   server: www.ignitelimit.com
@@ -3750,19 +3754,19 @@ proxies:
       Host: www.ignitelimit.com
 - name: 'T.ME: @aristapnel #254'
   type: trojan
-  server: www.ignitelimit.com
+  server: www.calmlunch.com
   port: 443
   password: humanity
   network: ws
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: www.ignitelimit.com
+  servername: www.calmlunch.com
   client-fingerprint: chrome
   ws-opts:
     path: /assignment
     headers:
-      Host: www.ignitelimit.com
+      Host: www.calmlunch.com
 - name: 'T.ME: @aristapnel #255'
   type: trojan
   server: www.calmlunch.com
@@ -3795,21 +3799,6 @@ proxies:
       Host: www.calmlunch.com
 - name: 'T.ME: @aristapnel #257'
   type: trojan
-  server: www.calmlunch.com
-  port: 443
-  password: humanity
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.calmlunch.com
-  client-fingerprint: chrome
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.calmlunch.com
-- name: 'T.ME: @aristapnel #258'
-  type: trojan
   server: www.ignitelimit.com
   port: 443
   password: humanity
@@ -3823,10 +3812,21 @@ proxies:
     path: /assignment
     headers:
       Host: www.ignitelimit.com
-- name: 'T.ME: @aristapnel #259'
+- name: 'T.ME: @aristapnel #258'
   type: trojan
   server: ikuai.bot.nu
   port: 11777
+  password: 7c9fea7c-8def-3dd5-853a-5844f9b04146
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: windows11.dpdns.org
+  client-fingerprint: chrome
+- name: 'T.ME: @aristapnel #259'
+  type: trojan
+  server: ikuai.bot.nu
+  port: 14555
   password: 7c9fea7c-8def-3dd5-853a-5844f9b04146
   network: tcp
   udp: true
@@ -3847,17 +3847,6 @@ proxies:
   client-fingerprint: chrome
 - name: 'T.ME: @aristapnel #261'
   type: trojan
-  server: ikuai.bot.nu
-  port: 14555
-  password: 7c9fea7c-8def-3dd5-853a-5844f9b04146
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: windows11.dpdns.org
-  client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #262'
-  type: trojan
   server: www.multiplydose.com
   port: 443
   password: humanity
@@ -3871,7 +3860,7 @@ proxies:
     path: /assignment
     headers:
       Host: www.multiplydose.com
-- name: 'T.ME: @aristapnel #263'
+- name: 'T.ME: @aristapnel #262'
   type: trojan
   server: www.multiplydose.com
   port: 443
@@ -3886,7 +3875,7 @@ proxies:
     path: //assignment
     headers:
       Host: www.multiplydose.com
-- name: 'T.ME: @aristapnel #264'
+- name: 'T.ME: @aristapnel #263'
   type: trojan
   server: www.multiplydose.com
   port: 443
@@ -3901,6 +3890,21 @@ proxies:
     path: /assignment
     headers:
       Host: www.multiplydose.com
+- name: 'T.ME: @aristapnel #264'
+  type: trojan
+  server: www.calmlunch.com
+  port: 443
+  password: humanity
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.calmlunch.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmlunch.com
 - name: 'T.ME: @aristapnel #265'
   type: trojan
   server: www.calmlunch.com
@@ -3918,19 +3922,19 @@ proxies:
       Host: www.calmlunch.com
 - name: 'T.ME: @aristapnel #266'
   type: trojan
-  server: www.calmlunch.com
+  server: www.multiplydose.com
   port: 443
   password: humanity
   network: ws
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: www.calmlunch.com
+  servername: www.multiplydose.com
   client-fingerprint: chrome
   ws-opts:
     path: /assignment
     headers:
-      Host: www.calmlunch.com
+      Host: www.multiplydose.com
 - name: 'T.ME: @aristapnel #267'
   type: trojan
   server: www.multiplydose.com
@@ -3943,7 +3947,7 @@ proxies:
   servername: www.multiplydose.com
   client-fingerprint: chrome
   ws-opts:
-    path: /assignment
+    path: //assignment
     headers:
       Host: www.multiplydose.com
 - name: 'T.ME: @aristapnel #268'
@@ -3958,7 +3962,7 @@ proxies:
   servername: www.multiplydose.com
   client-fingerprint: chrome
   ws-opts:
-    path: //assignment
+    path: /assignment
     headers:
       Host: www.multiplydose.com
 - name: 'T.ME: @aristapnel #269'
@@ -3978,21 +3982,6 @@ proxies:
       Host: www.multiplydose.com
 - name: 'T.ME: @aristapnel #270'
   type: trojan
-  server: www.multiplydose.com
-  port: 443
-  password: humanity
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.multiplydose.com
-  client-fingerprint: chrome
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.multiplydose.com
-- name: 'T.ME: @aristapnel #271'
-  type: trojan
   server: 193.168.197.76
   port: 49044
   password: WiqtB8V23f
@@ -4004,7 +3993,7 @@ proxies:
   client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: GunService
-- name: 'T.ME: @aristapnel #272'
+- name: 'T.ME: @aristapnel #271'
   type: trojan
   server: 138.124.182.202
   port: 39141
@@ -4017,9 +4006,24 @@ proxies:
   client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: GunService
-- name: 'T.ME: @aristapnel #273'
+- name: 'T.ME: @aristapnel #272'
   type: trojan
   server: 95.38.189.169
+  port: 40443
+  password: humanity
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.ignitelimit.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.ignitelimit.com
+- name: 'T.ME: @aristapnel #273'
+  type: trojan
+  server: 95.38.189.135
   port: 40443
   password: humanity
   network: ws
@@ -4049,7 +4053,7 @@ proxies:
       Host: www.ignitelimit.com
 - name: 'T.ME: @aristapnel #275'
   type: trojan
-  server: 95.38.189.135
+  server: 95.38.180.82
   port: 40443
   password: humanity
   network: ws
@@ -4064,21 +4068,6 @@ proxies:
       Host: www.ignitelimit.com
 - name: 'T.ME: @aristapnel #276'
   type: trojan
-  server: 95.38.180.82
-  port: 40443
-  password: humanity
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.ignitelimit.com
-  client-fingerprint: chrome
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.ignitelimit.com
-- name: 'T.ME: @aristapnel #277'
-  type: trojan
   server: 94.184.21.170
   port: 40443
   password: humanity
@@ -4092,7 +4081,7 @@ proxies:
     path: /assignment
     headers:
       Host: www.multiplydose.com
-- name: 'T.ME: @aristapnel #278'
+- name: 'T.ME: @aristapnel #277'
   type: trojan
   server: 94.101.186.0
   port: 40443
@@ -4107,7 +4096,7 @@ proxies:
     path: /assignment
     headers:
       Host: www.ignitelimit.com
-- name: 'T.ME: @aristapnel #279'
+- name: 'T.ME: @aristapnel #278'
   type: trojan
   server: 79.127.37.45
   port: 40443
@@ -4122,9 +4111,24 @@ proxies:
     path: /assignment
     headers:
       Host: www.multiplydose.com
-- name: 'T.ME: @aristapnel #280'
+- name: 'T.ME: @aristapnel #279'
   type: trojan
   server: 37.32.11.209
+  port: 40443
+  password: humanity
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.ignitelimit.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.ignitelimit.com
+- name: 'T.ME: @aristapnel #280'
+  type: trojan
+  server: 37.32.10.17
   port: 40443
   password: humanity
   network: ws
@@ -4146,28 +4150,13 @@ proxies:
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: www.ignitelimit.com
-  client-fingerprint: chrome
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.ignitelimit.com
-- name: 'T.ME: @aristapnel #282'
-  type: trojan
-  server: 37.32.10.17
-  port: 40443
-  password: humanity
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
   servername: www.creationlong.org
   client-fingerprint: chrome
   ws-opts:
     path: /assignment
     headers:
       Host: www.creationlong.org
-- name: 'T.ME: @aristapnel #283'
+- name: 'T.ME: @aristapnel #282'
   type: trojan
   server: 37.152.190.150
   port: 40443
@@ -4182,7 +4171,7 @@ proxies:
     path: /assignment
     headers:
       Host: www.ignitelimit.com
-- name: 'T.ME: @aristapnel #284'
+- name: 'T.ME: @aristapnel #283'
   type: trojan
   server: 37.152.189.13
   port: 40443
@@ -4197,7 +4186,7 @@ proxies:
     path: /assignment
     headers:
       Host: www.ignitelimit.com
-- name: 'T.ME: @aristapnel #285'
+- name: 'T.ME: @aristapnel #284'
   type: trojan
   server: 37.152.186.247
   port: 40443
@@ -4212,7 +4201,7 @@ proxies:
     path: /assignment
     headers:
       Host: www.ignitelimit.com
-- name: 'T.ME: @aristapnel #286'
+- name: 'T.ME: @aristapnel #285'
   type: trojan
   server: 37.152.186.104
   port: 40443
@@ -4227,7 +4216,7 @@ proxies:
     path: /assignment
     headers:
       Host: www.ignitelimit.com
-- name: 'T.ME: @aristapnel #287'
+- name: 'T.ME: @aristapnel #286'
   type: trojan
   server: 37.152.185.223
   port: 40443
@@ -4242,9 +4231,24 @@ proxies:
     path: /assignment
     headers:
       Host: www.ignitelimit.com
-- name: 'T.ME: @aristapnel #288'
+- name: 'T.ME: @aristapnel #287'
   type: trojan
   server: 2.144.7.209
+  port: 40443
+  password: humanity
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.ignitelimit.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.ignitelimit.com
+- name: 'T.ME: @aristapnel #288'
+  type: trojan
+  server: 2.144.6.140
   port: 40443
   password: humanity
   network: ws
@@ -4266,27 +4270,27 @@ proxies:
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: www.ignitelimit.com
-  client-fingerprint: chrome
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.ignitelimit.com
-- name: 'T.ME: @aristapnel #290'
-  type: trojan
-  server: 2.144.6.140
-  port: 40443
-  password: humanity
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
   servername: www.creationlong.org
   client-fingerprint: chrome
   ws-opts:
     path: /assignment
     headers:
       Host: www.creationlong.org
+- name: 'T.ME: @aristapnel #290'
+  type: trojan
+  server: 2.144.4.208
+  port: 40443
+  password: humanity
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.ignitelimit.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.ignitelimit.com
 - name: 'T.ME: @aristapnel #291'
   type: trojan
   server: 2.144.4.208
@@ -4296,27 +4300,27 @@ proxies:
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: www.ignitelimit.com
-  client-fingerprint: chrome
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.ignitelimit.com
-- name: 'T.ME: @aristapnel #292'
-  type: trojan
-  server: 2.144.4.208
-  port: 40443
-  password: humanity
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
   servername: www.creationlong.org
   client-fingerprint: chrome
   ws-opts:
     path: /assignment
     headers:
       Host: www.creationlong.org
+- name: 'T.ME: @aristapnel #292'
+  type: trojan
+  server: 2.144.23.105
+  port: 40443
+  password: humanity
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.ignitelimit.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.ignitelimit.com
 - name: 'T.ME: @aristapnel #293'
   type: trojan
   server: 2.144.23.105
@@ -4326,28 +4330,13 @@ proxies:
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: www.ignitelimit.com
-  client-fingerprint: chrome
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.ignitelimit.com
-- name: 'T.ME: @aristapnel #294'
-  type: trojan
-  server: 2.144.23.105
-  port: 40443
-  password: humanity
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
   servername: www.creationlong.org
   client-fingerprint: chrome
   ws-opts:
     path: /assignment
     headers:
       Host: www.creationlong.org
-- name: 'T.ME: @aristapnel #295'
+- name: 'T.ME: @aristapnel #294'
   type: trojan
   server: 2.144.23.105
   port: 40443
@@ -4362,6 +4351,21 @@ proxies:
     path: /assignment
     headers:
       Host: www.calmlunch.com
+- name: 'T.ME: @aristapnel #295'
+  type: trojan
+  server: 2.144.21.112
+  port: 40443
+  password: humanity
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.ignitelimit.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.ignitelimit.com
 - name: 'T.ME: @aristapnel #296'
   type: trojan
   server: 2.144.21.112
@@ -4371,27 +4375,27 @@ proxies:
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: www.ignitelimit.com
-  client-fingerprint: chrome
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.ignitelimit.com
-- name: 'T.ME: @aristapnel #297'
-  type: trojan
-  server: 2.144.21.112
-  port: 40443
-  password: humanity
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
   servername: www.creationlong.org
   client-fingerprint: chrome
   ws-opts:
     path: /assignment
     headers:
       Host: www.creationlong.org
+- name: 'T.ME: @aristapnel #297'
+  type: trojan
+  server: 2.144.19.97
+  port: 40443
+  password: humanity
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.ignitelimit.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.ignitelimit.com
 - name: 'T.ME: @aristapnel #298'
   type: trojan
   server: 2.144.19.97
@@ -4401,27 +4405,27 @@ proxies:
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: www.ignitelimit.com
-  client-fingerprint: chrome
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.ignitelimit.com
-- name: 'T.ME: @aristapnel #299'
-  type: trojan
-  server: 2.144.19.97
-  port: 40443
-  password: humanity
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
   servername: www.creationlong.org
   client-fingerprint: chrome
   ws-opts:
     path: /assignment
     headers:
       Host: www.creationlong.org
+- name: 'T.ME: @aristapnel #299'
+  type: trojan
+  server: 2.144.19.136
+  port: 40443
+  password: humanity
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.ignitelimit.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.ignitelimit.com
 - name: 'T.ME: @aristapnel #300'
   type: trojan
   server: 2.144.19.136
@@ -4431,30 +4435,30 @@ proxies:
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: www.ignitelimit.com
-  client-fingerprint: chrome
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.ignitelimit.com
-- name: 'T.ME: @aristapnel #301'
-  type: trojan
-  server: 2.144.19.136
-  port: 40443
-  password: humanity
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
   servername: www.creationlong.org
   client-fingerprint: chrome
   ws-opts:
     path: /assignment
     headers:
       Host: www.creationlong.org
-- name: 'T.ME: @aristapnel #302'
+- name: 'T.ME: @aristapnel #301'
   type: trojan
   server: 193.151.132.136
+  port: 40443
+  password: humanity
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.ignitelimit.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.ignitelimit.com
+- name: 'T.ME: @aristapnel #302'
+  type: trojan
+  server: 188.121.123.55
   port: 40443
   password: humanity
   network: ws
@@ -4476,28 +4480,13 @@ proxies:
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: www.ignitelimit.com
-  client-fingerprint: chrome
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.ignitelimit.com
-- name: 'T.ME: @aristapnel #304'
-  type: trojan
-  server: 188.121.123.55
-  port: 40443
-  password: humanity
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
   servername: www.creationlong.org
   client-fingerprint: chrome
   ws-opts:
     path: /assignment
     headers:
       Host: www.creationlong.org
-- name: 'T.ME: @aristapnel #305'
+- name: 'T.ME: @aristapnel #304'
   type: trojan
   server: 188.121.123.55
   port: 40443
@@ -4512,7 +4501,7 @@ proxies:
     path: /assignment
     headers:
       Host: www.calmlunch.com
-- name: 'T.ME: @aristapnel #306'
+- name: 'T.ME: @aristapnel #305'
   type: trojan
   server: 188.121.120.157
   port: 40443
@@ -4527,7 +4516,7 @@ proxies:
     path: /assignment
     headers:
       Host: www.ignitelimit.com
-- name: 'T.ME: @aristapnel #307'
+- name: 'T.ME: @aristapnel #306'
   type: trojan
   server: 188.121.114.7
   port: 40443
@@ -4542,7 +4531,7 @@ proxies:
     path: /assignment
     headers:
       Host: www.ignitelimit.com
-- name: 'T.ME: @aristapnel #308'
+- name: 'T.ME: @aristapnel #307'
   type: trojan
   server: 188.121.114.52
   port: 40443
@@ -4557,7 +4546,7 @@ proxies:
     path: /assignment
     headers:
       Host: www.ignitelimit.com
-- name: 'T.ME: @aristapnel #309'
+- name: 'T.ME: @aristapnel #308'
   type: trojan
   server: 188.121.112.93
   port: 40443
@@ -4572,7 +4561,7 @@ proxies:
     path: /assignment
     headers:
       Host: www.ignitelimit.com
-- name: 'T.ME: @aristapnel #310'
+- name: 'T.ME: @aristapnel #309'
   type: trojan
   server: 188.121.112.205
   port: 40443
@@ -4587,7 +4576,7 @@ proxies:
     path: /assignment
     headers:
       Host: www.ignitelimit.com
-- name: 'T.ME: @aristapnel #311'
+- name: 'T.ME: @aristapnel #310'
   type: trojan
   server: 188.121.105.205
   port: 40443
@@ -4602,7 +4591,7 @@ proxies:
     path: /assignment
     headers:
       Host: www.ignitelimit.com
-- name: 'T.ME: @aristapnel #312'
+- name: 'T.ME: @aristapnel #311'
   type: trojan
   server: 188.114.98.0
   port: 443
@@ -4617,7 +4606,7 @@ proxies:
     path: /assignment
     headers:
       Host: www.calmlunch.com
-- name: 'T.ME: @aristapnel #313'
+- name: 'T.ME: @aristapnel #312'
   type: trojan
   server: 188.114.98.0
   port: 443
@@ -4632,7 +4621,7 @@ proxies:
     path: /assignment
     headers:
       Host: www.creationlong.org
-- name: 'T.ME: @aristapnel #314'
+- name: 'T.ME: @aristapnel #313'
   type: trojan
   server: 185.208.79.62
   port: 443
@@ -4647,7 +4636,7 @@ proxies:
     path: /assignment
     headers:
       Host: www.calmlunch.com
-- name: 'T.ME: @aristapnel #315'
+- name: 'T.ME: @aristapnel #314'
   type: trojan
   server: 172.64.152.23
   port: 443
@@ -4662,7 +4651,7 @@ proxies:
     path: /assignment
     headers:
       Host: www.gossipglove.com
-- name: 'T.ME: @aristapnel #316'
+- name: 'T.ME: @aristapnel #315'
   type: trojan
   server: 104.21.40.34
   port: 443
@@ -4677,7 +4666,7 @@ proxies:
     path: /assignment
     headers:
       Host: www.gossipglove.com
-- name: 'T.ME: @aristapnel #317'
+- name: 'T.ME: @aristapnel #316'
   type: trojan
   server: 104.20.42.250
   port: 443
@@ -4692,7 +4681,7 @@ proxies:
     path: /assignment
     headers:
       Host: www.calmloud.com
-- name: 'T.ME: @aristapnel #318'
+- name: 'T.ME: @aristapnel #317'
   type: trojan
   server: 104.20.42.250
   port: 443
@@ -4709,7 +4698,7 @@ proxies:
     path: /assignment
     headers:
       Host: www.calmloud.com
-- name: 'T.ME: @aristapnel #319'
+- name: 'T.ME: @aristapnel #318'
   type: trojan
   server: 104.19.229.21
   port: 443
@@ -4724,7 +4713,7 @@ proxies:
     path: /assignment
     headers:
       Host: www.multiplydose.com
-- name: 'T.ME: @aristapnel #320'
+- name: 'T.ME: @aristapnel #319'
   type: trojan
   server: 104.18.139.67
   port: 443
@@ -4739,7 +4728,7 @@ proxies:
     path: /assignment
     headers:
       Host: www.multiplydose.com
-- name: 'T.ME: @aristapnel #321'
+- name: 'T.ME: @aristapnel #320'
   type: trojan
   server: 104.16.80.73
   port: 443
@@ -4754,7 +4743,7 @@ proxies:
     path: /assignment
     headers:
       Host: www.gossipglove.com
-- name: 'T.ME: @aristapnel #322'
+- name: 'T.ME: @aristapnel #321'
   type: trojan
   server: 104.16.7.70
   port: 443
@@ -4769,7 +4758,7 @@ proxies:
     path: assignment
     headers:
       Host: www.ignitelimit.com
-- name: 'T.ME: @aristapnel #323'
+- name: 'T.ME: @aristapnel #322'
   type: trojan
   server: 104.16.7.70
   port: 443
@@ -4784,7 +4773,7 @@ proxies:
     path: /assignment
     headers:
       Host: www.ignitelimit.com
-- name: 'T.ME: @aristapnel #324'
+- name: 'T.ME: @aristapnel #323'
   type: trojan
   server: 104.16.7.70
   port: 443
@@ -4799,7 +4788,7 @@ proxies:
     path: /assignment
     headers:
       Host: www.creationlong.org
-- name: 'T.ME: @aristapnel #325'
+- name: 'T.ME: @aristapnel #324'
   type: trojan
   server: 104.16.7.70
   port: 443
@@ -4814,6 +4803,21 @@ proxies:
     path: /assignment
     headers:
       Host: www.ignitelimit.com
+- name: 'T.ME: @aristapnel #325'
+  type: trojan
+  server: 104.16.7.70
+  port: 443
+  password: humanity
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.gossipglove.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.gossipglove.com
 - name: 'T.ME: @aristapnel #326'
   type: trojan
   server: 104.16.7.70
@@ -4831,21 +4835,6 @@ proxies:
       Host: www.gossipglove.com
 - name: 'T.ME: @aristapnel #327'
   type: trojan
-  server: 104.16.7.70
-  port: 443
-  password: humanity
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.gossipglove.com
-  client-fingerprint: chrome
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.gossipglove.com
-- name: 'T.ME: @aristapnel #328'
-  type: trojan
   server: 104.16.63.25
   port: 443
   password: humanity
@@ -4859,7 +4848,7 @@ proxies:
     path: /assignment
     headers:
       Host: www.creationlong.org
-- name: 'T.ME: @aristapnel #329'
+- name: 'T.ME: @aristapnel #328'
   type: trojan
   server: 104.16.7.70
   port: 443
@@ -4874,7 +4863,7 @@ proxies:
     path: /tr
     headers:
       Host: Koma-YT.PAGeS.Dev
-- name: 'T.ME: @aristapnel #330'
+- name: 'T.ME: @aristapnel #329'
   type: trojan
   server: 104.16.7.70
   port: 443
@@ -5223,7 +5212,6 @@ proxy-groups:
   - 'T.ME: @aristapnel #327'
   - 'T.ME: @aristapnel #328'
   - 'T.ME: @aristapnel #329'
-  - 'T.ME: @aristapnel #330'
   - DIRECT
 - name: Auto Select
   type: url-test
@@ -5557,7 +5545,6 @@ proxy-groups:
   - 'T.ME: @aristapnel #327'
   - 'T.ME: @aristapnel #328'
   - 'T.ME: @aristapnel #329'
-  - 'T.ME: @aristapnel #330'
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 150
