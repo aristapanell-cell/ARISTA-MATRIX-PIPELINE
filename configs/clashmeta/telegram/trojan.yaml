@@ -80,7 +80,7 @@ proxies:
   type: trojan
   server: 45.130.125.76
   port: 443
-  password: mitivpn
+  password: '%6d%69%74%69%76%70%6e'
   network: ws
   udp: true
   skip-cert-verify: false
@@ -90,49 +90,10 @@ proxies:
   alpn:
   - http/1.1
   ws-opts:
-    path: /?ed
+    path: /?ed=2048
     headers:
       Host: www.app-cloud.ir
 - name: 'Trojan #2'
-  type: trojan
-  server: 78.159.131.12
-  port: 28259
-  password: MeaDiUmPlkWbZJ2BON8tz
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 🔒
-  client-fingerprint: chrome
-- name: 'Trojan #3'
-  type: trojan
-  server: 15.237.158.158
-  port: 22222
-  password: telegram-id-privatevpns
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-- name: 'Trojan #4'
-  type: trojan
-  server: 188.114.98.0
-  port: 443
-  password: humanity
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.calmlunch.com
-  client-fingerprint: chrome
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.calmlunch.com
-- name: 'Trojan #5'
   type: trojan
   server: 104.17.121.71
   port: 443
@@ -147,44 +108,7 @@ proxies:
     path: /assignment
     headers:
       Host: www.calmlunch.com
-- name: 'Trojan #6'
-  type: trojan
-  server: 172.64.152.23
-  port: 443
-  password: humanity
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.calmlunch.com
-  client-fingerprint: chrome
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.calmlunch.com
-- name: 'Trojan #7'
-  type: trojan
-  server: 2.27.23.226
-  port: 5231
-  password: WXgoPIGPSr
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.icloud.com
-  client-fingerprint: chrome
-- name: 'Trojan #8'
-  type: trojan
-  server: 2.27.23.226
-  port: 5231
-  password: WXgoPIGPSr
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.icloud.com
-  client-fingerprint: chrome
-- name: 'Trojan #9'
+- name: 'Trojan #3'
   type: trojan
   server: 45.130.125.76
   port: 443
@@ -201,24 +125,84 @@ proxies:
     path: /?ed=2048
     headers:
       Host: www.hitgram.ir
-- name: 'Trojan #10'
+- name: 'Trojan #4'
   type: trojan
-  server: 104.17.121.71
+  server: 208.103.161.33
   port: 443
-  password: mitivpn
+  password: Mitivpn
   network: ws
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: www.app-cloud.ir
+  servername: www.hitgram.ir
   client-fingerprint: chrome
   alpn:
   - http/1.1
   ws-opts:
-    path: /?ed=2048
+    path: /?ed=mitivpn
     headers:
-      Host: www.app-cloud.ir
-- name: 'Trojan #11'
+      Host: www.hitgram.ir
+- name: 'Trojan #5'
+  type: trojan
+  server: 216.24.57.6
+  port: 443
+  password: Mitivpn
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: cdn.hitgram.ir
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /?ed=mitivpn
+    headers:
+      Host: cdn.hitgram.ir
+- name: 'Trojan #6'
+  type: trojan
+  server: s1.websart.ir
+  port: 58900
+  password: aYrH3Tt3R2
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: s1.websart.ir
+  client-fingerprint: chrome
+- name: 'Trojan #7'
+  type: trojan
+  server: 208.103.161.33
+  port: 443
+  password: Mitivpn
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.hitgram.ir
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /?ed=mitivpn
+    headers:
+      Host: www.hitgram.ir
+- name: 'Trojan #8'
+  type: trojan
+  server: 104.17.121.71
+  port: 443
+  password: humanity
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.multiplydose.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.multiplydose.com
+- name: 'Trojan #9'
   type: trojan
   server: www.hitgram.ir
   port: 443
@@ -235,21 +219,57 @@ proxies:
     path: /?ed=2048
     headers:
       Host: www.hitgram.ir
-- name: 'Trojan #12'
+- name: 'Trojan #10'
   type: trojan
-  server: 104.17.121.71
+  server: 45.130.125.69
   port: 443
   password: humanity
   network: ws
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: www.multiplydose.com
+  servername: www.calmloud.com
   client-fingerprint: chrome
+  alpn:
+  - http/1.1
   ws-opts:
     path: /assignment
     headers:
-      Host: www.multiplydose.com
+      Host: www.calmloud.com
+- name: 'Trojan #11'
+  type: trojan
+  server: 216.24.57.7
+  port: 443
+  password: Mitivpn
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: cdn.hitgram.ir
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: cdn.hitgram.ir
+- name: 'Trojan #12'
+  type: trojan
+  server: 216.24.57.7
+  port: 443
+  password: Mitivpn
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.hitgram.ir
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: www.hitgram.ir
 - name: 'Trojan #13'
   type: trojan
   server: 127.0.0.1
@@ -284,56 +304,67 @@ proxies:
       Host: dash.hitgram.ir
 - name: 'Trojan #15'
   type: trojan
-  server: 208.103.161.175
+  server: 45.130.125.76
   port: 443
-  password: '%6d%69%74%69%76%70%6e'
+  password: mitivpn
   network: ws
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: cdn.iranpoems.ir
+  servername: www.app-cloud.ir
   client-fingerprint: chrome
+  alpn:
+  - http/1.1
   ws-opts:
     path: /?ed=2048
     headers:
-      Host: cdn.iranpoems.ir
+      Host: www.app-cloud.ir
 - name: 'Trojan #16'
   type: trojan
-  server: 45.130.125.69
+  server: 2.27.23.226
+  port: 5231
+  password: WXgoPIGPSr
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.icloud.com
+  client-fingerprint: chrome
+- name: 'Trojan #17'
+  type: trojan
+  server: 104.18.32.47
   port: 443
   password: humanity
   network: ws
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: www.calmloud.com
+  servername: www.gossipglove.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.gossipglove.com
+- name: 'Trojan #18'
+  type: trojan
+  server: 104.18.22.63
+  port: 443
+  password: humanity
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.ignitelimit.com
   client-fingerprint: chrome
   alpn:
   - http/1.1
   ws-opts:
     path: /assignment
     headers:
-      Host: www.calmloud.com
-- name: 'Trojan #17'
+      Host: www.ignitelimit.com
+- name: 'Trojan #19'
   type: trojan
-  server: chatgpt.com
-  port: 443
-  password: wLy%3A8%3E%23.3p1*
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: bb-1w3.PAgeS.Dev
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /eyJqdW5rIjoiTkFPd2NSU0hwQU5JIiwicHJvdG9jb2wiOiJ0ciIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ==?ed=2560
-    headers:
-      Host: bb-1w3.PAgeS.Dev
-- name: 'Trojan #18'
-  type: trojan
-  server: 208.103.161.101
+  server: www.creationlong.org
   port: 443
   password: humanity
   network: ws
@@ -349,263 +380,22 @@ proxies:
     path: /assignment
     headers:
       Host: www.creationlong.org
-- name: 'Trojan #19'
-  type: trojan
-  server: 104.18.32.47
-  port: 2096
-  password: mitivpn
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.app-cloud.ir
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: www.app-cloud.ir
 - name: 'Trojan #20'
   type: trojan
-  server: 45.130.125.76
+  server: 104.18.32.47
   port: 443
-  password: mitivpn
+  password: humanity
   network: ws
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: www.app-cloud.ir
+  servername: www.multiplydose.com
   client-fingerprint: chrome
-  alpn:
-  - http/1.1
   ws-opts:
-    path: /?ed=2048
+    path: /assignment
     headers:
-      Host: www.app-cloud.ir
+      Host: www.multiplydose.com
 - name: 'Trojan #21'
-  type: trojan
-  server: 216.24.57.7
-  port: 443
-  password: Mitivpn
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: cdn.hitgram.ir
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: cdn.hitgram.ir
-- name: 'Trojan #22'
-  type: trojan
-  server: 216.24.57.7
-  port: 443
-  password: Mitivpn
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.hitgram.ir
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: www.hitgram.ir
-- name: 'Trojan #23'
-  type: trojan
-  server: www.iranpoems.ir
-  port: 443
-  password: mitivpn
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.iranpoems.ir
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: www.iranpoems.ir
-- name: 'Trojan #24'
-  type: trojan
-  server: 45.130.125.69
-  port: 443
-  password: humanity
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.calmloud.com
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.calmloud.com
-- name: 'Trojan #25'
-  type: trojan
-  server: 45.130.125.76
-  port: 443
-  password: mitivpn
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.app-cloud.ir
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: www.app-cloud.ir
-- name: 'Trojan #26'
-  type: trojan
-  server: 45.130.125.76
-  port: 443
-  password: UnNurmal
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.app-cloud.ir
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: www.app-cloud.ir
-- name: 'Trojan #27'
-  type: trojan
-  server: jpbgp.netvigor.cc
-  port: 19128
-  password: gcuCpQfaiVeDBdWG
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: yazhou10.dynu.net
-  client-fingerprint: chrome
-- name: 'Trojan #28'
-  type: trojan
-  server: 45.130.125.69
-  port: 443
-  password: humanity
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.calmlunch.com
-  client-fingerprint: chrome
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.calmlunch.com
-- name: 'Trojan #29'
-  type: trojan
-  server: 104.21.40.34
-  port: 443
-  password: humanity
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.gossipglove.com
-  client-fingerprint: chrome
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.gossipglove.com
-- name: 'Trojan #30'
-  type: trojan
-  server: 172.64.152.23
-  port: 443
-  password: humanity
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.gossipglove.com
-  client-fingerprint: chrome
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.gossipglove.com
-- name: 'Trojan #31'
-  type: trojan
-  server: 104.20.42.250
-  port: 443
-  password: humanity
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.calmloud.com
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.calmloud.com
-- name: 'Trojan #32'
-  type: trojan
-  server: www.multiplydose.com
-  port: 443
-  password: humanity
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.multiplydose.com
-  client-fingerprint: chrome
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.multiplydose.com
-- name: 'Trojan #33'
-  type: trojan
-  server: 172.67.180.92
-  port: 443
-  password: humanity
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.multiplydose.com
-  client-fingerprint: chrome
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.multiplydose.com
-- name: 'Trojan #34'
-  type: trojan
-  server: 45.130.125.76
-  port: 443
-  password: '%6d%69%74%69%76%70%6e'
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.app-cloud.ir
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: www.app-cloud.ir
-- name: 'Trojan #35'
   type: trojan
   server: 162.159.153.2
   port: 443
@@ -622,6 +412,220 @@ proxies:
     path: /?proxyip=ip.111000.de5.net%3A443
     headers:
       Host: sni.111000.dynv6.net
+- name: 'Trojan #22'
+  type: trojan
+  server: 45.130.125.69
+  port: 443
+  password: humanity
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.calmlunch.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmlunch.com
+- name: 'Trojan #23'
+  type: trojan
+  server: 45.130.125.69
+  port: 443
+  password: humanity
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.calmlunch.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmlunch.com
+- name: 'Trojan #24'
+  type: trojan
+  server: 45.130.125.76
+  port: 443
+  password: mitivpn
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.app-cloud.ir
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /?ed
+    headers:
+      Host: www.app-cloud.ir
+- name: 'Trojan #25'
+  type: trojan
+  server: chatgpt.com
+  port: 443
+  password: wLy%3A8%3E%23.3p1*
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: bb-1w3.PAgeS.Dev
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /eyJqdW5rIjoiTkFPd2NSU0hwQU5JIiwicHJvdG9jb2wiOiJ0ciIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ==?ed=2560
+    headers:
+      Host: bb-1w3.PAgeS.Dev
+- name: 'Trojan #26'
+  type: trojan
+  server: www.iranpoems.ir
+  port: 443
+  password: mitivpn
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.iranpoems.ir
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: www.iranpoems.ir
+- name: 'Trojan #27'
+  type: trojan
+  server: 45.130.125.69
+  port: 443
+  password: humanity
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.calmloud.com
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmloud.com
+- name: 'Trojan #28'
+  type: trojan
+  server: snapp.ir
+  port: 80
+  password: 33ws1asxa8vmbehw
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: web.maxisup.ir
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: web.maxisup.ir
+- name: 'Trojan #29'
+  type: trojan
+  server: 104.17.121.71
+  port: 443
+  password: mitivpn
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.app-cloud.ir
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: www.app-cloud.ir
+- name: 'Trojan #30'
+  type: trojan
+  server: 188.114.98.0
+  port: 443
+  password: humanity
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.calmlunch.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmlunch.com
+- name: 'Trojan #31'
+  type: trojan
+  server: 104.17.121.71
+  port: 443
+  password: humanity
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.calmlunch.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmlunch.com
+- name: 'Trojan #32'
+  type: trojan
+  server: 172.64.152.23
+  port: 443
+  password: humanity
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.calmlunch.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmlunch.com
+- name: 'Trojan #33'
+  type: trojan
+  server: 2.27.23.226
+  port: 5231
+  password: WXgoPIGPSr
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.icloud.com
+  client-fingerprint: chrome
+- name: 'Trojan #34'
+  type: trojan
+  server: 51.75.86.196
+  port: 55646
+  password: 03mpolj39zyewzufal2r
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: 51.75.86.196
+  client-fingerprint: chrome
+- name: 'Trojan #35'
+  type: trojan
+  server: 45.130.125.69
+  port: 443
+  password: humanity
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.calmloud.com
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmloud.com
 - name: 'Trojan #36'
   type: trojan
   server: 45.130.125.76
@@ -641,38 +645,39 @@ proxies:
       Host: www.app-cloud.ir
 - name: 'Trojan #37'
   type: trojan
-  server: 45.130.125.76
+  server: 216.24.57.7
   port: 443
-  password: mitivpn
+  password: Mitivpn
   network: ws
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: www.app-cloud.ir
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /?ed
-    headers:
-      Host: www.app-cloud.ir
-- name: 'Trojan #38'
-  type: trojan
-  server: 104.17.121.71
-  port: 443
-  password: mitivpn
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.app-cloud.ir
+  servername: www.hitgram.ir
   client-fingerprint: chrome
   alpn:
   - http/1.1
   ws-opts:
     path: /?ed=2048
     headers:
-      Host: www.app-cloud.ir
+      Host: www.hitgram.ir
+- name: 'Trojan #38'
+  type: trojan
+  server: 208.103.161.101
+  port: 443
+  password: humanity
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.creationlong.org
+  client-fingerprint: chrome
+  alpn:
+  - h2
+  - http/1.1
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.creationlong.org
 - name: 'Trojan #39'
   type: trojan
   server: 216.24.57.6
@@ -692,35 +697,133 @@ proxies:
       Host: www.calmloud.com
 - name: 'Trojan #40'
   type: trojan
-  server: 188.114.98.0
+  server: 165.215.250.14
   port: 443
   password: humanity
   network: ws
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: www.calmloud.com
-  client-fingerprint: ios
+  servername: www.calmlunch.com
+  client-fingerprint: chrome
   ws-opts:
     path: /assignment
     headers:
-      Host: www.calmloud.com
+      Host: www.calmlunch.com
 - name: 'Trojan #41'
   type: trojan
-  server: 63.182.182.4
-  port: 22223
-  password: telegram-id-directvpn
+  server: 78.159.131.12
+  port: 28259
+  password: MeaDiUmPlkWbZJ2BON8tz
   network: tcp
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: trojan.burgerip.co.uk
+  servername: 🔒
+  client-fingerprint: chrome
+- name: 'Trojan #42'
+  type: trojan
+  server: 208.103.161.33
+  port: 443
+  password: Mitivpn
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.hitgram.ir
   client-fingerprint: chrome
   alpn:
   - http/1.1
-- name: 'Trojan #42'
+  ws-opts:
+    path: /?ed=mitivpn
+    headers:
+      Host: www.hitgram.ir
+- name: 'Trojan #43'
   type: trojan
-  server: 216.24.57.7
+  server: 104.18.32.47
+  port: 2096
+  password: mitivpn
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.app-cloud.ir
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: www.app-cloud.ir
+- name: 'Trojan #44'
+  type: trojan
+  server: 45.130.125.76
+  port: 443
+  password: mitivpn
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.app-cloud.ir
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: www.app-cloud.ir
+- name: 'Trojan #45'
+  type: trojan
+  server: 45.130.125.76
+  port: 443
+  password: mitivpn
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.app-cloud.ir
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /?ed
+    headers:
+      Host: www.app-cloud.ir
+- name: 'Trojan #46'
+  type: trojan
+  server: 104.17.121.71
+  port: 443
+  password: mitivpn
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.app-cloud.ir
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: www.app-cloud.ir
+- name: 'Trojan #47'
+  type: trojan
+  server: 172.64.152.23
+  port: 443
+  password: humanity
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.calmlunch.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmlunch.com
+- name: 'Trojan #48'
+  type: trojan
+  server: www.hitgram.ir
   port: 443
   password: Mitivpn
   network: ws
@@ -735,72 +838,7 @@ proxies:
     path: /?ed=2048
     headers:
       Host: www.hitgram.ir
-- name: 'Trojan #43'
-  type: trojan
-  server: 104.18.32.47
-  port: 443
-  password: humanity
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.gossipglove.com
-  client-fingerprint: chrome
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.gossipglove.com
-- name: 'Trojan #44'
-  type: trojan
-  server: 104.18.22.63
-  port: 443
-  password: humanity
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.ignitelimit.com
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.ignitelimit.com
-- name: 'Trojan #45'
-  type: trojan
-  server: www.creationlong.org
-  port: 443
-  password: humanity
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.creationlong.org
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.creationlong.org
-- name: 'Trojan #46'
-  type: trojan
-  server: 104.18.32.47
-  port: 443
-  password: humanity
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.multiplydose.com
-  client-fingerprint: chrome
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.multiplydose.com
-- name: 'Trojan #47'
+- name: 'Trojan #49'
   type: trojan
   server: 188.114.96.4
   port: 443
@@ -817,66 +855,34 @@ proxies:
     path: /assignment
     headers:
       Host: www.calmloud.com
-- name: 'Trojan #48'
-  type: trojan
-  server: 172.64.152.23
-  port: 443
-  password: humanity
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.calmlunch.com
-  client-fingerprint: chrome
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.calmlunch.com
-- name: 'Trojan #49'
-  type: trojan
-  server: 165.215.250.14
-  port: 443
-  password: humanity
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.calmlunch.com
-  client-fingerprint: chrome
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.calmlunch.com
 - name: 'Trojan #50'
   type: trojan
-  server: snapp.ir
-  port: 80
-  password: 33ws1asxa8vmbehw
+  server: 45.130.125.76
+  port: 443
+  password: UnNurmal
   network: ws
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: web.maxisup.ir
+  servername: www.app-cloud.ir
   client-fingerprint: chrome
+  alpn:
+  - http/1.1
   ws-opts:
-    path: /
+    path: /?ed=2048
     headers:
-      Host: web.maxisup.ir
+      Host: www.app-cloud.ir
 - name: 'Trojan #51'
   type: trojan
-  server: 104.17.121.71
-  port: 443
-  password: humanity
-  network: ws
+  server: jpbgp.netvigor.cc
+  port: 19128
+  password: gcuCpQfaiVeDBdWG
+  network: tcp
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: www.calmlunch.com
+  servername: yazhou10.dynu.net
   client-fingerprint: chrome
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.calmlunch.com
 proxy-groups:
 - name: Proxy Select
   type: select
