@@ -78,28 +78,6 @@ sniffer:
 proxies:
 - name: 'Hysteria2 #1'
   type: hysteria2
-  server: 18.157.100.78
-  port: 8880
-  password: Masir_Sefid
-  sni: qus.masir-sefid.shop
-  skip-cert-verify: false
-  fast-open: true
-  client-fingerprint: chrome
-  obfs: salamander
-  obfs-password: Masir_Sefid
-- name: 'Hysteria2 #2'
-  type: hysteria2
-  server: 18.159.104.97
-  port: 54040
-  password: Masir_Sefid
-  sni: qus.masir-sefid.shop
-  skip-cert-verify: false
-  fast-open: true
-  client-fingerprint: chrome
-  obfs: salamander
-  obfs-password: Masir_Sefid
-- name: 'Hysteria2 #3'
-  type: hysteria2
   server: 18.159.104.97
   port: 4040
   password: Masir_Sefid
@@ -115,15 +93,11 @@ proxy-groups:
   proxies:
   - Auto Select
   - 'Hysteria2 #1'
-  - 'Hysteria2 #2'
-  - 'Hysteria2 #3'
   - DIRECT
 - name: Auto Select
   type: url-test
   proxies:
   - 'Hysteria2 #1'
-  - 'Hysteria2 #2'
-  - 'Hysteria2 #3'
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 150
