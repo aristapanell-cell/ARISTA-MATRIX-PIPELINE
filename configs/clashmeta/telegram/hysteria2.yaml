@@ -89,8 +89,8 @@ proxies:
   obfs-password: Masir_Sefid
 - name: 'Hysteria2 #2'
   type: hysteria2
-  server: 18.194.238.82
-  port: 443
+  server: 18.159.104.97
+  port: 4040
   password: Masir_Sefid
   sni: qus.masir-sefid.shop
   skip-cert-verify: false
@@ -100,8 +100,52 @@ proxies:
   obfs-password: Masir_Sefid
 - name: 'Hysteria2 #3'
   type: hysteria2
-  server: 18.159.104.97
-  port: 4040
+  server: 18.159.66.5
+  port: 444
+  password: lmtmpdlj9ojwu2iw
+  sni: cdn.pedramdns.shop
+  skip-cert-verify: false
+  fast-open: true
+  client-fingerprint: chrome
+  obfs: salamander
+  obfs-password: JynMarket
+- name: 'Hysteria2 #4'
+  type: hysteria2
+  server: reddeadfan.rd-team.ru
+  port: 2026
+  password: rstnnl2705%3AQtmSqzxgO95zXwNcgVYSjDl02aRsjrrl
+  sni: reddeadfan.rd-team.ru
+  skip-cert-verify: false
+  fast-open: true
+  client-fingerprint: chrome
+  obfs: salamander
+  obfs-password: FxZylbqClUqVqAs2nezW9kPyFb2edZ2
+- name: 'Hysteria2 #5'
+  type: hysteria2
+  server: 18.194.238.82
+  port: 8880
+  password: Masir_Sefid
+  sni: qus.masir-sefid.shop
+  skip-cert-verify: false
+  fast-open: true
+  client-fingerprint: chrome
+  obfs: salamander
+  obfs-password: Masir_Sefid
+- name: 'Hysteria2 #6'
+  type: hysteria2
+  server: 18.194.238.82
+  port: 443
+  password: Masir_Sefid
+  sni: qus.masir-sefid.shop
+  skip-cert-verify: false
+  fast-open: true
+  client-fingerprint: chrome
+  obfs: salamander
+  obfs-password: Masir_Sefid
+- name: 'Hysteria2 #7'
+  type: hysteria2
+  server: 18.159.66.5
+  port: 443
   password: Masir_Sefid
   sni: qus.masir-sefid.shop
   skip-cert-verify: false
@@ -117,6 +161,10 @@ proxy-groups:
   - 'Hysteria2 #1'
   - 'Hysteria2 #2'
   - 'Hysteria2 #3'
+  - 'Hysteria2 #4'
+  - 'Hysteria2 #5'
+  - 'Hysteria2 #6'
+  - 'Hysteria2 #7'
   - DIRECT
 - name: Auto Select
   type: url-test
@@ -124,6 +172,10 @@ proxy-groups:
   - 'Hysteria2 #1'
   - 'Hysteria2 #2'
   - 'Hysteria2 #3'
+  - 'Hysteria2 #4'
+  - 'Hysteria2 #5'
+  - 'Hysteria2 #6'
+  - 'Hysteria2 #7'
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 150
