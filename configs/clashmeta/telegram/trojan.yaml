@@ -78,509 +78,39 @@ sniffer:
 proxies:
 - name: 'Trojan #1'
   type: trojan
-  server: 51.38.65.155
+  server: 188.114.97.6
   port: 443
-  password: 3e7112b0-5d42-11f1-8311-1239d0255272
-  network: tcp
+  password: mitivpn
+  network: ws
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: yahoo.com
+  servername: cdn.linkman1.ir
   client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /720f09dba195249b423f771661162528/workers/services/view/mitivpn/production/settings
+    headers:
+      Host: cdn.linkman1.ir
 - name: 'Trojan #2'
   type: trojan
-  server: 172.238.120.124
+  server: 188.114.97.6
   port: 443
-  password: r-_YbwF.j0TtHVewoFIppramjAnmSfqYzJ
-  network: tcp
+  password: mitivpn
+  network: ws
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: 172.238.120.124
+  servername: www.linkman1.ir
   client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /720f09dba195249b423f771661162528/workers/services/view/mitivpn/production/settings
+    headers:
+      Host: www.linkman1.ir
 - name: 'Trojan #3'
-  type: trojan
-  server: 78.159.131.12
-  port: 28259
-  password: MeaDiUmPlkWbZJ2BON8tz
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: ads.x5.ru
-  client-fingerprint: chrome
-- name: 'Trojan #4'
-  type: trojan
-  server: 78.159.131.12
-  port: 28259
-  password: MeaDiUmPlkWbZJ2BON8tz
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 🔒
-  client-fingerprint: chrome
-- name: 'Trojan #5'
-  type: trojan
-  server: 188.114.97.6
-  port: 443
-  password: mitivpn
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: cdn.linkman1.ir
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /720f09dba195249b423f771661162528/workers/services/view/mitivpn/production/settings
-    headers:
-      Host: cdn.linkman1.ir
-- name: 'Trojan #6'
-  type: trojan
-  server: 172.236.220.10
-  port: 443
-  password: s_WEN9lMmufG+qDIsn-4C7JOVAnDdbS3Ui
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 172.236.220.10
-  client-fingerprint: chrome
-- name: 'Trojan #7'
-  type: trojan
-  server: 185.137.157.254
-  port: 443
-  password: hxn2jK9Uzezogua0oHuq9Y8viN=UCe.2Jd
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.directorypipeline.click
-  client-fingerprint: chrome
-- name: 'Trojan #8'
-  type: trojan
-  server: www.calmlunch.com
-  port: 443
-  password: humanity
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.calmlunch.com
-  client-fingerprint: chrome
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.calmlunch.com
-- name: 'Trojan #9'
-  type: trojan
-  server: 172.104.237.100
-  port: 443
-  password: VPTFm%3DoZ%2B%2BSuNT%2BjMRqGZqrAnWq-r8KJyY
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 172.104.237.100
-  client-fingerprint: chrome
-- name: 'Trojan #10'
-  type: trojan
-  server: 188.114.97.6
-  port: 443
-  password: ypa8jqVoqQ
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: ssss2.avaaal.ir
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /720f09dba195249b423f771661162528/workers/services/view/Avaal/production/settings
-    headers:
-      Host: ssss2.avaaal.ir
-- name: 'Trojan #11'
-  type: trojan
-  server: 188.114.97.6
-  port: 443
-  password: mitivpn
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.linkman1.ir
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /720f09dba195249b423f771661162528/workers/services/view/mitivpn/production/settings
-    headers:
-      Host: www.linkman1.ir
-- name: 'Trojan #12'
-  type: trojan
-  server: 172.237.145.189
-  port: 443
-  password: A3uIh_5NqMg3hFa.gDYWT.afz0UuJ6%3DVIM
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 172.237.145.189
-  client-fingerprint: chrome
-- name: 'Trojan #13'
-  type: trojan
-  server: ssss2.avaaal.ir
-  port: 443
-  password: GdL9nNA8km
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: ssss2.avaaal.ir
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /720f09dba195249b423f771661162528/workers/services/view/Avaal/production/settings
-    headers:
-      Host: ssss2.avaaal.ir
-- name: 'Trojan #14'
-  type: trojan
-  server: 188.114.97.6
-  port: 443
-  password: mitivpn
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.linkman1.ir
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /720f09dba195249b423f771661162528/workers/services/view/mitivpn/production/settings
-    headers:
-      Host: www.linkman1.ir
-- name: 'Trojan #15'
-  type: trojan
-  server: 188.114.97.6
-  port: 443
-  password: mitivpn
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: cdn.linkman1.ir
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /720f09dba195249b423f771661162528/workers/services/view/mitivpn/production/settings
-    headers:
-      Host: cdn.linkman1.ir
-- name: 'Trojan #16'
-  type: trojan
-  server: 185.18.250.245
-  port: 443
-  password: humanity
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.calmlunch.com
-  client-fingerprint: chrome
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.calmlunch.com
-- name: 'Trojan #17'
-  type: trojan
-  server: 3.122.92.172
-  port: 22223
-  password: telegram-id-directvpn
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-- name: 'Trojan #18'
-  type: trojan
-  server: 63.179.174.154
-  port: 22223
-  password: telegram-id-directvpn
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-- name: 'Trojan #19'
-  type: trojan
-  server: 51.44.150.171
-  port: 22223
-  password: telegram-id-directvpn
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-- name: 'Trojan #20'
-  type: trojan
-  server: 13.37.36.34
-  port: 22223
-  password: telegram-id-directvpn
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-- name: 'Trojan #21'
-  type: trojan
-  server: 63.184.244.52
-  port: 22223
-  password: telegram-id-directvpn
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-- name: 'Trojan #22'
-  type: trojan
-  server: 35.158.230.241
-  port: 22223
-  password: telegram-id-directvpn
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-- name: 'Trojan #23'
-  type: trojan
-  server: 13.36.249.118
-  port: 22223
-  password: telegram-id-directvpn
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-- name: 'Trojan #24'
-  type: trojan
-  server: 13.39.177.190
-  port: 22223
-  password: telegram-id-directvpn
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-- name: 'Trojan #25'
-  type: trojan
-  server: 3.75.20.183
-  port: 22223
-  password: telegram-id-directvpn
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-- name: 'Trojan #26'
-  type: trojan
-  server: 3.125.174.245
-  port: 22223
-  password: telegram-id-directvpn
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-- name: 'Trojan #27'
-  type: trojan
-  server: 13.37.65.174
-  port: 22223
-  password: telegram-id-directvpn
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-- name: 'Trojan #28'
-  type: trojan
-  server: 15.188.97.116
-  port: 22223
-  password: telegram-id-directvpn
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-- name: 'Trojan #29'
-  type: trojan
-  server: 35.157.253.93
-  port: 22223
-  password: telegram-id-directvpn
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-- name: 'Trojan #30'
-  type: trojan
-  server: 18.184.212.180
-  port: 22223
-  password: telegram-id-directvpn
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-- name: 'Trojan #31'
-  type: trojan
-  server: 13.39.4.77
-  port: 22223
-  password: telegram-id-directvpn
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-- name: 'Trojan #32'
-  type: trojan
-  server: 65.20.90.225
-  port: 443
-  password: Tu1fZjElnkRg0ECRj0sI0u54PY8ptUmATg
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.sandbox-cloud.click
-  client-fingerprint: chrome
-- name: 'Trojan #33'
-  type: trojan
-  server: 188.114.97.6
-  port: 443
-  password: ypa8jqVoqQ
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: ssss2.avaaal.ir
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /720f09dba195249b423f771661162528/workers/services/view/Avaal/production/settings
-    headers:
-      Host: ssss2.avaaal.ir
-- name: 'Trojan #34'
-  type: trojan
-  server: 188.114.97.6
-  port: 443
-  password: '%6d%69%74%69%76%70%6e'
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: cdn.linkman1.ir
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /720f09dba195249b423f771661162528/workers/services/view/mitivpn/production/settings
-    headers:
-      Host: cdn.linkman1.ir
-- name: 'Trojan #35'
-  type: trojan
-  server: 43.169.18.179
-  port: 443
-  password: humanity
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.creationlong.org
-  client-fingerprint: chrome
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.creationlong.org
-- name: 'Trojan #36'
-  type: trojan
-  server: 89.124.116.211
-  port: 443
-  password: po5u3ol81xjpalfv
-  network: xhttp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: my.yektanet.com
-  client-fingerprint: chrome
-- name: 'Trojan #37'
-  type: trojan
-  server: 188.114.97.6
-  port: 443
-  password: rQZjCMGZEN
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: cloud.magicservice.top
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
-  ws-opts:
-    path: /
-    headers:
-      Host: cloud.magicservice.top
-- name: 'Trojan #38'
   type: trojan
   server: 104.17.121.71
   port: 443
@@ -597,39 +127,235 @@ proxies:
     path: /assignment
     headers:
       Host: www.calmloud.com
-- name: 'Trojan #39'
+- name: 'Trojan #4'
   type: trojan
-  server: 208.103.161.33
-  port: 443
-  password: mitivpn
-  network: ws
+  server: 18.166.59.84
+  port: 7484
+  password: BxceQaOe
+  network: tcp
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: ir-sub.ir
+  servername: t.me%2Fripaojiedian
   client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: ir-sub.ir
-- name: 'Trojan #40'
+- name: 'Trojan #5'
   type: trojan
-  server: 188.114.97.6
-  port: 443
-  password: ''
-  network: ws
+  server: 3.122.92.172
+  port: 22223
+  password: telegram-id-directvpn
+  network: tcp
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: www.linkman1.ir
+  servername: trojan.burgerip.co.uk
   client-fingerprint: chrome
   alpn:
   - http/1.1
-  ws-opts:
-    path: /720f09dba195249b423f771661162528/workers/services/view//production/settings
-    headers:
-      Host: www.linkman1.ir
-- name: 'Trojan #41'
+- name: 'Trojan #6'
+  type: trojan
+  server: 63.179.174.154
+  port: 22223
+  password: telegram-id-directvpn
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+- name: 'Trojan #7'
+  type: trojan
+  server: 51.44.150.171
+  port: 22223
+  password: telegram-id-directvpn
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+- name: 'Trojan #8'
+  type: trojan
+  server: 13.37.36.34
+  port: 22223
+  password: telegram-id-directvpn
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+- name: 'Trojan #9'
+  type: trojan
+  server: 63.184.244.52
+  port: 22223
+  password: telegram-id-directvpn
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+- name: 'Trojan #10'
+  type: trojan
+  server: 35.158.230.241
+  port: 22223
+  password: telegram-id-directvpn
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+- name: 'Trojan #11'
+  type: trojan
+  server: 13.36.249.118
+  port: 22223
+  password: telegram-id-directvpn
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+- name: 'Trojan #12'
+  type: trojan
+  server: 13.39.177.190
+  port: 22223
+  password: telegram-id-directvpn
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+- name: 'Trojan #13'
+  type: trojan
+  server: 3.75.20.183
+  port: 22223
+  password: telegram-id-directvpn
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+- name: 'Trojan #14'
+  type: trojan
+  server: 3.125.174.245
+  port: 22223
+  password: telegram-id-directvpn
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+- name: 'Trojan #15'
+  type: trojan
+  server: 13.37.65.174
+  port: 22223
+  password: telegram-id-directvpn
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+- name: 'Trojan #16'
+  type: trojan
+  server: 15.188.97.116
+  port: 22223
+  password: telegram-id-directvpn
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+- name: 'Trojan #17'
+  type: trojan
+  server: 35.157.253.93
+  port: 22223
+  password: telegram-id-directvpn
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+- name: 'Trojan #18'
+  type: trojan
+  server: 18.184.212.180
+  port: 22223
+  password: telegram-id-directvpn
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+- name: 'Trojan #19'
+  type: trojan
+  server: 13.39.4.77
+  port: 22223
+  password: telegram-id-directvpn
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+- name: 'Trojan #20'
+  type: trojan
+  server: 172.237.145.189
+  port: 443
+  password: A3uIh_5NqMg3hFa.gDYWT.afz0UuJ6%3DVIM
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: 172.237.145.189
+  client-fingerprint: chrome
+- name: 'Trojan #21'
+  type: trojan
+  server: 172.104.237.100
+  port: 443
+  password: VPTFm%3DoZ%2B%2BSuNT%2BjMRqGZqrAnWq-r8KJyY
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: 172.104.237.100
+  client-fingerprint: chrome
+- name: 'Trojan #22'
   type: trojan
   server: 172.237.90.117
   port: 35287
@@ -647,6 +373,275 @@ proxies:
     path: /FREE By Tharuwa (0767597317)
     headers:
       Host: zoom.us
+- name: 'Trojan #23'
+  type: trojan
+  server: 208.103.161.33
+  port: 443
+  password: mitivpn
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: ir-sub.ir
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: ir-sub.ir
+- name: 'Trojan #24'
+  type: trojan
+  server: 45.130.125.160
+  port: 443
+  password: humanity
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.calmloud.com
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmloud.com
+- name: 'Trojan #25'
+  type: trojan
+  server: 188.114.97.6
+  port: 443
+  password: mitivpn
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: cdn.linkman1.ir
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /720f09dba195249b423f771661162528/workers/services/view/mitivpn/production/settings
+    headers:
+      Host: cdn.linkman1.ir
+- name: 'Trojan #26'
+  type: trojan
+  server: 45.130.125.76
+  port: 443
+  password: humanity
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.calmlunch.com
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmlunch.com
+- name: 'Trojan #27'
+  type: trojan
+  server: 18.163.128.27
+  port: 2663
+  password: f6d3aa07a52dbcedcb4731029e2fb6ae
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.nintendogames.net
+  client-fingerprint: chrome
+- name: 'Trojan #28'
+  type: trojan
+  server: 78.159.131.12
+  port: 28259
+  password: MeaDiUmPlkWbZJ2BON8tz
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: 🔒
+  client-fingerprint: chrome
+- name: 'Trojan #29'
+  type: trojan
+  server: 188.114.97.6
+  port: 443
+  password: mitivpn
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: cdn.linkman1.ir
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /720f09dba195249b423f771661162528/workers/services/view/mitivpn/production/settings
+    headers:
+      Host: cdn.linkman1.ir
+- name: 'Trojan #30'
+  type: trojan
+  server: 172.236.220.10
+  port: 443
+  password: s_WEN9lMmufG+qDIsn-4C7JOVAnDdbS3Ui
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: 172.236.220.10
+  client-fingerprint: chrome
+- name: 'Trojan #31'
+  type: trojan
+  server: 185.137.157.254
+  port: 443
+  password: hxn2jK9Uzezogua0oHuq9Y8viN=UCe.2Jd
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.directorypipeline.click
+  client-fingerprint: chrome
+- name: 'Trojan #32'
+  type: trojan
+  server: www.calmlunch.com
+  port: 443
+  password: humanity
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.calmlunch.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmlunch.com
+- name: 'Trojan #33'
+  type: trojan
+  server: 65.20.90.225
+  port: 443
+  password: Tu1fZjElnkRg0ECRj0sI0u54PY8ptUmATg
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.sandbox-cloud.click
+  client-fingerprint: chrome
+- name: 'Trojan #34'
+  type: trojan
+  server: 149.104.104.101
+  port: 443
+  password: BzOx2R8u59SOipHwhIYW-IMyJePBEiUY-m
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.registry-monitor.click
+  client-fingerprint: chrome
+- name: 'Trojan #35'
+  type: trojan
+  server: 45.130.125.76
+  port: 443
+  password: humanity
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.calmlunch.com
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmlunch.com
+- name: 'Trojan #36'
+  type: trojan
+  server: www.calmlunch.com
+  port: 443
+  password: humanity
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.calmlunch.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmlunch.com
+- name: 'Trojan #37'
+  type: trojan
+  server: 172.238.120.124
+  port: 443
+  password: r-_YbwF.j0TtHVewoFIppramjAnmSfqYzJ
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: 172.238.120.124
+  client-fingerprint: chrome
+- name: 'Trojan #38'
+  type: trojan
+  server: 172.236.220.10
+  port: 443
+  password: s_WEN9lMmufG%2BqDIsn-4C7JOVAnDdbS3Ui
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: 172.236.220.10
+  client-fingerprint: chrome
+- name: 'Trojan #39'
+  type: trojan
+  server: 188.114.97.6
+  port: 443
+  password: JPZp5yhQpQ
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: ssss2.avaaal.ir
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /720f09dba195249b423f771661162528/workers/services/view/Avaal/production/settings
+    headers:
+      Host: ssss2.avaaal.ir
+- name: 'Trojan #40'
+  type: trojan
+  server: 188.114.97.6
+  port: 443
+  password: GdL9nNA8km
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: ssss2.avaaal.ir
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /720f09dba195249b423f771661162528/workers/services/view/Avaal/production/settings
+    headers:
+      Host: ssss2.avaaal.ir
+- name: 'Trojan #41'
+  type: trojan
+  server: 188.114.97.6
+  port: 443
+  password: mitivpn
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: cdn.linkman1.ir
+  client-fingerprint: safari
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /720f09dba195249b423f771661162528/workers/services/view/mitivpn/production/settings
+    headers:
+      Host: cdn.linkman1.ir
 - name: 'Trojan #42'
   type: trojan
   server: 188.114.97.6
@@ -666,43 +661,37 @@ proxies:
       Host: www.linkman1.ir
 - name: 'Trojan #43'
   type: trojan
-  server: 188.114.97.6
+  server: 185.18.250.245
   port: 443
-  password: mitivpn
+  password: humanity
   network: ws
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: cdn.linkman1.ir
+  servername: www.calmlunch.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmlunch.com
+- name: 'Trojan #44'
+  type: trojan
+  server: 63.179.174.154
+  port: 22223
+  password: telegram-id-v2rayvpnchannel
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: trojan.burgerip.co.uk
   client-fingerprint: chrome
   alpn:
   - http/1.1
-  ws-opts:
-    path: /720f09dba195249b423f771661162528/workers/services/view/mitivpn/production/settings
-    headers:
-      Host: cdn.linkman1.ir
-- name: 'Trojan #44'
-  type: trojan
-  server: 188.114.97.6
-  port: 443
-  password: mitivpn
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: cdn.linkman1.ir
-  client-fingerprint: safari
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /720f09dba195249b423f771661162528/workers/services/view/mitivpn/production/settings
-    headers:
-      Host: cdn.linkman1.ir
 - name: 'Trojan #45'
   type: trojan
-  server: 3.122.92.172
-  port: 22222
-  password: telegram-id-privatevpns
+  server: 51.44.150.171
+  port: 22223
+  password: telegram-id-v2rayvpnchannel
   network: tcp
   udp: true
   skip-cert-verify: false
@@ -713,9 +702,9 @@ proxies:
   - http/1.1
 - name: 'Trojan #46'
   type: trojan
-  server: 63.179.174.154
-  port: 22222
-  password: telegram-id-privatevpns
+  server: 13.37.36.34
+  port: 22223
+  password: telegram-id-v2rayvpnchannel
   network: tcp
   udp: true
   skip-cert-verify: false
@@ -726,9 +715,9 @@ proxies:
   - http/1.1
 - name: 'Trojan #47'
   type: trojan
-  server: 51.44.150.171
-  port: 22222
-  password: telegram-id-privatevpns
+  server: 63.184.244.52
+  port: 22223
+  password: telegram-id-v2rayvpnchannel
   network: tcp
   udp: true
   skip-cert-verify: false
@@ -739,9 +728,9 @@ proxies:
   - http/1.1
 - name: 'Trojan #48'
   type: trojan
-  server: 13.37.36.34
-  port: 22222
-  password: telegram-id-privatevpns
+  server: 35.158.230.241
+  port: 22223
+  password: telegram-id-v2rayvpnchannel
   network: tcp
   udp: true
   skip-cert-verify: false
@@ -752,9 +741,9 @@ proxies:
   - http/1.1
 - name: 'Trojan #49'
   type: trojan
-  server: 63.184.244.52
-  port: 22222
-  password: telegram-id-privatevpns
+  server: 13.36.249.118
+  port: 22223
+  password: telegram-id-v2rayvpnchannel
   network: tcp
   udp: true
   skip-cert-verify: false
@@ -765,9 +754,9 @@ proxies:
   - http/1.1
 - name: 'Trojan #50'
   type: trojan
-  server: 35.158.230.241
-  port: 22222
-  password: telegram-id-privatevpns
+  server: 13.39.177.190
+  port: 22223
+  password: telegram-id-v2rayvpnchannel
   network: tcp
   udp: true
   skip-cert-verify: false
@@ -778,9 +767,9 @@ proxies:
   - http/1.1
 - name: 'Trojan #51'
   type: trojan
-  server: 13.36.249.118
-  port: 22222
-  password: telegram-id-privatevpns
+  server: 3.75.20.183
+  port: 22223
+  password: telegram-id-v2rayvpnchannel
   network: tcp
   udp: true
   skip-cert-verify: false
@@ -791,9 +780,9 @@ proxies:
   - http/1.1
 - name: 'Trojan #52'
   type: trojan
-  server: 13.39.177.190
-  port: 22222
-  password: telegram-id-privatevpns
+  server: 3.125.174.245
+  port: 22223
+  password: telegram-id-v2rayvpnchannel
   network: tcp
   udp: true
   skip-cert-verify: false
@@ -804,9 +793,9 @@ proxies:
   - http/1.1
 - name: 'Trojan #53'
   type: trojan
-  server: 3.75.20.183
-  port: 22222
-  password: telegram-id-privatevpns
+  server: 13.37.65.174
+  port: 22223
+  password: telegram-id-v2rayvpnchannel
   network: tcp
   udp: true
   skip-cert-verify: false
@@ -817,9 +806,9 @@ proxies:
   - http/1.1
 - name: 'Trojan #54'
   type: trojan
-  server: 3.125.174.245
-  port: 22222
-  password: telegram-id-privatevpns
+  server: 15.188.97.116
+  port: 22223
+  password: telegram-id-v2rayvpnchannel
   network: tcp
   udp: true
   skip-cert-verify: false
@@ -830,9 +819,9 @@ proxies:
   - http/1.1
 - name: 'Trojan #55'
   type: trojan
-  server: 13.37.65.174
-  port: 22222
-  password: telegram-id-privatevpns
+  server: 35.157.253.93
+  port: 22223
+  password: telegram-id-v2rayvpnchannel
   network: tcp
   udp: true
   skip-cert-verify: false
@@ -843,9 +832,9 @@ proxies:
   - http/1.1
 - name: 'Trojan #56'
   type: trojan
-  server: 15.188.97.116
-  port: 22222
-  password: telegram-id-privatevpns
+  server: 18.184.212.180
+  port: 22223
+  password: telegram-id-v2rayvpnchannel
   network: tcp
   udp: true
   skip-cert-verify: false
@@ -856,9 +845,9 @@ proxies:
   - http/1.1
 - name: 'Trojan #57'
   type: trojan
-  server: 35.157.253.93
-  port: 22222
-  password: telegram-id-privatevpns
+  server: 13.39.4.77
+  port: 22223
+  password: telegram-id-v2rayvpnchannel
   network: tcp
   udp: true
   skip-cert-verify: false
@@ -868,264 +857,6 @@ proxies:
   alpn:
   - http/1.1
 - name: 'Trojan #58'
-  type: trojan
-  server: 18.184.212.180
-  port: 22222
-  password: telegram-id-privatevpns
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-- name: 'Trojan #59'
-  type: trojan
-  server: 13.39.4.77
-  port: 22222
-  password: telegram-id-privatevpns
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-- name: 'Trojan #60'
-  type: trojan
-  server: 199.247.23.69
-  port: 27301
-  password: 7m4h7un97cd8g2ay
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 199.247.23.69
-  client-fingerprint: chrome
-- name: 'Trojan #61'
-  type: trojan
-  server: 108.61.179.178
-  port: 27301
-  password: 2i9ysjdt4gea60cd
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 108.61.179.178
-  client-fingerprint: chrome
-- name: 'Trojan #62'
-  type: trojan
-  server: 172.238.120.124
-  port: 443
-  password: r-_YbwF.j0TtHVewoFIppramjAnmSfqYzJ
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 172.238.120.124
-  client-fingerprint: chrome
-- name: 'Trojan #63'
-  type: trojan
-  server: 45.130.125.160
-  port: 443
-  password: humanity
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.calmloud.com
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.calmloud.com
-- name: 'Trojan #64'
-  type: trojan
-  server: 63.179.174.154
-  port: 22223
-  password: telegram-id-v2rayvpnchannel
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-- name: 'Trojan #65'
-  type: trojan
-  server: 51.44.150.171
-  port: 22223
-  password: telegram-id-v2rayvpnchannel
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-- name: 'Trojan #66'
-  type: trojan
-  server: 13.37.36.34
-  port: 22223
-  password: telegram-id-v2rayvpnchannel
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-- name: 'Trojan #67'
-  type: trojan
-  server: 63.184.244.52
-  port: 22223
-  password: telegram-id-v2rayvpnchannel
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-- name: 'Trojan #68'
-  type: trojan
-  server: 35.158.230.241
-  port: 22223
-  password: telegram-id-v2rayvpnchannel
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-- name: 'Trojan #69'
-  type: trojan
-  server: 13.36.249.118
-  port: 22223
-  password: telegram-id-v2rayvpnchannel
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-- name: 'Trojan #70'
-  type: trojan
-  server: 13.39.177.190
-  port: 22223
-  password: telegram-id-v2rayvpnchannel
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-- name: 'Trojan #71'
-  type: trojan
-  server: 3.75.20.183
-  port: 22223
-  password: telegram-id-v2rayvpnchannel
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-- name: 'Trojan #72'
-  type: trojan
-  server: 3.125.174.245
-  port: 22223
-  password: telegram-id-v2rayvpnchannel
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-- name: 'Trojan #73'
-  type: trojan
-  server: 13.37.65.174
-  port: 22223
-  password: telegram-id-v2rayvpnchannel
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-- name: 'Trojan #74'
-  type: trojan
-  server: 15.188.97.116
-  port: 22223
-  password: telegram-id-v2rayvpnchannel
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-- name: 'Trojan #75'
-  type: trojan
-  server: 35.157.253.93
-  port: 22223
-  password: telegram-id-v2rayvpnchannel
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-- name: 'Trojan #76'
-  type: trojan
-  server: 18.184.212.180
-  port: 22223
-  password: telegram-id-v2rayvpnchannel
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-- name: 'Trojan #77'
-  type: trojan
-  server: 13.39.4.77
-  port: 22223
-  password: telegram-id-v2rayvpnchannel
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-- name: 'Trojan #78'
   type: trojan
   server: 35.181.84.6
   port: 22223
@@ -1138,39 +869,236 @@ proxies:
   client-fingerprint: chrome
   alpn:
   - http/1.1
-- name: 'Trojan #79'
+- name: 'Trojan #59'
   type: trojan
-  server: 104.17.121.71
-  port: 2053
-  password: Mitivpn
+  server: 188.114.97.6
+  port: 443
+  password: ''
   network: ws
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: dash.hitgram.ir
+  servername: www.linkman1.ir
   client-fingerprint: chrome
   alpn:
   - http/1.1
   ws-opts:
-    path: /
+    path: /720f09dba195249b423f771661162528/workers/services/view//production/settings
     headers:
-      Host: dash.hitgram.ir
-- name: 'Trojan #80'
+      Host: www.linkman1.ir
+- name: 'Trojan #60'
   type: trojan
-  server: 216.24.57.6
+  server: 188.114.97.6
   port: 443
   password: mitivpn
   network: ws
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: www.ir-sub.ir
+  servername: cdn.linkman1.ir
   client-fingerprint: chrome
+  alpn:
+  - http/1.1
   ws-opts:
-    path: /
+    path: /720f09dba195249b423f771661162528/workers/services/view/mitivpn/production/settings
     headers:
-      Host: www.ir-sub.ir
-- name: 'Trojan #81'
+      Host: cdn.linkman1.ir
+- name: 'Trojan #61'
+  type: trojan
+  server: 3.122.92.172
+  port: 22222
+  password: telegram-id-privatevpns
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+- name: 'Trojan #62'
+  type: trojan
+  server: 63.179.174.154
+  port: 22222
+  password: telegram-id-privatevpns
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+- name: 'Trojan #63'
+  type: trojan
+  server: 51.44.150.171
+  port: 22222
+  password: telegram-id-privatevpns
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+- name: 'Trojan #64'
+  type: trojan
+  server: 13.37.36.34
+  port: 22222
+  password: telegram-id-privatevpns
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+- name: 'Trojan #65'
+  type: trojan
+  server: 63.184.244.52
+  port: 22222
+  password: telegram-id-privatevpns
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+- name: 'Trojan #66'
+  type: trojan
+  server: 35.158.230.241
+  port: 22222
+  password: telegram-id-privatevpns
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+- name: 'Trojan #67'
+  type: trojan
+  server: 13.36.249.118
+  port: 22222
+  password: telegram-id-privatevpns
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+- name: 'Trojan #68'
+  type: trojan
+  server: 13.39.177.190
+  port: 22222
+  password: telegram-id-privatevpns
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+- name: 'Trojan #69'
+  type: trojan
+  server: 3.75.20.183
+  port: 22222
+  password: telegram-id-privatevpns
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+- name: 'Trojan #70'
+  type: trojan
+  server: 3.125.174.245
+  port: 22222
+  password: telegram-id-privatevpns
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+- name: 'Trojan #71'
+  type: trojan
+  server: 13.37.65.174
+  port: 22222
+  password: telegram-id-privatevpns
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+- name: 'Trojan #72'
+  type: trojan
+  server: 15.188.97.116
+  port: 22222
+  password: telegram-id-privatevpns
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+- name: 'Trojan #73'
+  type: trojan
+  server: 35.157.253.93
+  port: 22222
+  password: telegram-id-privatevpns
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+- name: 'Trojan #74'
+  type: trojan
+  server: 18.184.212.180
+  port: 22222
+  password: telegram-id-privatevpns
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+- name: 'Trojan #75'
+  type: trojan
+  server: 13.39.4.77
+  port: 22222
+  password: telegram-id-privatevpns
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+- name: 'Trojan #76'
   type: trojan
   server: 193.124.46.134
   port: 8441
@@ -1183,17 +1111,102 @@ proxies:
   client-fingerprint: chrome
   alpn:
   - http/1.1
-- name: 'Trojan #82'
+- name: 'Trojan #77'
   type: trojan
-  server: 18.163.128.27
-  port: 2663
-  password: f6d3aa07a52dbcedcb4731029e2fb6ae
-  network: tcp
+  server: 188.114.97.6
+  port: 443
+  password: ypa8jqVoqQ
+  network: ws
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: www.nintendogames.net
+  servername: ssss2.avaaal.ir
   client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /720f09dba195249b423f771661162528/workers/services/view/Avaal/production/settings
+    headers:
+      Host: ssss2.avaaal.ir
+- name: 'Trojan #78'
+  type: trojan
+  server: 188.114.97.6
+  port: 443
+  password: mitivpn
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.linkman1.ir
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /720f09dba195249b423f771661162528/workers/services/view/mitivpn/production/settings
+    headers:
+      Host: www.linkman1.ir
+- name: 'Trojan #79'
+  type: trojan
+  server: 2.144.15.223
+  port: 40443
+  password: humanity
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.ignitelimit.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.ignitelimit.com
+- name: 'Trojan #80'
+  type: trojan
+  server: 104.16.89.120
+  port: 443
+  password: humanity
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.creationlong.org
+  client-fingerprint: chrome
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.creationlong.org
+- name: 'Trojan #81'
+  type: trojan
+  server: 172.64.152.23
+  port: 443
+  password: humanity
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.calmlunch.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmlunch.com
+- name: 'Trojan #82'
+  type: trojan
+  server: 188.114.96.3
+  port: 443
+  password: humanity
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.creationlong.org
+  client-fingerprint: chrome
+  alpn:
+  - h2%252chttp%252f1.1
+  ws-opts:
+    path: '%2fassignment'
+    headers:
+      Host: www.creationlong.org
 - name: 'Trojan #83'
   type: trojan
   server: www.gossipglove.com
@@ -1213,85 +1226,6 @@ proxies:
       Host: www.gossipglove.com
 - name: 'Trojan #84'
   type: trojan
-  server: 2.144.15.223
-  port: 40443
-  password: humanity
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.ignitelimit.com
-  client-fingerprint: chrome
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.ignitelimit.com
-- name: 'Trojan #85'
-  type: trojan
-  server: 104.16.89.120
-  port: 443
-  password: humanity
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.creationlong.org
-  client-fingerprint: chrome
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.creationlong.org
-- name: 'Trojan #86'
-  type: trojan
-  server: 172.64.152.23
-  port: 443
-  password: humanity
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.calmlunch.com
-  client-fingerprint: chrome
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.calmlunch.com
-- name: 'Trojan #87'
-  type: trojan
-  server: 188.114.96.3
-  port: 443
-  password: humanity
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.creationlong.org
-  client-fingerprint: chrome
-  alpn:
-  - h2%252chttp%252f1.1
-  ws-opts:
-    path: '%2fassignment'
-    headers:
-      Host: www.creationlong.org
-- name: 'Trojan #88'
-  type: trojan
-  server: www.gossipglove.com
-  port: 443
-  password: humanity
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.gossipglove.com
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.gossipglove.com
-- name: 'Trojan #89'
-  type: trojan
   server: 104.18.8.83
   port: 443
   password: humanity
@@ -1305,7 +1239,7 @@ proxies:
     path: /assignment
     headers:
       Host: www.calmlunch.com
-- name: 'Trojan #90'
+- name: 'Trojan #85'
   type: trojan
   server: 104.18.9.83
   port: 443
@@ -1320,7 +1254,40 @@ proxies:
     path: /assignment
     headers:
       Host: www.calmlunch.com
-- name: 'Trojan #91'
+- name: 'Trojan #86'
+  type: trojan
+  server: 199.247.23.69
+  port: 27301
+  password: 7m4h7un97cd8g2ay
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: 199.247.23.69
+  client-fingerprint: chrome
+- name: 'Trojan #87'
+  type: trojan
+  server: 108.61.179.178
+  port: 27301
+  password: 2i9ysjdt4gea60cd
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: 108.61.179.178
+  client-fingerprint: chrome
+- name: 'Trojan #88'
+  type: trojan
+  server: 172.238.120.124
+  port: 443
+  password: r-_YbwF.j0TtHVewoFIppramjAnmSfqYzJ
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: 172.238.120.124
+  client-fingerprint: chrome
+- name: 'Trojan #89'
   type: trojan
   server: 45.130.125.76
   port: 443
@@ -1337,122 +1304,72 @@ proxies:
     path: /assignment
     headers:
       Host: www.calmlunch.com
-- name: 'Trojan #92'
+- name: 'Trojan #90'
   type: trojan
-  server: 172.236.220.10
-  port: 443
-  password: s_WEN9lMmufG%2BqDIsn-4C7JOVAnDdbS3Ui
-  network: tcp
+  server: 104.17.121.71
+  port: 2053
+  password: Mitivpn
+  network: ws
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: 172.236.220.10
+  servername: dash.hitgram.ir
   client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /
+    headers:
+      Host: dash.hitgram.ir
+- name: 'Trojan #91'
+  type: trojan
+  server: 216.24.57.6
+  port: 443
+  password: mitivpn
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.ir-sub.ir
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: www.ir-sub.ir
+- name: 'Trojan #92'
+  type: trojan
+  server: 188.114.97.6
+  port: 443
+  password: ypa8jqVoqQ
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: ssss2.avaaal.ir
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /720f09dba195249b423f771661162528/workers/services/view/Avaal/production/settings
+    headers:
+      Host: ssss2.avaaal.ir
 - name: 'Trojan #93'
   type: trojan
   server: 188.114.97.6
   port: 443
-  password: JPZp5yhQpQ
+  password: '%6d%69%74%69%76%70%6e'
   network: ws
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: ssss2.avaaal.ir
+  servername: cdn.linkman1.ir
   client-fingerprint: chrome
   alpn:
   - http/1.1
   ws-opts:
-    path: /720f09dba195249b423f771661162528/workers/services/view/Avaal/production/settings
+    path: /720f09dba195249b423f771661162528/workers/services/view/mitivpn/production/settings
     headers:
-      Host: ssss2.avaaal.ir
-- name: 'Trojan #94'
-  type: trojan
-  server: 188.114.97.6
-  port: 443
-  password: GdL9nNA8km
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: ssss2.avaaal.ir
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /720f09dba195249b423f771661162528/workers/services/view/Avaal/production/settings
-    headers:
-      Host: ssss2.avaaal.ir
-- name: 'Trojan #95'
-  type: trojan
-  server: 45.130.125.76
-  port: 443
-  password: humanity
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.calmlunch.com
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.calmlunch.com
-- name: 'Trojan #96'
-  type: trojan
-  server: 45.130.125.76
-  port: 443
-  password: humanity
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.calmlunch.com
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.calmlunch.com
-- name: 'Trojan #97'
-  type: trojan
-  server: www.calmlunch.com
-  port: 443
-  password: humanity
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.calmlunch.com
-  client-fingerprint: chrome
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.calmlunch.com
-- name: 'Trojan #98'
-  type: trojan
-  server: 45.12.146.179
-  port: 4443
-  password: strong-secret-pass-777
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 45.12.146.179
-  client-fingerprint: chrome
-- name: 'Trojan #99'
-  type: trojan
-  server: 18.166.59.84
-  port: 7484
-  password: BxceQaOe
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: t.me%2Fripaojiedian
-  client-fingerprint: chrome
+      Host: cdn.linkman1.ir
 proxy-groups:
 - name: Proxy Select
   type: select
@@ -1551,12 +1468,6 @@ proxy-groups:
   - 'Trojan #91'
   - 'Trojan #92'
   - 'Trojan #93'
-  - 'Trojan #94'
-  - 'Trojan #95'
-  - 'Trojan #96'
-  - 'Trojan #97'
-  - 'Trojan #98'
-  - 'Trojan #99'
   - DIRECT
 - name: Auto Select
   type: url-test
@@ -1654,12 +1565,6 @@ proxy-groups:
   - 'Trojan #91'
   - 'Trojan #92'
   - 'Trojan #93'
-  - 'Trojan #94'
-  - 'Trojan #95'
-  - 'Trojan #96'
-  - 'Trojan #97'
-  - 'Trojan #98'
-  - 'Trojan #99'
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 150
