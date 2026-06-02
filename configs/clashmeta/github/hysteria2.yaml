@@ -79,7 +79,7 @@ proxies:
 - name: 'T.ME: @aristapnel #1'
   type: hysteria2
   server: 18.185.89.204
-  port: 15
+  port: 44044
   password: Masir_Sefid
   sni: qus.masir-sefid.shop
   skip-cert-verify: false
@@ -90,7 +90,7 @@ proxies:
 - name: 'T.ME: @aristapnel #2'
   type: hysteria2
   server: 18.185.89.204
-  port: 2083
+  port: 48
   password: Masir_Sefid
   sni: qus.masir-sefid.shop
   skip-cert-verify: false
@@ -101,7 +101,7 @@ proxies:
 - name: 'T.ME: @aristapnel #3'
   type: hysteria2
   server: 18.185.89.204
-  port: 44044
+  port: 54040
   password: Masir_Sefid
   sni: qus.masir-sefid.shop
   skip-cert-verify: false
@@ -112,7 +112,7 @@ proxies:
 - name: 'T.ME: @aristapnel #4'
   type: hysteria2
   server: 18.185.89.204
-  port: 48
+  port: 59826
   password: Masir_Sefid
   sni: qus.masir-sefid.shop
   skip-cert-verify: false
@@ -123,7 +123,7 @@ proxies:
 - name: 'T.ME: @aristapnel #5'
   type: hysteria2
   server: 18.185.89.204
-  port: 54040
+  port: 15
   password: Masir_Sefid
   sni: qus.masir-sefid.shop
   skip-cert-verify: false
@@ -134,7 +134,7 @@ proxies:
 - name: 'T.ME: @aristapnel #6'
   type: hysteria2
   server: 18.185.89.204
-  port: 59826
+  port: 2083
   password: Masir_Sefid
   sni: qus.masir-sefid.shop
   skip-cert-verify: false
@@ -1247,6 +1247,24 @@ proxies:
   client-fingerprint: chrome
   obfs: salamander
   obfs-password: Masir_Sefid
+- name: 'T.ME: @aristapnel #110'
+  type: hysteria2
+  server: hy2.123266.xyz
+  port: 33333
+  password: bce6c821-200d-421f-bf3d-7159e5246ea0
+  sni: hy2.123266.xyz
+  skip-cert-verify: false
+  fast-open: true
+  client-fingerprint: chrome
+- name: 'T.ME: @aristapnel #111'
+  type: hysteria2
+  server: 185.228.139.247
+  port: 4433
+  password: 18cf8030-1ceb-4b7d-8c0c-c036413c144e
+  sni: de2.xiaoliyu.cyou
+  skip-cert-verify: false
+  fast-open: true
+  client-fingerprint: chrome
 proxy-groups:
 - name: Proxy Select
   type: select
@@ -1361,6 +1379,8 @@ proxy-groups:
   - 'T.ME: @aristapnel #107'
   - 'T.ME: @aristapnel #108'
   - 'T.ME: @aristapnel #109'
+  - 'T.ME: @aristapnel #110'
+  - 'T.ME: @aristapnel #111'
   - DIRECT
 - name: Auto Select
   type: url-test
@@ -1474,6 +1494,8 @@ proxy-groups:
   - 'T.ME: @aristapnel #107'
   - 'T.ME: @aristapnel #108'
   - 'T.ME: @aristapnel #109'
+  - 'T.ME: @aristapnel #110'
+  - 'T.ME: @aristapnel #111'
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 150
