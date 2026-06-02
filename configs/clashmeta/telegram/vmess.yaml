@@ -78,63 +78,9 @@ sniffer:
 proxies:
 - name: 'ARISTA #1'
   type: vmess
-  server: heu83ujieiwoeu83j2ewjehuwehu8.dentiscan.ca
-  port: 80
-  uuid: e2923bc6-8204-4768-98ea-379d48ea8a7a
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: heu83ujieiwoeu83j2ewjehuwehu8.dentiscan.ca
-  client-fingerprint: ''
-  ws-opts:
-    path: /1awNzxRSwKsdkPVKP0ZQqlHjt10sp
-    headers:
-      Host: heu83ujieiwoeu83j2ewjehuwehu8.dentiscan.ca
-- name: 'ARISTA #2'
-  type: vmess
-  server: heu83ujieiwoeu83j2ewjehuwehu8.dentiscan.ca
-  port: 80
-  uuid: e2923bc6-8204-4768-98ea-379d48ea8a7a
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: heu83ujieiwoeu83j2ewjehuwehu8.dentiscan.ca
-  client-fingerprint: ''
-  ws-opts:
-    path: /1awNzxRSwKsdkPVKP0ZQqlHjt10sp
-    headers:
-      Host: heu83ujieiwoeu83j2ewjehuwehu8.dentiscan.ca
-- name: 'ARISTA #3'
-  type: vmess
-  server: aris.arisping-ir.store
-  port: 443
-  uuid: 67f79907-6163-475c-b5ba-2a3faa0c02c5
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: cdn.arisping-ir.store
-  client-fingerprint: ''
-  ws-opts:
-    path: /
-    headers:
-      Host: cdn.arisping-ir.store
-- name: 'ARISTA #4'
-  type: vmess
-  server: 95.179.159.222
-  port: 26966
-  uuid: ac112108-b9a1-410e-ae45-3f4b1409376e
+  server: s1.hamishe.cloud
+  port: 110
+  uuid: bc53f4f7-66c0-43ce-b950-649ec286a3d2
   alterId: 0
   cipher: auto
   network: tcp
@@ -142,27 +88,23 @@ proxies:
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: 95.179.159.222
+  servername: divar.ir
   client-fingerprint: ''
-- name: 'ARISTA #5'
+- name: 'ARISTA #2'
   type: vmess
-  server: 188.114.97.6
-  port: 443
-  uuid: 44444444-4444-4444-8444-444444444444
+  server: 172.233.17.76
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
   alterId: 0
-  cipher: zero
-  network: ws
-  tls: true
+  cipher: auto
+  network: tcp
+  tls: false
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: media-sin6-3.cdn.whatsapp.net.cyylr.eu.cc
+  servername: 172.233.17.76
   client-fingerprint: ''
-  ws-opts:
-    path: /my-wbv
-    headers:
-      Host: media-sin6-3.cdn.whatsapp.net.cyylr.eu.cc
-- name: 'ARISTA #6'
+- name: 'ARISTA #3'
   type: vmess
   server: 57.151.100.27
   port: 10086
@@ -176,63 +118,7 @@ proxies:
   tcp-fast-open: true
   servername: 57.151.100.27
   client-fingerprint: ''
-- name: 'ARISTA #7'
-  type: vmess
-  server: de5.taskflowhub.org
-  port: 2053
-  uuid: ca58b165-0f7d-49aa-9fae-a017e8a0f884
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: de5.taskflowhub.org
-  client-fingerprint: ''
-- name: 'ARISTA #8'
-  type: vmess
-  server: v10.hdacd.com
-  port: 30807
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: v10.hdacd.com
-  client-fingerprint: ''
-- name: 'ARISTA #9'
-  type: vmess
-  server: v29.hdacd.com
-  port: 30829
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: v29.hdacd.com
-  client-fingerprint: ''
-- name: 'ARISTA #10'
-  type: vmess
-  server: v36.hdacd.com
-  port: 30836
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: v36.hdacd.com
-  client-fingerprint: ''
-- name: 'ARISTA #11'
+- name: 'ARISTA #4'
   type: vmess
   server: de5.taskflowhub.org
   port: 2053
@@ -250,11 +136,11 @@ proxies:
   - h3
   - h2
   - http/1.1
-- name: 'ARISTA #12'
+- name: 'ARISTA #5'
   type: vmess
-  server: s1.hamishe.cloud
-  port: 110
-  uuid: bc53f4f7-66c0-43ce-b950-649ec286a3d2
+  server: 45.92.70.236
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
   alterId: 0
   cipher: auto
   network: tcp
@@ -262,27 +148,9 @@ proxies:
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: divar.ir
-  client-fingerprint: ''
-- name: 'ARISTA #13'
-  type: vmess
-  server: th1.vpnjantit.com
-  port: 10000
-  uuid: 1020f486-5e30-11f1-9b9b-bb0e43c242bb
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: th1.vpnjantit.com
-  client-fingerprint: ''
-  ws-opts:
-    path: /vpnjantit
-    headers:
-      Host: th1.vpnjantit.com
-- name: 'ARISTA #14'
+  servername: 45.92.70.236
+  client-fingerprint: chrome
+- name: 'ARISTA #6'
   type: vmess
   server: node-de.connectsuite.org
   port: 2053
@@ -299,11 +167,11 @@ proxies:
   alpn:
   - h2
   - http/1.1
-- name: 'ARISTA #15'
+- name: 'ARISTA #7'
   type: vmess
   server: 95.179.159.222
   port: 26966
-  uuid: c9bdb8c9-97a4-41bf-8659-58784ac234f2
+  uuid: ac112108-b9a1-410e-ae45-3f4b1409376e
   alterId: 0
   cipher: auto
   network: tcp
@@ -313,84 +181,7 @@ proxies:
   tcp-fast-open: true
   servername: 95.179.159.222
   client-fingerprint: ''
-- name: 'ARISTA #16'
-  type: vmess
-  server: s1.hamishe.cloud
-  port: 110
-  uuid: bc53f4f7-66c0-43ce-b950-649ec286a3d2
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: divar.ir
-  client-fingerprint: ''
-- name: 'ARISTA #17'
-  type: vmess
-  server: 45.12.132.183
-  port: 8443
-  uuid: 6f1f1a18-ecc4-4513-890e-fd193042f564
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: pq-Hungary1.09vpn.com
-  client-fingerprint: ''
-  ws-opts:
-    path: /vmess/
-    headers:
-      Host: pq-Hungary1.09vpn.com
-- name: 'ARISTA #18'
-  type: vmess
-  server: 95.179.159.222
-  port: 26966
-  uuid: c9bdb8c9-97a4-41bf-8659-58784ac234f2
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 95.179.159.222
-  client-fingerprint: ''
-- name: 'ARISTA #19'
-  type: vmess
-  server: node-fr.connectsuite.org
-  port: 2053
-  uuid: 2f4234f9-8f33-4c7f-952f-565ffa5f5fb7
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: node-fr.connectsuite.org
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
-- name: 'ARISTA #20'
-  type: vmess
-  server: 172.233.17.76
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 172.233.17.76
-  client-fingerprint: ''
-- name: 'ARISTA #21'
+- name: 'ARISTA #8'
   type: vmess
   server: 51.195.235.71
   port: 2052
@@ -403,6 +194,66 @@ proxies:
   skip-cert-verify: false
   tcp-fast-open: true
   servername: 51.195.235.71
+  client-fingerprint: ''
+- name: 'ARISTA #9'
+  type: vmess
+  server: 162.19.254.232
+  port: 2053
+  uuid: ca58b165-0f7d-49aa-9fae-a017e8a0f884
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: de5.taskflowhub.org
+  client-fingerprint: ''
+- name: 'ARISTA #10'
+  type: vmess
+  server: heu83ujieiwoeu83j2ewjehuwehu8.dentiscan.ca
+  port: 80
+  uuid: e2923bc6-8204-4768-98ea-379d48ea8a7a
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: heu83ujieiwoeu83j2ewjehuwehu8.dentiscan.ca
+  client-fingerprint: ''
+  ws-opts:
+    path: /1awNzxRSwKsdkPVKP0ZQqlHjt10sp
+    headers:
+      Host: heu83ujieiwoeu83j2ewjehuwehu8.dentiscan.ca
+- name: 'ARISTA #11'
+  type: vmess
+  server: 95.179.208.194
+  port: 38422
+  uuid: e3ac9d1b-4311-4f6c-8642-035acd3507a8
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: 95.179.208.194
+  client-fingerprint: ''
+- name: 'ARISTA #12'
+  type: vmess
+  server: s1.hamishe.cloud
+  port: 110
+  uuid: bc53f4f7-66c0-43ce-b950-649ec286a3d2
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: divar.ir
   client-fingerprint: ''
 proxy-groups:
 - name: Proxy Select
@@ -421,15 +272,6 @@ proxy-groups:
   - 'ARISTA #10'
   - 'ARISTA #11'
   - 'ARISTA #12'
-  - 'ARISTA #13'
-  - 'ARISTA #14'
-  - 'ARISTA #15'
-  - 'ARISTA #16'
-  - 'ARISTA #17'
-  - 'ARISTA #18'
-  - 'ARISTA #19'
-  - 'ARISTA #20'
-  - 'ARISTA #21'
   - DIRECT
 - name: Auto Select
   type: url-test
@@ -446,15 +288,6 @@ proxy-groups:
   - 'ARISTA #10'
   - 'ARISTA #11'
   - 'ARISTA #12'
-  - 'ARISTA #13'
-  - 'ARISTA #14'
-  - 'ARISTA #15'
-  - 'ARISTA #16'
-  - 'ARISTA #17'
-  - 'ARISTA #18'
-  - 'ARISTA #19'
-  - 'ARISTA #20'
-  - 'ARISTA #21'
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 150
