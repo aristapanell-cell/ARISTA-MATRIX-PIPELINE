@@ -5843,21 +5843,6 @@ proxies:
     path: /assignment
     headers:
       Host: www.calmloud.com
-- name: 'T.ME: @aristapnel #457'
-  type: trojan
-  server: 104.18.32.47
-  port: 443
-  password: humanity
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.calmlunch.com
-  client-fingerprint: chrome
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.calmlunch.com
 proxy-groups:
 - name: Proxy Select
   type: select
@@ -6319,7 +6304,6 @@ proxy-groups:
   - 'T.ME: @aristapnel #454'
   - 'T.ME: @aristapnel #455'
   - 'T.ME: @aristapnel #456'
-  - 'T.ME: @aristapnel #457'
   - DIRECT
 - name: Auto Select
   type: url-test
@@ -6780,7 +6764,6 @@ proxy-groups:
   - 'T.ME: @aristapnel #454'
   - 'T.ME: @aristapnel #455'
   - 'T.ME: @aristapnel #456'
-  - 'T.ME: @aristapnel #457'
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 150
