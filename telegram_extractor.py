@@ -24,6 +24,15 @@ class TelegramConfigExtractor:
         })
         
         self.channels = [
+            "https://t.me/s/JynMarket",
+            "https://t.me/s/ConfigX2ray",
+            "https://t.me/s/JavidanNet",
+            "https://t.me/s/hddify",
+            "https://t.me/s/vpnbaz",
+            "https://t.me/s/MARAMBASHI",
+            "https://t.me/s/p1ctok",
+            "https://t.me/s/VPNX4",
+            "https://t.me/s/BestProxyTel1",
             "https://t.me/s/iSeqaro",
             "https://t.me/s/SOSkeyNET", 
             "https://t.me/s/irancpi_vpn",
@@ -850,7 +859,7 @@ class TelegramConfigExtractor:
         
         return False
     
-    def tag_config(self, config_str, tag="ARISTA🔥"):
+    def tag_config(self, config_str, tag="ARISTA"):
         config_str = self.clean_config(config_str)
         
         if config_str.startswith('vmess://'):
