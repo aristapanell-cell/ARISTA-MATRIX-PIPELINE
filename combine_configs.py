@@ -376,7 +376,7 @@ class ConfigCombiner:
         try:
             if '#' in url_str:
                 tag = url_str.split('#')[-1].strip()
-                if tag and tag != 'ARISTA🔥':
+                if tag and tag != 'ARISTA':
                     return tag
         except:
             pass
