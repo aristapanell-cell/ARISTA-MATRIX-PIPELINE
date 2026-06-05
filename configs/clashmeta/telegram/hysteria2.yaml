@@ -76,6 +76,15 @@ sniffer:
       - 2087
       - 2096
 proxies:
+- name: 'Hysteria2 #1'
+  type: hysteria2
+  server: 62.210.124.146
+  port: 22000
+  password: dongtaiwang.com
+  sni: www.microsoft.com
+  skip-cert-verify: false
+  fast-open: true
+  client-fingerprint: chrome
 - name: 'Hysteria2 #2'
   type: hysteria2
   server: 18.157.222.169
@@ -87,17 +96,41 @@ proxies:
   client-fingerprint: chrome
   obfs: salamander
   obfs-password: Masir_Sefid
+- name: 'Hysteria2 #3'
+  type: hysteria2
+  server: 62.210.26.173
+  port: 64772
+  password: github.com%2FAlvin9999-newpac%2Ffanqiang
+  sni: bing.com
+  skip-cert-verify: false
+  fast-open: true
+  client-fingerprint: chrome
+- name: 'Hysteria2 #4'
+  type: hysteria2
+  server: 130.61.50.75
+  port: 6443
+  password: zhangyang
+  sni: dash.cloudflare.com
+  skip-cert-verify: false
+  fast-open: true
+  client-fingerprint: chrome
 proxy-groups:
 - name: Proxy Select
   type: select
   proxies:
   - Auto Select
+  - 'Hysteria2 #1'
   - 'Hysteria2 #2'
+  - 'Hysteria2 #3'
+  - 'Hysteria2 #4'
   - DIRECT
 - name: Auto Select
   type: url-test
   proxies:
+  - 'Hysteria2 #1'
   - 'Hysteria2 #2'
+  - 'Hysteria2 #3'
+  - 'Hysteria2 #4'
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 150
