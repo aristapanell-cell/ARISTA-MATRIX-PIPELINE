@@ -89,17 +89,6 @@ proxies:
   obfs-password: Masir_Sefid
 - name: 'Hysteria2 #2'
   type: hysteria2
-  server: 18.194.63.255
-  port: 443
-  password: masir_sefid
-  sni: content.masir-sefid.shop
-  skip-cert-verify: false
-  fast-open: true
-  client-fingerprint: chrome
-  obfs: salamander
-  obfs-password: masir_sefid
-- name: 'Hysteria2 #3'
-  type: hysteria2
   server: 18.157.222.169
   port: 443
   password: Masir_Sefid
@@ -116,14 +105,12 @@ proxy-groups:
   - Auto Select
   - 'Hysteria2 #1'
   - 'Hysteria2 #2'
-  - 'Hysteria2 #3'
   - DIRECT
 - name: Auto Select
   type: url-test
   proxies:
   - 'Hysteria2 #1'
   - 'Hysteria2 #2'
-  - 'Hysteria2 #3'
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 150
