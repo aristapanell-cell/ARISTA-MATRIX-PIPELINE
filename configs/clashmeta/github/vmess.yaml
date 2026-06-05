@@ -2006,7 +2006,7 @@ proxies:
   client-fingerprint: null
 - name: 'T.ME: @aristapnel #128'
   type: vmess
-  server: 195.209.90.168
+  server: 37.220.161.247
   port: 443
   uuid: df9c9355-b02c-4c12-909d-0dbeb725d52b
   alterId: 0
@@ -2023,45 +2023,6 @@ proxies:
     headers:
       Host: renderer-stream-1-411.mirra.now
 - name: 'T.ME: @aristapnel #129'
-  type: vmess
-  server: renderer-stream-1-411.mirra.now
-  port: 443
-  uuid: df9c9355-b02c-4c12-909d-0dbeb725d52b
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: renderer-stream-1-411.mirra.now
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
-  ws-opts:
-    path: /api/v1/gpu-stream/socket
-    headers:
-      Host: renderer-stream-1-411.mirra.now
-- name: 'T.ME: @aristapnel #130'
-  type: vmess
-  server: renderer-stream-1-411.mirra.now
-  port: 443
-  uuid: df9c9355-b02c-4c12-909d-0dbeb725d52b
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: renderer-stream-1-411.mirra.now
-  client-fingerprint: ''
-  ws-opts:
-    path: /api/v1/gpu-stream/socket
-    headers:
-      Host: renderer-stream-1-411.mirra.now
-- name: 'T.ME: @aristapnel #131'
   type: vmess
   server: renderer-stream-1-411.mirra.now
   port: 443
@@ -2213,8 +2174,6 @@ proxy-groups:
   - 'T.ME: @aristapnel #127'
   - 'T.ME: @aristapnel #128'
   - 'T.ME: @aristapnel #129'
-  - 'T.ME: @aristapnel #130'
-  - 'T.ME: @aristapnel #131'
   - DIRECT
 - name: Auto Select
   type: url-test
@@ -2348,8 +2307,6 @@ proxy-groups:
   - 'T.ME: @aristapnel #127'
   - 'T.ME: @aristapnel #128'
   - 'T.ME: @aristapnel #129'
-  - 'T.ME: @aristapnel #130'
-  - 'T.ME: @aristapnel #131'
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 150
