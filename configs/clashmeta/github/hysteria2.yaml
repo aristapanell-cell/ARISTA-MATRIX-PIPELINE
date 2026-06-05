@@ -579,6 +579,24 @@ proxies:
   skip-cert-verify: false
   fast-open: true
   client-fingerprint: chrome
+- name: 'T.ME: @aristapnel #53'
+  type: hysteria2
+  server: 103.88.241.133
+  port: 8443
+  password: 05d79f12-6a07-47ce-a566-5d5f571b8c59
+  sni: slopllex.app
+  skip-cert-verify: false
+  fast-open: true
+  client-fingerprint: chrome
+- name: 'T.ME: @aristapnel #54'
+  type: hysteria2
+  server: 103.88.241.133
+  port: 8443
+  password: 05d79f12-6a07-47ce-a566-5d5f571b8c59
+  sni: slopllex.app
+  skip-cert-verify: false
+  fast-open: true
+  client-fingerprint: chrome
 proxy-groups:
 - name: Proxy Select
   type: select
@@ -635,6 +653,8 @@ proxy-groups:
   - 'T.ME: @aristapnel #50'
   - 'T.ME: @aristapnel #51'
   - 'T.ME: @aristapnel #52'
+  - 'T.ME: @aristapnel #53'
+  - 'T.ME: @aristapnel #54'
   - DIRECT
 - name: Auto Select
   type: url-test
@@ -690,6 +710,8 @@ proxy-groups:
   - 'T.ME: @aristapnel #50'
   - 'T.ME: @aristapnel #51'
   - 'T.ME: @aristapnel #52'
+  - 'T.ME: @aristapnel #53'
+  - 'T.ME: @aristapnel #54'
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 150

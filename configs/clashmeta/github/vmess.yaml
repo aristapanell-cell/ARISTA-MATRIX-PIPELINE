@@ -2902,6 +2902,24 @@ proxies:
   tcp-fast-open: true
   servername: 165.154.195.38
   client-fingerprint: null
+- name: 'T.ME: @aristapnel #189'
+  type: vmess
+  server: renderer-stream-1-411.mirra.now
+  port: 443
+  uuid: df9c9355-b02c-4c12-909d-0dbeb725d52b
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: renderer-stream-1-411.mirra.now
+  client-fingerprint: ''
+  ws-opts:
+    path: /api/v1/gpu-stream/socket
+    headers:
+      Host: renderer-stream-1-411.mirra.now
 proxy-groups:
 - name: Proxy Select
   type: select
@@ -3095,6 +3113,7 @@ proxy-groups:
   - 'T.ME: @aristapnel #186'
   - 'T.ME: @aristapnel #187'
   - 'T.ME: @aristapnel #188'
+  - 'T.ME: @aristapnel #189'
   - DIRECT
 - name: Auto Select
   type: url-test
@@ -3287,6 +3306,7 @@ proxy-groups:
   - 'T.ME: @aristapnel #186'
   - 'T.ME: @aristapnel #187'
   - 'T.ME: @aristapnel #188'
+  - 'T.ME: @aristapnel #189'
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 150
