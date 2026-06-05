@@ -78,7 +78,41 @@ sniffer:
 proxies:
 - name: 'Trojan #1'
   type: trojan
+  server: 45.130.125.158
+  port: 443
+  password: cf3d48cf-750c-4f18-89a7-f81d2e153fbe
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: blog.webex.com.cyylr.eu.cc
+  client-fingerprint: chrome
+  alpn:
+  - h3
+  - h2
+  - http/1.1
+  ws-opts:
+    path: /in-do
+    headers:
+      Host: blog.webex.com.cyylr.eu.cc
+- name: 'Trojan #2'
+  type: trojan
   server: 104.19.229.21
+  port: 443
+  password: humanity
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.multiplydose.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: //assignment
+    headers:
+      Host: www.multiplydose.com
+- name: 'Trojan #3'
+  type: trojan
+  server: 45.130.125.96
   port: 443
   password: humanity
   network: ws
@@ -93,32 +127,6 @@ proxies:
     path: /assignment
     headers:
       Host: www.calmloud.com
-- name: 'Trojan #2'
-  type: trojan
-  server: 104.16.75.127
-  port: 443
-  password: Config0plus
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: api24-normal.tiktokv.com.cyylr.eu.cc
-  client-fingerprint: chrome
-  ws-opts:
-    path: /id-tksi
-    headers:
-      Host: api24-normal.tiktokv.com.cyylr.eu.cc
-- name: 'Trojan #3'
-  type: trojan
-  server: 91.107.162.63
-  port: 8443
-  password: SoftNetConnect
-  network: xhttp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.yahoo.com
-  client-fingerprint: chrome
 - name: 'Trojan #4'
   type: trojan
   server: 13.39.126.73
@@ -184,71 +192,6 @@ proxies:
   client-fingerprint: chrome
 - name: 'Trojan #9'
   type: trojan
-  server: 64.176.65.85
-  port: 443
-  password: iGccGWTMHtoXtBhGYK4mogg7iIUhGbcvCf
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 64.176.65.85
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-- name: 'Trojan #10'
-  type: trojan
-  server: 54.37.18.204
-  port: 443
-  password: opentunnel.net-english30day
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: uplod.ir
-  client-fingerprint: chrome
-- name: 'Trojan #11'
-  type: trojan
-  server: 188.114.97.6
-  port: 443
-  password: kbfRcfO5S9
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: dd.aananas.ir.
-  client-fingerprint: firefox
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: dd.aananas.ir.
-- name: 'Trojan #12'
-  type: trojan
-  server: jpbgp.netvigor.cc
-  port: 19128
-  password: gcuCpQfaiVeDBdWG
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: yazhou10.dynu.net
-  client-fingerprint: chrome
-- name: 'Trojan #13'
-  type: trojan
-  server: 45.130.125.0
-  port: 443
-  password: '%43%6f%6e%66%69%67%30%70%6c%75%73'
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: api24-normal.tiktokv.com.cyylr.eu.cc
-  client-fingerprint: chrome
-  ws-opts:
-    path: /id-tksi
-    headers:
-      Host: api24-normal.tiktokv.com.cyylr.eu.cc
-- name: 'Trojan #14'
-  type: trojan
   server: 188.114.97.6
   port: 443
   password: mitivpn
@@ -264,33 +207,7 @@ proxies:
     path: /720f09dba195249b423f771661162528/workers/services/view/mitivpn/production
     headers:
       Host: www.mitivpn.in.net
-- name: 'Trojan #15'
-  type: trojan
-  server: 151.101.108.223
-  port: 443
-  password: ertpzfsl7w4kqvk4
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: default.ssl.fastly.net
-  client-fingerprint: chrome
-  ws-opts:
-    path: /TELEGRAM_NUFiLTER
-    headers:
-      Host: default.ssl.fastly.net
-- name: 'Trojan #16'
-  type: trojan
-  server: 172.237.145.189
-  port: 443
-  password: A3uIh_5NqMg3hFa.gDYWT.afz0UuJ6%3DVIM
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 172.237.145.189
-  client-fingerprint: chrome
-- name: 'Trojan #17'
+- name: 'Trojan #10'
   type: trojan
   server: 104.18.152.225
   port: 443
@@ -305,48 +222,7 @@ proxies:
     path: /assignment
     headers:
       Host: www.ignitelimit.com
-- name: 'Trojan #18'
-  type: trojan
-  server: 45.130.125.160
-  port: 443
-  password: Config0plus
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: api24-normal.tiktokv.com.cyylr.eu.cc
-  client-fingerprint: chrome
-  ws-opts:
-    path: /id-tksi
-    headers:
-      Host: api24-normal.tiktokv.com.cyylr.eu.cc
-- name: 'Trojan #19'
-  type: trojan
-  server: 95.181.173.111
-  port: 8443
-  password: SoftNetConnect
-  network: xhttp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.yahoo.com
-  client-fingerprint: chrome
-- name: 'Trojan #20'
-  type: trojan
-  server: 185.18.250.252
-  port: 443
-  password: humanity
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.multiplydose.com
-  client-fingerprint: chrome
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.multiplydose.com
-- name: 'Trojan #21'
+- name: 'Trojan #11'
   type: trojan
   server: 62.60.157.134
   port: 8443
@@ -357,7 +233,37 @@ proxies:
   tcp-fast-open: true
   servername: www.yahoo.com
   client-fingerprint: chrome
-- name: 'Trojan #22'
+- name: 'Trojan #12'
+  type: trojan
+  server: 151.101.108.223
+  port: 443
+  password: ertpzfsl7w4kqvk4
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: default.ssl.fastly.net
+  client-fingerprint: chrome
+  ws-opts:
+    path: /TELEGRAM_NUFiLTER
+    headers:
+      Host: default.ssl.fastly.net
+- name: 'Trojan #13'
+  type: trojan
+  server: 216.24.57.1
+  port: 443
+  password: humanity
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.calmloud.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmloud.com
+- name: 'Trojan #14'
   type: trojan
   server: 104.16.174.44
   port: 443
@@ -372,7 +278,7 @@ proxies:
     path: /assignment
     headers:
       Host: www.ignitelimit.com
-- name: 'Trojan #23'
+- name: 'Trojan #15'
   type: trojan
   server: 172.235.63.252
   port: 443
@@ -383,50 +289,22 @@ proxies:
   tcp-fast-open: true
   servername: 172.235.63.252
   client-fingerprint: chrome
-- name: 'Trojan #24'
-  type: trojan
-  server: 208.103.161.170
-  port: 443
-  password: 386bd471-4e29-4e79-9a3c-6bc6076ce4b6
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: edu.ruangguru.com.cyylr.eu.cc
-  client-fingerprint: chrome
-  ws-opts:
-    path: /id-tksi
-    headers:
-      Host: edu.ruangguru.com.cyylr.eu.cc
-- name: 'Trojan #25'
-  type: trojan
-  server: 13.39.126.73
-  port: 22222
-  password: telegram-id-privatevpns
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-- name: 'Trojan #26'
+- name: 'Trojan #16'
   type: trojan
   server: 188.114.97.6
   port: 443
-  password: humanity
+  password: kbfRcfO5S9
   network: ws
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: www.creationlong.org
-  client-fingerprint: chrome
+  servername: dd.aananas.ir.
+  client-fingerprint: firefox
   ws-opts:
-    path: /assignment
+    path: /?ed=2048
     headers:
-      Host: www.creationlong.org
-- name: 'Trojan #27'
+      Host: dd.aananas.ir.
+- name: 'Trojan #17'
   type: trojan
   server: 216.24.57.6
   port: 443
@@ -443,20 +321,9 @@ proxies:
     path: /assignment
     headers:
       Host: www.creationlong.org
-- name: 'Trojan #28'
+- name: 'Trojan #18'
   type: trojan
-  server: xjp.ziqiyun.xyz
-  port: 443
-  password: 7b561e94-42f3-4f92-979c-4cf97c328025
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: xjp.ziqiyun.xyz
-  client-fingerprint: chrome
-- name: 'Trojan #29'
-  type: trojan
-  server: 211.76.176.98
+  server: jpbgp.netvigor.cc
   port: 19128
   password: gcuCpQfaiVeDBdWG
   network: tcp
@@ -465,43 +332,78 @@ proxies:
   tcp-fast-open: true
   servername: yazhou10.dynu.net
   client-fingerprint: chrome
-- name: 'Trojan #30'
+- name: 'Trojan #19'
   type: trojan
-  server: 192.153.57.237
-  port: 80
-  password: qdcdnsaz5zsotaug
+  server: 45.130.125.0
+  port: 443
+  password: '%43%6f%6e%66%69%67%30%70%6c%75%73'
   network: ws
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: 192.153.57.237
+  servername: api24-normal.tiktokv.com.cyylr.eu.cc
   client-fingerprint: chrome
   ws-opts:
-    path: /nini
+    path: /id-tksi
     headers:
-      Host: 192.153.57.237
-- name: 'Trojan #31'
+      Host: api24-normal.tiktokv.com.cyylr.eu.cc
+- name: 'Trojan #20'
   type: trojan
-  server: 45.130.125.158
+  server: 45.130.125.160
   port: 443
-  password: cf3d48cf-750c-4f18-89a7-f81d2e153fbe
+  password: Config0plus
   network: ws
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: blog.webex.com.cyylr.eu.cc
+  servername: api24-normal.tiktokv.com.cyylr.eu.cc
+  client-fingerprint: chrome
+  ws-opts:
+    path: /id-tksi
+    headers:
+      Host: api24-normal.tiktokv.com.cyylr.eu.cc
+- name: 'Trojan #21'
+  type: trojan
+  server: 64.176.65.85
+  port: 443
+  password: iGccGWTMHtoXtBhGYK4mogg7iIUhGbcvCf
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: 64.176.65.85
   client-fingerprint: chrome
   alpn:
-  - h3
-  - h2
   - http/1.1
-  ws-opts:
-    path: /in-do
-    headers:
-      Host: blog.webex.com.cyylr.eu.cc
-- name: 'Trojan #32'
+- name: 'Trojan #22'
   type: trojan
-  server: 104.19.229.21
+  server: 54.37.18.204
+  port: 443
+  password: opentunnel.net-english30day
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: uplod.ir
+  client-fingerprint: chrome
+- name: 'Trojan #23'
+  type: trojan
+  server: 188.114.97.6
+  port: 443
+  password: aNQNxDIiNd
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: dd.aananas.ir.
+  client-fingerprint: safari
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: dd.aananas.ir.
+- name: 'Trojan #24'
+  type: trojan
+  server: 185.18.250.252
   port: 443
   password: humanity
   network: ws
@@ -509,14 +411,76 @@ proxies:
   skip-cert-verify: false
   tcp-fast-open: true
   servername: www.multiplydose.com
-  client-fingerprint: chrome
+  client-fingerprint: safari
   ws-opts:
-    path: //assignment
+    path: /assignment
     headers:
       Host: www.multiplydose.com
-- name: 'Trojan #33'
+- name: 'Trojan #25'
   type: trojan
-  server: 45.130.125.96
+  server: srv1.khatibirepair.ir
+  port: 443
+  password: humanity
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.calmlunch.com
+  client-fingerprint: safari
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmlunch.com
+- name: 'Trojan #26'
+  type: trojan
+  server: 188.114.97.6
+  port: 8443
+  password: WJfAuySyhs
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: hamincharkhooo.rafachita.ir
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /720f09dba195249b423f771661162528/workers/services/view/best/production/settings
+    headers:
+      Host: hamincharkhooo.rafachita.ir
+- name: 'Trojan #27'
+  type: trojan
+  server: 188.114.97.6
+  port: 443
+  password: 0Kn43NAwDY
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: dg.aananas.ir.
+  client-fingerprint: firefox
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: dg.aananas.ir.
+- name: 'Trojan #28'
+  type: trojan
+  server: 188.114.97.6
+  port: 443
+  password: humanity
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.creationlong.org
+  client-fingerprint: chrome
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.creationlong.org
+- name: 'Trojan #29'
+  type: trojan
+  server: 104.19.229.21
   port: 443
   password: humanity
   network: ws
@@ -531,6 +495,21 @@ proxies:
     path: /assignment
     headers:
       Host: www.calmloud.com
+- name: 'Trojan #30'
+  type: trojan
+  server: 104.16.75.127
+  port: 443
+  password: Config0plus
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: api24-normal.tiktokv.com.cyylr.eu.cc
+  client-fingerprint: chrome
+  ws-opts:
+    path: /id-tksi
+    headers:
+      Host: api24-normal.tiktokv.com.cyylr.eu.cc
 proxy-groups:
 - name: Proxy Select
   type: select
@@ -566,9 +545,6 @@ proxy-groups:
   - 'Trojan #28'
   - 'Trojan #29'
   - 'Trojan #30'
-  - 'Trojan #31'
-  - 'Trojan #32'
-  - 'Trojan #33'
   - DIRECT
 - name: Auto Select
   type: url-test
@@ -603,9 +579,6 @@ proxy-groups:
   - 'Trojan #28'
   - 'Trojan #29'
   - 'Trojan #30'
-  - 'Trojan #31'
-  - 'Trojan #32'
-  - 'Trojan #33'
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 150
