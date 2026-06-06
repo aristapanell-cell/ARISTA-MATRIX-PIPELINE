@@ -78,83 +78,36 @@ sniffer:
 proxies:
 - name: 'ARISTA #1'
   type: vmess
-  server: 169.197.142.22
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  server: node-de.connectsuite.org
+  port: 2053
+  uuid: fd169a0a-5c32-4f3e-9b6c-28dd35f2a5e5
   alterId: 0
   cipher: auto
   network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 169.197.142.22
-  client-fingerprint: ''
-- name: 'ARISTA #2'
-  type: vmess
-  server: 38.91.107.49
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 38.91.107.49
-  client-fingerprint: ''
-- name: 'ARISTA #3'
-  type: vmess
-  server: 45.130.125.96
-  port: 2096
-  uuid: df64d822-0009-48c4-a4a8-5a4b7beb93f2
-  alterId: 0
-  cipher: auto
-  network: ws
   tls: true
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: notathing.dadcloud.ir
-  client-fingerprint: ''
-  ws-opts:
-    path: ''
-    headers:
-      Host: notathing.dadcloud.ir
-- name: 'ARISTA #4'
+  servername: node-de.connectsuite.org
+  client-fingerprint: chrome
+  alpn:
+  - h2
+  - http/1.1
+- name: 'ARISTA #2'
   type: vmess
-  server: ec0c9ef2c915f271ec0c9ef2c915f271.dadhost.ir
-  port: 23699
-  uuid: df64d822-0009-48c4-a4a8-5a4b7beb93f2
+  server: de5.taskflowhub.org
+  port: 2053
+  uuid: ca58b165-0f7d-49aa-9fae-a017e8a0f884
   alterId: 0
   cipher: auto
   network: tcp
-  tls: false
+  tls: true
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: ec0c9ef2c915f271ec0c9ef2c915f271.dadhost.ir
+  servername: de5.taskflowhub.org
   client-fingerprint: ''
-- name: 'ARISTA #5'
-  type: vmess
-  server: www.arvancloud.ir
-  port: 8880
-  uuid: c534085e-0c5c-4e31-b3b8-b0ddde551a83
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: bamangadambezan.speedtest2026.ir
-  client-fingerprint: ''
-  ws-opts:
-    path: /hugme
-    headers:
-      Host: bamangadambezan.speedtest2026.ir
-- name: 'ARISTA #6'
+- name: 'ARISTA #3'
   type: vmess
   server: 87.107.162.243
   port: 25105
@@ -172,102 +125,7 @@ proxies:
     path: /
     headers:
       Host: 87.107.162.243
-- name: 'ARISTA #7'
-  type: vmess
-  server: 172.64.198.249
-  port: 2086
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: ip1.1457230.xyz
-  client-fingerprint: chrome
-  ws-opts:
-    path: github.com/Alvin9999
-    headers:
-      Host: ip1.1457230.xyz
-- name: 'ARISTA #8'
-  type: vmess
-  server: node-de.connectsuite.org
-  port: 2053
-  uuid: fd169a0a-5c32-4f3e-9b6c-28dd35f2a5e5
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: node-de.connectsuite.org
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
-- name: 'ARISTA #9'
-  type: vmess
-  server: de5.taskflowhub.org
-  port: 2053
-  uuid: ca58b165-0f7d-49aa-9fae-a017e8a0f884
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: de5.taskflowhub.org
-  client-fingerprint: ''
-- name: 'ARISTA #10'
-  type: vmess
-  server: 172.233.17.76
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 172.233.17.76
-  client-fingerprint: ''
-- name: 'ARISTA #11'
-  type: vmess
-  server: 165.140.216.141
-  port: 443
-  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 165.140.216.141
-  client-fingerprint: ''
-- name: 'ARISTA #12'
-  type: vmess
-  server: i.toxicfa.cf
-  port: 8880
-  uuid: 75aae5be-0838-4ada-fdf1-1d0ea41fca55
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: i.toxicfa.cf
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: i.toxicfa.cf
-- name: 'ARISTA #13'
+- name: 'ARISTA #4'
   type: vmess
   server: 120.237.79.157
   port: 52908
@@ -281,7 +139,7 @@ proxies:
   tcp-fast-open: true
   servername: 120.237.79.157
   client-fingerprint: chrome
-- name: 'ARISTA #14'
+- name: 'ARISTA #5'
   type: vmess
   server: 216.106.183.35
   port: 22324
@@ -295,7 +153,7 @@ proxies:
   tcp-fast-open: true
   servername: 216.106.183.35
   client-fingerprint: chrome
-- name: 'ARISTA #15'
+- name: 'ARISTA #6'
   type: vmess
   server: node-fr.connectsuite.org
   port: 2053
@@ -312,7 +170,7 @@ proxies:
   alpn:
   - h2
   - http/1.1
-- name: 'ARISTA #16'
+- name: 'ARISTA #7'
   type: vmess
   server: cf.scpnb.top
   port: 443
@@ -330,7 +188,7 @@ proxies:
     path: /7fd8d1db-96ec-4e46-80a8-74ad9472384e-vm
     headers:
       Host: graph-keep-beds-catalog.trycloudflare.com
-- name: 'ARISTA #17'
+- name: 'ARISTA #8'
   type: vmess
   server: 47.250.45.234
   port: 8613
@@ -348,6 +206,88 @@ proxies:
     path: /arki?ed=2048
     headers:
       Host: 47.250.45.234
+- name: 'ARISTA #9'
+  type: vmess
+  server: aris.arisping-ir.store
+  port: 443
+  uuid: 67f79907-6163-475c-b5ba-2a3faa0c02c5
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: cdn.arisping-ir.store
+  client-fingerprint: ''
+  ws-opts:
+    path: /
+    headers:
+      Host: cdn.arisping-ir.store
+- name: 'ARISTA #10'
+  type: vmess
+  server: 172.233.17.76
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: 172.233.17.76
+  client-fingerprint: ''
+- name: 'ARISTA #11'
+  type: vmess
+  server: 172.64.198.249
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: ip1.1457230.xyz
+  client-fingerprint: chrome
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: ip1.1457230.xyz
+- name: 'ARISTA #12'
+  type: vmess
+  server: www.arvancloud.ir
+  port: 8880
+  uuid: c534085e-0c5c-4e31-b3b8-b0ddde551a83
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: bamangadambezan.speedtest2026.ir
+  client-fingerprint: ''
+  ws-opts:
+    path: /hugme
+    headers:
+      Host: bamangadambezan.speedtest2026.ir
+- name: 'ARISTA #13'
+  type: vmess
+  server: 165.140.216.141
+  port: 443
+  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: 165.140.216.141
+  client-fingerprint: ''
 proxy-groups:
 - name: Proxy Select
   type: select
@@ -366,10 +306,6 @@ proxy-groups:
   - 'ARISTA #11'
   - 'ARISTA #12'
   - 'ARISTA #13'
-  - 'ARISTA #14'
-  - 'ARISTA #15'
-  - 'ARISTA #16'
-  - 'ARISTA #17'
   - DIRECT
 - name: Auto Select
   type: url-test
@@ -387,10 +323,6 @@ proxy-groups:
   - 'ARISTA #11'
   - 'ARISTA #12'
   - 'ARISTA #13'
-  - 'ARISTA #14'
-  - 'ARISTA #15'
-  - 'ARISTA #16'
-  - 'ARISTA #17'
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 150
