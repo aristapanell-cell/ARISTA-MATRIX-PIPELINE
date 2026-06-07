@@ -536,45 +536,25 @@ proxies:
   client-fingerprint: chrome
 - name: 'T.ME: @aristapnel #48'
   type: hysteria2
-  server: fi-hel-hostvds-05.sssrvpn.pro
-  port: 13337
-  password: c7166f8f-236b-4fa4-b99c-172813b24f73
-  sni: h2.mtproxy-hub.org
+  server: 193.53.126.108
+  port: 443
+  password: 10550754-cf62-3d3b-ba6a-50be27a275d7
+  sni: s463.okgfwbackxyz.xyz
   skip-cert-verify: false
   fast-open: true
   client-fingerprint: chrome
-  obfs: salamander
-  obfs-password: killmebaby
+  alpn:
+  - h3
 - name: 'T.ME: @aristapnel #49'
   type: hysteria2
-  server: fi-hel-hostvds-07.sssrvpn.pro
-  port: 13337
-  password: c7166f8f-236b-4fa4-b99c-172813b24f73
-  sni: h2.mtproxy-hub.org
+  server: 193.53.126.108
+  port: 443
+  password: 10550754-cf62-3d3b-ba6a-50be27a275d7
+  sni: s463.okgfwbackxyz.xyz
   skip-cert-verify: false
   fast-open: true
   client-fingerprint: chrome
-  obfs: salamander
-  obfs-password: killmebaby
 - name: 'T.ME: @aristapnel #50'
-  type: hysteria2
-  server: 193.53.126.108
-  port: 443
-  password: 10550754-cf62-3d3b-ba6a-50be27a275d7
-  sni: s463.okgfwbackxyz.xyz
-  skip-cert-verify: false
-  fast-open: true
-  client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #51'
-  type: hysteria2
-  server: 193.53.126.108
-  port: 443
-  password: 10550754-cf62-3d3b-ba6a-50be27a275d7
-  sni: s463.okgfwbackxyz.xyz
-  skip-cert-verify: false
-  fast-open: true
-  client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #52'
   type: hysteria2
   server: 193.53.126.108
   port: 443
@@ -637,8 +617,6 @@ proxy-groups:
   - 'T.ME: @aristapnel #48'
   - 'T.ME: @aristapnel #49'
   - 'T.ME: @aristapnel #50'
-  - 'T.ME: @aristapnel #51'
-  - 'T.ME: @aristapnel #52'
   - DIRECT
 - name: Auto Select
   type: url-test
@@ -692,8 +670,6 @@ proxy-groups:
   - 'T.ME: @aristapnel #48'
   - 'T.ME: @aristapnel #49'
   - 'T.ME: @aristapnel #50'
-  - 'T.ME: @aristapnel #51'
-  - 'T.ME: @aristapnel #52'
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 150
