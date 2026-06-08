@@ -494,6 +494,28 @@ proxies:
   skip-cert-verify: false
   fast-open: true
   client-fingerprint: chrome
+- name: 'T.ME: @aristapnel #44'
+  type: hysteria2
+  server: fi-hel-hostvds-05.sssrvpn.pro
+  port: 13337
+  password: c7166f8f-236b-4fa4-b99c-172813b24f73
+  sni: h2.mtproxy-hub.org
+  skip-cert-verify: false
+  fast-open: true
+  client-fingerprint: chrome
+  obfs: salamander
+  obfs-password: killmebaby
+- name: 'T.ME: @aristapnel #45'
+  type: hysteria2
+  server: fi-hel-hostvds-07.sssrvpn.pro
+  port: 13337
+  password: c7166f8f-236b-4fa4-b99c-172813b24f73
+  sni: h2.mtproxy-hub.org
+  skip-cert-verify: false
+  fast-open: true
+  client-fingerprint: chrome
+  obfs: salamander
+  obfs-password: killmebaby
 proxy-groups:
 - name: Proxy Select
   type: select
@@ -541,6 +563,8 @@ proxy-groups:
   - 'T.ME: @aristapnel #41'
   - 'T.ME: @aristapnel #42'
   - 'T.ME: @aristapnel #43'
+  - 'T.ME: @aristapnel #44'
+  - 'T.ME: @aristapnel #45'
   - DIRECT
 - name: Auto Select
   type: url-test
@@ -587,6 +611,8 @@ proxy-groups:
   - 'T.ME: @aristapnel #41'
   - 'T.ME: @aristapnel #42'
   - 'T.ME: @aristapnel #43'
+  - 'T.ME: @aristapnel #44'
+  - 'T.ME: @aristapnel #45'
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 150
