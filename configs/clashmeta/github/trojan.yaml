@@ -2632,7 +2632,7 @@ proxies:
       Host: www.calmloud.com
 - name: 'T.ME: @aristapnel #203'
   type: trojan
-  server: 216.24.57.7
+  server: 216.24.57.6
   port: 443
   password: humanity
   network: ws
@@ -2656,14 +2656,14 @@ proxies:
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: www.ignitelimit.com
+  servername: www.calmloud.com
   client-fingerprint: chrome
   alpn:
   - http/1.1
   ws-opts:
     path: /assignment
     headers:
-      Host: www.ignitelimit.com
+      Host: www.calmloud.com
 - name: 'T.ME: @aristapnel #205'
   type: trojan
   server: 216.24.57.7
@@ -2675,6 +2675,8 @@ proxies:
   tcp-fast-open: true
   servername: www.ignitelimit.com
   client-fingerprint: chrome
+  alpn:
+  - http/1.1
   ws-opts:
     path: /assignment
     headers:
@@ -2696,22 +2698,37 @@ proxies:
       Host: www.ignitelimit.com
 - name: 'T.ME: @aristapnel #207'
   type: trojan
-  server: 216.24.57.6
+  server: 216.24.57.7
   port: 443
   password: humanity
   network: ws
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: www.creationlong.org
+  servername: www.ignitelimit.com
   client-fingerprint: chrome
-  alpn:
-  - http/1.1
   ws-opts:
     path: /assignment
     headers:
-      Host: www.creationlong.org
+      Host: www.ignitelimit.com
 - name: 'T.ME: @aristapnel #208'
+  type: trojan
+  server: 216.24.57.7
+  port: 443
+  password: humanity
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.calmloud.com
+  client-fingerprint: chrome
+  alpn:
+  - http%2F1.1
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmloud.com
+- name: 'T.ME: @aristapnel #209'
   type: trojan
   server: 216.24.57.6
   port: 443
@@ -2728,7 +2745,24 @@ proxies:
     path: /assignment
     headers:
       Host: www.creationlong.org
-- name: 'T.ME: @aristapnel #209'
+- name: 'T.ME: @aristapnel #210'
+  type: trojan
+  server: 216.24.57.6
+  port: 443
+  password: humanity
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.creationlong.org
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.creationlong.org
+- name: 'T.ME: @aristapnel #211'
   type: trojan
   server: 141.193.213.11
   port: 443
@@ -2743,7 +2777,7 @@ proxies:
     path: /us-gllc
     headers:
       Host: api24-normal.tiktokv.com.r3xxe.eu.cc
-- name: 'T.ME: @aristapnel #210'
+- name: 'T.ME: @aristapnel #212'
   type: trojan
   server: 141.193.213.11
   port: 443
@@ -2973,6 +3007,8 @@ proxy-groups:
   - 'T.ME: @aristapnel #208'
   - 'T.ME: @aristapnel #209'
   - 'T.ME: @aristapnel #210'
+  - 'T.ME: @aristapnel #211'
+  - 'T.ME: @aristapnel #212'
   - DIRECT
 - name: Auto Select
   type: url-test
@@ -3187,6 +3223,8 @@ proxy-groups:
   - 'T.ME: @aristapnel #208'
   - 'T.ME: @aristapnel #209'
   - 'T.ME: @aristapnel #210'
+  - 'T.ME: @aristapnel #211'
+  - 'T.ME: @aristapnel #212'
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 150

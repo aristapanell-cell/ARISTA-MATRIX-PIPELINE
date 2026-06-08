@@ -458,7 +458,7 @@ proxies:
       Host: renderer-stream-1-411.mirra.now
 - name: 'T.ME: @aristapnel #23'
   type: vmess
-  server: renderer-stream-1-411.mirra.now
+  server: 37.220.161.249
   port: 443
   uuid: df9c9355-b02c-4c12-909d-0dbeb725d52b
   alterId: 0
@@ -512,7 +512,7 @@ proxies:
       Host: renderer-stream-1-411.mirra.now
 - name: 'T.ME: @aristapnel #26'
   type: vmess
-  server: 93.93.89.118
+  server: renderer-stream-1-411.mirra.now
   port: 443
   uuid: df9c9355-b02c-4c12-909d-0dbeb725d52b
   alterId: 0
@@ -523,7 +523,10 @@ proxies:
   skip-cert-verify: false
   tcp-fast-open: true
   servername: renderer-stream-1-411.mirra.now
-  client-fingerprint: ''
+  client-fingerprint: chrome
+  alpn:
+  - h2
+  - http/1.1
   ws-opts:
     path: /api/v1/gpu-stream/socket
     headers:
@@ -541,10 +544,7 @@ proxies:
   skip-cert-verify: false
   tcp-fast-open: true
   servername: renderer-stream-1-411.mirra.now
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
+  client-fingerprint: ''
   ws-opts:
     path: /api/v1/gpu-stream/socket
     headers:
@@ -568,24 +568,6 @@ proxies:
     headers:
       Host: renderer-stream-1-411.mirra.now
 - name: 'T.ME: @aristapnel #29'
-  type: vmess
-  server: renderer-stream-1-411.mirra.now
-  port: 443
-  uuid: df9c9355-b02c-4c12-909d-0dbeb725d52b
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: renderer-stream-1-411.mirra.now
-  client-fingerprint: ''
-  ws-opts:
-    path: /api/v1/gpu-stream/socket
-    headers:
-      Host: renderer-stream-1-411.mirra.now
-- name: 'T.ME: @aristapnel #30'
   type: vmess
   server: renderer-stream-1-411.mirra.now
   port: 443
@@ -637,7 +619,6 @@ proxy-groups:
   - 'T.ME: @aristapnel #27'
   - 'T.ME: @aristapnel #28'
   - 'T.ME: @aristapnel #29'
-  - 'T.ME: @aristapnel #30'
   - DIRECT
 - name: Auto Select
   type: url-test
@@ -671,7 +652,6 @@ proxy-groups:
   - 'T.ME: @aristapnel #27'
   - 'T.ME: @aristapnel #28'
   - 'T.ME: @aristapnel #29'
-  - 'T.ME: @aristapnel #30'
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 150
