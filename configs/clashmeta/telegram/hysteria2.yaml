@@ -89,8 +89,19 @@ proxies:
   obfs-password: '@JavidnamanIran-Javid-SHAH-KingRezaPahlavi'
 - name: 'Hysteria2 #2'
   type: hysteria2
+  server: 181.214.99.162
+  port: 35000
+  password: b4bd0613-ff7c-4f2f-954d-185915e6ddad
+  sni: api.kermanshahi.org
+  skip-cert-verify: false
+  fast-open: true
+  client-fingerprint: chrome
+  obfs: salamander
+  obfs-password: '@JavidnamanIran-Javid-SHAH-KingRezaPahlavi'
+- name: 'Hysteria2 #3'
+  type: hysteria2
   server: 18.157.222.169
-  port: 4040
+  port: 444
   password: '%40Masir_Sefid'
   sni: free.masir-sefid.shop
   skip-cert-verify: false
@@ -98,18 +109,9 @@ proxies:
   client-fingerprint: chrome
   obfs: salamander
   obfs-password: Masir_Sefid
-- name: 'Hysteria2 #3'
-  type: hysteria2
-  server: vpn-de-002.fastervpn.world
-  port: 443
-  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
-  sni: vpn-de-002.fastervpn.world
-  skip-cert-verify: false
-  fast-open: true
-  client-fingerprint: chrome
 - name: 'Hysteria2 #4'
   type: hysteria2
-  server: 181.214.99.162
+  server: 5.175.249.174
   port: 35000
   password: b4bd0613-ff7c-4f2f-954d-185915e6ddad
   sni: api.kermanshahi.org
@@ -165,7 +167,7 @@ proxies:
 - name: 'Hysteria2 #9'
   type: hysteria2
   server: 18.157.222.169
-  port: 444
+  port: 4040
   password: '%40Masir_Sefid'
   sni: free.masir-sefid.shop
   skip-cert-verify: false
@@ -174,28 +176,6 @@ proxies:
   obfs: salamander
   obfs-password: Masir_Sefid
 - name: 'Hysteria2 #10'
-  type: hysteria2
-  server: 5.175.249.174
-  port: 35000
-  password: b4bd0613-ff7c-4f2f-954d-185915e6ddad
-  sni: api.kermanshahi.org
-  skip-cert-verify: false
-  fast-open: true
-  client-fingerprint: chrome
-  obfs: salamander
-  obfs-password: '@JavidnamanIran-Javid-SHAH-KingRezaPahlavi'
-- name: 'Hysteria2 #11'
-  type: hysteria2
-  server: 18.157.222.169
-  port: 1040
-  password: Masir_Sefid
-  sni: free.masir…
-  skip-cert-verify: false
-  fast-open: true
-  client-fingerprint: chrome
-  obfs: salamander
-  obfs-password: Masir_Sefid
-- name: 'Hysteria2 #12'
   type: hysteria2
   server: sg2.yuntong.click
   port: 443
@@ -221,8 +201,6 @@ proxy-groups:
   - 'Hysteria2 #8'
   - 'Hysteria2 #9'
   - 'Hysteria2 #10'
-  - 'Hysteria2 #11'
-  - 'Hysteria2 #12'
   - DIRECT
 - name: Auto Select
   type: url-test
@@ -237,8 +215,6 @@ proxy-groups:
   - 'Hysteria2 #8'
   - 'Hysteria2 #9'
   - 'Hysteria2 #10'
-  - 'Hysteria2 #11'
-  - 'Hysteria2 #12'
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 150
