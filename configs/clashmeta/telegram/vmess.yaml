@@ -92,62 +92,6 @@ proxies:
   client-fingerprint: ''
 - name: 'ARISTA #2'
   type: vmess
-  server: de5.taskflowhub.org
-  port: 2053
-  uuid: ca58b165-0f7d-49aa-9fae-a017e8a0f884
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: de5.taskflowhub.org
-  client-fingerprint: ''
-- name: 'ARISTA #3'
-  type: vmess
-  server: 185.42.212.222
-  port: 26052
-  uuid: 3547b4d7-67d3-42b7-81ea-5d0c34a0bd97
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 185.42.212.222
-  client-fingerprint: ''
-- name: 'ARISTA #4'
-  type: vmess
-  server: 35.177.106.164
-  port: 1006
-  uuid: 084f0500-00a3-4a8a-ac54-7dd51a620c2d
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 35.177.106.164
-  client-fingerprint: ''
-- name: 'ARISTA #5'
-  type: vmess
-  server: 85.90.217.42
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 85.90.217.42
-  client-fingerprint: ''
-- name: 'ARISTA #6'
-  type: vmess
   server: 51.195.235.71
   port: 2052
   uuid: 59e28f78-c31b-4613-9d9f-1e6732a31f46
@@ -160,7 +104,7 @@ proxies:
   tcp-fast-open: true
   servername: 51.195.235.71
   client-fingerprint: ''
-- name: 'ARISTA #7'
+- name: 'ARISTA #3'
   type: vmess
   server: azmononline.konkuriran.sbs
   port: 2080
@@ -174,7 +118,7 @@ proxies:
   tcp-fast-open: true
   servername: azmononline.konkuriran.sbs
   client-fingerprint: ''
-- name: 'ARISTA #8'
+- name: 'ARISTA #4'
   type: vmess
   server: 91.107.244.117
   port: 2080
@@ -188,7 +132,7 @@ proxies:
   tcp-fast-open: true
   servername: 91.107.244.117
   client-fingerprint: ''
-- name: 'ARISTA #9'
+- name: 'ARISTA #5'
   type: vmess
   server: de5.niekotin.de
   port: 80
@@ -206,57 +150,7 @@ proxies:
     path: /vmess
     headers:
       Host: de5.niekotin.de
-- name: 'ARISTA #10'
-  type: vmess
-  server: ParsVds.ir
-  port: 443
-  uuid: 62aa5f80-0328-4004-a375-7f5a59df4022
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: hms19.best-tizi.top
-  client-fingerprint: ''
-  ws-opts:
-    path: /linkws
-    headers:
-      Host: hms19.best-tizi.top
-- name: 'ARISTA #11'
-  type: vmess
-  server: 140.238.2.250
-  port: 443
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 140.238.2.250
-  client-fingerprint: ''
-- name: 'ARISTA #12'
-  type: vmess
-  server: 172.64.103.211
-  port: 443
-  uuid: 1052f24e-7b09-45eb-b0c5-d858eb124192
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: glweidf.cfd
-  client-fingerprint: ''
-  ws-opts:
-    path: /linkws
-    headers:
-      Host: glweidf.cfd
-- name: 'ARISTA #13'
+- name: 'ARISTA #6'
   type: vmess
   server: 172.232.103.186
   port: 22324
@@ -270,109 +164,7 @@ proxies:
   tcp-fast-open: true
   servername: 172.232.103.186
   client-fingerprint: ''
-- name: 'ARISTA #14'
-  type: vmess
-  server: fr.connfull.org
-  port: 2053
-  uuid: 500e29aa-c40b-43e1-905c-e6e7ac4a5b83
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: fr.connfull.org
-  client-fingerprint: chrome
-- name: 'ARISTA #15'
-  type: vmess
-  server: it.connfull.org
-  port: 2053
-  uuid: d7a4643c-1b72-4199-b54d-810da8d0e657
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: it.connfull.org
-  client-fingerprint: chrome
-- name: 'ARISTA #16'
-  type: vmess
-  server: 172.233.17.76
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 172.233.17.76
-  client-fingerprint: ''
-- name: 'ARISTA #17'
-  type: vmess
-  server: 173.249.209.146
-  port: 20086
-  uuid: 3935c2dc-dbb0-43f7-b367-fe89abe87fdf
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 173.249.209.146
-  client-fingerprint: ''
-  ws-opts:
-    path: /
-    headers:
-      Host: 173.249.209.146
-- name: 'ARISTA #18'
-  type: vmess
-  server: 45.63.100.170
-  port: 43220
-  uuid: 54d46f38-6332-4906-97d6-a277870413f9
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 45.63.100.170
-  client-fingerprint: ''
-- name: 'ARISTA #19'
-  type: vmess
-  server: it.connfull.org
-  port: 2053
-  uuid: d7a4643c-1b72-4199-b54d-810da8d0e657
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: it.connfull.org
-  client-fingerprint: chrome
-- name: 'ARISTA #20'
-  type: vmess
-  server: fr.connfull.org
-  port: 2053
-  uuid: 500e29aa-c40b-43e1-905c-e6e7ac4a5b83
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: fr.connfull.org
-  client-fingerprint: chrome
-- name: 'ARISTA #21'
+- name: 'ARISTA #7'
   type: vmess
   server: de.connfull.org
   port: 2053
@@ -386,11 +178,11 @@ proxies:
   tcp-fast-open: true
   servername: de.connfull.org
   client-fingerprint: chrome
-- name: 'ARISTA #22'
+- name: 'ARISTA #8'
   type: vmess
-  server: node-de.connectsuite.org
+  server: fr.connfull.org
   port: 2053
-  uuid: fd169a0a-5c32-4f3e-9b6c-28dd35f2a5e5
+  uuid: 500e29aa-c40b-43e1-905c-e6e7ac4a5b83
   alterId: 0
   cipher: auto
   network: tcp
@@ -398,47 +190,45 @@ proxies:
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: node-de.connectsuite.org
+  servername: fr.connfull.org
+  client-fingerprint: chrome
+- name: 'ARISTA #9'
+  type: vmess
+  server: it.connfull.org
+  port: 2053
+  uuid: d7a4643c-1b72-4199-b54d-810da8d0e657
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: it.connfull.org
+  client-fingerprint: chrome
+- name: 'ARISTA #10'
+  type: vmess
+  server: uk5.taskflowhub.org
+  port: 2053
+  uuid: 89371dfc-2618-40d7-a558-693ff4f7f1eb
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: uk5.taskflowhub.org
   client-fingerprint: chrome
   alpn:
+  - h3
   - h2
   - http/1.1
-- name: 'ARISTA #23'
+- name: 'ARISTA #11'
   type: vmess
-  server: de5.taskflowhub.org
-  port: 2053
-  uuid: ca58b165-0f7d-49aa-9fae-a017e8a0f884
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: de5.taskflowhub.org
-  client-fingerprint: ''
-- name: 'ARISTA #24'
-  type: vmess
-  server: www.speedtest.net
-  port: 8443
-  uuid: 17260c45-20a7-4c09-befe-ed3edbafc138
-  alterId: 0
-  cipher: auto
-  network: xhttp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: gErtOw1.lOolOolOolOo.cOM
-  client-fingerprint: random
-  alpn:
-  - h2
-  - http/1.1
-- name: 'ARISTA #25'
-  type: vmess
-  server: 95.179.166.190
-  port: 31707
-  uuid: bf19d5c2-d644-4524-8c75-76715109fe9e
+  server: 85.9.125.88
+  port: 1060
+  uuid: 7974c355-1e2e-4da3-9e93-78033e0600ac
   alterId: 0
   cipher: auto
   network: tcp
@@ -446,27 +236,9 @@ proxies:
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: 95.179.166.190
+  servername: 85.9.125.88
   client-fingerprint: ''
-- name: 'ARISTA #26'
-  type: vmess
-  server: 47.250.149.51
-  port: 50018
-  uuid: 9665280c-a3d1-4aab-ef9f-a3a497337d91
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 47.250.149.51
-  client-fingerprint: ''
-  ws-opts:
-    path: /9665280c
-    headers:
-      Host: 47.250.149.51
-- name: 'ARISTA #27'
+- name: 'ARISTA #12'
   type: vmess
   server: cf.scpnb.top
   port: 443
@@ -484,7 +256,7 @@ proxies:
     path: /6d28e73a-a184-4b6a-ab5a-efc2980d38fc-vm
     headers:
       Host: playstation-schema-collections-equilibrium.trycloudflare.com
-- name: 'ARISTA #28'
+- name: 'ARISTA #13'
   type: vmess
   server: cf.scpnb.top
   port: 443
@@ -502,7 +274,7 @@ proxies:
     path: /7fd8d1db-96ec-4e46-80a8-74ad9472384e-vm
     headers:
       Host: graph-keep-beds-catalog.trycloudflare.com
-- name: 'ARISTA #29'
+- name: 'ARISTA #14'
   type: vmess
   server: cf.scpnb.top
   port: 443
@@ -520,11 +292,57 @@ proxies:
     path: /7c84ae69-f0b3-47dc-83c5-e7b5f00f5bed-vm
     headers:
       Host: vienna-bread-threats-amendment.trycloudflare.com
-- name: 'ARISTA #30'
+- name: 'ARISTA #15'
   type: vmess
-  server: uk.connfull.org
+  server: 45.63.100.170
+  port: 43220
+  uuid: 54d46f38-6332-4906-97d6-a277870413f9
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: 45.63.100.170
+  client-fingerprint: ''
+- name: 'ARISTA #16'
+  type: vmess
+  server: 35.177.106.164
+  port: 1006
+  uuid: 084f0500-00a3-4a8a-ac54-7dd51a620c2d
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: 35.177.106.164
+  client-fingerprint: ''
+- name: 'ARISTA #17'
+  type: vmess
+  server: 47.250.149.51
+  port: 50018
+  uuid: 9665280c-a3d1-4aab-ef9f-a3a497337d91
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: 47.250.149.51
+  client-fingerprint: ''
+  ws-opts:
+    path: /9665280c
+    headers:
+      Host: 47.250.149.51
+- name: 'ARISTA #18'
+  type: vmess
+  server: node-de.connectsuite.org
   port: 2053
-  uuid: d64d52b1-144f-4bce-a6d7-1324de187b1b
+  uuid: fd169a0a-5c32-4f3e-9b6c-28dd35f2a5e5
   alterId: 0
   cipher: auto
   network: tcp
@@ -532,23 +350,12 @@ proxies:
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: uk.connfull.org
+  servername: node-de.connectsuite.org
   client-fingerprint: chrome
-- name: 'ARISTA #31'
-  type: vmess
-  server: de.connfull.org
-  port: 2053
-  uuid: f2ff4ae6-cf2d-4d15-9f0d-b6d9980df9aa
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: de.connfull.org
-  client-fingerprint: chrome
-- name: 'ARISTA #32'
+  alpn:
+  - h2
+  - http/1.1
+- name: 'ARISTA #19'
   type: vmess
   server: de5.taskflowhub.org
   port: 2053
@@ -561,12 +368,12 @@ proxies:
   skip-cert-verify: false
   tcp-fast-open: true
   servername: de5.taskflowhub.org
-  client-fingerprint: chrome
-- name: 'ARISTA #33'
+  client-fingerprint: ''
+- name: 'ARISTA #20'
   type: vmess
-  server: 169.197.142.22
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  server: 185.42.212.222
+  port: 26052
+  uuid: 3547b4d7-67d3-42b7-81ea-5d0c34a0bd97
   alterId: 0
   cipher: auto
   network: tcp
@@ -574,87 +381,41 @@ proxies:
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: 169.197.142.22
+  servername: 185.42.212.222
   client-fingerprint: ''
-- name: 'ARISTA #34'
+- name: 'ARISTA #21'
   type: vmess
-  server: 51.254.133.152
-  port: 80
-  uuid: ac8bcf5e-bb58-4e8b-b4e4-5fdea010a6c6
+  server: aris.arisping-ir.store
+  port: 443
+  uuid: 67f79907-6163-475c-b5ba-2a3faa0c02c5
   alterId: 0
   cipher: auto
   network: ws
-  tls: false
+  tls: true
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: fr5.niekotin.de
+  servername: cdn.arisping-ir.store
   client-fingerprint: ''
   ws-opts:
-    path: /vmess
+    path: /
     headers:
-      Host: fr5.niekotin.de
-- name: 'ARISTA #35'
+      Host: cdn.arisping-ir.store
+- name: 'ARISTA #22'
   type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  server: 45.39.84.65
+  port: 16063
+  uuid: c7dcc6a8-04af-4cdf-a44f-4d473dedb565
   alterId: 0
   cipher: auto
-  network: tcp
+  network: httpupgrade
   tls: false
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: 82.198.246.233
-  client-fingerprint: chrome
-- name: 'ARISTA #36'
-  type: vmess
-  server: 82.198.246.9
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 82.198.246.9
-  client-fingerprint: chrome
-- name: 'ARISTA #37'
-  type: vmess
-  server: 129.146.77.248
-  port: 39495
-  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 129.146.77.248
-  client-fingerprint: chrome
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: 129.146.77.248
-- name: 'ARISTA #38'
-  type: vmess
-  server: 45.92.70.236
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 45.92.70.236
-  client-fingerprint: chrome
-- name: 'ARISTA #39'
+  servername: 45.39.84.65
+  client-fingerprint: ''
+- name: 'ARISTA #23'
   type: vmess
   server: 85.90.217.42
   port: 22324
@@ -667,8 +428,8 @@ proxies:
   skip-cert-verify: false
   tcp-fast-open: true
   servername: 85.90.217.42
-  client-fingerprint: chrome
-- name: 'ARISTA #40'
+  client-fingerprint: ''
+- name: 'ARISTA #24'
   type: vmess
   server: 140.238.2.250
   port: 443
@@ -681,67 +442,57 @@ proxies:
   skip-cert-verify: false
   tcp-fast-open: true
   servername: 140.238.2.250
-  client-fingerprint: chrome
-- name: 'ARISTA #41'
+  client-fingerprint: ''
+- name: 'ARISTA #25'
   type: vmess
-  server: 85.9.125.88
-  port: 1060
-  uuid: 7974c355-1e2e-4da3-9e93-78033e0600ac
+  server: it.connfull.org
+  port: 2053
+  uuid: d7a4643c-1b72-4199-b54d-810da8d0e657
   alterId: 0
   cipher: auto
   network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 85.9.125.88
-  client-fingerprint: ''
-- name: 'ARISTA #42'
-  type: vmess
-  server: 172.67.219.57
-  port: 443
-  uuid: 8216253e-7765-4a4f-b82f-ea52f2bb5761
-  alterId: 0
-  cipher: auto
-  network: ws
   tls: true
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: AFyIshOg.roxifa.ir
+  servername: it.connfull.org
   client-fingerprint: chrome
-  alpn:
-  - h2
-  ws-opts:
-    path: /rafa?ed=1024
-    headers:
-      Host: AFyIshOg.roxifa.ir
-- name: 'ARISTA #43'
+- name: 'ARISTA #26'
   type: vmess
-  server: speedtest.net
-  port: 443
-  uuid: c84f2799-52d2-484a-9e31-a25b2bd35d67
+  server: fr.connfull.org
+  port: 2053
+  uuid: 500e29aa-c40b-43e1-905c-e6e7ac4a5b83
   alterId: 0
   cipher: auto
-  network: ws
+  network: tcp
   tls: true
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: speedtest.net
-  client-fingerprint: firefox
+  servername: fr.connfull.org
+  client-fingerprint: chrome
+- name: 'ARISTA #27'
+  type: vmess
+  server: www.speedtest.net
+  port: 8443
+  uuid: 17260c45-20a7-4c09-befe-ed3edbafc138
+  alterId: 0
+  cipher: auto
+  network: xhttp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: gErtOw1.lOolOolOolOo.cOM
+  client-fingerprint: random
   alpn:
   - h2
   - http/1.1
-  ws-opts:
-    path: ws/?ed=2048
-    headers:
-      Host: Dbdjhiw72ebsu272hs519j.com
-- name: 'ARISTA #44'
+- name: 'ARISTA #28'
   type: vmess
-  server: 212.87.198.79
-  port: 45255
-  uuid: dd5ffd23-cef5-44dd-a143-658bd7f3943a
+  server: 185.236.38.44
+  port: 19946
+  uuid: c9e42537-8652-4a4c-85d3-0d36abf38f88
   alterId: 0
   cipher: auto
   network: tcp
@@ -749,9 +500,37 @@ proxies:
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: bale.ai
+  servername: 185.236.38.44
   client-fingerprint: ''
-- name: 'ARISTA #45'
+- name: 'ARISTA #29'
+  type: vmess
+  server: client.cloudafra.top
+  port: 4356
+  uuid: 0c9dc39b-47d9-47d8-8dab-c3cce76e3099
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: client.cloudafra.top
+  client-fingerprint: ''
+- name: 'ARISTA #30'
+  type: vmess
+  server: 172.232.103.186
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: 172.232.103.186
+  client-fingerprint: ''
+- name: 'ARISTA #31'
   type: vmess
   server: 66.163.117.58
   port: 22324
@@ -765,21 +544,7 @@ proxies:
   tcp-fast-open: true
   servername: v2raynplus-v2raynplus-v2raynplus
   client-fingerprint: ''
-- name: 'ARISTA #46'
-  type: vmess
-  server: 51.195.235.71
-  port: 2052
-  uuid: 59e28f78-c31b-4613-9d9f-1e6732a31f46
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 51.195.235.71
-  client-fingerprint: ''
-- name: 'ARISTA #47'
+- name: 'ARISTA #32'
   type: vmess
   server: 85.9.125.88
   port: 1020
@@ -792,6 +557,154 @@ proxies:
   skip-cert-verify: false
   tcp-fast-open: true
   servername: 85.9.125.88
+  client-fingerprint: ''
+- name: 'ARISTA #33'
+  type: vmess
+  server: 172.233.17.76
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: 172.233.17.76
+  client-fingerprint: ''
+- name: 'ARISTA #34'
+  type: vmess
+  server: 173.249.209.146
+  port: 20086
+  uuid: 3935c2dc-dbb0-43f7-b367-fe89abe87fdf
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: 173.249.209.146
+  client-fingerprint: ''
+  ws-opts:
+    path: /
+    headers:
+      Host: 173.249.209.146
+- name: 'ARISTA #35'
+  type: vmess
+  server: 212.87.198.79
+  port: 45255
+  uuid: dd5ffd23-cef5-44dd-a143-658bd7f3943a
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: bale.ai
+  client-fingerprint: ''
+- name: 'ARISTA #36'
+  type: vmess
+  server: uk.connfull.org
+  port: 2053
+  uuid: d64d52b1-144f-4bce-a6d7-1324de187b1b
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: uk.connfull.org
+  client-fingerprint: chrome
+- name: 'ARISTA #37'
+  type: vmess
+  server: de.connfull.org
+  port: 2053
+  uuid: f2ff4ae6-cf2d-4d15-9f0d-b6d9980df9aa
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: de.connfull.org
+  client-fingerprint: chrome
+- name: 'ARISTA #38'
+  type: vmess
+  server: 172.64.103.211
+  port: 443
+  uuid: 1052f24e-7b09-45eb-b0c5-d858eb124192
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: glweidf.cfd
+  client-fingerprint: ''
+  ws-opts:
+    path: /linkws
+    headers:
+      Host: glweidf.cfd
+- name: 'ARISTA #39'
+  type: vmess
+  server: ambxxic01hk.dorabbb.top
+  port: 44806
+  uuid: fe9333e9-c864-41ea-8076-a0df85cc50de
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: ambxxic01hk.dorabbb.top
+  client-fingerprint: chrome
+- name: 'ARISTA #40'
+  type: vmess
+  server: de5.taskflowhub.org
+  port: 2053
+  uuid: ca58b165-0f7d-49aa-9fae-a017e8a0f884
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: de5.taskflowhub.org
+  client-fingerprint: ''
+- name: 'ARISTA #41'
+  type: vmess
+  server: 95.179.166.190
+  port: 31707
+  uuid: bf19d5c2-d644-4524-8c75-76715109fe9e
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: 95.179.166.190
+  client-fingerprint: ''
+- name: 'ARISTA #42'
+  type: vmess
+  server: 51.195.235.71
+  port: 2052
+  uuid: 59e28f78-c31b-4613-9d9f-1e6732a31f46
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: 51.195.235.71
   client-fingerprint: ''
 proxy-groups:
 - name: Proxy Select
@@ -840,11 +753,6 @@ proxy-groups:
   - 'ARISTA #40'
   - 'ARISTA #41'
   - 'ARISTA #42'
-  - 'ARISTA #43'
-  - 'ARISTA #44'
-  - 'ARISTA #45'
-  - 'ARISTA #46'
-  - 'ARISTA #47'
   - DIRECT
 - name: Auto Select
   type: url-test
@@ -891,11 +799,6 @@ proxy-groups:
   - 'ARISTA #40'
   - 'ARISTA #41'
   - 'ARISTA #42'
-  - 'ARISTA #43'
-  - 'ARISTA #44'
-  - 'ARISTA #45'
-  - 'ARISTA #46'
-  - 'ARISTA #47'
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 150
