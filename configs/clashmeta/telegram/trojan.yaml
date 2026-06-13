@@ -78,68 +78,6 @@ sniffer:
 proxies:
 - name: 'Trojan #1'
   type: trojan
-  server: 195.209.196.184
-  port: 443
-  password: Y10B3MFWKpwTZxpkY2dCNcxyHX4Q5qa1
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: s23930.cdn.ngenix.net
-  client-fingerprint: firefox
-  alpn:
-  - h2
-  ws-opts:
-    path: /api/user
-    headers:
-      Host: s23930.cdn.ngenix.net
-- name: 'Trojan #2'
-  type: trojan
-  server: 216.24.57.1
-  port: 443
-  password: humanity
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.calmloud.com
-  client-fingerprint: chrome
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.calmloud.com
-- name: 'Trojan #3'
-  type: trojan
-  server: 185.231.112.217
-  port: 40443
-  password: humanity
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.creationlong.org
-  client-fingerprint: chrome
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.creationlong.org
-- name: 'Trojan #4'
-  type: trojan
-  server: 104.16.174.121
-  port: 443
-  password: humanity
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.ignitelimit.com
-  client-fingerprint: chrome
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.ignitelimit.com
-- name: 'Trojan #5'
-  type: trojan
   server: 45.130.125.96
   port: 443
   password: humanity
@@ -155,35 +93,226 @@ proxies:
     path: /assignment
     headers:
       Host: www.calmloud.com
-- name: 'Trojan #6'
+- name: 'Trojan #2'
   type: trojan
-  server: 216.24.57.6
-  port: 443
-  password: humanity
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.calmloud.com
-  client-fingerprint: chrome
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.calmloud.com
-- name: 'Trojan #7'
-  type: trojan
-  server: 64.176.65.85
-  port: 443
-  password: iGccGWTMHtoXtBhGYK4mogg7iIUhGbcvCf
+  server: 18.166.223.23
+  port: 17005
+  password: d02e3bb7e6b3333e818d36866d40de6e
   network: tcp
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: 64.176.65.85
+  servername: www.nintendogames.net
   client-fingerprint: chrome
+- name: 'Trojan #3'
+  type: trojan
+  server: 18.198.224.239
+  port: 22223
+  password: telegram-id-v2rayvpnchannel
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+- name: 'Trojan #4'
+  type: trojan
+  server: 51.44.149.159
+  port: 22223
+  password: telegram-id-v2rayvpnchannel
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+- name: 'Trojan #5'
+  type: trojan
+  server: 52.47.178.252
+  port: 22223
+  password: telegram-id-v2rayvpnchannel
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+- name: 'Trojan #6'
+  type: trojan
+  server: 3.78.191.119
+  port: 22223
+  password: telegram-id-v2rayvpnchannel
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+- name: 'Trojan #7'
+  type: trojan
+  server: 18.198.170.186
+  port: 22223
+  password: telegram-id-v2rayvpnchannel
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
 - name: 'Trojan #8'
   type: trojan
-  server: 83.228.225.220
+  server: 15.236.184.10
+  port: 22223
+  password: telegram-id-v2rayvpnchannel
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+- name: 'Trojan #9'
+  type: trojan
+  server: 13.38.234.91
+  port: 22223
+  password: telegram-id-v2rayvpnchannel
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+- name: 'Trojan #10'
+  type: trojan
+  server: 3.121.6.227
+  port: 22223
+  password: telegram-id-v2rayvpnchannel
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+- name: 'Trojan #11'
+  type: trojan
+  server: 3.69.103.29
+  port: 22223
+  password: telegram-id-v2rayvpnchannel
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+- name: 'Trojan #12'
+  type: trojan
+  server: 35.181.198.31
+  port: 22223
+  password: telegram-id-v2rayvpnchannel
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+- name: 'Trojan #13'
+  type: trojan
+  server: 35.181.194.45
+  port: 22223
+  password: telegram-id-v2rayvpnchannel
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+- name: 'Trojan #14'
+  type: trojan
+  server: 3.121.164.113
+  port: 22223
+  password: telegram-id-v2rayvpnchannel
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+- name: 'Trojan #15'
+  type: trojan
+  server: 18.193.28.136
+  port: 22223
+  password: telegram-id-v2rayvpnchannel
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+- name: 'Trojan #16'
+  type: trojan
+  server: 15.188.7.92
+  port: 22223
+  password: telegram-id-v2rayvpnchannel
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+- name: 'Trojan #17'
+  type: trojan
+  server: 15.188.68.152
+  port: 22223
+  password: telegram-id-v2rayvpnchannel
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+- name: 'Trojan #18'
+  type: trojan
+  server: 46.8.113.142
+  port: 443
+  password: LYaEYwjN8LjWTRJdCCTzW7V6gK7atJVu
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: ch-2.bexum.fun
+  client-fingerprint: chrome
+- name: 'Trojan #19'
+  type: trojan
+  server: 188.213.130.61
   port: 1040
   password: Masir_Sefid
   network: tcp
@@ -192,9 +321,20 @@ proxies:
   tcp-fast-open: true
   servername: store.steampowered.com
   client-fingerprint: chrome
-- name: 'Trojan #9'
+- name: 'Trojan #20'
   type: trojan
-  server: masir_sefid
+  server: 84.234.29.189
+  port: 1040
+  password: Masir_Sefid
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: store.steampowered.com
+  client-fingerprint: chrome
+- name: 'Trojan #21'
+  type: trojan
+  server: 37.156.45.168
   port: 443
   password: Masir_Sefid
   network: tcp
@@ -203,24 +343,42 @@ proxies:
   tcp-fast-open: true
   servername: store.steampowered.com
   client-fingerprint: chrome
-- name: 'Trojan #10'
+- name: 'Trojan #22'
   type: trojan
-  server: 185.18.250.252
-  port: 443
-  password: humanity
-  network: ws
+  server: 188.213.130.212
+  port: 1040
+  password: Masir_Sefid
+  network: tcp
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: www.multiplydose.com
+  servername: store.steampowered.com
   client-fingerprint: chrome
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.multiplydose.com
-- name: 'Trojan #11'
+- name: 'Trojan #23'
   type: trojan
-  server: 188.114.97.6
+  server: 84.234.29.238
+  port: 443
+  password: Masir_Sefid
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: store.steampowered.com
+  client-fingerprint: chrome
+- name: 'Trojan #24'
+  type: trojan
+  server: 37.156.46.29
+  port: 443
+  password: Masir_Sefid
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: store.steampowered.com
+  client-fingerprint: chrome
+- name: 'Trojan #25'
+  type: trojan
+  server: 104.18.152.246
   port: 443
   password: humanity
   network: ws
@@ -229,119 +387,13 @@ proxies:
   tcp-fast-open: true
   servername: www.calmloud.com
   client-fingerprint: chrome
+  alpn:
+  - http/1.1
   ws-opts:
     path: /assignment
     headers:
       Host: www.calmloud.com
-- name: 'Trojan #12'
-  type: trojan
-  server: 162.159.153.13
-  port: 443
-  password: tg-dns68
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: vip.putata.eu.org
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: vip.putata.eu.org
-- name: 'Trojan #13'
-  type: trojan
-  server: 13.53.249.38
-  port: 22222
-  password: telegram-id-directvpn
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-- name: 'Trojan #14'
-  type: trojan
-  server: 18.170.134.196
-  port: 22222
-  password: telegram-id-directvpn
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-- name: 'Trojan #15'
-  type: trojan
-  server: de-1.hysteria.ltd
-  port: 9443
-  password: LYaEYwjN8LjWTRJdCCTzW7V6gK7atJVu
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: de-1.hysteria.ltd
-  client-fingerprint: chrome
-- name: 'Trojan #16'
-  type: trojan
-  server: 185.18.250.252
-  port: 443
-  password: humanity
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.multiplydose.com
-  client-fingerprint: chrome
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.multiplydose.com
-- name: 'Trojan #17'
-  type: trojan
-  server: 77.110.114.75
-  port: 443
-  password: SoftNetConnect
-  network: grpc
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.yahoo.com
-  client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: GunService
-- name: 'Trojan #18'
-  type: trojan
-  server: 188.114.97.6
-  port: 443
-  password: mitivpn
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: global.fastly.com.mitivpn-a.site
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /ed=mitivpn
-    headers:
-      Host: global.fastly.com.mitivpn-a.site
-- name: 'Trojan #19'
-  type: trojan
-  server: 198.62.62.23
-  port: 443
-  password: humanity
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.calmlunch.com
-  client-fingerprint: chrome
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.calmlunch.com
-- name: 'Trojan #20'
+- name: 'Trojan #26'
   type: trojan
   server: 188.114.97.6
   port: 443
@@ -358,246 +410,116 @@ proxies:
     path: /ed=mitivpn
     headers:
       Host: www.ssl.global.digi.my.mitivpn.xyz
-- name: 'Trojan #21'
-  type: trojan
-  server: 104.16.7.70
-  port: 443
-  password: humanity
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.ignitelimit.com
-  client-fingerprint: chrome
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.ignitelimit.com
-- name: 'Trojan #22'
-  type: trojan
-  server: 90081bb25c.node.tro.cac.cab
-  port: 45619
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: fr.01.naiun.bilibili.com
-  client-fingerprint: chrome
-- name: 'Trojan #23'
-  type: trojan
-  server: 90081bb25c.node.tro.cac.cab
-  port: 46424
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: de.01.naiun.bilibili.com
-  client-fingerprint: chrome
-- name: 'Trojan #24'
-  type: trojan
-  server: hkntt1.mmm.uw.to
-  port: 443
-  password: bc2f8931-cb3d-4a13-8198-ad0d9d5ef06a
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: HKNTT1.mmm.uw.to
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
-  ws-opts:
-    path: /bc2f8931-cb3d-4a13-8198-ad0d9d5ef06a-tr
-    headers:
-      Host: HKNTT1.mmm.uw.to
-- name: 'Trojan #25'
-  type: trojan
-  server: 2.26.54.174
-  port: 8448
-  password: TrojanPass2026!
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: foolsland.ru
-  client-fingerprint: chrome
-- name: 'Trojan #26'
-  type: trojan
-  server: 104.18.152.225
-  port: 443
-  password: humanity
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.ignitelimit.com
-  client-fingerprint: chrome
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.ignitelimit.com
 - name: 'Trojan #27'
   type: trojan
-  server: 52.47.178.252
-  port: 22222
-  password: telegram-id-privatevpns
-  network: tcp
+  server: www.ignitelimit.com
+  port: 443
+  password: humanity
+  network: ws
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: trojan.burgerip.co.uk
+  servername: www.ignitelimit.com
   client-fingerprint: chrome
-  alpn:
-  - http/1.1
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.ignitelimit.com
 - name: 'Trojan #28'
   type: trojan
-  server: 3.78.191.119
-  port: 22222
-  password: telegram-id-privatevpns
-  network: tcp
+  server: 172.64.152.38
+  port: 443
+  password: humanity
+  network: ws
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: trojan.burgerip.co.uk
+  servername: www.multiplydose.com
   client-fingerprint: chrome
-  alpn:
-  - http/1.1
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.multiplydose.com
 - name: 'Trojan #29'
   type: trojan
-  server: 18.198.170.186
-  port: 22222
-  password: telegram-id-privatevpns
-  network: tcp
+  server: 172.64.152.23
+  port: 443
+  password: humanity
+  network: ws
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: trojan.burgerip.co.uk
+  servername: www.calmlunch.com
   client-fingerprint: chrome
   alpn:
   - http/1.1
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmlunch.com
 - name: 'Trojan #30'
   type: trojan
-  server: 15.236.184.10
-  port: 22222
-  password: telegram-id-privatevpns
-  network: tcp
+  server: 188.114.98.0
+  port: 443
+  password: humanity
+  network: ws
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: trojan.burgerip.co.uk
+  servername: www.multiplydose.com
   client-fingerprint: chrome
-  alpn:
-  - http/1.1
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.multiplydose.com
 - name: 'Trojan #31'
   type: trojan
-  server: 13.38.234.91
-  port: 22222
-  password: telegram-id-privatevpns
-  network: tcp
+  server: 104.18.7.147
+  port: 443
+  password: humanity
+  network: ws
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: trojan.burgerip.co.uk
+  servername: www.creationlong.org
   client-fingerprint: chrome
-  alpn:
-  - http/1.1
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.creationlong.org
 - name: 'Trojan #32'
   type: trojan
-  server: 3.121.6.227
-  port: 22222
-  password: telegram-id-privatevpns
-  network: tcp
+  server: 104.18.32.37
+  port: 443
+  password: humanity
+  network: ws
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: trojan.burgerip.co.uk
+  servername: www.gossipglove.com
   client-fingerprint: chrome
-  alpn:
-  - http/1.1
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.gossipglove.com
 - name: 'Trojan #33'
   type: trojan
-  server: 3.69.103.29
-  port: 22222
-  password: telegram-id-privatevpns
-  network: tcp
+  server: 188.114.98.0
+  port: 443
+  password: humanity
+  network: ws
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: trojan.burgerip.co.uk
+  servername: www.multiplydose.com
   client-fingerprint: chrome
-  alpn:
-  - http/1.1
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.multiplydose.com
 - name: 'Trojan #34'
   type: trojan
-  server: 35.181.198.31
-  port: 22222
-  password: telegram-id-privatevpns
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-- name: 'Trojan #35'
-  type: trojan
-  server: 35.181.194.45
-  port: 22222
-  password: telegram-id-privatevpns
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-- name: 'Trojan #36'
-  type: trojan
-  server: 3.121.164.113
-  port: 22222
-  password: telegram-id-privatevpns
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-- name: 'Trojan #37'
-  type: trojan
-  server: 18.193.28.136
-  port: 22222
-  password: telegram-id-privatevpns
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-- name: 'Trojan #38'
-  type: trojan
-  server: 15.188.7.92
-  port: 22222
-  password: telegram-id-privatevpns
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-- name: 'Trojan #39'
-  type: trojan
-  server: 104.19.229.21
+  server: 104.18.13.149
   port: 443
   password: humanity
   network: ws
@@ -612,6 +534,83 @@ proxies:
     path: /assignment
     headers:
       Host: www.calmloud.com
+- name: 'Trojan #35'
+  type: trojan
+  server: 77.110.114.75
+  port: 443
+  password: SoftNetConnect
+  network: grpc
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.yahoo.com
+  client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: GunService
+- name: 'Trojan #36'
+  type: trojan
+  server: 188.114.97.6
+  port: 443
+  password: mitivpn
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: global.fastly.com.mitivpn-a.site
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /ed=mitivpn
+    headers:
+      Host: global.fastly.com.mitivpn-a.site
+- name: 'Trojan #37'
+  type: trojan
+  server: 195.209.196.184
+  port: 443
+  password: Y10B3MFWKpwTZxpkY2dCNcxyHX4Q5qa1
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: s23930.cdn.ngenix.net
+  client-fingerprint: firefox
+  alpn:
+  - h2
+  ws-opts:
+    path: /api/user
+    headers:
+      Host: s23930.cdn.ngenix.net
+- name: 'Trojan #38'
+  type: trojan
+  server: 188.114.97.6
+  port: 443
+  password: mitivpn
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: s1.mitivpn.de.ssl.global.fastly.co.iranpoems.ir
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /ed=mitivpn
+    headers:
+      Host: s1.mitivpn.de.ssl.global.fastly.co.iranpoems.ir
+- name: 'Trojan #39'
+  type: trojan
+  server: ip.feywebsite.ir
+  port: 8443
+  password: 15dde292f853ec5
+  network: xhttp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: us.asukasimp.com
+  client-fingerprint: chrome
+  alpn:
+  - h2
 - name: 'Trojan #40'
   type: trojan
   server: 188.114.97.6
@@ -631,78 +630,20 @@ proxies:
       Host: global.fastly.com.mitivpn-a.site
 - name: 'Trojan #41'
   type: trojan
-  server: 188.114.97.6
+  server: 216.24.57.1
   port: 443
-  password: qFgh3C8Ei8
+  password: humanity
   network: ws
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: dh.aananas.ir.
-  client-fingerprint: firefox
+  servername: www.calmloud.com
+  client-fingerprint: chrome
   ws-opts:
-    path: /?ed=2048
+    path: /assignment
     headers:
-      Host: dh.aananas.ir.
+      Host: www.calmloud.com
 - name: 'Trojan #42'
-  type: trojan
-  server: 194.5.192.89
-  port: 2087
-  password: SoftNetConnect
-  network: grpc
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.yahoo.com
-  client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: GunService
-- name: 'Trojan #43'
-  type: trojan
-  server: 188.114.97.6
-  port: 443
-  password: mitivpn
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: global.fastly.com.mitivpn-a.site
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /ed=mitivpn
-    headers:
-      Host: global.fastly.com.mitivpn-a.site
-- name: 'Trojan #44'
-  type: trojan
-  server: 18.166.223.23
-  port: 17005
-  password: d02e3bb7e6b3333e818d36866d40de6e
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.nintendogames.net
-  client-fingerprint: chrome
-- name: 'Trojan #45'
-  type: trojan
-  server: 104.16.72.40
-  port: 443
-  password: mitivpn
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: SaDszDx.glObaL.ssl.fastly.net.mItIvPN.store
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: https://chatgpt.com
-    headers:
-      Host: SaDszDx.glObaL.ssl.fastly.net.mItIvPN.store
-- name: 'Trojan #46'
   type: trojan
   server: 45.130.125.0
   port: 443
@@ -719,24 +660,76 @@ proxies:
     path: /assignment
     headers:
       Host: www.calmloud.com
-- name: 'Trojan #47'
+- name: 'Trojan #43'
   type: trojan
-  server: 216.24.57.1
+  server: 104.18.152.225
   port: 443
   password: humanity
   network: ws
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: www.creationlong.org
+  servername: www.ignitelimit.com
+  client-fingerprint: safari
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.ignitelimit.com
+- name: 'Trojan #44'
+  type: trojan
+  server: 194.5.192.89
+  port: 443
+  password: SoftNetConnect
+  network: xhttp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.yahoo.com
+  client-fingerprint: chrome
+- name: 'Trojan #45'
+  type: trojan
+  server: 185.137.157.254
+  port: 443
+  password: hxn2jK9Uzezogua0oHuq9Y8viN=UCe.2Jd
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.directorypipeline.click
+  client-fingerprint: chrome
+- name: 'Trojan #46'
+  type: trojan
+  server: 185.18.250.252
+  port: 443
+  password: humanity
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.multiplydose.com
   client-fingerprint: chrome
   ws-opts:
     path: /assignment
     headers:
-      Host: www.creationlong.org
+      Host: www.multiplydose.com
+- name: 'Trojan #47'
+  type: trojan
+  server: 104.18.152.225
+  port: 443
+  password: humanity
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.ignitelimit.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.ignitelimit.com
 - name: 'Trojan #48'
   type: trojan
-  server: www.calmloud.com
+  server: 45.130.125.96
   port: 443
   password: humanity
   network: ws
@@ -760,227 +753,58 @@ proxies:
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: www.creationlong.org
+  servername: www.calmlunch.com
   client-fingerprint: chrome
   ws-opts:
     path: /assignment
     headers:
-      Host: www.creationlong.org
+      Host: www.calmlunch.com
 - name: 'Trojan #50'
+  type: trojan
+  server: 216.24.57.1
+  port: 443
+  password: humanity
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.calmloud.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmloud.com
+- name: 'Trojan #51'
+  type: trojan
+  server: 185.18.250.252
+  port: 443
+  password: humanity
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.multiplydose.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.multiplydose.com
+- name: 'Trojan #52'
   type: trojan
   server: 188.114.97.6
   port: 443
-  password: mitivpn
+  password: humanity
   network: ws
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: sadszdx.global.ssl.fastly.net.b5r.ir
+  servername: www.calmlunch.com
   client-fingerprint: chrome
-  alpn:
-  - http/1.1
   ws-opts:
-    path: https://chatgpt.com
+    path: /assignment
     headers:
-      Host: sadszdx.global.ssl.fastly.net.b5r.ir
-- name: 'Trojan #51'
-  type: trojan
-  server: 18.198.224.239
-  port: 22223
-  password: telegram-id-v2rayvpnchannel
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-- name: 'Trojan #52'
-  type: trojan
-  server: 51.44.149.159
-  port: 22223
-  password: telegram-id-v2rayvpnchannel
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
+      Host: www.calmlunch.com
 - name: 'Trojan #53'
-  type: trojan
-  server: 52.47.178.252
-  port: 22223
-  password: telegram-id-v2rayvpnchannel
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-- name: 'Trojan #54'
-  type: trojan
-  server: 3.78.191.119
-  port: 22223
-  password: telegram-id-v2rayvpnchannel
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-- name: 'Trojan #55'
-  type: trojan
-  server: 18.198.170.186
-  port: 22223
-  password: telegram-id-v2rayvpnchannel
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-- name: 'Trojan #56'
-  type: trojan
-  server: 15.236.184.10
-  port: 22223
-  password: telegram-id-v2rayvpnchannel
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-- name: 'Trojan #57'
-  type: trojan
-  server: 13.38.234.91
-  port: 22223
-  password: telegram-id-v2rayvpnchannel
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-- name: 'Trojan #58'
-  type: trojan
-  server: 3.121.6.227
-  port: 22223
-  password: telegram-id-v2rayvpnchannel
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-- name: 'Trojan #59'
-  type: trojan
-  server: 3.69.103.29
-  port: 22223
-  password: telegram-id-v2rayvpnchannel
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-- name: 'Trojan #60'
-  type: trojan
-  server: 35.181.198.31
-  port: 22223
-  password: telegram-id-v2rayvpnchannel
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-- name: 'Trojan #61'
-  type: trojan
-  server: 35.181.194.45
-  port: 22223
-  password: telegram-id-v2rayvpnchannel
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-- name: 'Trojan #62'
-  type: trojan
-  server: 3.121.164.113
-  port: 22223
-  password: telegram-id-v2rayvpnchannel
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-- name: 'Trojan #63'
-  type: trojan
-  server: 18.193.28.136
-  port: 22223
-  password: telegram-id-v2rayvpnchannel
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-- name: 'Trojan #64'
-  type: trojan
-  server: 15.188.7.92
-  port: 22223
-  password: telegram-id-v2rayvpnchannel
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-- name: 'Trojan #65'
-  type: trojan
-  server: 188.114.97.6
-  port: 8443
-  password: ppmk
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: flat-firefly-6022.rixewi3168.workers.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: flat-firefly-6022.rixewi3168.workers.dev
-- name: 'Trojan #66'
   type: trojan
   server: 188.114.97.6
   port: 443
@@ -997,7 +821,7 @@ proxies:
     path: /ed=mitivpn
     headers:
       Host: global.fastly.com.mitivpn-a.site
-- name: 'Trojan #67'
+- name: 'Trojan #54'
   type: trojan
   server: 188.114.97.6
   port: 443
@@ -1014,337 +838,7 @@ proxies:
     path: /ed=mitivpn
     headers:
       Host: www.ssl.global.digi.my.mitivpn.xyz
-- name: 'Trojan #68'
-  type: trojan
-  server: 195.15.253.123
-  port: 2083
-  password: Masir_Sefid
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: store.steampowered.com
-  client-fingerprint: chrome
-- name: 'Trojan #69'
-  type: trojan
-  server: 195.15.253.123
-  port: 1040
-  password: Masir_Sefid
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: store.steampowered.com
-  client-fingerprint: chrome
-- name: 'Trojan #70'
-  type: trojan
-  server: 84.234.31.249
-  port: 443
-  password: Masir_Sefid
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: store.steampowered.com
-  client-fingerprint: chrome
-- name: 'Trojan #71'
-  type: trojan
-  server: 188.114.97.6
-  port: 443
-  password: humanity
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.creationlong.org
-  client-fingerprint: chrome
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.creationlong.org
-- name: 'Trojan #72'
-  type: trojan
-  server: 104.16.174.12
-  port: 443
-  password: humanity
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.ignitelimit.com
-  client-fingerprint: chrome
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.ignitelimit.com
-- name: 'Trojan #73'
-  type: trojan
-  server: 104.18.152.225
-  port: 443
-  password: humanity
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.ignitelimit.com
-  client-fingerprint: safari
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.ignitelimit.com
-- name: 'Trojan #74'
-  type: trojan
-  server: 188.114.97.6
-  port: 443
-  password: mitivpn
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: b5r.ir
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /ed=mitivpn
-    headers:
-      Host: b5r.ir
-- name: 'Trojan #75'
-  type: trojan
-  server: 104.18.152.229
-  port: 443
-  password: humanity
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.calmloud.com
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.calmloud.com
-- name: 'Trojan #76'
-  type: trojan
-  server: 45.130.125.96
-  port: 443
-  password: humanity
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.calmloud.com
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.calmloud.com
-- name: 'Trojan #77'
-  type: trojan
-  server: 194.5.192.89
-  port: 443
-  password: SoftNetConnect
-  network: xhttp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.yahoo.com
-  client-fingerprint: chrome
-- name: 'Trojan #78'
-  type: trojan
-  server: 194.5.192.89
-  port: 2087
-  password: SoftNetConnect
-  network: grpc
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.yahoo.com
-  client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: GunService
-- name: 'Trojan #79'
-  type: trojan
-  server: 188.213.130.61
-  port: 1040
-  password: Masir_Sefid
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: store.steampowered.com
-  client-fingerprint: chrome
-- name: 'Trojan #80'
-  type: trojan
-  server: 84.234.29.189
-  port: 1040
-  password: Masir_Sefid
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: store.steampowered.com
-  client-fingerprint: chrome
-- name: 'Trojan #81'
-  type: trojan
-  server: 37.156.45.168
-  port: 443
-  password: Masir_Sefid
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: store.steampowered.com
-  client-fingerprint: chrome
-- name: 'Trojan #82'
-  type: trojan
-  server: 188.213.130.212
-  port: 1040
-  password: Masir_Sefid
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: store.steampowered.com
-  client-fingerprint: chrome
-- name: 'Trojan #83'
-  type: trojan
-  server: 84.234.29.238
-  port: 443
-  password: Masir_Sefid
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: store.steampowered.com
-  client-fingerprint: chrome
-- name: 'Trojan #84'
-  type: trojan
-  server: 37.156.46.29
-  port: 443
-  password: Masir_Sefid
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: store.steampowered.com
-  client-fingerprint: chrome
-- name: 'Trojan #85'
-  type: trojan
-  server: 188.114.97.6
-  port: 443
-  password: humanity
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.calmlunch.com
-  client-fingerprint: chrome
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.calmlunch.com
-- name: 'Trojan #86'
-  type: trojan
-  server: 188.114.97.6
-  port: 443
-  password: mitivpn
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.ssl.global.digi.my.mitivpn.xyz
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /ed=mitivpn
-    headers:
-      Host: www.ssl.global.digi.my.mitivpn.xyz
-- name: 'Trojan #87'
-  type: trojan
-  server: 188.114.97.6
-  port: 443
-  password: mitivpn
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: s1.mitivpn.de.ssl.global.fastly.co.iranpoems.ir
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /ed=mitivpn
-    headers:
-      Host: s1.mitivpn.de.ssl.global.fastly.co.iranpoems.ir
-- name: 'Trojan #88'
-  type: trojan
-  server: 188.114.97.6
-  port: 443
-  password: mitivpn
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: s2.mitivpn.nl.ssl.global.fastly.dev.iranpoems.ir
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /?mitivpn
-    headers:
-      Host: s2.mitivpn.nl.ssl.global.fastly.dev.iranpoems.ir
-- name: 'Trojan #89'
-  type: trojan
-  server: 188.114.97.6
-  port: 443
-  password: mitivpn
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: wedf.uss.mitivpn.dsech.ss.ssandfdsgx.gloteefghedcalasd.ssl.fastly.net.b5r.ir
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: https://chatgpt.com
-    headers:
-      Host: wedf.uss.mitivpn.dsech.ss.ssandfdsgx.gloteefghedcalasd.ssl.fastly.net.b5r.ir
-- name: 'Trojan #90'
-  type: trojan
-  server: 167.233.105.87
-  port: 443
-  password: SoftNetConnect
-  network: xhttp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.yahoo.com
-  client-fingerprint: chrome
-- name: 'Trojan #91'
-  type: trojan
-  server: 188.114.97.6
-  port: 443
-  password: mitivpn
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: mitivpn.sdde.ssdl.globdal.fastdly.net.mitivpn.site
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: https://chatgpt.com
-    headers:
-      Host: mitivpn.sdde.ssdl.globdal.fastdly.net.mitivpn.site
-- name: 'Trojan #92'
+- name: 'Trojan #55'
   type: trojan
   server: 188.114.97.6
   port: 443
@@ -1361,37 +855,448 @@ proxies:
     path: https://chatgpt.com
     headers:
       Host: 2.1.mitivpn.dee.srfsl.gleobal.fastl3y.n3et.mitivpn.site
-- name: 'Trojan #93'
+- name: 'Trojan #56'
+  type: trojan
+  server: 45.151.102.87
+  port: 8443
+  password: SoftNetConnect
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.yahoo.com
+  client-fingerprint: chrome
+- name: 'Trojan #57'
   type: trojan
   server: 188.114.97.6
   port: 443
-  password: humanity
+  password: mitivpn
   network: ws
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: www.calmlunch.com
+  servername: global.fastly.com.mitivpn-a.site
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /ed=mitivpn
+    headers:
+      Host: global.fastly.com.mitivpn-a.site
+- name: 'Trojan #58'
+  type: trojan
+  server: 185.204.169.164
+  port: 8443
+  password: SoftNetConnect
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.yahoo.com
+  client-fingerprint: chrome
+- name: 'Trojan #59'
+  type: trojan
+  server: 188.114.97.6
+  port: 8443
+  password: ppmk
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: flat-firefly-6022.rixewi3168.workers.dev
   client-fingerprint: chrome
   ws-opts:
-    path: /assignment
+    path: /
     headers:
-      Host: www.calmlunch.com
-- name: 'Trojan #94'
+      Host: flat-firefly-6022.rixewi3168.workers.dev
+- name: 'Trojan #60'
   type: trojan
-  server: 104.18.32.47
+  server: 90081bb25c.node.tro.cac.cab
+  port: 45619
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: fr.01.naiun.bilibili.com
+  client-fingerprint: chrome
+- name: 'Trojan #61'
+  type: trojan
+  server: 90081bb25c.node.tro.cac.cab
+  port: 46424
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: de.01.naiun.bilibili.com
+  client-fingerprint: chrome
+- name: 'Trojan #62'
+  type: trojan
+  server: hkntt1.mmm.uw.to
+  port: 443
+  password: bc2f8931-cb3d-4a13-8198-ad0d9d5ef06a
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: HKNTT1.mmm.uw.to
+  client-fingerprint: chrome
+  alpn:
+  - h2
+  - http/1.1
+  ws-opts:
+    path: /bc2f8931-cb3d-4a13-8198-ad0d9d5ef06a-tr
+    headers:
+      Host: HKNTT1.mmm.uw.to
+- name: 'Trojan #63'
+  type: trojan
+  server: 2.26.54.174
+  port: 8448
+  password: TrojanPass2026!
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: foolsland.ru
+  client-fingerprint: chrome
+- name: 'Trojan #64'
+  type: trojan
+  server: 162.159.153.13
+  port: 443
+  password: tg-dns68
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: vip.putata.eu.org
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: vip.putata.eu.org
+- name: 'Trojan #65'
+  type: trojan
+  server: 13.53.249.38
+  port: 22222
+  password: telegram-id-directvpn
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+- name: 'Trojan #66'
+  type: trojan
+  server: 18.170.134.196
+  port: 22222
+  password: telegram-id-directvpn
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+- name: 'Trojan #67'
+  type: trojan
+  server: 16.163.154.228
+  port: 45744
+  password: BxceQaOe
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: t.me%2Fripaojiedian
+  client-fingerprint: chrome
+- name: 'Trojan #68'
+  type: trojan
+  server: 13.39.240.239
+  port: 22222
+  password: telegram-id-privatevpns
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+- name: 'Trojan #69'
+  type: trojan
+  server: 16.163.97.86
+  port: 5701
+  password: d02e3bb7e6b3333e818d36866d40de6e
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.nintendogames.net
+  client-fingerprint: chrome
+- name: 'Trojan #70'
+  type: trojan
+  server: 37.156.46.29
+  port: 1040
+  password: Masir_Sefid
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: store.steampowered.com
+  client-fingerprint: chrome
+- name: 'Trojan #71'
+  type: trojan
+  server: 18.166.223.23
+  port: 17005
+  password: d02e3bb7e6b3333e818d36866d40de6e
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.nintendogames.net
+  client-fingerprint: chrome
+- name: 'Trojan #72'
+  type: trojan
+  server: 104.16.174.121
   port: 443
   password: humanity
   network: ws
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: www.multiplydose.com
+  servername: www.ignitelimit.com
   client-fingerprint: chrome
   ws-opts:
     path: /assignment
     headers:
-      Host: www.multiplydose.com
-- name: 'Trojan #95'
+      Host: www.ignitelimit.com
+- name: 'Trojan #73'
+  type: trojan
+  server: 188.114.97.6
+  port: 443
+  password: mitivpn
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: wedf.uss.mitivpn.dsech.ss.ssandfdsgx.gloteefghedcalasd.ssl.fastly.net.b5r.ir
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: https://chatgpt.com
+    headers:
+      Host: wedf.uss.mitivpn.dsech.ss.ssandfdsgx.gloteefghedcalasd.ssl.fastly.net.b5r.ir
+- name: 'Trojan #74'
+  type: trojan
+  server: 185.231.112.217
+  port: 40443
+  password: humanity
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.creationlong.org
+  client-fingerprint: chrome
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.creationlong.org
+- name: 'Trojan #75'
+  type: trojan
+  server: 15.236.71.30
+  port: 22223
+  password: telegram-id-directvpn
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+- name: 'Trojan #76'
+  type: trojan
+  server: 15.237.134.240
+  port: 22223
+  password: telegram-id-directvpn
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+- name: 'Trojan #77'
+  type: trojan
+  server: 18.192.188.251
+  port: 22223
+  password: telegram-id-directvpn
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+- name: 'Trojan #78'
+  type: trojan
+  server: 18.198.224.239
+  port: 22223
+  password: telegram-id-directvpn
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+- name: 'Trojan #79'
+  type: trojan
+  server: 51.44.149.159
+  port: 22223
+  password: telegram-id-directvpn
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+- name: 'Trojan #80'
+  type: trojan
+  server: 52.47.178.252
+  port: 22223
+  password: telegram-id-directvpn
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+- name: 'Trojan #81'
+  type: trojan
+  server: 3.78.191.119
+  port: 22223
+  password: telegram-id-directvpn
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+- name: 'Trojan #82'
+  type: trojan
+  server: 18.198.170.186
+  port: 22223
+  password: telegram-id-directvpn
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+- name: 'Trojan #83'
+  type: trojan
+  server: 15.236.184.10
+  port: 22223
+  password: telegram-id-directvpn
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+- name: 'Trojan #84'
+  type: trojan
+  server: 13.38.234.91
+  port: 22223
+  password: telegram-id-directvpn
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+- name: 'Trojan #85'
+  type: trojan
+  server: 3.121.6.227
+  port: 22223
+  password: telegram-id-directvpn
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+- name: 'Trojan #86'
+  type: trojan
+  server: 3.69.103.29
+  port: 22223
+  password: telegram-id-directvpn
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+- name: 'Trojan #87'
+  type: trojan
+  server: 35.181.198.31
+  port: 22223
+  password: telegram-id-directvpn
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+- name: 'Trojan #88'
+  type: trojan
+  server: 35.181.194.45
+  port: 22223
+  password: telegram-id-directvpn
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+- name: 'Trojan #89'
+  type: trojan
+  server: 3.121.164.113
+  port: 22223
+  password: telegram-id-directvpn
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+- name: 'Trojan #90'
   type: trojan
   server: 188.114.97.6
   port: 443
@@ -1408,176 +1313,233 @@ proxies:
     path: /ed=mitivpn
     headers:
       Host: s1.mitivpn.de.ssl.global.fastly.co.iranpoems.ir
-- name: 'Trojan #96'
+- name: 'Trojan #91'
   type: trojan
-  server: 172.64.149.54
-  port: 2096
-  password: 8r%3C%5B9%27l6hAO%238ZQi
+  server: 188.114.97.6
+  port: 443
+  password: mitivpn
   network: ws
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: Koma-YT.PAGeS.Dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: /tr
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-- name: 'Trojan #97'
-  type: trojan
-  server: 46.8.113.142
-  port: 443
-  password: LYaEYwjN8LjWTRJdCCTzW7V6gK7atJVu
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: ch-2.bexum.fun
-  client-fingerprint: chrome
-- name: 'Trojan #98'
-  type: trojan
-  server: 194.5.192.89
-  port: 443
-  password: SoftNetConnect
-  network: xhttp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.yahoo.com
-  client-fingerprint: chrome
-- name: 'Trojan #99'
-  type: trojan
-  server: 185.137.157.254
-  port: 443
-  password: hxn2jK9Uzezogua0oHuq9Y8viN=UCe.2Jd
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.directorypipeline.click
-  client-fingerprint: chrome
-- name: 'Trojan #100'
-  type: trojan
-  server: 172.64.155.209
-  port: 443
-  password: humanity
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.gossipglove.com
-  client-fingerprint: chrome
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.gossipglove.com
-- name: 'Trojan #101'
-  type: trojan
-  server: 104.16.80.73
-  port: 443
-  password: humanity
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.creationlong.org
-  client-fingerprint: chrome
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.creationlong.org
-- name: 'Trojan #102'
-  type: trojan
-  server: 172.67.180.92
-  port: 443
-  password: humanity
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.multiplydose.com
-  client-fingerprint: chrome
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.multiplydose.com
-- name: 'Trojan #103'
-  type: trojan
-  server: www.ignitelimit.com
-  port: 443
-  password: humanity
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.ignitelimit.com
-  client-fingerprint: chrome
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.ignitelimit.com
-- name: 'Trojan #104'
-  type: trojan
-  server: 172.64.152.38
-  port: 443
-  password: humanity
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.multiplydose.com
-  client-fingerprint: chrome
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.multiplydose.com
-- name: 'Trojan #105'
-  type: trojan
-  server: 172.64.152.23
-  port: 443
-  password: humanity
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.calmlunch.com
+  servername: s2.mitivpn.nl.ssl.global.fastly.dev.iranpoems.ir
   client-fingerprint: chrome
   alpn:
   - http/1.1
   ws-opts:
-    path: /assignment
+    path: /?mitivpn
     headers:
-      Host: www.calmlunch.com
+      Host: s2.mitivpn.nl.ssl.global.fastly.dev.iranpoems.ir
+- name: 'Trojan #92'
+  type: trojan
+  server: 15.236.71.30
+  port: 22222
+  password: telegram-id-privatevpns
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+- name: 'Trojan #93'
+  type: trojan
+  server: 15.237.134.240
+  port: 22222
+  password: telegram-id-privatevpns
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+- name: 'Trojan #94'
+  type: trojan
+  server: 18.192.188.251
+  port: 22222
+  password: telegram-id-privatevpns
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+- name: 'Trojan #95'
+  type: trojan
+  server: 18.198.224.239
+  port: 22222
+  password: telegram-id-privatevpns
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+- name: 'Trojan #96'
+  type: trojan
+  server: 51.44.149.159
+  port: 22222
+  password: telegram-id-privatevpns
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+- name: 'Trojan #97'
+  type: trojan
+  server: 52.47.178.252
+  port: 22222
+  password: telegram-id-privatevpns
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+- name: 'Trojan #98'
+  type: trojan
+  server: 3.78.191.119
+  port: 22222
+  password: telegram-id-privatevpns
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+- name: 'Trojan #99'
+  type: trojan
+  server: 18.198.170.186
+  port: 22222
+  password: telegram-id-privatevpns
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+- name: 'Trojan #100'
+  type: trojan
+  server: 15.236.184.10
+  port: 22222
+  password: telegram-id-privatevpns
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+- name: 'Trojan #101'
+  type: trojan
+  server: 13.38.234.91
+  port: 22222
+  password: telegram-id-privatevpns
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+- name: 'Trojan #102'
+  type: trojan
+  server: 3.121.6.227
+  port: 22222
+  password: telegram-id-privatevpns
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+- name: 'Trojan #103'
+  type: trojan
+  server: 3.69.103.29
+  port: 22222
+  password: telegram-id-privatevpns
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+- name: 'Trojan #104'
+  type: trojan
+  server: 35.181.198.31
+  port: 22222
+  password: telegram-id-privatevpns
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+- name: 'Trojan #105'
+  type: trojan
+  server: 35.181.194.45
+  port: 22222
+  password: telegram-id-privatevpns
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: trojan.burgerip.co.uk
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
 - name: 'Trojan #106'
   type: trojan
-  server: 188.114.98.0
-  port: 443
-  password: humanity
-  network: ws
+  server: 3.121.164.113
+  port: 22222
+  password: telegram-id-privatevpns
+  network: tcp
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: www.multiplydose.com
+  servername: trojan.burgerip.co.uk
   client-fingerprint: chrome
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.multiplydose.com
+  alpn:
+  - http/1.1
 - name: 'Trojan #107'
   type: trojan
-  server: 104.18.7.147
+  server: 188.114.97.6
   port: 443
   password: humanity
   network: ws
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: www.creationlong.org
+  servername: www.calmloud.com
   client-fingerprint: chrome
   ws-opts:
     path: /assignment
     headers:
-      Host: www.creationlong.org
+      Host: www.calmloud.com
 - name: 'Trojan #108'
   type: trojan
   server: 89.116.46.68
@@ -1655,6 +1617,159 @@ proxies:
       Host: www.calmlunch.com
 - name: 'Trojan #113'
   type: trojan
+  server: 172.64.149.54
+  port: 2096
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: Koma-YT.PAGeS.Dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: /tr
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+- name: 'Trojan #114'
+  type: trojan
+  server: 194.5.192.89
+  port: 2087
+  password: SoftNetConnect
+  network: grpc
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.yahoo.com
+  client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: GunService
+- name: 'Trojan #115'
+  type: trojan
+  server: 188.114.97.6
+  port: 443
+  password: humanity
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.creationlong.org
+  client-fingerprint: chrome
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.creationlong.org
+- name: 'Trojan #116'
+  type: trojan
+  server: www.calmlunch.com
+  port: 443
+  password: humanity
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.calmlunch.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmlunch.com
+- name: 'Trojan #117'
+  type: trojan
+  server: 104.16.7.70
+  port: 443
+  password: humanity
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.ignitelimit.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.ignitelimit.com
+- name: 'Trojan #118'
+  type: trojan
+  server: 198.62.62.23
+  port: 443
+  password: humanity
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.calmlunch.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmlunch.com
+- name: 'Trojan #119'
+  type: trojan
+  server: 188.114.97.6
+  port: 443
+  password: mitivpn
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.ssl.global.digi.my.mitivpn.xyz
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /ed=mitivpn
+    headers:
+      Host: www.ssl.global.digi.my.mitivpn.xyz
+- name: 'Trojan #120'
+  type: trojan
+  server: 216.24.57.6
+  port: 443
+  password: humanity
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.calmloud.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmloud.com
+- name: 'Trojan #121'
+  type: trojan
+  server: 64.176.65.85
+  port: 443
+  password: iGccGWTMHtoXtBhGYK4mogg7iIUhGbcvCf
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: 64.176.65.85
+  client-fingerprint: chrome
+- name: 'Trojan #122'
+  type: trojan
+  server: 83.228.225.220
+  port: 1040
+  password: Masir_Sefid
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: store.steampowered.com
+  client-fingerprint: chrome
+- name: 'Trojan #123'
+  type: trojan
+  server: masir_sefid
+  port: 443
+  password: Masir_Sefid
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: store.steampowered.com
+  client-fingerprint: chrome
+- name: 'Trojan #124'
+  type: trojan
   server: 188.114.97.6
   port: 443
   password: 2t5hATPZBk
@@ -1668,7 +1783,141 @@ proxies:
     path: /?ed=2048
     headers:
       Host: dd.aananas.ir.
-- name: 'Trojan #114'
+- name: 'Trojan #125'
+  type: trojan
+  server: 188.114.97.6
+  port: 443
+  password: mitivpn
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: b5r.ir
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /ed=mitivpn
+    headers:
+      Host: b5r.ir
+- name: 'Trojan #126'
+  type: trojan
+  server: 104.19.229.21
+  port: 443
+  password: humanity
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.calmloud.com
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmloud.com
+- name: 'Trojan #127'
+  type: trojan
+  server: 64.176.65.85
+  port: 443
+  password: iGccGWTMHtoXtBhGYK4mogg7iIUhGbcvCf
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: 64.176.65.85
+  client-fingerprint: chrome
+- name: 'Trojan #128'
+  type: trojan
+  server: 167.233.105.87
+  port: 443
+  password: SoftNetConnect
+  network: xhttp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.yahoo.com
+  client-fingerprint: chrome
+- name: 'Trojan #129'
+  type: trojan
+  server: 188.114.97.6
+  port: 443
+  password: mitivpn
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: mitivpn.sdde.ssdl.globdal.fastdly.net.mitivpn.site
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: https://chatgpt.com
+    headers:
+      Host: mitivpn.sdde.ssdl.globdal.fastdly.net.mitivpn.site
+- name: 'Trojan #130'
+  type: trojan
+  server: 188.114.97.6
+  port: 443
+  password: qFgh3C8Ei8
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: dh.aananas.ir.
+  client-fingerprint: firefox
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: dh.aananas.ir.
+- name: 'Trojan #131'
+  type: trojan
+  server: 194.5.192.89
+  port: 2087
+  password: SoftNetConnect
+  network: grpc
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.yahoo.com
+  client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: GunService
+- name: 'Trojan #132'
+  type: trojan
+  server: 194.5.192.89
+  port: 443
+  password: SoftNetConnect
+  network: xhttp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.yahoo.com
+  client-fingerprint: chrome
+- name: 'Trojan #133'
+  type: trojan
+  server: 195.15.253.123
+  port: 2083
+  password: Masir_Sefid
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: store.steampowered.com
+  client-fingerprint: chrome
+- name: 'Trojan #134'
+  type: trojan
+  server: 195.15.253.123
+  port: 1040
+  password: Masir_Sefid
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: store.steampowered.com
+  client-fingerprint: chrome
+- name: 'Trojan #135'
   type: trojan
   server: 195.15.253.91
   port: 443
@@ -1679,22 +1928,7 @@ proxies:
   tcp-fast-open: true
   servername: store.steampowered.com
   client-fingerprint: chrome
-- name: 'Trojan #115'
-  type: trojan
-  server: 188.114.97.6
-  port: 443
-  password: YZSfMMqKIC
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: dd.aananas.ir.
-  client-fingerprint: firefox
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: dd.aananas.ir.
-- name: 'Trojan #116'
+- name: 'Trojan #136'
   type: trojan
   server: 45.130.125.0
   port: 443
@@ -1711,199 +1945,100 @@ proxies:
     path: /assignment
     headers:
       Host: www.calmloud.com
-- name: 'Trojan #117'
+- name: 'Trojan #137'
   type: trojan
-  server: www.calmlunch.com
+  server: 216.24.57.1
   port: 443
   password: humanity
   network: ws
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: www.calmlunch.com
+  servername: www.creationlong.org
   client-fingerprint: chrome
   ws-opts:
     path: /assignment
     headers:
-      Host: www.calmlunch.com
-- name: 'Trojan #118'
+      Host: www.creationlong.org
+- name: 'Trojan #138'
   type: trojan
-  server: 52.47.178.252
-  port: 22223
-  password: telegram-id-directvpn
-  network: tcp
+  server: www.calmloud.com
+  port: 443
+  password: humanity
+  network: ws
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: trojan.burgerip.co.uk
+  servername: www.calmloud.com
   client-fingerprint: chrome
   alpn:
   - http/1.1
-- name: 'Trojan #119'
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmloud.com
+- name: 'Trojan #139'
   type: trojan
-  server: 3.78.191.119
-  port: 22223
-  password: telegram-id-directvpn
-  network: tcp
+  server: 188.114.97.6
+  port: 443
+  password: humanity
+  network: ws
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: trojan.burgerip.co.uk
+  servername: www.creationlong.org
+  client-fingerprint: chrome
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.creationlong.org
+- name: 'Trojan #140'
+  type: trojan
+  server: 188.114.97.6
+  port: 443
+  password: mitivpn
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: sadszdx.global.ssl.fastly.net.b5r.ir
   client-fingerprint: chrome
   alpn:
   - http/1.1
-- name: 'Trojan #120'
+  ws-opts:
+    path: https://chatgpt.com
+    headers:
+      Host: sadszdx.global.ssl.fastly.net.b5r.ir
+- name: 'Trojan #141'
   type: trojan
-  server: 18.198.170.186
-  port: 22223
-  password: telegram-id-directvpn
-  network: tcp
+  server: 104.16.174.12
+  port: 443
+  password: humanity
+  network: ws
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: trojan.burgerip.co.uk
+  servername: www.ignitelimit.com
   client-fingerprint: chrome
-  alpn:
-  - http/1.1
-- name: 'Trojan #121'
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.ignitelimit.com
+- name: 'Trojan #142'
   type: trojan
-  server: 15.236.184.10
-  port: 22223
-  password: telegram-id-directvpn
-  network: tcp
+  server: 104.18.32.47
+  port: 443
+  password: humanity
+  network: ws
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: trojan.burgerip.co.uk
+  servername: www.multiplydose.com
   client-fingerprint: chrome
-  alpn:
-  - http/1.1
-- name: 'Trojan #122'
-  type: trojan
-  server: 13.38.234.91
-  port: 22223
-  password: telegram-id-directvpn
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-- name: 'Trojan #123'
-  type: trojan
-  server: 3.121.6.227
-  port: 22223
-  password: telegram-id-directvpn
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-- name: 'Trojan #124'
-  type: trojan
-  server: 3.69.103.29
-  port: 22223
-  password: telegram-id-directvpn
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-- name: 'Trojan #125'
-  type: trojan
-  server: 35.181.198.31
-  port: 22223
-  password: telegram-id-directvpn
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-- name: 'Trojan #126'
-  type: trojan
-  server: 35.181.194.45
-  port: 22223
-  password: telegram-id-directvpn
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-- name: 'Trojan #127'
-  type: trojan
-  server: 3.121.164.113
-  port: 22223
-  password: telegram-id-directvpn
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-- name: 'Trojan #128'
-  type: trojan
-  server: 18.193.28.136
-  port: 22223
-  password: telegram-id-directvpn
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-- name: 'Trojan #129'
-  type: trojan
-  server: 15.188.7.92
-  port: 22223
-  password: telegram-id-directvpn
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: trojan.burgerip.co.uk
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-- name: 'Trojan #130'
-  type: trojan
-  server: 37.156.46.29
-  port: 1040
-  password: Masir_Sefid
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: store.steampowered.com
-  client-fingerprint: chrome
-- name: 'Trojan #131'
-  type: trojan
-  server: 18.166.223.23
-  port: 17005
-  password: d02e3bb7e6b3333e818d36866d40de6e
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.nintendogames.net
-  client-fingerprint: chrome
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.multiplydose.com
 proxy-groups:
 - name: Proxy Select
   type: select
@@ -2040,6 +2175,17 @@ proxy-groups:
   - 'Trojan #129'
   - 'Trojan #130'
   - 'Trojan #131'
+  - 'Trojan #132'
+  - 'Trojan #133'
+  - 'Trojan #134'
+  - 'Trojan #135'
+  - 'Trojan #136'
+  - 'Trojan #137'
+  - 'Trojan #138'
+  - 'Trojan #139'
+  - 'Trojan #140'
+  - 'Trojan #141'
+  - 'Trojan #142'
   - DIRECT
 - name: Auto Select
   type: url-test
@@ -2175,6 +2321,17 @@ proxy-groups:
   - 'Trojan #129'
   - 'Trojan #130'
   - 'Trojan #131'
+  - 'Trojan #132'
+  - 'Trojan #133'
+  - 'Trojan #134'
+  - 'Trojan #135'
+  - 'Trojan #136'
+  - 'Trojan #137'
+  - 'Trojan #138'
+  - 'Trojan #139'
+  - 'Trojan #140'
+  - 'Trojan #141'
+  - 'Trojan #142'
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 150
