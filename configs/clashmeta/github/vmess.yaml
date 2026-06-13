@@ -282,6 +282,27 @@ proxies:
   client-fingerprint: ''
 - name: 'T.ME: @aristapnel #13'
   type: vmess
+  server: renderer-stream-1-411.mirra.now
+  port: 443
+  uuid: df9c9355-b02c-4c12-909d-0dbeb725d52b
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: renderer-stream-1-411.mirra.now
+  client-fingerprint: chrome
+  alpn:
+  - h2
+  - http/1.1
+  ws-opts:
+    path: /api/v1/gpu-stream/socket
+    headers:
+      Host: renderer-stream-1-411.mirra.now
+- name: 'T.ME: @aristapnel #14'
+  type: vmess
   server: de4.niekotin.de
   port: 80
   uuid: 38ed5d70-443e-4ac3-b877-ea21d97fed93
@@ -298,7 +319,7 @@ proxies:
     path: /vmess
     headers:
       Host: de4.niekotin.de
-- name: 'T.ME: @aristapnel #14'
+- name: 'T.ME: @aristapnel #15'
   type: vmess
   server: 82.198.246.214
   port: 180
@@ -312,7 +333,7 @@ proxies:
   tcp-fast-open: true
   servername: usaapp1.jisuyun.top
   client-fingerprint: null
-- name: 'T.ME: @aristapnel #15'
+- name: 'T.ME: @aristapnel #16'
   type: vmess
   server: 85.9.125.88
   port: 1020
@@ -326,7 +347,7 @@ proxies:
   tcp-fast-open: true
   servername: 85.9.125.88
   client-fingerprint: ''
-- name: 'T.ME: @aristapnel #16'
+- name: 'T.ME: @aristapnel #17'
   type: vmess
   server: 193.111.235.72
   port: 22301
@@ -361,6 +382,7 @@ proxy-groups:
   - 'T.ME: @aristapnel #14'
   - 'T.ME: @aristapnel #15'
   - 'T.ME: @aristapnel #16'
+  - 'T.ME: @aristapnel #17'
   - DIRECT
 - name: Auto Select
   type: url-test
@@ -381,6 +403,7 @@ proxy-groups:
   - 'T.ME: @aristapnel #14'
   - 'T.ME: @aristapnel #15'
   - 'T.ME: @aristapnel #16'
+  - 'T.ME: @aristapnel #17'
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 150
