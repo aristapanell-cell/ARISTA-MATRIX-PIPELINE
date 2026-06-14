@@ -248,99 +248,83 @@ class ConfigCombiner:
             url = url_str.split('#')[0] if '#' in url_str else url_str
             url = url.replace('vless://', 'http://')
             parsed = urlparse(url)
-            params = parse_qs(parsed.query)
-            params = {k: v[0] for k, v in params.items()}
-    
+            params = {k: v[0] for k, v in parse_qs(parsed.query).items()}
+
+            def clean(s):
+                return str(s or "").strip()
+
             original_name = self.get_original_tag(url_str) or "VLESS"
             config_name = f"{original_name} #{index + 1}"
-    
-            network_type = params.get('type', 'tcp')
-            security = params.get('security', '')
-            tls_enabled = security in ['tls', 'reality']
-    
-            final_server = parsed.hostname
-            final_sni = params.get('sni') or params.get('host') or parsed.hostname
-    
-            if self.is_ip(final_server) and (not final_sni or self.is_ip(final_sni)):
-                final_sni = params.get('host') or parsed.hostname or 'cloudflare.com'
-    
+
+            network_type = clean(params.get('type')) or 'tcp'
+            security = clean(params.get('security')).lower()
+
+            tls_enabled = security in ('tls', 'reality')
+
+            server = parsed.hostname
+            sni = params.get('sni') or params.get('host') or server
+
             config = {
                 "name": config_name,
                 "type": "vless",
-                "server": final_server,
+                "server": server,
                 "port": parsed.port or 443,
                 "uuid": parsed.username or "",
                 "network": network_type,
                 "tls": tls_enabled,
-                "udp": params.get('udp') != 'false',
+                "udp": params.get('udp', 'true') != 'false',
                 "skip-cert-verify": False,
                 "tcp-fast-open": True,
-                "servername": final_sni,
+                "servername": sni,
                 "flow": params.get('flow', ''),
                 "client-fingerprint": params.get('fp', 'chrome'),
                 "packet-encoding": "xudp"
             }
-    
-            if params.get('fragment'):
-                config["fragment"] = {
-                    "enabled": True,
-                    "packets": params.get('fragment', '2-4'),
-                    "length": params.get('fragment_length', '80-150'),
-                    "interval": params.get('fragment_interval', '20-40'),
-                    "sleep": int(params.get('fragment_sleep', '20'))
-                }
-    
-            if params.get('alpn'):
-                config["alpn"] = [v.strip() for v in params['alpn'].split(',')]
-            elif tls_enabled:
-                config["alpn"] = ["h2", "http/1.1"]
-    
+
             if network_type == "ws":
                 config["ws-opts"] = {
                     "path": params.get('path', '/'),
-                    "headers": {
-                        "Host": final_sni
-                    },
-                    "max-early-data": int(params.get('maxEarlyData', '2048')),
+                    "headers": {"Host": sni},
+                    "max-early-data": int(params.get('maxEarlyData', 2048)),
                     "early-data-header-name": params.get('earlyDataHeaderName', 'Sec-WebSocket-Protocol')
                 }
-    
+
             if network_type == "grpc":
                 config["grpc-opts"] = {
                     "grpc-service-name": params.get('serviceName', 'GunService')
                 }
-    
+
             if network_type == "http":
                 config["http-opts"] = {
                     "method": params.get('method', 'GET'),
                     "path": [params.get('path', '/')],
-                    "headers": {
-                        "Host": [final_sni]
-                    }
+                    "headers": {"Host": [sni]}
                 }
-    
-            if security == 'reality':
-                pbk = params.get('pbk', '').strip()
-                sid = params.get('sid', '').strip().lower()
+
+            if security == "reality":
+                pbk = clean(params.get('pbk'))
+                sid = clean(params.get('sid')).lower()
 
                 reality_opts = {}
 
                 if pbk and len(pbk) > 10:
                     reality_opts["public-key"] = pbk
 
-                if (
-                    sid
-                    and re.fullmatch(r'[0-9a-f]+', sid)
-                    and 2 <= len(sid) <= 16
-                    and len(sid) % 2 == 0
-                ):
-                    reality_opts["short-id"] = sid
+                sid_clean = re.sub(r'[^0-9a-f]', '', sid)
 
-                if "public-key" in reality_opts:
+                if (
+                    sid_clean
+                    and len(sid_clean) in (2, 4, 6, 8, 10, 12, 14, 16)
+                ):
+                    reality_opts["short-id"] = sid_clean
+
+                if reality_opts:
                     config["reality-opts"] = reality_opts
-    
+
             return config
-        except Exception:
+
+        except Exception as e:
+            print(f"[VLESS ERROR] {e}")
             return None
     
     def ss_to_clash_meta(self, ss_url, index):
