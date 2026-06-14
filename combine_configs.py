@@ -322,22 +322,21 @@ class ConfigCombiner:
             if security == 'reality':
                 pbk = params.get('pbk', '').strip()
                 sid = params.get('sid', '').strip().lower()
-    
+
                 reality_opts = {}
-    
-                if pbk:
+
+                if pbk and len(pbk) > 10:
                     reality_opts["public-key"] = pbk
-    
-                if sid:
-                    sid = re.sub(r'[^0-9a-f]', '', sid)
-    
-                    if 4 <= len(sid) <= 16 and len(sid) % 2 == 0:
-                        reality_opts["short-id"] = sid
-    
+
+                if (
+                    sid
+                    and re.fullmatch(r'[0-9a-f]+', sid)
+                    and 2 <= len(sid) <= 16
+                    and len(sid) % 2 == 0
+                ):
+                    reality_opts["short-id"] = sid
+
                 if "public-key" in reality_opts:
-                    if "short-id" in reality_opts and len(reality_opts["short-id"]) == 0:
-                        reality_opts.pop("short-id")
-    
                     config["reality-opts"] = reality_opts
     
             return config
