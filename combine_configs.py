@@ -32,23 +32,6 @@ class ConfigCombiner:
             'other': 'سایر پروتکل‌ها'
         }
         
-        self.protocol_emojis = {
-            'vmess': '🚀', 'vless': '⚡', 'trojan': '🛡️',
-            'ss': '📡', 'hysteria2': '🌪️', 'hysteria': '🌀',
-            'tuic': '🔌', 'wireguard': '🔒', 'other': '📦'
-        }
-        
-        self.os_list = [
-            {'id': 'windows', 'name': 'ویندوز', 'emoji': '🪟'},
-            {'id': 'android', 'name': 'اندروید', 'emoji': '📱'},
-            {'id': 'ios', 'name': 'iOS', 'emoji': '📱'},
-            {'id': 'linux', 'name': 'لینوکس', 'emoji': '🐧'},
-            {'id': 'macos', 'name': 'مک', 'emoji': '🍎'},
-            {'id': 'router', 'name': 'روتر', 'emoji': '📡'}
-        ]
-        
-        self.client_links = {}
-        
         self.setup_webhook()
     
     def setup_webhook(self):
@@ -132,12 +115,20 @@ class ConfigCombiner:
         
         keyboard = []
         row = []
-        for i, os_item in enumerate(self.os_list):
+        os_list = [
+            {'id': 'windows', 'name': 'ویندوز', 'emoji': '🪟'},
+            {'id': 'android', 'name': 'اندروید', 'emoji': '📱'},
+            {'id': 'ios', 'name': 'iOS', 'emoji': '📱'},
+            {'id': 'linux', 'name': 'لینوکس', 'emoji': '🐧'},
+            {'id': 'macos', 'name': 'مک', 'emoji': '🍎'},
+            {'id': 'router', 'name': 'روتر', 'emoji': '📡'}
+        ]
+        for i, os_item in enumerate(os_list):
             row.append({
                 'text': f"{os_item['emoji']} {os_item['name']}",
                 'callback_data': f"os_{os_item['id']}"
             })
-            if (i + 1) % 2 == 0 or i == len(self.os_list) - 1:
+            if (i + 1) % 2 == 0 or i == len(os_list) - 1:
                 keyboard.append(row)
                 row = []
         
@@ -145,8 +136,16 @@ class ConfigCombiner:
         self.send_message(chat_id, text, reply_markup)
     
     def show_clients(self, chat_id, message_id, os_id):
-        os_name = next((item['name'] for item in self.os_list if item['id'] == os_id), os_id)
-        os_emoji = next((item['emoji'] for item in self.os_list if item['id'] == os_id), '📱')
+        os_list = [
+            {'id': 'windows', 'name': 'ویندوز', 'emoji': '🪟'},
+            {'id': 'android', 'name': 'اندروید', 'emoji': '📱'},
+            {'id': 'ios', 'name': 'iOS', 'emoji': '📱'},
+            {'id': 'linux', 'name': 'لینوکس', 'emoji': '🐧'},
+            {'id': 'macos', 'name': 'مک', 'emoji': '🍎'},
+            {'id': 'router', 'name': 'روتر', 'emoji': '📡'}
+        ]
+        os_name = next((item['name'] for item in os_list if item['id'] == os_id), os_id)
+        os_emoji = next((item['emoji'] for item in os_list if item['id'] == os_id), '📱')
         
         text = f"{os_emoji} <b>{os_name}</b>\n\n🔹 <b>کلاینت‌های موجود:</b>\n\nدر حال حاضر لینکی موجود نیست.\n"
         
@@ -743,10 +742,8 @@ class ConfigCombiner:
         caption = f"""
 🔰 <b>کانفیگ‌های {protocol_name}</b>
 
-┌─────────────────┐
-│ 📊 تعداد: {count} عدد    │
-│ 📡 منبع: {source_persian}     │
-└─────────────────┘
+📊 تعداد: {count} عدد
+📡 منبع: {source_persian}
 
 ➖➖➖➖➖➖➖➖
 <blockquote>@aristapanel</blockquote>
@@ -763,10 +760,8 @@ class ConfigCombiner:
         caption = f"""
 🔰 <b>کانفیگ‌های {protocol_name}</b>
 
-┌─────────────────┐
-│ 📊 تعداد: {count} عدد    │
-│ 📡 منبع: {source_persian}     │
-└─────────────────┘
+📊 تعداد: {count} عدد
+📡 منبع: {source_persian}
 
 ➖➖➖➖➖➖➖➖
 <blockquote>@aristapanel</blockquote>
@@ -957,11 +952,17 @@ class ConfigCombiner:
         print(f"📊 کانفیگ‌های ترکیبی یکتا: {total_combined}")
         print("\n📁 فایل‌های ایجاد شده در پوشه configs/:")
         
+        protocol_emojis = {
+            'vmess': '🚀', 'vless': '⚡', 'trojan': '🛡️',
+            'ss': '📡', 'hysteria2': '🌪️', 'hysteria': '🌀',
+            'tuic': '🔌', 'wireguard': '🔒', 'other': '📦'
+        }
+        
         for category in self.categories:
             if os.path.exists(f'configs/combined/{category}.txt'):
                 with open(f'configs/combined/{category}.txt', 'r', encoding='utf-8') as f:
                     lines = [line for line in f if line.strip() and not line.startswith('#')]
-                print(f"  {self.protocol_emojis.get(category, '📄')} combined/{category}.txt: {len(lines)} کانفیگ")
+                print(f"  {protocol_emojis.get(category, '📄')} combined/{category}.txt: {len(lines)} کانفیگ")
         
         supported_protocols = ['vmess', 'vless', 'trojan', 'ss', 'hysteria2']
         for protocol in supported_protocols:
