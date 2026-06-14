@@ -726,47 +726,53 @@ class ConfigCombiner:
     
     def create_persian_caption(self, category, count, source, timestamp, source_type):
         protocol_name = self.protocol_names_fa.get(category, category.upper())
-        protocol_emoji = self.protocol_emojis.get(category, '📁')
-        
-        file_extension = '.txt'
-        
-        if file_extension == '.yaml':
-            clients_text = "ClashMeta"
-        else:
-            clients_text = "V2rayNG, Hiddify, Nekobox"
-        
         source_persian = "تلگرام" if source_type == "telegram" else "گیت‌هاب"
         
+        clients_list = []
+        if category in ['vmess', 'vless', 'trojan']:
+            clients_list = ['V2rayNG', 'Hiddify', 'Nekobox']
+        elif category == 'ss':
+            clients_list = ['Shadowsocks', 'V2rayNG', 'Hiddify']
+        elif category in ['hysteria2', 'hysteria']:
+            clients_list = ['Hiddify', 'Nekobox']
+        else:
+            clients_list = ['V2rayNG', 'Hiddify', 'Nekobox']
+        
+        clients_tag = ' #'.join(clients_list)
+        
         caption = f"""
-🅰️🆁🅸🆂🆃🅰️ 🅲🅾️🅽🅵🅸🅶
+🔰 <b>کانفیگ‌های {protocol_name}</b>
 
-🔰 تعداد <b>{count}</b> عدد کانفیگ <b>{protocol_name}</b> استخراج شده از {source_persian}
-👈 قابل استفاده در کلاینت‌های <b>{clients_text}</b>
+┌─────────────────┐
+│ 📊 تعداد: {count} عدد    │
+│ 📡 منبع: {source_persian}     │
+└─────────────────┘
 
 ➖➖➖➖➖➖➖➖
 <blockquote>@aristapanel</blockquote>
 ➖➖➖➖➖➖➖➖
 
-#arista #V2ray #{category} #پنل_آریستا
+#arista #{category} #{clients_tag}
 """
         return caption
     
     def create_clashmeta_caption(self, protocol, count, timestamp, source_type):
         protocol_name = self.protocol_names_fa.get(protocol, protocol.upper())
-        
         source_persian = "تلگرام" if source_type == "telegram" else "گیت‌هاب"
         
         caption = f"""
-🅰️🆁🅸🆂🆃🅰️ 🅲🅾️🅽🅵🅸🅶
+🔰 <b>کانفیگ‌های {protocol_name}</b>
 
-🔰 تعداد <b>{count}</b> عدد کانفیگ <b>{protocol_name}</b> استخراج شده از {source_persian}
-👈 قابل استفاده در کلاینت <b>ClashMeta</b>
+┌─────────────────┐
+│ 📊 تعداد: {count} عدد    │
+│ 📡 منبع: {source_persian}     │
+└─────────────────┘
 
 ➖➖➖➖➖➖➖➖
 <blockquote>@aristapanel</blockquote>
 ➖➖➖➖➖➖➖➖
 
-#arista #V2ray #clashmeta #{protocol} #ClashMeta #پنل_آریستا
+#arista #{protocol} #ClashMeta
 """
         return caption
     
