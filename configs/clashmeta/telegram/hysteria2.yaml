@@ -100,6 +100,26 @@ proxies:
   obfs-password: Masir_Sefid
 - name: 'Hysteria2 #3'
   type: hysteria2
+  server: 181.214.99.162
+  port: 35000
+  password: b4bd0613-ff7c-4f2f-954d-185915e6ddad
+  sni: api.kermanshahi.org
+  skip-cert-verify: false
+  fast-open: true
+  client-fingerprint: chrome
+  obfs: salamander
+  obfs-password: '@JavidnamanIran-Javid-SHAH-KingRezaPahlavi'
+- name: 'Hysteria2 #4'
+  type: hysteria2
+  server: vpn-de-002.fastervpn.world
+  port: 443
+  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+  sni: vpn-de-002.fastervpn.world
+  skip-cert-verify: false
+  fast-open: true
+  client-fingerprint: chrome
+- name: 'Hysteria2 #5'
+  type: hysteria2
   server: 202.61.205.86
   port: 4433
   password: 18cf8030-1ceb-4b7d-8c0c-c036413c144e
@@ -107,7 +127,7 @@ proxies:
   skip-cert-verify: false
   fast-open: true
   client-fingerprint: chrome
-- name: 'Hysteria2 #4'
+- name: 'Hysteria2 #6'
   type: hysteria2
   server: 18.157.222.169
   port: 54040
@@ -118,15 +138,6 @@ proxies:
   client-fingerprint: chrome
   obfs: salamander
   obfs-password: Masir_Sefid
-- name: 'Hysteria2 #5'
-  type: hysteria2
-  server: vpn-de-002.fastervpn.world
-  port: 443
-  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
-  sni: vpn-de-002.fastervpn.world
-  skip-cert-verify: false
-  fast-open: true
-  client-fingerprint: chrome
 proxy-groups:
 - name: Proxy Select
   type: select
@@ -137,6 +148,7 @@ proxy-groups:
   - 'Hysteria2 #3'
   - 'Hysteria2 #4'
   - 'Hysteria2 #5'
+  - 'Hysteria2 #6'
   - DIRECT
 - name: Auto Select
   type: url-test
@@ -146,6 +158,7 @@ proxy-groups:
   - 'Hysteria2 #3'
   - 'Hysteria2 #4'
   - 'Hysteria2 #5'
+  - 'Hysteria2 #6'
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 150
