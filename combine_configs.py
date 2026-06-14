@@ -727,29 +727,18 @@ class ConfigCombiner:
         protocol_name = self.protocol_names_fa.get(category, category.upper())
         source_persian = "تلگرام" if source_type == "telegram" else "گیت‌هاب"
         
-        clients_list = []
-        if category in ['vmess', 'vless', 'trojan']:
-            clients_list = ['V2rayNG', 'Hiddify', 'Nekobox']
-        elif category == 'ss':
-            clients_list = ['Shadowsocks', 'V2rayNG', 'Hiddify']
-        elif category in ['hysteria2', 'hysteria']:
-            clients_list = ['Hiddify', 'Nekobox']
-        else:
-            clients_list = ['V2rayNG', 'Hiddify', 'Nekobox']
-        
-        clients_tag = ' #'.join(clients_list)
-        
         caption = f"""
 🔰 <b>کانفیگ‌های {protocol_name}</b>
 
 📊 تعداد: {count} عدد
 📡 منبع: {source_persian}
+👈 قابل استفاده در کلاینت‌های <b>V2rayNG</b> • <b>Hiddify</b> • <b>NekoBox</b> • <b>Nnpsternet</b>
 
 ➖➖➖➖➖➖➖➖
 <blockquote>@aristapanel</blockquote>
 ➖➖➖➖➖➖➖➖
 
-#arista #{category} #{clients_tag}
+#arista #{category} #V2rayNG #Hiddify #NekoBox #Nnpsternet
 """
         return caption
     
@@ -762,6 +751,7 @@ class ConfigCombiner:
 
 📊 تعداد: {count} عدد
 📡 منبع: {source_persian}
+👈 قابل استفاده در کلاینت <b>ClashMeta</b>
 
 ➖➖➖➖➖➖➖➖
 <blockquote>@aristapanel</blockquote>
