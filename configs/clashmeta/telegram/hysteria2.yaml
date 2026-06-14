@@ -78,15 +78,13 @@ sniffer:
 proxies:
 - name: 'Hysteria2 #1'
   type: hysteria2
-  server: 18.157.222.169
-  port: 54040
-  password: '%40Masir_Sefid'
-  sni: free.masir-sefid.shop
+  server: vpn-de-002.fastervpn.world
+  port: 443
+  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+  sni: vpn-de-002.fastervpn.world
   skip-cert-verify: false
   fast-open: true
   client-fingerprint: chrome
-  obfs: salamander
-  obfs-password: Masir_Sefid
 - name: 'Hysteria2 #2'
   type: hysteria2
   server: 181.214.99.162
@@ -100,15 +98,6 @@ proxies:
   obfs-password: '@JavidnamanIran-Javid-SHAH-KingRezaPahlavi'
 - name: 'Hysteria2 #3'
   type: hysteria2
-  server: vpn-de-002.fastervpn.world
-  port: 443
-  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
-  sni: vpn-de-002.fastervpn.world
-  skip-cert-verify: false
-  fast-open: true
-  client-fingerprint: chrome
-- name: 'Hysteria2 #4'
-  type: hysteria2
   server: 207.154.242.160
   port: 443
   password: Masir_Sefid
@@ -118,7 +107,7 @@ proxies:
   client-fingerprint: chrome
   obfs: salamander
   obfs-password: Masir_Sefid
-- name: 'Hysteria2 #5'
+- name: 'Hysteria2 #4'
   type: hysteria2
   server: 206.189.58.246
   port: 443
@@ -129,6 +118,28 @@ proxies:
   client-fingerprint: chrome
   obfs: salamander
   obfs-password: Masir_Sefid
+- name: 'Hysteria2 #5'
+  type: hysteria2
+  server: 18.157.222.169
+  port: 54040
+  password: '%40Masir_Sefid'
+  sni: free.masir-sefid.shop
+  skip-cert-verify: false
+  fast-open: true
+  client-fingerprint: chrome
+  obfs: salamander
+  obfs-password: Masir_Sefid
+- name: 'Hysteria2 #6'
+  type: hysteria2
+  server: 31.22.91.243
+  port: 443
+  password: EsimHy2Game_7xK9mPq2
+  sni: se.esimpson.org
+  skip-cert-verify: false
+  fast-open: true
+  client-fingerprint: chrome
+  obfs: salamander
+  obfs-password: EsimObfs_9mK2x7
 proxy-groups:
 - name: Proxy Select
   type: select
@@ -139,6 +150,7 @@ proxy-groups:
   - 'Hysteria2 #3'
   - 'Hysteria2 #4'
   - 'Hysteria2 #5'
+  - 'Hysteria2 #6'
   - DIRECT
 - name: Auto Select
   type: url-test
@@ -148,6 +160,7 @@ proxy-groups:
   - 'Hysteria2 #3'
   - 'Hysteria2 #4'
   - 'Hysteria2 #5'
+  - 'Hysteria2 #6'
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 150
