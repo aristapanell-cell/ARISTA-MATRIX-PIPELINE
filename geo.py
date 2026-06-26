@@ -70,7 +70,7 @@ def geo_lookup(ip):
     if ip in cache:
         return cache[ip]
 
-    best_result = None
+    result = None
 
     sources = [
         {
@@ -198,34 +198,19 @@ def geo_lookup(ip):
                 if r.status_code == 200:
                     data = r.json()
                     parsed = source["parser"](data)
-
-                    if not parsed:
-                        continue
-
-                    if not best_result:
-                        best_result = parsed
-
-                    city = parsed.get("city")
-                    region = parsed.get("region")
-
-                    if city and city not in ("Unknown", ""):
-                        best_result = parsed
-                        print(f"GEO: {ip} -> {source['name']} -> City: {city}")
+                    if parsed and parsed.get("country") and parsed.get("country") != "Unknown":
+                        result = parsed
+                        print(f"GEO: {ip} -> {source['name']} -> {parsed.get('country')}")
                         break
-
-                    if region and region not in ("Unknown", ""):
-                        best_result = parsed
-                        print(f"GEO: {ip} -> {source['name']} -> Region: {region}")
-
             except:
                 time.sleep(RETRY_DELAY)
                 continue
-
-        if best_result and best_result.get("city") and best_result.get("city") not in ("Unknown", ""):
+        
+        if result:
             break
 
-    if best_result is None:
-        best_result = {
+    if result is None:
+        result = {
             "country": "Unknown",
             "region": "Unknown",
             "city": "Unknown",
@@ -233,7 +218,7 @@ def geo_lookup(ip):
             "asn": "Unknown"
         }
 
-    cache[ip] = best_result
+    cache[ip] = result
     save_geo_cache(cache)
 
-    return best_result
+    return result
