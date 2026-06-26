@@ -385,6 +385,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 1
+          ref: main
 
       - uses: actions/setup-python@v5
         with:
@@ -439,6 +440,8 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
+          git pull origin main --rebase || true
+
           mkdir -p output
 
           [ -f output/best_ips.txt ] && git add output/best_ips.txt
@@ -446,7 +449,6 @@ jobs:
           [ -f output/results.txt ] && git add output/results.txt
           [ -f output/scan_cursor.txt ] && git add output/scan_cursor.txt
           [ -f output/current_part.txt ] && git add output/current_part.txt
-
           [ -f output/tcp_live.txt ] && git add output/tcp_live.txt
           [ -f output/tls_live.txt ] && git add output/tls_live.txt
           [ -f output/https_live.txt ] && git add output/https_live.txt
@@ -457,5 +459,5 @@ jobs:
 
           git diff --cached --quiet || (
             git commit -m "ARISTA $(date -u +'%Y-%m-%d %H:%M:%S UTC')"
-            git push
+            git push origin main
           )
