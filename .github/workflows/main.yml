@@ -120,7 +120,6 @@ jobs:
 
       - name: TCP Scan
         run: |
-          free -h
           python main.py --tcp
 
       - name: Save State
@@ -178,7 +177,6 @@ jobs:
 
       - name: TLS Scan
         run: |
-          free -h
           python main.py --tls
 
       - name: Save State
@@ -236,7 +234,6 @@ jobs:
 
       - name: HTTPS Validation
         run: |
-          free -h
           python main.py --https
 
       - name: Save State
@@ -294,7 +291,6 @@ jobs:
 
       - name: Fingerprint
         run: |
-          free -h
           python main.py --fp
 
       - name: Save State
@@ -352,7 +348,6 @@ jobs:
 
       - name: GEO
         run: |
-          free -h
           python main.py --geo
 
       - name: Save State
@@ -410,7 +405,6 @@ jobs:
 
       - name: Finalize
         run: |
-          free -h
           python main.py --finalize
 
       - name: Save Final State
