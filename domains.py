@@ -3,7 +3,6 @@ import ssl
 import requests
 import re
 import json
-import os
 from urllib.parse import urlparse
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
@@ -40,8 +39,11 @@ HEADERS_TO_CHECK = [
 
 def load_config():
     try:
-        config_path = os.path.join(os.path.dirname(__file__), "config.json")
-        with open(config_path, "r", encoding="utf-8") as f:
+        with open(
+            "config.json",
+            "r",
+            encoding="utf-8"
+        ) as f:
             return json.load(f)
     except:
         return {}
