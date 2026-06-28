@@ -221,6 +221,26 @@ on:
 
 <div align="center">
 
+# 📡 بانک اطلاعات IPهای برتر
+
+### ⚡ آخرین نتایج اسکن به‌صورت زنده در دسترس است
+
+<br>
+
+<a href="https://cdn.jsdelivr.net/gh/aristapanell-cell/ARISTA-MATRIX-PIPELINE@main/output/best_ips.txt">
+    <img src="https://img.shields.io/badge/⚡_BEST_IPS-LIVE-00C853?style=for-the-badge&logo=github&logoColor=white&labelColor=111827" alt="BEST IPS">
+</a>
+
+<br><br>
+
+⭐ **مشاهده لیست کامل IPهای رتبه‌بندی‌شده**  
+🚀 **Score • TTFB • Protocol • CDN • Domain • Country • City • Provider**
+
+</div>
+
+---
+<div align="center">
+
 ### 📦 **پروژه جمع‌آوری کانفیگ و سابسکریپشن‌ها برای استفاده در کلاینت‌های مختلف**  
 **V2rayNG • Hiddify • NekoBox • ClashMeta • SingBox • و سایر کلاینت‌های محبوب**
 
