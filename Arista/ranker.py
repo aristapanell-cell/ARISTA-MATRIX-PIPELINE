@@ -292,16 +292,19 @@ def find_domain_for_ip(ip, domains_set, sni_map, port):
     key = f"{ip}:{port}"
     sni = sni_map.get(key, "")
 
-    if sni:
-        for d in sorted(domains_set):
+    if sni and sni != "-" and "." in sni:
+        domains_list = list(domains_set)
+        for d in domains_list[:100]:
             if d in sni or sni in d:
                 return d
 
-    for d in sorted(domains_set):
+    domains_list = list(domains_set)
+    for d in domains_list[:100]:
         if d in ip:
             return d
 
-    for d in sorted(domains_set):
+    domains_list = list(domains_set)
+    for d in domains_list[:100]:
         try:
             if ip == socket.gethostbyname(d):
                 return d
