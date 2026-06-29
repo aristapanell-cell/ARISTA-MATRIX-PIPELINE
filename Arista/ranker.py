@@ -1,7 +1,6 @@
 import os
 import json
 import re
-import socket
 
 RESULT_FILE = "output/results.txt"
 BEST_FILE = "output/best_ips.txt"
@@ -221,6 +220,30 @@ def load_domains_raw():
     return domains
 
 
+def load_domains_from_tls():
+    domains = set()
+    
+    if not os.path.exists(TLS_FILE):
+        return domains
+    
+    try:
+        with open(TLS_FILE, "r", encoding="utf-8") as f:
+            for line in f:
+                line = line.strip()
+                if not line:
+                    continue
+                
+                parts = line.split(":")
+                if len(parts) >= 5:
+                    sni = parts[4]
+                    if sni and sni != "-":
+                        domains.add(sni.lower())
+    except:
+        pass
+    
+    return domains
+
+
 def get_port_type(port):
     if port in {443, 8443, 2053, 2083, 2087, 2096}:
         return "HTTPS"
@@ -278,43 +301,78 @@ def parse_line_to_dict(line):
         return None
 
 
-def resolve_ptr(ip):
-    try:
-        host = socket.gethostbyaddr(ip)[0]
-        if host and "." in host:
-            return host.lower()
-    except:
-        pass
-    return None
-
-
-def find_domain_for_ip(ip, domains_set, sni_map, port):
+def find_domain_for_ip(ip, domains_set, sni_map, port, domains_from_tls):
     key = f"{ip}:{port}"
     sni = sni_map.get(key, "")
-
+    
     if sni and sni != "-":
-        for d in sorted(domains_set):
+        if re.match(r'^[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$', sni):
+            return sni
+        
+        for d in sorted(domains_set, key=len, reverse=True):
+            if d in sni or sni in d:
+                if re.match(r'^[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$', d):
+                    return d
+    
+    if domains_from_tls:
+        for d in sorted(domains_from_tls, key=len, reverse=True):
+            if ip in d or d in ip:
+                if re.match(r'^[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$', d):
+                    return d
+    
+    if domains_set:
+        for d in sorted(domains_set, key=len, reverse=True):
+            if ip in d or d in ip:
+                if re.match(r'^[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$', d):
+                    return d
+    
+    if sni and sni != "-":
+        sni_parts = sni.split('.')
+        if len(sni_parts) >= 2:
+            if len(sni_parts[-1]) >= 2:
+                return sni
+    
+    return "-"
+
+
+def find_best_domain(ip, domains_set, sni_map, port, domains_from_tls, domains_raw):
+    all_domains = set()
+    all_domains.update(domains_set)
+    all_domains.update(domains_from_tls)
+    all_domains.update(domains_raw)
+    
+    valid_domains = {
+        d for d in all_domains 
+        if re.match(r'^[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$', d)
+    }
+    
+    sorted_domains = sorted(valid_domains, key=len)
+    
+    key = f"{ip}:{port}"
+    sni = sni_map.get(key, "")
+    
+    if sni and sni != "-":
+        for d in sorted_domains:
             if d in sni or sni in d:
                 return d
-
-    for d in sorted(domains_set):
-        if d in ip:
+        if re.match(r'^[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$', sni):
+            return sni
+    
+    ip_parts = ip.split('.')
+    for d in sorted_domains:
+        if ip in d or d in ip:
             return d
-
-    for d in sorted(domains_set):
-        try:
-            if ip in socket.gethostbyname(d):
-                return d
-        except:
-            pass
-
-    ptr_domain = resolve_ptr(ip)
-    if ptr_domain:
-        return ptr_domain
-
-    if sni and sni != "-" and "." in sni:
+        
+        d_parts = d.split('.')
+        if len(d_parts) >= 2:
+            if d_parts[-1] in ['com', 'net', 'org', 'ir', 'uk', 'us', 'de', 'fr', 'jp', 'cn', 'ru']:
+                for part in ip_parts:
+                    if part in d or d in part:
+                        return d
+    
+    if sni and sni != "-":
         return sni
-
+    
     return "-"
 
 
@@ -326,6 +384,7 @@ def rank_results():
     city_map = load_geo_city()
     asn_map = load_geo_asn()
     tcp_map = load_tcp_latency()
+    domains_from_tls = load_domains_from_tls()
 
     ranked = []
 
@@ -397,7 +456,7 @@ def rank_results():
 
         port_type = get_port_type(port)
 
-        domain = find_domain_for_ip(ip, domains_set, sni_map, port)
+        domain = find_best_domain(ip, domains_set, sni_map, port, domains_from_tls, domains_set)
 
         parts = [
             f'[IP: {ip}]',
@@ -414,7 +473,7 @@ def rank_results():
         if domain and domain != "-":
             parts.append(f'[DOMAIN={domain}]')
 
-        if sni and sni != "-":
+        if sni and sni != "-" and sni != domain:
             parts.append(f'[SNI={sni}]')
 
         if city and city != "-" and city != "Unknown":
