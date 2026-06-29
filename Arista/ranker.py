@@ -175,11 +175,13 @@ def find_domain_for_ip(ip, domains_set, sni_map, port):
     if sni and domains_set:
         sni_lower = sni.lower()
         for d in sorted(domains_set, key=len, reverse=True):
-            if d in sni_lower:
+            d_lower = d.lower()
+            if d_lower in sni_lower or sni_lower in d_lower:
                 return d
     
     for d in sorted(domains_set, key=len, reverse=True):
-        if d in ip:
+        d_lower = d.lower()
+        if d_lower in ip:
             return d
     
     return "-"
