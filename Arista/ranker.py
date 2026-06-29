@@ -111,13 +111,18 @@ def load_geo_data():
     return city_map, asn_map
 
 def load_domains_raw():
+    domains = set()
     if not os.path.exists(DOMAINS_RAW_FILE):
-        return set()
+        return domains
     try:
         with open(DOMAINS_RAW_FILE, "r", encoding="utf-8") as f:
-            return {line.strip().lower() for line in f if line.strip()}
+            for line in f:
+                line = line.strip()
+                if line:
+                    domains.add(line.lower())
     except:
-        return set()
+        pass
+    return domains
 
 def get_port_type(port):
     if port in STABLE_PORTS:
@@ -166,14 +171,17 @@ def parse_line_to_dict(line):
 def find_domain_for_ip(ip, domains_set, sni_map, port):
     key = f"{ip}:{port}"
     sni = sni_map.get(key, "")
-    if sni:
+    
+    if sni and domains_set:
         sni_lower = sni.lower()
-        for d in domains_set:
+        for d in sorted(domains_set, key=len, reverse=True):
             if d in sni_lower:
                 return d
-    for d in domains_set:
+    
+    for d in sorted(domains_set, key=len, reverse=True):
         if d in ip:
             return d
+    
     return "-"
 
 def score_item(item):
@@ -230,6 +238,8 @@ def rank_results():
     sni_map = load_tls_sni()
     city_map, asn_map = load_geo_data()
     tcp_map = load_tcp_latency()
+
+    print(f"DOMAINS_RAW={len(domains_set)} DOMAINS_IPS={len(domains_ips)}")
 
     ranked = []
     for item in data:
